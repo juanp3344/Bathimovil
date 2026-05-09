@@ -13,7 +13,7 @@ namespace BibliotecaServicios.Entidades
         public string? Motivo_Cambio { get; set; }
 
         // N:1
-        public int Id_Tipo_Portatil { get; set; }
-        [ForeignKey("Id_Tipo_Portatil")] public Tipos_Portatiles? _Tipo_Portatiles { get; set; }
+        public int Tipo_Portatil { get; set; }
+        [ForeignKey("Tipo_Portatil")] public Tipos_Portatiles? _Tipo_Portatiles { get; set; }
     }
 }

@@ -13,8 +13,8 @@ namespace BibliotecaServicios.Entidades
 
 
         // N:1
-        public int Id_Contratos { get; set; }
-        [ForeignKey("Id_Contratos")] public Contratos? _Contrato { get; set; }
+        public int Contrato { get; set; }
+        [ForeignKey("Contrato")] public Contratos? _Contrato { get; set; }
 
 
         // 1:N

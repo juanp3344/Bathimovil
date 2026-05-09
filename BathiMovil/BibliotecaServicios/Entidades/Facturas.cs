@@ -14,8 +14,8 @@ namespace BibliotecaServicios.Entidades
         public decimal Impuesto_Iva { get; set; }
 
         // N:1
-        public int Id_Cliente { get; set; }
-        [ForeignKey("Id_Cliente")] public Clientes? _Cliente { get; set; }
+        public int Cliente { get; set; }
+        [ForeignKey("Cliente")] public Clientes? _Cliente { get; set; }
 
         // 1:N
         [NotMapped] public List<Detalle_Facturas>? Detalle_Facturas { get; set; }

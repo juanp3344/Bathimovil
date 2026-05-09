@@ -12,7 +12,7 @@ namespace BibliotecaServicios.Entidades
         public decimal Subtotal { get; set; }
 
         // N:1
-        public int Id_Factura { get; set; }
-        [ForeignKey("Id_Factura")] public Facturas? _Factura { get; set; }
+        public int Factura { get; set; }
+        [ForeignKey("Factura")] public Facturas? _Factura { get; set; }
     }
 }

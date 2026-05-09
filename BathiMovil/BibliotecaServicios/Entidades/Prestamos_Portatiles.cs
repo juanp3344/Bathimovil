@@ -10,10 +10,10 @@ namespace BibliotecaServicios.Entidades
         public int Id_Prestamo_Portatil { get; set; }
 
         // N:1
-        public int Id_Prestamo { get; set; }
-        public int Id_Portatil { get; set; }
+        public int Prestamo { get; set; }
+        public int Portatil { get; set; }
 
-        [ForeignKey("Id_Prestamo")] public Prestamos? _Prestamo { get; set; }
-        [ForeignKey("Id_Portatil")] public Portatiles? _Portatil { get; set; }
+        [ForeignKey("Prestamo")] public Prestamos? _Prestamo { get; set; }
+        [ForeignKey("Portatil")] public Portatiles? _Portatil { get; set; }
     }
 }

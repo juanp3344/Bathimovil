@@ -13,11 +13,11 @@ namespace BibliotecaServicios.Entidades
 
 
         // N:1
-        public int Id_Tipo_Aseo_Elementos { get; set; }
-        public int Id_Mantenimiento { get; set; }
+        public int Tipo_Aseo_Elementos { get; set; }
+        public int Mantenimiento { get; set; }
 
 
-        [ForeignKey("Id_Mantenimiento")] public Mantenimiento? _Mantenimiento { get; set; }
-        [ForeignKey("Id_Tipo_Aseo_Elementos")] public Tipo_Aseo_Elementos? _Tipo_Aseo_Elemento { get; set; }
+        [ForeignKey("Mantenimiento")] public Mantenimiento? _Mantenimiento { get; set; }
+        [ForeignKey("Tipo_Aseo_Elementos")] public Tipo_Aseo_Elementos? _Tipo_Aseo_Elemento { get; set; }
     }
 }

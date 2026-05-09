@@ -131,7 +131,7 @@ CREATE TABLE [Prestamos]
 [Fecha_Inicio] SMALLDATETIME NOT NULL,
 [Fecha_Fin_Prevista] SMALLDATETIME NOT NULL,
 [Estado_Prestamo] BIT NOT NULL,
-
+[Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato])
 );
 
 

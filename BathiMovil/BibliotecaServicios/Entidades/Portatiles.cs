@@ -12,13 +12,13 @@ namespace BibliotecaServicios.Entidades
         public string? Estado_Actual { get; set; }
 
         // N:1
-        public int Id_Tipo_Portatil { get; set; }
-        public int Id_Sede { get; set; }
-        public int Id_Compra { get; set; }
+        public int Tipo_Portatil { get; set; }
+        public int Sede { get; set; }
+        public int Compra { get; set; }
 
 
-        [ForeignKey("Id_Tipo_Portatil")] public Tipos_Portatiles? _Tipo_Portatil { get; set; }
-        [ForeignKey("Id_Sede")] public Sedes? _Sede { get; set; }
-        [ForeignKey("Id_Compra")] public Compras? _Compra { get; set; }
+        [ForeignKey("Tipo_Portatil")] public Tipos_Portatiles? _Tipo_Portatil { get; set; }
+        [ForeignKey("Sede")] public Sedes? _Sede { get; set; }
+        [ForeignKey("Compra")] public Compras? _Compra { get; set; }
     }
 }

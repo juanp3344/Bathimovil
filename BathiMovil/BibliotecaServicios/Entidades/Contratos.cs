@@ -13,8 +13,8 @@ namespace BibliotecaServicios.Entidades
         public DateTime Fecha_Expiracion { get; set; }
 
         // N:1
-        public int Id_Cliente { get; set; }
-        [ForeignKey("Id_Cliente")] public Clientes? _Cliente { get; set; }
+        public int Cliente { get; set; }
+        [ForeignKey("Cliente")] public Clientes? _Cliente { get; set; }
 
         // 1:1
         [NotMapped] public List<Prestamos>? Prestamos { get; set; }

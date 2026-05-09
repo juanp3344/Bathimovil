@@ -14,13 +14,13 @@ namespace BibliotecaServicios.Entidades
         public decimal Costo_Mano_Obra { get; set; }
 
         // N:1
-        public int Id_Prestamo { get; set; }
-        public int Id_Empleado { get; set; }
-        public int Id_Portatil { get; set; }
+        public int Prestamo { get; set; }
+        public int Empleado { get; set; }
+        public int Portatil { get; set; }
 
-        [ForeignKey("Id_Prestamo")] public Prestamos? _Prestamo { get; set; }
-        [ForeignKey("Id_Empleado")] public Empleados? _Empleado { get; set; }
-        [ForeignKey("Id_Portatil")] public Portatiles? _Portatil { get; set; }
+        [ForeignKey("Prestamo")] public Prestamos? _Prestamo { get; set; }
+        [ForeignKey("Empleado")] public Empleados? _Empleado { get; set; }
+        [ForeignKey("Portatil")] public Portatiles? _Portatil { get; set; }
 
         // 1:N
         [NotMapped] public List<Aseo_Elementos>? Aseo_Elementos { get; set; }

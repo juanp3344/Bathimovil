@@ -12,11 +12,11 @@ namespace BibliotecaServicios.Entidades
         public DateTime Fecha_Entrega_Estimada { get; set; }
 
         // N:1
-        public int Id_Contrato { get; set; }
-        public int Id_Empleado { get; set; }
+        public int Contrato { get; set; }
+        public int Empleado { get; set; }
 
-        [ForeignKey("Id_Contrato")] public Contratos? _Contrato { get; set; }
-        [ForeignKey("Id_Empleado")] public Empleados? _Empleado { get; set; }
+        [ForeignKey("Contrato")] public Contratos? _Contrato { get; set; }
+        [ForeignKey("Empleado")] public Empleados? _Empleado { get; set; }
        
     }
 }

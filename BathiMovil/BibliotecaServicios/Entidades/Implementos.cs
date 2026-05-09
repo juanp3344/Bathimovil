@@ -14,13 +14,13 @@ namespace BibliotecaServicios.Entidades
         public decimal Costo { get; set; }
 
         // N:1
-        public int Id_Portatil { get; set; }
-        public int Id_Bodega { get; set; }
+        public int Portatil { get; set; }
+        public int Bodega { get; set; }
         public int Tipo_Implemento { get; set; }
 
-        [ForeignKey("Id_Portatil")] public Tipo_Implementos? _Tipo_Implemento { get; set; }
-        [ForeignKey("Id_Bodega")] public Portatiles? _Portatil { get; set; }
-        [ForeignKey("Tipo_Implemento")] public Bodegas? _Bodega { get; set; }
+        [ForeignKey("Tipo_Implemento")] public Tipo_Implementos? _Tipo_Implemento { get; set; }
+        [ForeignKey("Portatil")] public Portatiles? _Portatil { get; set; }
+        [ForeignKey("Bodega")] public Bodegas? _Bodega { get; set; }
 
     }
 }
