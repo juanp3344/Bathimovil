@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/1. Presentacion/" />
+  <Folder Name="/2. Servicios/">
+    <Project Path="BibliotecaServicios/BibliotecaServicios.csproj" />
+  </Folder>
+  <Folder Name="/3.  Pruebas Unitarias/" />
+</Solution>
