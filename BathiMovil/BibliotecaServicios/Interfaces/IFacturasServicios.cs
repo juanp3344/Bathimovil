@@ -1,0 +1,13 @@
+﻿using Biblioteca.Entidades;
+
+
+namespace Biblioteca.Interfaces
+{
+    public interface IFacturasServicios
+    {
+        List<Facturas> Consultar();
+        Facturas Guardar(Facturas entidad);
+        Facturas Modificar(Facturas entidad);
+        Facturas Eliminar(Facturas entidad);
+    }
+}
