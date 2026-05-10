@@ -1,0 +1,58 @@
+using Biblioteca.Entidades;
+using Biblioteca.Implementaciones;
+using Biblioteca.Interfaces;
+using Biblioteca.Nucleo;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace ApiServicios.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class ClientesController : ControllerBase
+    {
+        private IClientesServicios? IClientesServicios;
+
+        
+
+        public ClientesController()
+        {
+            this.IClientesServicios = new ClientesServicios();
+        }
+
+        [HttpGet("Consultar")]
+        public List<Clientes> Consultar()
+        {
+            if (this.IClientesServicios == null)
+                throw new Exception("No implementado");
+            return this.IClientesServicios!.Consultar();
+        }
+
+        [HttpPost]
+        public Clientes Guardar(Clientes entidad)
+        {
+            if (this.IClientesServicios == null)
+                throw new Exception("No implementado");
+            return this.IClientesServicios!.Guardar(entidad);
+        }
+
+
+        [HttpPut]
+        public Clientes Modificar(Clientes id)
+        {
+            if (this.IClientesServicios == null)
+                throw new Exception("No implementado");
+            return this.IClientesServicios!.Modificar(id);
+        }
+
+        [HttpDelete]
+
+        public Clientes Eliminar(Clientes id)
+        {
+            if (this.IClientesServicios == null)
+                throw new Exception("No implementado");
+            return this.IClientesServicios!.Eliminar(id);
+        }
+
+    }
+}
