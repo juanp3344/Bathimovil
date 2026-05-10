@@ -1,7 +1,7 @@
-using Biblioteca.Entidades;
-using Biblioteca.Implementaciones;
-using Biblioteca.Interfaces;
-using Biblioteca.Nucleo;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

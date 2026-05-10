@@ -1,7 +1,7 @@
-﻿using Biblioteca.Entidades;
+﻿using BibliotecaServicios.Entidades;
 
 
-namespace Biblioteca.Interfaces
+namespace BibliotecaServicios.Interfaces
 {
     public interface IEmpleadosServicios
     {

@@ -1,11 +1,11 @@
 ﻿
 
-using Biblioteca.Entidades;
-using Biblioteca.Interfaces;
-using Biblioteca.Nucleo;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
 using Microsoft.EntityFrameworkCore;
 
-namespace Biblioteca.Implementaciones
+namespace BibliotecaServicios.Implementaciones
 {
     public class BodegasServicios: IBodegasServicios
     {

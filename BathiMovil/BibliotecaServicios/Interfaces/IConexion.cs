@@ -1,10 +1,10 @@
 ﻿
-using Biblioteca.Entidades;
+using BibliotecaServicios.Entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace Biblioteca.Interfaces
+namespace BibliotecaServicios.Interfaces
 {
     public interface IConexion
     {

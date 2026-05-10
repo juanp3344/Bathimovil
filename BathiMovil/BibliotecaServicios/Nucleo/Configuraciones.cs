@@ -1,6 +1,6 @@
 ﻿
 
-namespace Biblioteca.Nucleo
+namespace BibliotecaServicios.Nucleo
 {
     public class Configuraciones
     {

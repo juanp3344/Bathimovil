@@ -1,12 +1,12 @@
-﻿using Biblioteca.Entidades;
-using Biblioteca.Interfaces;
-using Biblioteca.Nucleo;
+﻿using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Biblioteca.Implementaciones
+namespace BibliotecaServicios.Implementaciones
 {
     public class Detalle_FacturasServicios: IDetalle_FacturasServicios
     {
