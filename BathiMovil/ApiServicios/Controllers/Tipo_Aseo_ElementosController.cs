@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class Tipo_Aseo_ElementosController : ControllerBase
     {
         private ITipo_Aseo_ElementosServicios? ITipo_Aseo_ElementosServicios;
@@ -18,7 +18,7 @@ namespace ApiServicios.Controllers
             this.ITipo_Aseo_ElementosServicios = new Tipo_Aseo_ElementosServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Tipo_Aseo_Elementos> Consultar()
         {
             if (this.ITipo_Aseo_ElementosServicios == null)

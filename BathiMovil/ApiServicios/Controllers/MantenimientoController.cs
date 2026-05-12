@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class MantenimientoController : ControllerBase
     {
         private IMantenimientoServicios? IMantenimientoServicios;
@@ -18,7 +18,7 @@ namespace ApiServicios.Controllers
             this.IMantenimientoServicios = new MantenimientoServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Mantenimiento> Consultar()
         {
             if (this.IMantenimientoServicios == null)

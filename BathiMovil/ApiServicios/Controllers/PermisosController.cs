@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class PermisosController : ControllerBase
     {
         private IPermisosServicios? IPermisosServicios;
@@ -21,7 +21,7 @@ namespace ApiServicios.Controllers
             this.IPermisosServicios = new PermisosServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Permisos> Consultar()
         {
             if (this.IPermisosServicios == null)

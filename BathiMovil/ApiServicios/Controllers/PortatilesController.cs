@@ -7,7 +7,7 @@ using BibliotecaServicios.Nucleo;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class PortatilesController : ControllerBase
     {
         private IPortatilesServicios? IPortatilesServicios;
@@ -19,7 +19,7 @@ namespace ApiServicios.Controllers
             this.IPortatilesServicios = new PortatilesServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Portatiles> Consultar()
         {
             if (this.IPortatilesServicios == null)

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class Historial_PreciosController : ControllerBase
     {
         private IHistorial_PreciosServicios? IHistorial_PreciosServicios;
@@ -20,7 +20,7 @@ namespace ApiServicios.Controllers
             this.IHistorial_PreciosServicios = new Historial_PreciosServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Historial_Precios> Consultar()
         {
             if (this.IHistorial_PreciosServicios == null)

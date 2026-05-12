@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class FacturasController : ControllerBase
     {
         private IFacturasServicios? IFacturasServicios;
@@ -20,7 +20,7 @@ namespace ApiServicios.Controllers
             this.IFacturasServicios = new FacturasServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Facturas> Consultar()
         {
             if (this.IFacturasServicios == null)

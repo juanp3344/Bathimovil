@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class Tipos_IntermediaController : ControllerBase
     {
         private ITipos_IntermediaServicios? ITipos_IntermediaServicios;
@@ -18,7 +18,7 @@ namespace ApiServicios.Controllers
             this.ITipos_IntermediaServicios = new Tipos_IntermediaServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Tipos_Intermedia> Consultar()
         {
             if (this.ITipos_IntermediaServicios == null)

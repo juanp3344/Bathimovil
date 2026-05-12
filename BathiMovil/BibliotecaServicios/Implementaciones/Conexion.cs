@@ -25,6 +25,8 @@ namespace BibliotecaServicios.Implementaciones
             modelBuilder.Entity<Empleados>().ToTable("Empleados");
 
             modelBuilder.Entity<Clientes>().ToTable("Clientes");
+
+            modelBuilder.Entity<Personas>().Property(p => p.Id_Persona).ValueGeneratedOnAdd();
         }
 
         public DbSet<Aseo_Elementos>? Aseo_Elementos { get; set; }
@@ -53,5 +55,6 @@ namespace BibliotecaServicios.Implementaciones
         public DbSet<Tipos_Intermedia>? Tipos_Intermedia { get; set; }
         public DbSet<Tipos_Portatiles>? Tipos_Portatiles { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
+        public DbSet<Roles_Permisos>? Roles_Permisos { get; set; }
     }
 }
