@@ -1,83 +1,58 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiServicios.Controllers
 {
-    public class HomeController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class ImplementosController : ControllerBase
     {
-        // GET: HomeController
-        public ActionResult Index()
+        private IImplementosServicios? iImplementosServicios;
+
+
+
+        public ImplementosController()
         {
-            return View();
+            this.iImplementosServicios = new ImplementosServicios();
         }
 
-        // GET: HomeController/Details/5
-        public ActionResult Details(int id)
+        [HttpGet("Consultar")]
+        public List<Implementos> Consultar()
         {
-            return View();
+            if (this.iImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.iImplementosServicios!.Consultar();
         }
 
-        // GET: HomeController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: HomeController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public Implementos Guardar(Implementos entidad)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            if (this.iImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.iImplementosServicios!.Guardar(entidad);
         }
 
-        // GET: HomeController/Edit/5
-        public ActionResult Edit(int id)
+
+        [HttpPut]
+        public Implementos Modificar(Implementos id)
         {
-            return View();
+            if (this.iImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.iImplementosServicios!.Modificar(id);
         }
 
-        // POST: HomeController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [HttpDelete]
+
+        public Implementos Eliminar(Implementos id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            if (this.iImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.iImplementosServicios!.Eliminar(id);
         }
 
-        // GET: HomeController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: HomeController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

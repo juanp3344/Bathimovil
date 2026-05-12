@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class PagosServicios
+    public class PagosServicios : IPagosServicios
     {
         private IConexion? iConexion;
 

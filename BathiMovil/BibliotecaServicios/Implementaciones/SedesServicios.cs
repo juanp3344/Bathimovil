@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class SedesServicios
+    public class SedesServicios : ISedesServicios
     {
         private IConexion? iConexion;
 

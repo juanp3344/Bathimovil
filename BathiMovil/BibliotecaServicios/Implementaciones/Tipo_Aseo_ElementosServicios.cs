@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class Tipo_Aseo_ElementosServicios
+    public class Tipo_Aseo_ElementosServicios : ITipo_Aseo_ElementosServicios
     {
         private IConexion? iConexion;
 

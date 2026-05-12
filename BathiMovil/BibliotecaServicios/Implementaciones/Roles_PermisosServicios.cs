@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class Roles_PermisosServicios
+    public class Roles_PermisosServicios : IRoles_PermisosServicios
     {
         private IConexion? iConexion;
 

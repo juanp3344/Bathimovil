@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class Tipos_PortatilesServicios
+    public class Tipos_PortatilesServicios : ITipos_PortatilesServicios
     {
         private IConexion? iConexion;
 
