@@ -53,7 +53,7 @@ namespace BibliotecaServicios.Implementaciones
         }
         public Roles_Permisos Eliminar(Roles_Permisos entidad)
         {
-            if (entidad.Id_Roles_Permiso == 0)
+            if (entidad.Id_Rol_Permiso == 0)
                 throw new Exception("No se ha guardado");
 
             this.iConexion = new Conexion();
@@ -63,4 +63,5 @@ namespace BibliotecaServicios.Implementaciones
 
             return entidad;
         }
+    }
 }
