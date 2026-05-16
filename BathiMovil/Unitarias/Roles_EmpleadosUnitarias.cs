@@ -42,10 +42,10 @@ namespace Unitarias
 
             this.entidad = new Roles_Empleados()
             {
-         Permisos = Roles_Empleados.Niveles_Acceso.superadmin,
+        // Permisos = Roles_Empleados.Niveles_Acceso.superadmin,
          Nombre_Rol = "Benson",
          Descripcion_Rol= "Regañar a Mordecai y a Rigby",
-         Salario_Base = 12000000
+         Salario_Base = 12000000m
     };
             this.iConexion.Roles_Empleados!.Add(this.entidad!);
             this.iConexion.SaveChanges();

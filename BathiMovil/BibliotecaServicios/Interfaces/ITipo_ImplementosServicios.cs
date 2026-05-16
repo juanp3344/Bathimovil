@@ -5,11 +5,11 @@ using System.Text;
 
 namespace BibliotecaServicios.Interfaces
 {
-    public interface ITipo_ImplementosServicios
+    public interface ITipos_ImplementosServicios
     {
-        List<Tipo_Implementos> Consultar();
-        Tipo_Implementos Guardar(Tipo_Implementos entidad);
-        Tipo_Implementos Modificar(Tipo_Implementos entidad);
-        Tipo_Implementos Eliminar(Tipo_Implementos entidad);
+        List<Tipos_Implementos> Consultar();
+        Tipos_Implementos Guardar(Tipos_Implementos entidad);
+        Tipos_Implementos Modificar(Tipos_Implementos entidad);
+        Tipos_Implementos Eliminar(Tipos_Implementos entidad);
     }
 }

@@ -8,20 +8,20 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class Tipo_ImplementosServicios : ITipo_ImplementosServicios
+    public class Tipos_ImplementosServicios : ITipos_ImplementosServicios
     {
         private IConexion? iConexion;
 
-        public List<Tipo_Implementos> Consultar()
+        public List<Tipos_Implementos> Consultar()
         {
             iConexion = new Conexion();
             iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            var lista = iConexion.Tipo_Implementos!.ToList();
+            var lista = iConexion.Tipos_Implementos!.ToList();
             return lista;
         }
 
-        public Tipo_Implementos Guardar(Tipo_Implementos entidad)
+        public Tipos_Implementos Guardar(Tipos_Implementos entidad)
         {
             if (entidad.Id_Tipo_Implemento != 0)
                 throw new Exception("Ya se guardo");
@@ -29,15 +29,15 @@ namespace BibliotecaServicios.Implementaciones
             iConexion = new Conexion();
             iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            iConexion.Tipo_Implementos!.Add(entidad!);
-            var lista = iConexion.Tipo_Implementos!.ToList();
+            iConexion.Tipos_Implementos!.Add(entidad!);
+            var lista = iConexion.Tipos_Implementos!.ToList();
 
 
             iConexion.SaveChanges();
             return entidad;
         }
 
-        public Tipo_Implementos Modificar(Tipo_Implementos entidad)
+        public Tipos_Implementos Modificar(Tipos_Implementos entidad)
         {
             if (entidad.Id_Tipo_Implemento == 0)
                 throw new Exception("No se ha guardado");
@@ -45,13 +45,13 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            var entry = this.iConexion!.Entry<Tipo_Implementos>(entidad!);
+            var entry = this.iConexion!.Entry<Tipos_Implementos>(entidad!);
             entry.State = EntityState.Modified;
-            var lista = iConexion.Tipo_Implementos!.ToList();
+            var lista = iConexion.Tipos_Implementos!.ToList();
 
             return entidad;
         }
-        public Tipo_Implementos Eliminar(Tipo_Implementos entidad)
+        public Tipos_Implementos Eliminar(Tipos_Implementos entidad)
         {
             if (entidad.Id_Tipo_Implemento == 0)
                 throw new Exception("No se ha guardado");
@@ -59,7 +59,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.iConexion.Tipo_Implementos!.Remove(entidad!);
+            this.iConexion.Tipos_Implementos!.Remove(entidad!);
 
             return entidad;
         }

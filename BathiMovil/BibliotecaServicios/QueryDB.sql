@@ -1,6 +1,6 @@
-CREATE DATABASE Portatiles_db
+CREATE DATABASE uPortatiles_db
 GO
-USE Portatiles_db
+USE uPortatiles_db
 GO
 
 
@@ -64,8 +64,7 @@ CREATE TABLE [Usuarios]
 [Username] NVARCHAR(50) NOT NULL UNIQUE,
 [Password_Hash] NVARCHAR(50) NOT NULL,
 [Activo] BIT NOT NULL,
-[Fecha_Ultimo_Acceso] NVARCHAR(50) NOT NULL,
-[Niveles_Acceso] NVARCHAR(50) NOT NULL,
+[Fecha_Ultimo_Acceso] SMALLDATETIME NOT NULL,
 
 
 [Persona] INT NOT NULL REFERENCES [Personas]([Id_Persona])
@@ -76,7 +75,7 @@ CREATE TABLE [Usuarios]
 
 CREATE TABLE [Clientes]
 (-- LISTA CONTRATOS Y FACTURAS
-[Id_Persona] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
+[Id_Persona] int NOT NULL PRIMARY KEY,
 [Razon_Social] NVARCHAR(50) NOT NULL,
 [Nit_CC] NVARCHAR(50) NOT NULL,
 [Direccion_Fiscal] NVARCHAR(50) NOT NULL
@@ -90,7 +89,7 @@ CREATE TABLE [Roles_Empleados]
 [Id_Rol] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
 [Nombre_Rol] NVARCHAR(50) NOT NULL ,
 [Descripcion_Rol] NVARCHAR(50) NOT NULL,
-[Salario_Base] NVARCHAR(50) NOT NULL,
+[Salario_Base] DECIMAL (10,2) NOT NULL,
 );
 
 
@@ -120,7 +119,16 @@ CREATE TABLE [Bodegas]
 );
 
 
+CREATE TABLE [Contratos](
 
+[Id_Contrato] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
+[Fecha_Firma] SMALLDATETIME NOT NULL,
+[Terminos] NVARCHAR(50) NOT NULL,
+[Fecha_Expiracion] SMALLDATETIME NOT NULL,
+
+
+[Cliente] INT NOT NULL REFERENCES [Clientes]([Id_Persona])
+);
 
 
 
@@ -135,16 +143,7 @@ CREATE TABLE [Prestamos]
 );
 
 
-CREATE TABLE [Contratos](
 
-[Id_Contrato] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Fecha_Firma] SMALLDATETIME NOT NULL,
-[Terminos] NVARCHAR(50) NOT NULL,
-[Fecha_Expiracion] SMALLDATETIME NOT NULL,
-
-
-[Cliente] INT NOT NULL REFERENCES [Clientes]([Id_Persona])
-);
 
 CREATE TABLE [Compras]
 (

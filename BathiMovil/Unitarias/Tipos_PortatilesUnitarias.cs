@@ -62,7 +62,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad!.Altura = 1.90;
+            this.entidad!.Altura = 1.90m;
 
             var entry = this.iConexion!.Entry<Tipos_Portatiles>(this.entidad!);
             entry.State = EntityState.Modified;

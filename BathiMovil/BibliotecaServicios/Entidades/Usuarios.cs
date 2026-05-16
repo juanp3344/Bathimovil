@@ -12,7 +12,6 @@ namespace BibliotecaServicios.Entidades
         public string? Password_Hash { get; set; }
         public bool Activo { get; set; }
         public DateTime Fecha_Ultimo_Acceso { get; set; }
-
         
 
         public int Persona { get; set; }

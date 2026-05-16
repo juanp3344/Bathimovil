@@ -15,7 +15,7 @@ namespace BibliotecaServicios.Entidades
         public string? Razon_Social { get; set; }
         public string? Nit_CC { get; set; }
         public string? Direccion_Fiscal { get; set; }
-        public CategoriaCliente Tipo_Cliente { get; set; }
+       // public CategoriaCliente Tipo_Cliente { get; set; }
 
         // 1:N
         [NotMapped] public List<Contratos>? Contratos { get; set; }

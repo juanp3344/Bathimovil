@@ -7,49 +7,49 @@ namespace ApiServicios.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    public class Tipo_ImplementosController : ControllerBase
+    public class Tipos_ImplementosController : ControllerBase
     {
-        private ITipo_ImplementosServicios? ITipo_ImplementosServicios;
+        private ITipos_ImplementosServicios? ITipos_ImplementosServicios;
 
 
 
-        public Tipo_ImplementosController()
+        public Tipos_ImplementosController()
         {
-            this.ITipo_ImplementosServicios = new Tipo_ImplementosServicios();
+            this.ITipos_ImplementosServicios = new Tipos_ImplementosServicios();
         }
 
         [HttpGet]
-        public List<Tipo_Implementos> Consultar()
+        public List<Tipos_Implementos> Consultar()
         {
-            if (this.ITipo_ImplementosServicios == null)
+            if (this.ITipos_ImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.ITipo_ImplementosServicios!.Consultar();
+            return this.ITipos_ImplementosServicios!.Consultar();
         }
 
         [HttpPost]
-        public Tipo_Implementos Guardar(Tipo_Implementos entidad)
+        public Tipos_Implementos Guardar(Tipos_Implementos entidad)
         {
-            if (this.ITipo_ImplementosServicios == null)
+            if (this.ITipos_ImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.ITipo_ImplementosServicios!.Guardar(entidad);
+            return this.ITipos_ImplementosServicios!.Guardar(entidad);
         }
 
 
         [HttpPut]
-        public Tipo_Implementos Modificar(Tipo_Implementos id)
+        public Tipos_Implementos Modificar(Tipos_Implementos id)
         {
-            if (this.ITipo_ImplementosServicios == null)
+            if (this.ITipos_ImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.ITipo_ImplementosServicios!.Modificar(id);
+            return this.ITipos_ImplementosServicios!.Modificar(id);
         }
 
         [HttpDelete]
 
-        public Tipo_Implementos Eliminar(Tipo_Implementos id)
+        public Tipos_Implementos Eliminar(Tipos_Implementos id)
         {
-            if (this.ITipo_ImplementosServicios == null)
+            if (this.ITipos_ImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.ITipo_ImplementosServicios!.Eliminar(id);
+            return this.ITipos_ImplementosServicios!.Eliminar(id);
         }
 
     }

@@ -17,7 +17,7 @@ namespace BibliotecaServicios.Entidades
         public string? Nombre_Rol { get; set; }
         public string? Descripcion_Rol { get; set; }
         public decimal Salario_Base { get; set; }
-        public Niveles_Acceso Permisos { get; set; }
+       // public Niveles_Acceso Permisos { get; set; }
 
         // 1:N
         [NotMapped] public List<Empleados>? Empleados { get; set; }

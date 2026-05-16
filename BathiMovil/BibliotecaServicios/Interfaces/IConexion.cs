@@ -30,7 +30,7 @@ namespace BibliotecaServicios.Interfaces
         public DbSet<Roles_Empleados>? Roles_Empleados { get; set; }
         public DbSet<Sedes>? Sedes { get; set; }
         public DbSet<Tipo_Aseo_Elementos>? Tipo_Aseo_Elementos { get; set; }
-        public DbSet<Tipo_Implementos>? Tipo_Implementos { get; set; }
+        public DbSet<Tipos_Implementos>? Tipos_Implementos { get; set; }
         public DbSet<Tipos_Intermedia>? Tipos_Intermedia { get; set; }
         public DbSet<Tipos_Portatiles>? Tipos_Portatiles { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }

@@ -13,8 +13,8 @@ namespace Unitarias
     public class UsuariosUnitaria
     {
         private IConexion? iConexion;
-        private Usuarios? entidad;
-
+        private Usuarios? entidad; 
+        private Personas? entidad2;
         [TestMethod]
         public void Ejecutar()
         {
@@ -39,12 +39,25 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
+
+            this.entidad2 = new Personas()
+            {
+
+                Cedula = "7483238",
+                Nombre = "Tomas",
+                Correo = "asjdhkajds@gmail.com",
+                Telefono = "2312312312"
+            };
+            this.iConexion.Personas!.Add(this.entidad2!);
+            this.iConexion.SaveChanges();
+
             this.entidad = new Usuarios()
             {
              Username = "Mano",
              Password_Hash = "Chachau",
              Activo = true,
              Fecha_Ultimo_Acceso = DateTime.Now,
+             Persona = entidad2.Id_Persona
     };
             this.iConexion.Usuarios!.Add(this.entidad!);
             this.iConexion.SaveChanges();
@@ -76,6 +89,7 @@ namespace Unitarias
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Usuarios!.Remove(this.entidad!);
+            this.iConexion.Personas!.Remove(this.entidad2!);
             this.iConexion.SaveChanges();
         }
     }
