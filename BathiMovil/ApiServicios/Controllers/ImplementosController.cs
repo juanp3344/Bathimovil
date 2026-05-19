@@ -1,83 +1,54 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiServicios.Controllers
 {
-    public class HomeController : Controller
+    [ApiController]
+    [Route("[controller]/[action]")]
+    public class ImplementosController : Controller
     {
-        // GET: HomeController
-        public ActionResult Index()
+        private IImplementosServicios? IImplementosServicios;
+
+        public ImplementosController()
         {
-            return View();
+            this.IImplementosServicios = new ImplementosServicios();
         }
 
-        // GET: HomeController/Details/5
-        public ActionResult Details(int id)
+        [HttpGet("Consultar")]
+        public List<Historial_Precios> Consultar()
         {
-            return View();
+            if (this.IImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.IImplementosServicios!.Consultar();
         }
 
-        // GET: HomeController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: HomeController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public Historial_Precios Guardar(Historial_Precios entidad)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            if (this.IImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.IImplementosServicios!.Guardar(entidad);
         }
 
-        // GET: HomeController/Edit/5
-        public ActionResult Edit(int id)
+
+        [HttpPut]
+        public Historial_Precios Modificar(Historial_Precios id)
         {
-            return View();
+            if (this.IImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.IImplementosServicios!.Modificar(id);
         }
 
-        // POST: HomeController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        [HttpDelete]
 
-        // GET: HomeController/Delete/5
-        public ActionResult Delete(int id)
+        public Historial_Precios Eliminar(Historial_Precios id)
         {
-            return View();
-        }
-
-        // POST: HomeController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            if (this.IImplementosServicios == null)
+                throw new Exception("No implementado");
+            return this.IImplementosServicios!.Eliminar(id);
         }
     }
 }

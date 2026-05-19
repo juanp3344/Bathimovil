@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ApiServicios.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class Aseo_ElementosController : ControllerBase
     {
         private IAseo_ElementosServicios? IAseo_ElementosServicios;
@@ -20,7 +20,7 @@ namespace ApiServicios.Controllers
             this.IAseo_ElementosServicios = new Aseo_ElementosServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Aseo_Elementos> Consultar()
         {
             if (this.IAseo_ElementosServicios == null)

@@ -1,5 +1,9 @@
-﻿namespace ApiServicios.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace ApiServicios.Controllers
 {
+    [ApiController]
+    [Route("[controller]/[action]")]
     public class Tipo_Aseo_ElementosController
     {
     }

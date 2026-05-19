@@ -34,6 +34,8 @@ namespace BibliotecaServicios.Interfaces
         public DbSet<Tipos_Intermedia>? Tipos_Intermedia { get; set; }
         public DbSet<Tipos_Portatiles>? Tipos_Portatiles { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
+        public DbSet<Roles_Permisos>? Roles_Permisos { get; set; }
+        public DbSet<Permisos>? Permisos { get; set; }
 
         EntityEntry<T> Entry<T>(T entity) where T : class;
         int SaveChanges();

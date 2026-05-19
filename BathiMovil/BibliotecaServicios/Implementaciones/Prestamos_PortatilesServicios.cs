@@ -7,7 +7,7 @@ using BibliotecaServicios.Nucleo;
 using Microsoft.EntityFrameworkCore;
 namespace BibliotecaServicios.Implementaciones
 {
-    public class Prestamos_PortatilesServicios
+    public class Prestamos_PortatilesServicios: IPrestamos_PortatilesServicios
     {
         private IConexion? iConexion;
 
@@ -62,4 +62,5 @@ namespace BibliotecaServicios.Implementaciones
 
             return entidad;
         }
+    }
 }

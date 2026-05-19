@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class PortatilesServicios
+    public class PortatilesServicios: IPortatilesServicios
     {
         private IConexion? iConexion;
 
@@ -63,4 +63,5 @@ namespace BibliotecaServicios.Implementaciones
 
             return entidad;
         }
+    }
 }
