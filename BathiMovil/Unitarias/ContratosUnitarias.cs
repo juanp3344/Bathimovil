@@ -14,6 +14,7 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Contratos? entidad;
+        private Clientes? entidad2;
 
         [TestMethod]
         public void Ejecutar()
@@ -39,11 +40,27 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
+            this.entidad2 = new Clientes()
+            {
+                //Tipo_Cliente = Clientes.CategoriaCliente.Constructora,
+                Razon_Social = "Mucha razon",
+
+                Nit_CC = "121434",
+                Direccion_Fiscal = "Carrera 55",
+                Cedula = "7483238",
+                Nombre = "Tomas",
+                Correo = "asjdhkajds@gmail.com",
+                Telefono = "2312312312"
+            };
+            this.iConexion.Clientes!.Add(this.entidad2!);
+            this.iConexion.SaveChanges();
+
             this.entidad = new Contratos()
             {
             Fecha_Firma = DateTime.Now,
             Terminos = "Me lo trae o le mando a los de la moto",
-            Fecha_Expiracion = DateTime.Now
+            Fecha_Expiracion = DateTime.Now,
+            Cliente = entidad2.Id_Persona
             };
             this.iConexion.Contratos!.Add(this.entidad!);
             this.iConexion.SaveChanges();
@@ -75,6 +92,7 @@ namespace Unitarias
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Contratos!.Remove(this.entidad!);
+            this.iConexion.Clientes!.Remove(this.entidad2!);
             this.iConexion.SaveChanges();
         }
     }

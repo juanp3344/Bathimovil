@@ -326,8 +326,7 @@ CREATE TABLE [Auditorias]
 CREATE TABLE [Permisos]
 (
 [Id_Permiso] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Nombre_Permiso] NVARCHAR(50) NOT NULL,
-[Nombre_Rol] NVARCHAR(50) NOT NULL
+[Nombre_Permiso] NVARCHAR(50) NOT NULL
 );
 
 

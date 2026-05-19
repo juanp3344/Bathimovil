@@ -1,9 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using BibliotecaPresentacion.Intefaces;
+using Newtonsoft.Json;
 using System.Text;
 
 namespace BibliotecaPresentacion.Implementaciones
 {
-    public class Comunicaciones
+    public class Comunicaciones: IComunicaciones
     {
         public async Task<Dictionary<string, object>> Ejecutar(Dictionary<string, object> datos)
         {

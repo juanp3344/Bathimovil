@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BibliotecaServicios.Entidades
 {
-    public class Mantenimiento
+    public class Mantenimientos
     {
         [Key]
         public int Id_Mantenimiento { get; set; }

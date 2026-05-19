@@ -48,6 +48,7 @@ namespace Unitarias
         Cantidad = 1,
         Marca = "De agua",
         Costo = 1000000000
+        
     };
             this.iConexion.Aseo_Elementos!.Add(this.entidad!);
             this.iConexion.SaveChanges();
