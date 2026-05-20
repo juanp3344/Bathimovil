@@ -5,11 +5,11 @@ using System.Text;
 
 namespace BibliotecaServicios.Interfaces
 {
-    public interface IMantenimientoServicios
+    public interface IMantenimientosServicios
     {
-        List<Mantenimiento> Consultar();
-        Mantenimiento Guardar(Mantenimiento entidad);
-        Mantenimiento Modificar(Mantenimiento entidad);
-        Mantenimiento Eliminar(Mantenimiento entidad);
+        List<Mantenimientos> Consultar();
+        Mantenimientos Guardar(Mantenimientos entidad);
+        Mantenimientos Modificar(Mantenimientos entidad);
+        Mantenimientos Eliminar(Mantenimientos entidad);
     }
 }

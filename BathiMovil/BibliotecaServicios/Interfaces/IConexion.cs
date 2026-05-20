@@ -21,7 +21,7 @@ namespace BibliotecaServicios.Interfaces
         public DbSet<Facturas>? Facturas { get; set; }
         public DbSet<Historial_Precios>? Historial_Precios { get; set; }
         public DbSet<Implementos>? Implementos { get; set; }
-        public DbSet<Mantenimiento>? Mantenimiento { get; set; }
+        public DbSet<Mantenimientos>? Mantenimientos { get; set; }
         public DbSet<Pagos>? Pagos { get; set; }
         public DbSet<Personas>? Personas { get; set; }
         public DbSet<Portatiles>? Portatiles { get; set; }

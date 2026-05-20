@@ -10,10 +10,10 @@ using Microsoft.EntityFrameworkCore;
 namespace Unitarias
 {
     [TestClass]
-    public class MantenimientoUnitaria
+    public class MantenimientosUnitaria
     {
         private IConexion? iConexion;
-        private Mantenimiento? entidad;
+        private Mantenimientos? entidad;
         private Empleados? entidadEMPLEADO;
         private Roles_Empleados? entidadROLES;
 
@@ -30,7 +30,7 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Mantenimiento!.ToList();
+            var lista = iConexion.Mantenimientos!.ToList();
             if (lista.Count > 0)
                 return;
             throw new Exception("");
@@ -67,7 +67,7 @@ namespace Unitarias
             this.iConexion.Empleados!.Add(this.entidadEMPLEADO!);
             this.iConexion.SaveChanges();
             //////////////////////////////////////////////////////////////////////////
-            this.entidad = new Mantenimiento()
+            this.entidad = new Mantenimientos()
             {
       
         Fecha_Servicio =DateTime.Now,
@@ -77,7 +77,7 @@ namespace Unitarias
         Empleado = entidadEMPLEADO.Id_Persona,
         
     };
-            this.iConexion.Mantenimiento!.Add(this.entidad!);
+            this.iConexion.Mantenimientos!.Add(this.entidad!);
             this.iConexion.SaveChanges();
 
             if (this.entidad!.Id_Mantenimiento != 0)
@@ -92,7 +92,7 @@ namespace Unitarias
 
             this.entidad!.Tipo_Mantenimiento = "Facil";
 
-            var entry = this.iConexion!.Entry<Mantenimiento>(this.entidad!);
+            var entry = this.iConexion!.Entry<Mantenimientos>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
 
@@ -106,7 +106,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.iConexion.Mantenimiento!.Remove(this.entidad!);
+            this.iConexion.Mantenimientos!.Remove(this.entidad!);
             this.iConexion.SaveChanges();
         }
     }
