@@ -46,7 +46,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Facturas>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Facturas!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Facturas Eliminar(Facturas entidad)
@@ -58,7 +58,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Facturas!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

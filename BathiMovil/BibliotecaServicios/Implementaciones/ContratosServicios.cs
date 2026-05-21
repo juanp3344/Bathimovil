@@ -46,7 +46,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Contratos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Contratos!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Contratos Eliminar(Contratos entidad)
@@ -58,7 +58,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Contratos!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

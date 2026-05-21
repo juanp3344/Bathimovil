@@ -15,7 +15,7 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Roles_Permisos? entidad;
-        private Roles_Empleados? entidad2;
+        private Roles? entidad2;
         private Permisos? entidad3;
         [TestMethod]
         public void Ejecutar()
@@ -41,14 +41,14 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad2 = new Roles_Empleados()
+            this.entidad2 = new Roles()
             {
-                // Permisos = Roles_Empleados.Niveles_Acceso.superadmin,
+                // Permisos = Roles.Niveles_Acceso.superadmin,
                 Nombre_Rol = "Benson",
                 Descripcion_Rol = "Regañar a Mordecai y a Rigby",
                 Salario_Base = 12000000m
             };
-            this.iConexion.Roles_Empleados!.Add(this.entidad2!);
+            this.iConexion.Roles!.Add(this.entidad2!);
             this.iConexion.SaveChanges();
 
             this.entidad3 = new Permisos()
@@ -95,7 +95,7 @@ namespace Unitarias
 
             this.iConexion.Roles_Permisos!.Remove(this.entidad!);
             this.iConexion.Permisos!.Remove(this.entidad3!);
-            this.iConexion.Roles_Empleados!.Remove(this.entidad2!);
+            this.iConexion.Roles!.Remove(this.entidad2!);
 
             this.iConexion.SaveChanges();
         }

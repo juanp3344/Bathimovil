@@ -7,49 +7,49 @@ namespace ApiServicios.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    public class Roles_EmpleadosController : ControllerBase
+    public class RolesController : ControllerBase
     {
-        private IRoles_EmpleadosServicios? IRoles_EmpleadosServicios;
+        private IRolesServicios? IRolesServicios;
 
 
 
-        public Roles_EmpleadosController()
+        public RolesController()
         {
-            this.IRoles_EmpleadosServicios = new Roles_EmpleadosServicios();
+            this.IRolesServicios = new RolesServicios();
         }
 
         [HttpGet]
-        public List<Roles_Empleados> Consultar()
+        public List<Roles> Consultar()
         {
-            if (this.IRoles_EmpleadosServicios == null)
+            if (this.IRolesServicios == null)
                 throw new Exception("No implementado");
-            return this.IRoles_EmpleadosServicios!.Consultar();
+            return this.IRolesServicios!.Consultar();
         }
 
         [HttpPost]
-        public Roles_Empleados Guardar(Roles_Empleados entidad)
+        public Roles Guardar(Roles entidad)
         {
-            if (this.IRoles_EmpleadosServicios == null)
+            if (this.IRolesServicios == null)
                 throw new Exception("No implementado");
-            return this.IRoles_EmpleadosServicios!.Guardar(entidad);
+            return this.IRolesServicios!.Guardar(entidad);
         }
 
 
         [HttpPut]
-        public Roles_Empleados Modificar(Roles_Empleados id)
+        public Roles Modificar(Roles id)
         {
-            if (this.IRoles_EmpleadosServicios == null)
+            if (this.IRolesServicios == null)
                 throw new Exception("No implementado");
-            return this.IRoles_EmpleadosServicios!.Modificar(id);
+            return this.IRolesServicios!.Modificar(id);
         }
 
         [HttpDelete]
 
-        public Roles_Empleados Eliminar(Roles_Empleados id)
+        public Roles Eliminar(Roles id)
         {
-            if (this.IRoles_EmpleadosServicios == null)
+            if (this.IRolesServicios == null)
                 throw new Exception("No implementado");
-            return this.IRoles_EmpleadosServicios!.Eliminar(id);
+            return this.IRolesServicios!.Eliminar(id);
         }
 
     }

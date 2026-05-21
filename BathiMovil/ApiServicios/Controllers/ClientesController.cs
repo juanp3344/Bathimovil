@@ -12,9 +12,6 @@ namespace ApiServicios.Controllers
     public class ClientesController : ControllerBase
     {
         private IClientesServicios? IClientesServicios;
-
-        
-
         public ClientesController()
         {
             this.IClientesServicios = new ClientesServicios();

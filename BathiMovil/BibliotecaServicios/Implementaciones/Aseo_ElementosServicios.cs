@@ -31,7 +31,7 @@ namespace BibliotecaServicios.Implementaciones
 
             iConexion.Aseo_Elementos!.Add(entidad!);
             var lista = iConexion.Aseo_Elementos!.ToList();
-           
+            iConexion.SaveChanges();
             return entidad;
         }
 
@@ -46,7 +46,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Aseo_Elementos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Aseo_Elementos!.ToList();
-           
+            iConexion.SaveChanges();
             return entidad;
         }
         public Aseo_Elementos Eliminar(Aseo_Elementos entidad)
@@ -59,7 +59,7 @@ namespace BibliotecaServicios.Implementaciones
 
             this.iConexion.Aseo_Elementos!.Remove(entidad!);
             var lista = iConexion.Aseo_Elementos!.ToList();
-            
+            iConexion.SaveChanges();
             return entidad;
         }
     }

@@ -7,49 +7,49 @@ namespace ApiServicios.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    public class MantenimientoController : ControllerBase
+    public class MantenimientossController : ControllerBase
     {
-        private IMantenimientoServicios? IMantenimientoServicios;
+        private IMantenimientosServicios? IMantenimientosServicios;
 
 
 
-        public MantenimientoController()
+        public MantenimientossController()
         {
-            this.IMantenimientoServicios = new MantenimientoServicios();
+            this.IMantenimientosServicios = new MantenimientosServicios();
         }
 
         [HttpGet]
-        public List<Mantenimiento> Consultar()
+        public List<Mantenimientos> Consultar()
         {
-            if (this.IMantenimientoServicios == null)
+            if (this.IMantenimientosServicios == null)
                 throw new Exception("No implementado");
-            return this.IMantenimientoServicios!.Consultar();
+            return this.IMantenimientosServicios!.Consultar();
         }
 
         [HttpPost]
-        public Mantenimiento Guardar(Mantenimiento entidad)
+        public Mantenimientos Guardar(Mantenimientos entidad)
         {
-            if (this.IMantenimientoServicios == null)
+            if (this.IMantenimientosServicios == null)
                 throw new Exception("No implementado");
-            return this.IMantenimientoServicios!.Guardar(entidad);
+            return this.IMantenimientosServicios!.Guardar(entidad);
         }
 
 
         [HttpPut]
-        public Mantenimiento Modificar(Mantenimiento id)
+        public Mantenimientos Modificar(Mantenimientos id)
         {
-            if (this.IMantenimientoServicios == null)
+            if (this.IMantenimientosServicios == null)
                 throw new Exception("No implementado");
-            return this.IMantenimientoServicios!.Modificar(id);
+            return this.IMantenimientosServicios!.Modificar(id);
         }
 
         [HttpDelete]
 
-        public Mantenimiento Eliminar(Mantenimiento id)
+        public Mantenimientos Eliminar(Mantenimientos id)
         {
-            if (this.IMantenimientoServicios == null)
+            if (this.IMantenimientosServicios == null)
                 throw new Exception("No implementado");
-            return this.IMantenimientoServicios!.Eliminar(id);
+            return this.IMantenimientosServicios!.Eliminar(id);
         }
 
     }

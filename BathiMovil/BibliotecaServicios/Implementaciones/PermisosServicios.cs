@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Permisos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Permisos!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Permisos Eliminar(Permisos entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Permisos!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

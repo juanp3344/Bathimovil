@@ -18,7 +18,7 @@ namespace BibliotecaServicios.Entidades
 
 
         // 1:N
-        [NotMapped] public List<Mantenimiento>? Mantenimientos { get; set; }
+        [NotMapped] public List<Mantenimientos>? Mantenimientos { get; set; }
         [NotMapped] public List<Prestamos_Portatiles>? Prestamos_Portatiles { get; set; }
     }
 }

@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Pagos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Pagos!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Pagos Eliminar(Pagos entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Pagos!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

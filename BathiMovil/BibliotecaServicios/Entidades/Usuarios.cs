@@ -16,5 +16,7 @@ namespace BibliotecaServicios.Entidades
 
         public int Persona { get; set; }
         [ForeignKey("Persona")] public Personas? _Persona { get; set; }
+        public int Rol { get; set; }
+        [ForeignKey("Rol")] public Roles? _Rol { get; set; }
     }
 }

@@ -46,7 +46,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Envios>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Envios!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Envios Eliminar(Envios entidad)
@@ -58,7 +58,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Envios!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

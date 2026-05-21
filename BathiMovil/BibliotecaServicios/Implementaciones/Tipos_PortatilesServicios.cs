@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Tipos_Portatiles>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Tipos_Portatiles!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Tipos_Portatiles Eliminar(Tipos_Portatiles entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Tipos_Portatiles!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

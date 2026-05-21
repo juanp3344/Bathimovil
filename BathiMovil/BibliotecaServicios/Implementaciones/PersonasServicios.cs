@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Personas>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Personas!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Personas Eliminar(Personas entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Personas!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

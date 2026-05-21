@@ -17,7 +17,7 @@ namespace BibliotecaServicios.Entidades
         public int Mantenimiento { get; set; }
 
 
-        [ForeignKey("Mantenimiento")] public Mantenimiento? _Mantenimiento { get; set; }
+        [ForeignKey("Mantenimiento")] public Mantenimientos? _Mantenimiento { get; set; }
         [ForeignKey("Tipo_Aseo_Elementos")] public Tipo_Aseo_Elementos? _Tipo_Aseo_Elemento { get; set; }
     }
 }

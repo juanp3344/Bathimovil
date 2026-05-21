@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BibliotecaServicios.Entidades
 {
-    public class Roles_Empleados
+    public class Roles
     {
         public enum Niveles_Acceso
         {
@@ -16,11 +16,11 @@ namespace BibliotecaServicios.Entidades
         public int Id_Rol { get; set; }
         public string? Nombre_Rol { get; set; }
         public string? Descripcion_Rol { get; set; }
-        public decimal Salario_Base { get; set; }
-       // public Niveles_Acceso Permisos { get; set; }
+        public decimal? Salario_Empleado { get; set; }
+        // public Niveles_Acceso Permisos { get; set; }
 
         // 1:N
-        [NotMapped] public List<Empleados>? Empleados { get; set; }
+        [NotMapped] public List<Usuarios>? Usuarios { get; set; }
         [NotMapped] public List<Roles_Permisos>? Roles_Permisos { get; set; }
     }
 }

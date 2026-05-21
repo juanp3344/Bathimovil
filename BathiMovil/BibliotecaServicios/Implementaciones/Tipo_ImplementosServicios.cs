@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Tipos_Implementos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Tipos_Implementos!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Tipos_Implementos Eliminar(Tipos_Implementos entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Tipos_Implementos!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

@@ -58,6 +58,16 @@ CREATE TABLE [Personas]
 [Telefono] NVARCHAR(50) NOT NULL
 );
 
+
+CREATE TABLE [Roles]
+(
+[Id_Rol] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
+[Nombre_Rol] NVARCHAR(50) NOT NULL ,
+[Descripcion_Rol] NVARCHAR(50) NOT NULL,
+[Salario_Empleado] DECIMAL(10,2) NULL
+);
+
+
 CREATE TABLE [Usuarios]
 (
 [Id_Usuario] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
@@ -67,6 +77,7 @@ CREATE TABLE [Usuarios]
 [Fecha_Ultimo_Acceso] SMALLDATETIME NOT NULL,
 
 
+[Rol] INT NOT NULL REFERENCES [Roles]([Id_Rol]),
 [Persona] INT NOT NULL REFERENCES [Personas]([Id_Persona])
 );
 
@@ -84,21 +95,13 @@ CONSTRAINT FK_Clientes_Personas
     REFERENCES Personas([Id_Persona])
 );
 
-CREATE TABLE [Roles_Empleados]
-(
-[Id_Rol] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Nombre_Rol] NVARCHAR(50) NOT NULL ,
-[Descripcion_Rol] NVARCHAR(50) NOT NULL,
-[Salario_Base] DECIMAL (10,2) NOT NULL,
-);
-
 
 
 CREATE TABLE [Empleados]
 (-- LISTA MANTENIMIENTO, ENVIOS
 [Id_Persona] int NOT NULL PRIMARY KEY,
 [Fecha_Ingreso] SMALLDATETIME NOT NULL,
-[Id_Rol] INT NOT NULL REFERENCES [Roles_Empleados]([Id_Rol]),
+[Salario_Base] DECIMAL (10,2) NULL,
 CONSTRAINT FK_Empleados_Personas
     FOREIGN KEY ([Id_Persona])
     REFERENCES Personas([Id_Persona])
@@ -170,7 +173,7 @@ CREATE TABLE [Portatiles]
 
 [Tipo_Portatil] INT NOT NULL REFERENCES [Tipos_Portatiles]([Id_Tipo_Portatil]),
 [Sede] INT NOT NULL REFERENCES [Sedes]([Id_Sede]),
-[Compra] INT NOT NULL REFERENCES [Compras]([Id_Compra])
+[Compra] INT NULL REFERENCES [Compras]([Id_Compra])
 );
 
 
@@ -335,7 +338,7 @@ CREATE TABLE [Roles_Permisos]
 [Id_Rol_Permiso] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
 
 [Permiso] INT NOT NULL REFERENCES [Permisos]([Id_Permiso]),
-[Rol_Empleado] INT NOT NULL REFERENCES [Roles_Empleados]([Id_Rol])
+[Rol] INT NOT NULL REFERENCES [Roles]([Id_Rol])
 
 
 );
