@@ -9,9 +9,9 @@ namespace BibliotecaServicios.Entidades
         public int Id_Tipo_Portatil { get; set; }
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }
-        public double Altura { get; set; }
-        public double Ancho { get; set; }
-        public double Largo { get; set; }
+        public decimal Altura { get; set; }
+        public decimal Ancho { get; set; }
+        public decimal Largo { get; set; }
 
         // 1:N
         [NotMapped] public List<Portatiles>? Portatiles { get; set; }

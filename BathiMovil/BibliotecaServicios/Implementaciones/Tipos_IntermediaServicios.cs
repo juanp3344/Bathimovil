@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class Tipos_IntermediaServicios
+    public class Tipos_IntermediaServicios : ITipos_IntermediaServicios
     {
         private IConexion? iConexion;
 
@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Tipos_Intermedia>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Tipos_Intermedia!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Tipos_Intermedia Eliminar(Tipos_Intermedia entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Tipos_Intermedia!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

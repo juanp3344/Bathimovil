@@ -47,7 +47,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Bodegas>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Bodegas!.ToList();
-            
+            iConexion.SaveChanges();
             return entidad;
         }
         public Bodegas Eliminar(Bodegas entidad)
@@ -59,7 +59,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Bodegas!.Remove(entidad!);
-            
+            iConexion.SaveChanges();
             return entidad;
         }
     }

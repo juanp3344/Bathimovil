@@ -1,0 +1,89 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+    <h1>@ViewData["Title"]</h1>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Catálogo</title>
+
+        <style>
+            .catalogo {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .producto {
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+                .producto img {
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+
+                .producto button {
+                    margin-top: 10px;
+                    padding: 8px 15px;
+                    border: none;
+                    background: #007bff;
+                    color: white;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                    .producto button:hover {
+                        background: #0056b3;
+                    }
+        </style>
+    </head>
+<center>
+    <form method="post">
+
+        <div class="catalogo">
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Producto 1</h3>
+                <p>$100.000</p>
+                <button>Ver más</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Producto 2</h3>
+                <p>$80.000</p>
+                <button>Ver más</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Traje del hombre araña</h3>
+                <p>$120.000</p>
+                <input type="submit"
+                       value="Comprar"
+                       asp-page-handler="BtComprar"
+                       class="btn btn-secondary" />
+                <input type="submit"
+                       value="Prestar"
+                       asp-page-handler="BtPrestar"
+                       class="btn btn-secondary" />
+            </div>
+
+        </div>
+        
+
+    </form>
+
+</center>

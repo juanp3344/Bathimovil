@@ -18,7 +18,7 @@ namespace BibliotecaServicios.Entidades
         public int Bodega { get; set; }
         public int Tipo_Implemento { get; set; }
 
-        [ForeignKey("Tipo_Implemento")] public Tipo_Implementos? _Tipo_Implemento { get; set; }
+        [ForeignKey("Tipo_Implemento")] public Tipos_Implementos? _Tipo_Implemento { get; set; }
         [ForeignKey("Portatil")] public Portatiles? _Portatil { get; set; }
         [ForeignKey("Bodega")] public Bodegas? _Bodega { get; set; }
 

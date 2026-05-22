@@ -46,7 +46,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Compras>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Compras!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Compras Eliminar(Compras entidad)
@@ -58,7 +58,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Compras!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

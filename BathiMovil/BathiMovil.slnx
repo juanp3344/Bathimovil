@@ -1,8 +1,13 @@
 <Solution>
-  <Folder Name="/1. Presentacion/" />
+  <Folder Name="/1. Presentacion/">
+    <Project Path="ApiPresentacion/ApiPresentacion.csproj" Id="d6e80460-120b-4d1d-bf67-9d98643348e0" />
+    <Project Path="BibliotecaPresentacion/BibliotecaPresentacion.csproj" Id="692840e1-2bd8-475f-99f6-447ad995075a" />
+  </Folder>
   <Folder Name="/2. Servicios/">
     <Project Path="ApiServicios/ApiServicios.csproj" Id="1a0e875a-2ea4-4021-aced-3c3783e925f1" />
     <Project Path="BibliotecaServicios/BibliotecaServicios.csproj" />
   </Folder>
-  <Folder Name="/3.  Pruebas Unitarias/" />
+  <Folder Name="/3.  Pruebas Unitarias/">
+    <Project Path="Unitarias/Unitarias.csproj" Id="ae380b24-8669-477f-bd77-f07996a1715c" />
+  </Folder>
 </Solution>

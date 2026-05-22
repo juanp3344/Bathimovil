@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class PrestamosServicios
+    public class PrestamosServicios : IPrestamosServicios
     {
         private IConexion? iConexion;
 
@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Prestamos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Prestamos!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Prestamos Eliminar(Prestamos entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Prestamos!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

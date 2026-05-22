@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class SedesServicios
+    public class SedesServicios : ISedesServicios
     {
         private IConexion? iConexion;
 
@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Sedes>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Sedes!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Sedes Eliminar(Sedes entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Sedes!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

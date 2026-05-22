@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class Tipo_Aseo_ElementosServicios
+    public class Tipo_Aseo_ElementosServicios : ITipo_Aseo_ElementosServicios
     {
         private IConexion? iConexion;
 
@@ -48,7 +48,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Tipo_Aseo_Elementos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Tipo_Aseo_Elementos!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Tipo_Aseo_Elementos Eliminar(Tipo_Aseo_Elementos entidad)
@@ -60,7 +60,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Tipo_Aseo_Elementos!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

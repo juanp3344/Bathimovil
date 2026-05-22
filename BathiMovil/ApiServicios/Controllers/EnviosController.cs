@@ -20,7 +20,7 @@ namespace ApiServicios.Controllers
             this.IEnviosServicios = new EnviosServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Envios> Consultar()
         {
             if (this.IEnviosServicios == null)

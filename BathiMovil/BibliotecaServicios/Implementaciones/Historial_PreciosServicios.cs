@@ -47,7 +47,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Historial_Precios>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Historial_Precios!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Historial_Precios Eliminar(Historial_Precios entidad)
@@ -59,7 +59,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Historial_Precios!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

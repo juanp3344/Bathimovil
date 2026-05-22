@@ -8,6 +8,7 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
+
     public class PortatilesServicios: IPortatilesServicios
     {
         private IConexion? iConexion;
@@ -48,7 +49,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Portatiles>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Portatiles!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Portatiles Eliminar(Portatiles entidad)
@@ -60,8 +61,22 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Portatiles!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
+        }
+
+        public bool ComprobarCantidad (int Id_Tipo, int cantidad)
+        {
+            this.iConexion = new Conexion();
+            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+            iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
+            var portatilesFiltrados = iConexion.Portatiles!
+                .Where(p => p.Tipo_Portatil == Id_Tipo)
+                .Where(p => p.Estado_Actual == "Disponible")  // <-- filtro añadido
+                .ToList();
+
+            return portatilesFiltrados.Count >= cantidad;
         }
     }
 }

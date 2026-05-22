@@ -20,7 +20,7 @@ namespace ApiServicios.Controllers
             this.IFacturasServicios = new FacturasServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Facturas> Consultar()
         {
             if (this.IFacturasServicios == null)

@@ -1,0 +1,183 @@
+﻿@page
+@model TiposPortatilesModel
+@{
+    ViewData["Title"] = "Tipos_Portatiless";
+}
+<center>
+    <div>
+        <form method="POST"
+              enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <div align="left">
+                <h3>Tipos_Portatiless</h3>
+            </div>
+            
+            <div>
+                <input type="submit"
+                       value="Refrescar"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtRefrescar" />
+                <input type="submit"
+                       value="Nuevo"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtNuevo"
+                       disabled="@(Model.Tipos_Portatiles != null)" />
+                <input type="submit"
+                       value="Guardar"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtGuardar"
+                       disabled="@(Model.Tipos_Portatiles == null)" />
+            </div>
+
+            @if (Model.Tipos_Portatiles != null)
+            {
+                <input type="hidden"
+                       asp-for="@Model.Tipos_Portatiles!.Id_Tipo_Portatil" />
+
+                <div>
+                    <div class="form-group">
+                        <label>
+                            Nombre
+                        </label>
+                        <div class="col-6">
+                            <input id="inNombre"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Tipos_Portatiles!.Nombre" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Descripcion
+                        </label>
+                        <div class="col-6">
+                            <input id="inDescripcion"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Tipos_Portatiles!.Descripcion" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Altura
+                        </label>
+                        <div class="col-6">
+                            <input id="inAltura"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Tipos_Portatiles!.Altura" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Ancho
+                        </label>
+                        <div class="col-6">
+                            <input id="inAncho"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Tipos_Portatiles!.Ancho" />
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Largo
+                            </label>
+                            <div class="col-6">
+                                <input id="inLargo"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Tipos_Portatiles!.Largo" />
+                            </div>
+                    </div>
+                </div>
+                </div>
+            }
+            
+            @if (ViewData.ContainsKey("Mensaje"))
+            {
+                @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
+                ;
+            }
+
+            @if (Model.Tipos_Portatiles != null && Model.Borrando)
+            {
+                <div class='popup'>
+                    <div class='pp_ms_inner'>
+                        <div style='width:95%'>
+                            <h2 align="left">
+                                Mensaje
+                            </h2>
+
+                            <h6 align="left">
+                                Desea borrar el Tipos_Portatiles?
+                            </h6>
+                            <h6 align="left">
+                                @Model.Tipos_Portatiles!.Nombre
+                            </h6>
+                            
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtCerrar"
+                                   class="btn btn-secondary" />
+                            <input type="submit"
+                                   value="Borrar"
+                                   asp-page-handler="BtBorrar"
+                                   class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+            }
+            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            {
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Descripcion
+                        </th>
+                        <th class="cl_hidden">
+                            Altura
+                        </th>
+                        <th class="cl_hidden">
+                            Ancho
+                        </th>
+                        <th class="cl_hidden">
+                            Largo
+                        </th>
+                    </tr>
+                
+                    @foreach (var elemento in Model.Lista)
+                    {
+                        <tr>
+                            <td>
+                                @elemento.Nombre
+                            </td>
+                            <td>
+                                @elemento.Descripcion
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Altura
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Ancho
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Largo
+                            </td>
+                            <td>
+                                <input type="submit"
+                                       value="Modicar"
+                                       asp-page-handler="BtModificar"
+                                       class="btn btn-warning"
+                                       asp-route-data="@elemento.Id_Tipo_Portatil" />
+                                <input type="submit"
+                                       value="Borrar"
+                                       asp-page-handler="BtBorrarVal"
+                                       class="btn btn-danger"
+                                       asp-route-data="@elemento.Id_Tipo_Portatil" />
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+        </form>
+    </div>
+</center>

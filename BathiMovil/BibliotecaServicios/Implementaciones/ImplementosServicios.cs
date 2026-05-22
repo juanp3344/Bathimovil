@@ -8,7 +8,8 @@ using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
 {
-    public class ImplementosServicios: IImplementosServicios
+
+    public class ImplementosServicios : IImplementosServicios
     {
         private IConexion? iConexion;
 
@@ -48,7 +49,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Implementos>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Implementos!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Implementos Eliminar(Implementos entidad)
@@ -60,7 +61,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Implementos!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

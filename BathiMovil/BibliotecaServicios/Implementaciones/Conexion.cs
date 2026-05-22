@@ -25,6 +25,8 @@ namespace BibliotecaServicios.Implementaciones
             modelBuilder.Entity<Empleados>().ToTable("Empleados");
 
             modelBuilder.Entity<Clientes>().ToTable("Clientes");
+
+            modelBuilder.Entity<Personas>().Property(p => p.Id_Persona).ValueGeneratedOnAdd();
         }
 
         public DbSet<Aseo_Elementos>? Aseo_Elementos { get; set; }
@@ -39,20 +41,21 @@ namespace BibliotecaServicios.Implementaciones
         public DbSet<Facturas>? Facturas { get; set; }
         public DbSet<Historial_Precios>? Historial_Precios { get; set; }
         public DbSet<Implementos>? Implementos { get; set; }
-        public DbSet<Mantenimiento>? Mantenimiento { get; set; }
+        public DbSet<Mantenimientos>? Mantenimientos { get; set; }
         public DbSet<Pagos>? Pagos { get; set; }
         public DbSet<Personas>? Personas { get; set; }
         public DbSet<Portatiles>? Portatiles { get; set; }
         public DbSet<Prestamos>? Prestamos { get; set; }
+        public DbSet<Permisos>? Permisos { get; set; }
         public DbSet<Prestamos_Portatiles>? Prestamos_Portatiles { get; set; }
-        public DbSet<Roles_Empleados>? Roles_Empleados { get; set; }
+        public DbSet<Roles>? Roles { get; set; }
         public DbSet<Sedes>? Sedes { get; set; }
         public DbSet<Tipo_Aseo_Elementos>? Tipo_Aseo_Elementos { get; set; }
-        public DbSet<Tipo_Implementos>? Tipo_Implementos { get; set; }
+
+        public DbSet<Tipos_Implementos>? Tipos_Implementos { get; set; }
         public DbSet<Tipos_Intermedia>? Tipos_Intermedia { get; set; }
         public DbSet<Tipos_Portatiles>? Tipos_Portatiles { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
         public DbSet<Roles_Permisos>? Roles_Permisos { get; set; }
-        public DbSet<Permisos>? Permisos { get; set; }
     }
 }

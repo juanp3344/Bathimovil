@@ -7,10 +7,9 @@ namespace BibliotecaServicios.Entidades
     public class Roles_Permisos
     {
         [Key] public int Id_Rol_Permiso { get; set; }
-        public bool Permitir { get; set; }
-        public int Rol_Empleado { get; set; }
+        public int Rol { get; set; }
         public int Permiso { get; set; }
-        [ForeignKey("Rol_Empleado")] public Roles_Empleados? _Id_Rol { get; set; }
-        [ForeignKey("Permiso")] public Permisos? _Id_Permiso { get; set; }
+        [ForeignKey("Rol")] public Roles? _Rol { get; set; }
+        [ForeignKey("Permiso")] public Permisos? _Permiso { get; set; }
     }
 }

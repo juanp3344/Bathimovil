@@ -2,53 +2,59 @@
 using BibliotecaServicios.Implementaciones;
 using BibliotecaServicios.Interfaces;
 using Microsoft.AspNetCore.Http;
+using BibliotecaServicios.Nucleo;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiServicios.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
-    public class ImplementosController : Controller
+
+    public class ImplementosController : ControllerBase
     {
-        private IImplementosServicios? IImplementosServicios;
+        private IImplementosServicios? iImplementosServicios;
+
+
 
         public ImplementosController()
         {
-            this.IImplementosServicios = new ImplementosServicios();
+            this.iImplementosServicios = new ImplementosServicios();
         }
 
-        [HttpGet("Consultar")]
-        public List<Historial_Precios> Consultar()
+        [HttpGet]
+        public List<Implementos> Consultar()
         {
-            if (this.IImplementosServicios == null)
+            if (this.iImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.IImplementosServicios!.Consultar();
+            return this.iImplementosServicios!.Consultar();
         }
 
         [HttpPost]
-        public Historial_Precios Guardar(Historial_Precios entidad)
+        public Implementos Guardar(Implementos entidad)
         {
-            if (this.IImplementosServicios == null)
+            if (this.iImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.IImplementosServicios!.Guardar(entidad);
+            return this.iImplementosServicios!.Guardar(entidad);
         }
 
 
         [HttpPut]
-        public Historial_Precios Modificar(Historial_Precios id)
+
+        public Implementos Modificar(Implementos id)
         {
-            if (this.IImplementosServicios == null)
+            if (this.iImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.IImplementosServicios!.Modificar(id);
+            return this.iImplementosServicios!.Modificar(id);
         }
 
         [HttpDelete]
 
-        public Historial_Precios Eliminar(Historial_Precios id)
+        public Implementos Eliminar(Implementos id)
         {
-            if (this.IImplementosServicios == null)
+            if (this.iImplementosServicios == null)
                 throw new Exception("No implementado");
-            return this.IImplementosServicios!.Eliminar(id);
+            return this.iImplementosServicios!.Eliminar(id);
         }
     }
 }

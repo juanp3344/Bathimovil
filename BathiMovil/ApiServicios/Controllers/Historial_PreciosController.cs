@@ -20,7 +20,7 @@ namespace ApiServicios.Controllers
             this.IHistorial_PreciosServicios = new Historial_PreciosServicios();
         }
 
-        [HttpGet("Consultar")]
+        [HttpGet]
         public List<Historial_Precios> Consultar()
         {
             if (this.IHistorial_PreciosServicios == null)

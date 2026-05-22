@@ -47,7 +47,7 @@ namespace BibliotecaServicios.Implementaciones
             var entry = this.iConexion!.Entry<Prestamos_Portatiles>(entidad!);
             entry.State = EntityState.Modified;
             var lista = iConexion.Prestamos_Portatiles!.ToList();
-
+            iConexion.SaveChanges();
             return entidad;
         }
         public Prestamos_Portatiles Eliminar(Prestamos_Portatiles entidad)
@@ -59,7 +59,7 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Prestamos_Portatiles!.Remove(entidad!);
-
+            iConexion.SaveChanges();
             return entidad;
         }
     }

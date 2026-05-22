@@ -1,4 +1,4 @@
-﻿
+
 
 using BibliotecaServicios.Entidades;
 using BibliotecaServicios.Interfaces;
@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace BibliotecaServicios.Implementaciones
 {
     public class PermisosServicios: IPermisosServicios
+
     {
         private IConexion? iConexion;
 
@@ -48,6 +49,7 @@ namespace BibliotecaServicios.Implementaciones
             entry.State = EntityState.Modified;
             var lista = iConexion.Permisos!.ToList();
 
+            iConexion.SaveChanges();
             return entidad;
         }
         public Permisos Eliminar(Permisos entidad)
@@ -60,6 +62,7 @@ namespace BibliotecaServicios.Implementaciones
 
             this.iConexion.Permisos!.Remove(entidad!);
 
+            iConexion.SaveChanges();
             return entidad;
         }
     }

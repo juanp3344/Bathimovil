@@ -12,10 +12,11 @@ namespace BibliotecaServicios.Entidades
         public string? Password_Hash { get; set; }
         public bool Activo { get; set; }
         public DateTime Fecha_Ultimo_Acceso { get; set; }
-
         
 
         public int Persona { get; set; }
         [ForeignKey("Persona")] public Personas? _Persona { get; set; }
+        public int Rol { get; set; }
+        [ForeignKey("Rol")] public Roles? _Rol { get; set; }
     }
 }
