@@ -329,16 +329,9 @@ CREATE TABLE [Auditorias]
 CREATE TABLE [Permisos]
 (
 [Id_Permiso] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Nombre_Permiso] NVARCHAR(50) NOT NULL
-);
+[Nombre_Permiso] NVARCHAR(50) NOT NULL,
 
-
-CREATE TABLE [Roles_Permisos]
-(
-[Id_Rol_Permiso] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-
-[Permiso] INT NOT NULL REFERENCES [Permisos]([Id_Permiso]),
 [Rol] INT NOT NULL REFERENCES [Roles]([Id_Rol])
-
-
 );
+
+

@@ -21,6 +21,6 @@ namespace BibliotecaServicios.Entidades
 
         // 1:N
         [NotMapped] public List<Usuarios>? Usuarios { get; set; }
-        [NotMapped] public List<Roles_Permisos>? Roles_Permisos { get; set; }
+        [NotMapped] public List<Permisos>? Permisos { get; set; }
     }
 }

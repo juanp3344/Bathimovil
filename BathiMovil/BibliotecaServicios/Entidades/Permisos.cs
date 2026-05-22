@@ -9,6 +9,8 @@ namespace BibliotecaServicios.Entidades
         [Key] public int Id_Permiso { get; set; }
         public string? Nombre_Permiso { get; set; }
 
-        [NotMapped] public List<Roles_Permisos>? Roles_Permisos { get; set; }
+        public int Rol { get; set; }
+
+        [ForeignKey("Rol")] public Roles? _Rol { get; set; }
     }
 }
