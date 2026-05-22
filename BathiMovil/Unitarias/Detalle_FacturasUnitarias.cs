@@ -42,10 +42,6 @@ public class Detalle_FacturasUnitaria
         this.entidad = new Detalle_Facturas()
         {
 
-   Cantidad = 121212,
-    Costo_Unitario = 1212,
-     Descuento_Aplicado = 12,
-    Subtotal = 12
 };
         this.iConexion.Detalle_Facturas!.Add(this.entidad!);
         this.iConexion.SaveChanges();

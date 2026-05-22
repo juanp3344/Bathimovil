@@ -7,7 +7,7 @@ using System.Text;
 
 namespace BibliotecaPresentacion.Implementaciones
 {
-    public class Roles_EmpleadosPresentacion : IRoles_EmpleadosPresentacion
+    public class RolesPresentacion : IRolesPresentacion
     {
         private IComunicaciones? iComunicaciones;
 

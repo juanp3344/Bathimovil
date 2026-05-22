@@ -42,10 +42,6 @@ namespace Unitarias
             this.entidad = new Personas()
             {
 
-         Cedula="12312312", 
-        Nombre = "Tomas",
-         Correo = "asjdhkajds@gmail.com",
-        Telefono = "2312312312"
     };
             this.iConexion.Personas!.Add(this.entidad!);
             this.iConexion.SaveChanges();

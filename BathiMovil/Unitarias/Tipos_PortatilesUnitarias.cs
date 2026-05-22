@@ -42,11 +42,6 @@ namespace Unitarias
             this.entidad = new Tipos_Portatiles()
             {
 
-             Nombre = "Andrés",
-             Descripcion = "Ajá",
-             Altura = 3,
-             Ancho = 2,
-             Largo = 1
 
     };
             this.iConexion.Tipos_Portatiles!.Add(this.entidad!);

@@ -14,7 +14,7 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Historial_Precios? entidad;
-        private Tipos_Portatiles? entidadTPortatl;
+
         [TestMethod]
         public void Ejecutar()
         {
@@ -39,28 +39,10 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidadTPortatl = new Tipos_Portatiles()
-            {
-
-                Nombre = "Andrés",
-                Descripcion = "Ajá",
-                Altura = 3,
-                Ancho = 2,
-                Largo = 1
-
-            };
-            this.iConexion.Tipos_Portatiles!.Add(this.entidadTPortatl!);
-            this.iConexion.SaveChanges();
-
             this.entidad = new Historial_Precios()
             {
 
-        Valor = 12000,
-         Fecha_Inicio =DateTime.Now,
-        Fecha_Fin =DateTime.Now,
-        Motivo_Cambio = "Porque si",
-        Tipo_Portatil = entidadTPortatl.Id_Tipo_Portatil
-    };
+            };
             this.iConexion.Historial_Precios!.Add(this.entidad!);
             this.iConexion.SaveChanges();
 
@@ -74,7 +56,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad!.Motivo_Cambio = "Porque me dio la gana";
+            this.entidad!.Motivo_Cambio = "Chowder";
 
             var entry = this.iConexion!.Entry<Historial_Precios>(this.entidad!);
             entry.State = EntityState.Modified;
@@ -91,7 +73,6 @@ namespace Unitarias
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Historial_Precios!.Remove(this.entidad!);
-            this.iConexion.Tipos_Portatiles!.Remove(this.entidadTPortatl!);
             this.iConexion.SaveChanges();
         }
     }

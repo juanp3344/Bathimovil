@@ -15,9 +15,6 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Compras? entidad;
-        private Clientes? entidadCliente;
-        private Contratos? entidadContrato;
-
 
         [TestMethod]
         public void Ejecutar()
@@ -43,41 +40,10 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-
-            this.entidadCliente = new Clientes()
-            {
-                //Tipo_Cliente = Clientes.CategoriaCliente.Constructora,
-                Razon_Social = "Mucha razon",
-
-                Nit_CC = "121434",
-                Direccion_Fiscal = "Carrera 55",
-                Cedula = "4783484AC",
-                Nombre = "Tomas",
-                Correo = "asjdhkajds@gmail.com",
-                Telefono = "2312312312"
-            };
-            this.iConexion.Clientes!.Add(this.entidadCliente!);
-            this.iConexion.SaveChanges();
-
-            this.entidadContrato = new Contratos()
-            {
-                Fecha_Firma = DateTime.Now,
-                Terminos = "Me lo trae o le mando a los de la moto",
-                Fecha_Expiracion = DateTime.Now,
-                Cliente = entidadCliente.Id_Persona
-            };
-            this.iConexion.Contratos!.Add(this.entidadContrato!);
-            this.iConexion.SaveChanges();
-
             this.entidad = new Compras()
             {
-
-                Fecha_Compra = DateTime.Now,
-                Monto_Total = 121212,
-                Metodo_Pago = "Nequi",
-                Garantia_Meses = 12,
-                Contrato = entidadContrato.Id_Contrato
-    };
+  
+            };
             this.iConexion.Compras!.Add(this.entidad!);
             this.iConexion.SaveChanges();
 
@@ -91,7 +57,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad!.Monto_Total = 12;
+            this.entidad!.Metodo_Pago = "Chowder";
 
             var entry = this.iConexion!.Entry<Compras>(this.entidad!);
             entry.State = EntityState.Modified;
@@ -108,9 +74,6 @@ namespace Unitarias
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             this.iConexion.Compras!.Remove(this.entidad!);
-            this.iConexion.Contratos!.Remove(this.entidadContrato!);
-            this.iConexion.Clientes!.Remove(this.entidadCliente!);
-
             this.iConexion.SaveChanges();
         }
     }

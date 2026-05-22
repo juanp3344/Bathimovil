@@ -42,10 +42,6 @@ namespace Unitarias
             this.entidad = new Tipo_Aseo_Elementos()
             {
 
-                Uso = "Tu sabes",
-                Instrucciones_Uso = "Tu sabes",
-                 Medida_litros = 12,
-                 Toxicidad = "Mucha"
     };
             this.iConexion.Tipo_Aseo_Elementos!.Add(this.entidad!);
             this.iConexion.SaveChanges();

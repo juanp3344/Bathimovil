@@ -43,13 +43,8 @@ namespace Unitarias
 
             this.entidad = new Aseo_Elementos()
             {
-
-        Fecha_Vencimiento = DateTime.Now,
-        Cantidad = 1,
-        Marca = "De agua",
-        Costo = 1000000000
-        
-    };
+         
+            };
             this.iConexion.Aseo_Elementos!.Add(this.entidad!);
             this.iConexion.SaveChanges();
 
@@ -63,7 +58,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad!.Costo = 10;
+            this.entidad!.Marca = "Chowder";
 
             var entry = this.iConexion!.Entry<Aseo_Elementos>(this.entidad!);
             entry.State = EntityState.Modified;

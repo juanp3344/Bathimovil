@@ -42,9 +42,6 @@ namespace Unitarias
 
             this.entidad = new Bodegas()
             {
-             Nombre = "Elton Tito",
-             Ubicacion = "Pómpeya",
-             Capacidad_Maxima = 1243
     };
             this.iConexion.Bodegas!.Add(this.entidad!);
             this.iConexion.SaveChanges();

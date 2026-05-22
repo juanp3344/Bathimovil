@@ -41,11 +41,7 @@ namespace Unitarias
 
             this.entidad = new Tipos_Implementos()
             {
-       Nombre = "Escoba",
-         Descripcion= "Barre",
-         Ancho = 12m,
-         Largo = 12m,
-        Altura = 12m
+
     };
             this.iConexion.Tipos_Implementos!.Add(this.entidad!);
             this.iConexion.SaveChanges();

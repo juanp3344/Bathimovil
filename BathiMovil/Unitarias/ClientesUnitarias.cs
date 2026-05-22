@@ -41,15 +41,7 @@ namespace Unitarias
 
             this.entidad = new Clientes()
             {
-                 //Tipo_Cliente = Clientes.CategoriaCliente.Constructora,
-                 Razon_Social = "Mucha razon",
-           
-                 Nit_CC = "121434",
-                 Direccion_Fiscal = "Carrera 55",
-                Cedula = "7483238",
-                Nombre = "Tomas",
-                Correo = "asjdhkajds@gmail.com",
-                Telefono = "2312312312"
+
             };
             this.iConexion.Clientes!.Add(this.entidad!);
             this.iConexion.SaveChanges();

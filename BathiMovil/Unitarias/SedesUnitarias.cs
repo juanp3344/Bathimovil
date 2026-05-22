@@ -43,10 +43,7 @@ namespace Unitarias
 
             this.entidad = new Sedes()
             {
-         Nombre = "Robledo",
-         Direccion= "Calle 45-c",
-         Ciudad = "Medellín",
-         Telefono_Contacto= "312802222"
+
 
     };
             this.iConexion.Sedes!.Add(this.entidad!);

@@ -14,8 +14,7 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Tipos_Intermedia? entidad;
-        private Tipos_Implementos? entidad2;
-        private Tipos_Portatiles? entidad3;
+
         [TestMethod]
         public void Ejecutar()
         {
@@ -37,41 +36,13 @@ namespace Unitarias
 
         private void Guardar()
         {
-            
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad2 = new Tipos_Implementos()
-            {
-                Nombre = "Escoba",
-                Descripcion = "Barre",
-                Ancho = 12m,
-                Largo = 12m,
-                Altura = 12m
-            };
-            this.iConexion.Tipos_Implementos!.Add(this.entidad2!);
-            this.iConexion.SaveChanges();
-            this.entidad3 = new Tipos_Portatiles()
-            {
-
-                Nombre = "Andrés",
-                Descripcion = "Ajá",
-                Altura = 3,
-                Ancho = 2,
-                Largo = 1
-
-            };
-            this.iConexion.Tipos_Portatiles!.Add(this.entidad3!);
-            this.iConexion.SaveChanges();
             this.entidad = new Tipos_Intermedia()
             {
-                Tipo_Implemento = entidad2.Id_Tipo_Implemento,
-                Posicion_Montaje = "Arribita",
-                Tipo_Portatil = entidad3.Id_Tipo_Portatil
 
             };
-
-            
             this.iConexion.Tipos_Intermedia!.Add(this.entidad!);
             this.iConexion.SaveChanges();
 
@@ -85,7 +56,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad!.Posicion_Montaje = "Abajo del espejo";
+            this.entidad!.Posicion_Montaje = "Chowder";
 
             var entry = this.iConexion!.Entry<Tipos_Intermedia>(this.entidad!);
             entry.State = EntityState.Modified;
@@ -101,10 +72,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            
             this.iConexion.Tipos_Intermedia!.Remove(this.entidad!);
-            this.iConexion.Tipos_Implementos!.Remove(this.entidad2!);
-            this.iConexion.Tipos_Portatiles!.Remove(this.entidad3!);
             this.iConexion.SaveChanges();
         }
     }

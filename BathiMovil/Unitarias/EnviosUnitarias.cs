@@ -43,10 +43,7 @@ namespace Unitarias
             this.entidad = new Envios()
             {
     
-        Fecha_Salida = DateTime.Now,
-        Destino = "Paraguay",
-        Costo_Envio = 121212,
-        Fecha_Entrega_Estimada = DateTime.Now
+
     };
             this.iConexion.Envios!.Add(this.entidad!);
             this.iConexion.SaveChanges();

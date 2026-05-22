@@ -42,10 +42,8 @@ namespace Unitarias
 
             this.entidad = new Auditorias()
             {
-        Fecha = DateTime.Now,
-       Descripcion = "Bonito",
-       Nombre_Ejecutor = "Pablo Robledo"
-    };
+  
+            };
             this.iConexion.Auditorias!.Add(this.entidad!);
             this.iConexion.SaveChanges();
 
@@ -59,7 +57,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.entidad!.Descripcion = "Feo";
+            this.entidad!.Descripcion = "Chowder";
 
             var entry = this.iConexion!.Entry<Auditorias>(this.entidad!);
             entry.State = EntityState.Modified;

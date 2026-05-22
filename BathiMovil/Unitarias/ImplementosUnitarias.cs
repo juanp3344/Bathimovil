@@ -41,11 +41,7 @@ namespace Unitarias
 
             this.entidad = new Implementos()
             {
-             Vida_Util = 1212,
-            Estado = "Bueno",
-        fecha_fabricacion = DateTime.Now,
-        Marca = "Hyundai",
-        Costo = 1200000
+
     };
             this.iConexion.Implementos!.Add(this.entidad!);
             this.iConexion.SaveChanges();

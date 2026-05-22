@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BibliotecaPresentacion.Intefaces
 {
-    public interface IRoles_EmpleadosPresentacion
+    public interface IRolesPresentacion
     {
         List<Roles_Empleados> Consultar();
         Roles_Empleados Guardar(Roles_Empleados entidad);
