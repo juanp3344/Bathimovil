@@ -14,7 +14,7 @@ namespace BibliotecaServicios.Entidades
         // N:1
         public int Tipo_Portatil { get; set; }
         public int Sede { get; set; }
-        public int Compra { get; set; }
+        public int? Compra { get; set; }
 
 
         [ForeignKey("Tipo_Portatil")] public Tipos_Portatiles? _Tipo_Portatil { get; set; }

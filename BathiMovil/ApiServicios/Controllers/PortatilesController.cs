@@ -53,5 +53,12 @@ namespace ApiServicios.Controllers
             return this.IPortatilesServicios!.Eliminar(id);
         }
 
+        [HttpPost]
+        public List<Portatiles> ComprobarTamanio(Tipos_Portatiles Entidad)
+        {
+            if (this.IPortatilesServicios == null)
+                throw new Exception("No implementado");
+            return this.IPortatilesServicios!.ComprobarCantidad(Entidad);
+        }
     }
 }

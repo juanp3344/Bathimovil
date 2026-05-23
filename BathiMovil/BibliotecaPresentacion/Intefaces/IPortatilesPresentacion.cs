@@ -13,5 +13,6 @@ namespace BibliotecaPresentacion.Intefaces
         Portatiles Modificar(Portatiles entidad);
 
         Portatiles Eliminar(Portatiles entidad);
+        List<Portatiles> ComprobarTamanio(Tipos_Portatiles Entidad);
     }
 }

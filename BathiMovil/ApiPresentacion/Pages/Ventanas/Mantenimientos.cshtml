@@ -1,0 +1,235 @@
+﻿@page
+@model MantenimientosModel
+@{
+    ViewData["Title"] = "Mantenimientos";
+}
+<center>
+    <div>
+        <form method="POST"
+              enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <div align="left">
+                <h3>Mantenimientos</h3>
+            </div>
+            
+            <div>
+                <input type="submit"
+                       value="Refrescar"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtRefrescar" />
+                <input type="submit"
+                       value="Nuevo"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtNuevo"
+                       disabled="@(Model.Mantenimiento != null)" />
+                <input type="submit"
+                       value="Guardar"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtGuardar"
+                       disabled="@(Model.Mantenimiento == null)" />
+            </div>
+
+            @if (Model.Mantenimiento != null)
+            {
+                <input type="hidden"
+                       asp-for="@Model.Mantenimiento!.Id_Mantenimiento" />
+
+                <div>
+                    <div class="form-group">
+                        <label>
+                            Fecha Servicio
+                        </label>
+                        <div class="col-6">
+                            <input id="inFecha_Servicio"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Mantenimiento!.Fecha_Servicio" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Tipo_Mantenimiento
+                        </label>
+                        <div class="col-6">
+                            <input id="inTipo_Mantenimiento"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Mantenimiento!.Tipo_Mantenimiento" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Descripcion Trabajo
+                        </label>
+                        <div class="col-6">
+                            <input id="inDescripcion_Trabajo"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Mantenimiento!.Descripcion_Trabajo" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Costo Mano Obra
+                        </label>
+                        <div class="col-6">
+                            <input id="inCosto_Mano_Obra"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Mantenimiento!.Costo_Mano_Obra" />
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label>
+                                Prestamo
+                            </label>
+                            <div class="col-6">
+                                <input id="inPrestamo"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Mantenimiento!.Prestamo" />
+                            </div>
+                    
+                </div>
+                    <div class="form-group">
+                        <label>
+                            Portatil
+                        </label>
+                        <div class="col-6">
+                            <input id="inPortatil"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Mantenimiento!.Portatil" />
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Empleado
+                        </label>
+                        <div class="col-6">
+                            <input id="inEmpleado"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Mantenimiento!.Empleado" />
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Prestamo
+                        </label>
+                        <div class="col-6">
+                            <input id="inPrestamo"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Mantenimiento!.Prestamo" />
+                        </div>
+
+                    </div>
+                </div>
+            }
+            
+            @if (ViewData.ContainsKey("Mensaje"))
+            {
+                @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
+                ;
+            }
+
+            @if (Model.Mantenimiento != null && Model.Borrando)
+            {
+                <div class='popup'>
+                    <div class='pp_ms_inner'>
+                        <div style='width:95%'>
+                            <h2 align="left">
+                                Mensaje
+                            </h2>
+
+                            <h6 align="left">
+                                Desea borrar el Mantenimiento?
+                            </h6>
+                            <h6 align="left">
+                                @Model.Mantenimiento!.Fecha_Servicio
+                            </h6>
+                            
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtCerrar"
+                                   class="btn btn-secondary" />
+                            <input type="submit"
+                                   value="Borrar"
+                                   asp-page-handler="BtBorrar"
+                                   class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+            }
+            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            {
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>
+                            Fecha_Servicio
+                        </th>
+                        <th>
+                            Tipo Mantenimiento
+                        </th>
+                        <th class="cl_hidden">
+                            Descripcion Trabajo
+                        </th>
+                        <th class="cl_hidden">
+                            Costo Mano Obra
+                        </th>
+                        <th class="cl_hidden">
+                            Prestamo
+                        </th>
+                        <th class="cl_hidden">
+                            Portatil
+                        </th>
+                        <th class="cl_hidden">
+                            Empleado
+                        </th>
+                        <th class="cl_hidden">
+                            Prestamo
+                        </th>
+                    </tr>
+                
+                    @foreach (var elemento in Model.Lista)
+                    {
+                        <tr>
+                            <td>
+                                @elemento.Fecha_Servicio
+                            </td>
+                            <td>
+                                @elemento.Tipo_Mantenimiento
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Descripcion_Trabajo
+                            </td>
+                            <td>
+                                @elemento.Costo_Mano_Obra
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Prestamo
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Portatil
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Empleado
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Prestamo
+                            </td>
+                            <td>
+                                <input type="submit"
+                                       value="Modicar"
+                                       asp-page-handler="BtModificar"
+                                       class="btn btn-warning"
+                                       asp-route-data="@elemento.Id_Mantenimiento" />
+                                <input type="submit"
+                                       value="Borrar"
+                                       asp-page-handler="BtBorrarVal"
+                                       class="btn btn-danger"
+                                       asp-route-data="@elemento.Id_Mantenimiento" />
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+        </form>
+    </div>
+</center>

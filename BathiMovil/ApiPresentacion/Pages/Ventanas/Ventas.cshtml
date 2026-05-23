@@ -1,7 +1,7 @@
 ﻿@page
 @model VentasModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Catalogo";
 }
 
     <h1>@ViewData["Title"]</h1>
@@ -21,14 +21,14 @@
             .producto {
                 border: 1px solid #ccc;
                 border-radius: 10px;
-                padding: 15px;
+                padding: 10px;
                 text-align: center;
                 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             }
 
                 .producto img {
                     width: 100%;
-                    height: 500px;
+                    height: 400px;
                     object-fit: cover;
                     border-radius: 8px;
                 }
@@ -44,7 +44,7 @@
                 }
 
                     .producto button:hover {
-                        background: #0056b3;
+                        background: red;
                     }
         </style>
     </head>
@@ -69,11 +69,11 @@
 
             <div class="producto">
                 <img src="https://via.placeholder.com/200" alt="">
-                <h3>Traje del hombre araña</h3>
+                <h3>Baño portatil Premium</h3>
                 <p>$120.000</p>
                 <input type="submit"
                        value="Comprar"
-                       asp-page-handler="BtComprar"
+                       asp-page-handler="BtComprarPortatilPersonal"
                        class="btn btn-primary" />
                 <input type="submit"
                        value="Prestar"

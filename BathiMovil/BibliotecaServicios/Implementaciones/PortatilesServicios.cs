@@ -4,6 +4,7 @@ using BibliotecaServicios.Nucleo;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Reflection.PortableExecutable;
 using System.Text;
 
 namespace BibliotecaServicios.Implementaciones
@@ -65,18 +66,17 @@ namespace BibliotecaServicios.Implementaciones
             return entidad;
         }
 
-        public bool ComprobarCantidad (int Id_Tipo, int cantidad)
+        public List<Portatiles> ComprobarCantidad (Tipos_Portatiles entidad)
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
             var portatilesFiltrados = iConexion.Portatiles!
-                .Where(p => p.Tipo_Portatil == Id_Tipo)
-                .Where(p => p.Estado_Actual == "Disponible")  // <-- filtro añadido
+                .Where(p => p.Tipo_Portatil == entidad.Id_Tipo_Portatil)
+                .Where(p => p.Estado_Actual == "Libre")  // <-- filtro añadido
                 .ToList();
 
-            return portatilesFiltrados.Count >= cantidad;
+            return portatilesFiltrados;
         }
     }
 }

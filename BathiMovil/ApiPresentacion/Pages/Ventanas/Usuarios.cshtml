@@ -1,7 +1,7 @@
 ﻿@page
-@model ComprasModel
+@model UsuariosModel
 @{
-    ViewData["Title"] = "Compras";
+    ViewData["Title"] = "Usuarios";
 }
 <center>
     <div>
@@ -10,7 +10,7 @@
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Compras</h3>
+                <h3>Usuarios</h3>
             </div>
             
             <div>
@@ -20,51 +20,83 @@
                        asp-page-handler="BtRefrescar" />
                 <input type="submit"
                        value="Nuevo"
-                       class="btn btn-success"
+                       class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Compra != null)" />
+                       disabled="@(Model.Usuario != null)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Compra == null)" />
+                       disabled="@(Model.Usuario == null)" />
             </div>
 
-            @if (Model.Compra != null)
+            @if (Model.Usuario != null)
             {
                 <input type="hidden"
-                       asp-for="@Model.Compra!.Id_Compra" />
+                       asp-for="@Model.Usuario!.Id_Usuario" />
 
                 <div>
                     <div class="form-group">
                         <label>
-                            Metodo de Pago
+                            Username
                         </label>
                         <div class="col-6">
-                            <input id="inMetodo_Pago"
+                            <input id="inUsername"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Metodo_Pago" />
+                                   asp-for="@Model.Usuario!.Username" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Monto Total
+                            Password_Hash
                         </label>
                         <div class="col-6">
-                            <input id="inMonto_Total"
+                            <input id="inPassword_Hash"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Monto_Total" />
+                                   asp-for="@Model.Usuario!.Password_Hash" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Contrato relacionado
+                            Activo
                         </label>
                         <div class="col-6">
-                            <input id="inContrato"
+                            <input id="inActivo"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Contrato" />
+                                   asp-for="@Model.Usuario!.Activo" />
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Fecha_Ultimo_Acceso
+                        </label>
+                        <div class="col-6">
+                            <input id="inFecha_Ultimo_Acceso"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Usuario!.Fecha_Ultimo_Acceso" />
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label>
+                                Persona
+                            </label>
+                            <div class="col-6">
+                                <input id="inPersona"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Usuario!.Persona" />
+                            </div>
+                    
+                </div>
+                    <div class="form-group">
+                        <label>
+                            Rol
+                        </label>
+                        <div class="col-6">
+                            <input id="inRol"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Usuario!.Rol" />
+                        </div>
+
                     </div>
                 </div>
             }
@@ -75,7 +107,7 @@
                 ;
             }
 
-            @if (Model.Compra != null && Model.Borrando)
+            @if (Model.Usuario != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
@@ -85,10 +117,10 @@
                             </h2>
 
                             <h6 align="left">
-                                Desea borrar el Compra?
+                                Desea borrar el Usuario?
                             </h6>
                             <h6 align="left">
-                                @Model.Compra!.Metodo_Pago
+                                @Model.Usuario!.Username
                             </h6>
                             
                             <input type="submit"
@@ -98,7 +130,7 @@
                             <input type="submit"
                                    value="Borrar"
                                    asp-page-handler="BtBorrar"
-                                   class="btn btn-secondary" />
+                                   class="btn btn-danger" />
                         </div>
                     </div>
                 </div>
@@ -108,77 +140,62 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>
-                            Metodo de Pago
+                            Username
                         </th>
                         <th>
-                            Monto Total
+                            Password_Hash
                         </th>
                         <th class="cl_hidden">
-                            Contrato
+                            Activo
+                        </th>
+                        <th class="cl_hidden">
+                            Fecha_Ultimo_Acceso
+                        </th>
+                        <th class="cl_hidden">
+                            Persona
+                        </th>
+                        <th class="cl_hidden">
+                            Rol
                         </th>
                     </tr>
                 
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
-                            <td class="cl_hidden">
-                                @elemento.Metodo_Pago
+                            <td>
+                                @elemento.Username
                             </td>
                             <td>
-                                @elemento.Monto_Total
+                                @elemento.Password_Hash
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Contrato
+                                @elemento.Activo
+                            </td>
+                            <td>
+                                @elemento.Fecha_Ultimo_Acceso
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Persona
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Rol
                             </td>
                             <td>
                                 <input type="submit"
                                        value="Modicar"
                                        asp-page-handler="BtModificar"
-                                       class="btn btn-secondary"
-                                       asp-route-data="@elemento.Id_Compra" />
+                                       class="btn btn-warning"
+                                       asp-route-data="@elemento.Id_Usuario" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
-                                       class="btn btn-secondary"
-                                       asp-route-data="@elemento.Id_Compra" />
+                                       class="btn btn-danger"
+                                       asp-route-data="@elemento.Id_Usuario" />
                             </td>
                         </tr>
                     }
                 </table>
             }
-
-            @if (Model!.ConfirmarCantidad)
-            {
-                <div class='popup'>
-                    <div class='pp_ms_inner'>
-                        <div style='width:95%'>
-
-                            <input type="hidden" asp-for="id" />
-                            <div class="form-group d-flex flex-column align-items-center">
-                        <label>
-                            INGRESE LA CANTIDAD
-                        </label>
-                                <div class="col-6">
-                                    <input id="inCantidad"
-                                           class="cts_forms form-control"
-                                           asp-for="@Model.Cantidad" />
-
-                                    <span asp-validation-for="Cantidad"
-                                          class="text-danger d-block text-center"></span>
-                        </div>
-                    </div>
-                            <div class="popup-footer">
-                                <input type="submit"
-                                       value="Aceptar"
-                                       asp-page-handler="BtAceptar"
-                                       class="btn btn-secondary" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
-
-            
         </form>
     </div>
 </center>

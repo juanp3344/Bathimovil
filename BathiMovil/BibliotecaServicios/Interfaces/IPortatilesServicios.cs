@@ -11,5 +11,6 @@ namespace BibliotecaServicios.Interfaces
         Portatiles Guardar(Portatiles entidad);
         Portatiles Modificar(Portatiles entidad);
         Portatiles Eliminar(Portatiles entidad);
+        List<Portatiles> ComprobarCantidad(Tipos_Portatiles entidad);
     }
 }

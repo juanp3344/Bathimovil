@@ -96,5 +96,24 @@ namespace BibliotecaPresentacion.Implementaciones
             return JsonConvert.DeserializeObject<Portatiles>(
                 respuesta["Valor"].ToString()!)!;
         }
+
+        public List<Portatiles> ComprobarTamanio(Tipos_Portatiles Entidad)
+        {
+            var datos = new Dictionary<string, object>();
+            datos["Url"] = "http://localhost:5010/Portatiles/ComprobarTamanio";
+            datos["Entidad"] = Entidad;
+
+            this.iComunicaciones = new Comunicaciones();
+            var task = this.iComunicaciones.EjecutarPost(datos)!;
+            task.Wait();
+            var respuesta = task.Result;
+
+            if (!respuesta.ContainsKey("Valor"))
+                return new List<Portatiles>();
+
+            return JsonConvert.DeserializeObject<List<Portatiles>>(
+                respuesta["Valor"].ToString()!)!;
+        }
+
     }
 }
