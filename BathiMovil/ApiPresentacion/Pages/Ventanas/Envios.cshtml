@@ -1,7 +1,7 @@
 ﻿@page
-@model ComprasModel
+@model EnviosModel
 @{
-    ViewData["Title"] = "Compras";
+    ViewData["Title"] = "Envios";
 }
 <center>
     <div>
@@ -10,7 +10,7 @@
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Compras</h3>
+                <h3>Envios</h3>
             </div>
             
             <div>
@@ -20,51 +20,84 @@
                        asp-page-handler="BtRefrescar" />
                 <input type="submit"
                        value="Nuevo"
-                       class="btn btn-success"
+                       class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Compra != null)" />
+                       disabled="@(Model.Envio != null)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Compra == null)" />
+                       disabled="@(Model.Envio == null)" />
             </div>
 
-            @if (Model.Compra != null)
+            @if (Model.Envio != null)
             {
                 <input type="hidden"
-                       asp-for="@Model.Compra!.Id_Compra" />
+                       asp-for="@Model.Envio!.Id_Envio" />
 
                 <div>
                     <div class="form-group">
                         <label>
-                            Metodo de Pago
+                            Fecha de Salida
                         </label>
                         <div class="col-6">
-                            <input id="inMetodo_Pago"
+                            <input id="inFecha_Salida"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Metodo_Pago" />
+                                   asp-for="@Model.Envio!.Fecha_Salida" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Monto Total
+                            Destino
                         </label>
                         <div class="col-6">
-                            <input id="inMonto_Total"
+                            <input id="inDestino"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Monto_Total" />
+                                   asp-for="@Model.Envio!.Destino" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Contrato relacionado
+                            Costo de Envio
+                        </label>
+                        <div class="col-6">
+                            <input id="inCosto_Envio"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Envio!.Costo_Envio" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Fecha Entrega Estimada
+                        </label>
+                        <div class="col-6">
+                            <input id="inFecha_Entrega_Estimada"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Envio!.Fecha_Entrega_Estimada" />
+                        </div>
+                   
+                </div>
+                <div class="form-group">
+                        <label>
+                            Contrato
                         </label>
                         <div class="col-6">
                             <input id="inContrato"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Contrato" />
+                                   asp-for="@Model.Envio!.Contrato" />
                         </div>
+                   
+                </div>
+                    <div class="form-group">
+                        <label>
+                           Empleado
+                        </label>
+                        <div class="col-6">
+                            <input id="inEmpleado"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Envio!.Empleado" />
+                        </div>
+
                     </div>
                 </div>
             }
@@ -75,7 +108,7 @@
                 ;
             }
 
-            @if (Model.Compra != null && Model.Borrando)
+            @if (Model.Envio != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
@@ -85,10 +118,10 @@
                             </h2>
 
                             <h6 align="left">
-                                Desea borrar el Compra?
+                                Desea borrar el Envio?
                             </h6>
                             <h6 align="left">
-                                @Model.Compra!.Metodo_Pago
+                                @Model.Envio!.Fecha_Salida
                             </h6>
                             
                             <input type="submit"
@@ -103,82 +136,71 @@
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
             {
-                <table class="tb_data table table-striped table-bordered table-hover">
-                    <tr>
+            <table class="tb_data table table-striped table-bordered table-hover">
+                <tr>
+                    <th>
+                        Fecha_Salida
+                    </th>
+                    <th>
+                        Destino
+                    </th>
+                    <th class="cl_hidden">
+                        Costo Envio
+                    </th>
+                      <th>
+                        Fecha Entrega Estimada
+                     </th>
+                      <th>
+                        Contrato
+                     </th>
                         <th>
-                            Metodo de Pago
+                            Empleado
                         </th>
-                        <th>
-                            Monto Total
-                        </th>
-                        <th class="cl_hidden">
-                            Contrato
-                        </th>
-                    </tr>
+                   
+                    <th class="cl_actions">
+                        Acción
+                    </th>
+                </tr>
                 
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
-                            <td class="cl_hidden">
-                                @elemento.Metodo_Pago
+                            <td>
+                                @elemento.Fecha_Salida
                             </td>
                             <td>
-                                @elemento.Monto_Total
+                                @elemento.Destino
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Costo_Envio
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Fecha_Entrega_Estimada
                             </td>
                             <td class="cl_hidden">
                                 @elemento.Contrato
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Empleado
                             </td>
                             <td>
                                 <input type="submit"
                                        value="Modicar"
                                        asp-page-handler="BtModificar"
                                        class="btn btn-secondary"
-                                       asp-route-data="@elemento.Id_Compra" />
+                                       asp-route-data="@elemento.Id_Envio" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
                                        class="btn btn-secondary"
-                                       asp-route-data="@elemento.Id_Compra" />
+                                       asp-route-data="@elemento.Id_Envio" />
                             </td>
                         </tr>
-                    }
-                </table>
+                }
+            </table>
             }
-
-            @if (Model!.ConfirmarCantidad)
-            {
-                <div class='popup'>
-                    <div class='pp_ms_inner'>
-                        <div style='width:95%'>
-
-
-                            <div class="form-group d-flex flex-column align-items-center">
-                        <label>
-                            INGRESE LA CANTIDAD
-                        </label>
-                                <div class="col-6">
-                                    <input id="inCantidad"
-                                           class="cts_forms form-control"
-                                           asp-for="@Model.Cantidad" />
-
-                                    <span asp-validation-for="Cantidad"
-                                          class="text-danger d-block text-center"></span>
-                        </div>
-                    </div>
-                            <div class="popup-footer">
-                                <input type="submit"
-                                       value="Aceptar"
-                                       asp-page-handler="BtAceptar"
-                                       class="btn btn-secondary" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
-
-            
         </form>
     </div>
 </center>

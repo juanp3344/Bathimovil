@@ -1,7 +1,7 @@
 ﻿@page
-@model TiposPortatilesModel
+@model EmpleadosModel
 @{
-    ViewData["Title"] = "Tipos_Portatiles";
+    ViewData["Title"] = "Empleados";
 }
 <center>
     <div>
@@ -10,7 +10,7 @@
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Tipos Portatiles</h3>
+                <h3>Empleados</h3>
             </div>
             
             <div>
@@ -22,20 +22,30 @@
                        value="Nuevo"
                        class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Tipos_Portatiles != null)" />
+                       disabled="@(Model.Empleado != null)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Tipos_Portatiles == null)" />
+                       disabled="@(Model.Empleado == null)" />
             </div>
 
-            @if (Model.Tipos_Portatiles != null)
+            @if (Model.Empleado != null)
             {
                 <input type="hidden"
-                       asp-for="@Model.Tipos_Portatiles!.Id_Tipo_Portatil" />
+                       asp-for="@Model.Empleado!.Id_Persona" />
 
                 <div>
+                    <div class="form-group">
+                        <label>
+                            Cedula
+                        </label>
+                        <div class="col-6">
+                            <input id="inCedula"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Empleado!.Cedula" />
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label>
                             Nombre
@@ -43,49 +53,49 @@
                         <div class="col-6">
                             <input id="inNombre"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Nombre" />
+                                   asp-for="@Model.Empleado!.Nombre" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Descripcion
+                            Correo
                         </label>
                         <div class="col-6">
-                            <input id="inDescripcion"
+                            <input id="inCorreo"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Descripcion" />
+                                   asp-for="@Model.Empleado!.Correo" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Altura
+                            Telefono
                         </label>
                         <div class="col-6">
-                            <input id="inAltura"
+                            <input id="inTelefono"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Altura" />
+                                   asp-for="@Model.Empleado!.Telefono" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Ancho
+                            Fecha Ingreso
                         </label>
                         <div class="col-6">
-                            <input id="inAncho"
+                            <input id="inFecha_Ingreso"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Ancho" />
+                                   asp-for="@Model.Empleado!.Fecha_Ingreso" />
                         </div>
-                        <div class="form-group">
-                            <label>
-                                Largo
-                            </label>
-                            <div class="col-6">
-                                <input id="inLargo"
-                                       class="cts_forms form-control"
-                                       asp-for="@Model.Tipos_Portatiles!.Largo" />
-                            </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>
+                            Salario Base
+                        </label>
+                        <div class="col-6">
+                            <input id="inSalario_Base"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Empleado!.Salario_Base" />
+                        </div>
+                    </div>
                 </div>
             }
             
@@ -95,7 +105,7 @@
                 ;
             }
 
-            @if (Model.Tipos_Portatiles != null && Model.Borrando)
+            @if (Model.Empleado != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
@@ -105,10 +115,10 @@
                             </h2>
 
                             <h6 align="left">
-                                Desea borrar el Tipos_Portatiles?
+                                Desea borrar el Empleado?
                             </h6>
                             <h6 align="left">
-                                @Model.Tipos_Portatiles!.Nombre
+                                @Model.Empleado!.Cedula
                             </h6>
                             
                             <input type="submit"
@@ -118,65 +128,74 @@
                             <input type="submit"
                                    value="Borrar"
                                    asp-page-handler="BtBorrar"
-                                   class="btn btn-danger" />
+                                   class="btn btn-secondary" />
                         </div>
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
             {
-                <table class="tb_data table table-striped table-bordered table-hover">
-                    <tr>
-                        <th>
-                            Nombre
-                        </th>
-                        <th>
-                            Descripcion
-                        </th>
-                        <th class="cl_hidden">
-                            Altura
-                        </th>
-                        <th class="cl_hidden">
-                            Ancho
-                        </th>
-                        <th class="cl_hidden">
-                            Largo
-                        </th>
-                    </tr>
+            <table class="tb_data table table-striped table-bordered table-hover">
+                <tr>
+                    <th>
+                        Cedula
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th class="cl_hidden">
+                        Correo
+                    </th>
+                      <th class="cl_hidden">
+                        Telefono
+                     </th>
+                     <th class="cl_hidden">
+                        Fecha de Ingreso
+                     </th>
+                      <th>
+                         Salario Base
+                      </th>
+                    <th class="cl_actions">
+                        Acción
+                    </th>
+                </tr>
                 
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
                             <td>
-                                @elemento.Nombre
+                                @elemento.Cedula
                             </td>
                             <td>
-                                @elemento.Descripcion
+                                @elemento.Nombre
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Altura
+                                @elemento.Correo
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Ancho
+                                @elemento.Telefono
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Largo
+                                @elemento.Fecha_Ingreso
+                            </td>
+                            <td>
+                                @elemento.Salario_Base
                             </td>
                             <td>
                                 <input type="submit"
                                        value="Modicar"
                                        asp-page-handler="BtModificar"
-                                       class="btn btn-warning"
-                                       asp-route-data="@elemento.Id_Tipo_Portatil" />
+                                       class="btn btn-secondary"
+                                       asp-route-data="@elemento.Id_Persona" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
-                                       class="btn btn-danger"
-                                       asp-route-data="@elemento.Id_Tipo_Portatil" />
+                                       class="btn btn-secondary"
+                                       asp-route-data="@elemento.Id_Persona" />
                             </td>
                         </tr>
-                    }
-                </table>
+                }
+            </table>
             }
         </form>
     </div>

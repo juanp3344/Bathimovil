@@ -1,7 +1,7 @@
 ﻿@page
-@model ComprasModel
+@model Detalle_FacturasModel
 @{
-    ViewData["Title"] = "Compras";
+    ViewData["Title"] = "Detalle facturas";
 }
 <center>
     <div>
@@ -10,7 +10,7 @@
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Compras</h3>
+                <h3>Detalle facturas</h3>
             </div>
             
             <div>
@@ -20,53 +20,73 @@
                        asp-page-handler="BtRefrescar" />
                 <input type="submit"
                        value="Nuevo"
-                       class="btn btn-success"
+                       class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Compra != null)" />
+                       disabled="@(Model.Detalle_Factura != null)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Compra == null)" />
+                       disabled="@(Model.Detalle_Factura == null)" />
             </div>
 
-            @if (Model.Compra != null)
+            @if (Model.Detalle_Factura != null)
             {
                 <input type="hidden"
-                       asp-for="@Model.Compra!.Id_Compra" />
+                       asp-for="@Model.Detalle_Factura!.Id_Detalle" />
 
                 <div>
                     <div class="form-group">
                         <label>
-                            Metodo de Pago
+                            Cantidad
                         </label>
                         <div class="col-6">
-                            <input id="inMetodo_Pago"
+                            <input id="inCantidad"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Metodo_Pago" />
+                                   asp-for="@Model.Detalle_Factura!.Cantidad" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Monto Total
+                            Costo Unitario
                         </label>
                         <div class="col-6">
-                            <input id="inMonto_Total"
+                            <input id="inCosto_Unitario"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Monto_Total" />
+                                   asp-for="@Model.Detalle_Factura!.Costo_Unitario" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Contrato relacionado
+                            Descuento Aplicado
                         </label>
                         <div class="col-6">
-                            <input id="inContrato"
+                            <input id="inDescuento_Aplicado"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Contrato" />
+                                   asp-for="@Model.Detalle_Factura!.Descuento_Aplicado" />
                         </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>
+                            Subtotal
+                        </label>
+                        <div class="col-6">
+                            <input id="inSubtotal"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Detalle_Factura!.Subtotal" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Factura
+                        </label>
+                        <div class="col-6">
+                            <input id="inFactura"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Detalle_Factura!.Factura" />
+                        </div>
+                    </div>
+                    </div>
             }
             
             @if (ViewData.ContainsKey("Mensaje"))
@@ -75,7 +95,7 @@
                 ;
             }
 
-            @if (Model.Compra != null && Model.Borrando)
+            @if (Model.Detalle_Factura != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
@@ -85,10 +105,10 @@
                             </h2>
 
                             <h6 align="left">
-                                Desea borrar el Compra?
+                                Desea borrar el Detalle_Factura?
                             </h6>
                             <h6 align="left">
-                                @Model.Compra!.Metodo_Pago
+                                @Model.Detalle_Factura!.Cantidad
                             </h6>
                             
                             <input type="submit"
@@ -103,82 +123,64 @@
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
             {
-                <table class="tb_data table table-striped table-bordered table-hover">
-                    <tr>
-                        <th>
-                            Metodo de Pago
-                        </th>
-                        <th>
-                            Monto Total
-                        </th>
+            <table class="tb_data table table-striped table-bordered table-hover">
+                <tr>
+                    <th>
+                        Cantidad
+                    </th>
+                    <th>
+                        Costo_Unitario
+                    </th>
+                    <th class="cl_hidden">
+                        Descuento_Aplicado
+                    </th>
+                      <th class="cl_hidden">
+                        Subtotal
+                     </th>
                         <th class="cl_hidden">
-                            Contrato
+                            Factura
                         </th>
-                    </tr>
+                    <th class="cl_actions">
+                        Acción
+                    </th>
+                </tr>
                 
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
-                            <td class="cl_hidden">
-                                @elemento.Metodo_Pago
+                            <td>
+                                @elemento.Cantidad
                             </td>
                             <td>
-                                @elemento.Monto_Total
+                                @elemento.Costo_Unitario
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Contrato
+                                @elemento.Descuento_Aplicado
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Subtotal
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Factura
                             </td>
                             <td>
                                 <input type="submit"
                                        value="Modicar"
                                        asp-page-handler="BtModificar"
                                        class="btn btn-secondary"
-                                       asp-route-data="@elemento.Id_Compra" />
+                                       asp-route-data="@elemento.Id_Detalle" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
                                        class="btn btn-secondary"
-                                       asp-route-data="@elemento.Id_Compra" />
+                                       asp-route-data="@elemento.Id_Detalle" />
                             </td>
                         </tr>
-                    }
-                </table>
+                }
+            </table>
             }
-
-            @if (Model!.ConfirmarCantidad)
-            {
-                <div class='popup'>
-                    <div class='pp_ms_inner'>
-                        <div style='width:95%'>
-
-
-                            <div class="form-group d-flex flex-column align-items-center">
-                        <label>
-                            INGRESE LA CANTIDAD
-                        </label>
-                                <div class="col-6">
-                                    <input id="inCantidad"
-                                           class="cts_forms form-control"
-                                           asp-for="@Model.Cantidad" />
-
-                                    <span asp-validation-for="Cantidad"
-                                          class="text-danger d-block text-center"></span>
-                        </div>
-                    </div>
-                            <div class="popup-footer">
-                                <input type="submit"
-                                       value="Aceptar"
-                                       asp-page-handler="BtAceptar"
-                                       class="btn btn-secondary" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
-
-            
         </form>
     </div>
 </center>

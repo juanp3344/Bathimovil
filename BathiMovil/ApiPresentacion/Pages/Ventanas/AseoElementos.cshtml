@@ -1,7 +1,7 @@
 ﻿@page
-@model TiposPortatilesModel
+@model AseoElementosModel
 @{
-    ViewData["Title"] = "Tipos_Portatiles";
+    ViewData["Title"] = "Aseo Elementos";
 }
 <center>
     <div>
@@ -10,7 +10,7 @@
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Tipos Portatiles</h3>
+                <h3>Aseo Elementos</h3>
             </div>
             
             <div>
@@ -22,70 +22,77 @@
                        value="Nuevo"
                        class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Tipos_Portatiles != null)" />
+                       disabled="@(Model.Aseo_Elemento != null)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Tipos_Portatiles == null)" />
+                       disabled="@(Model.Aseo_Elemento == null)" />
             </div>
 
-            @if (Model.Tipos_Portatiles != null)
+            @if (Model.Aseo_Elemento != null)
             {
                 <input type="hidden"
-                       asp-for="@Model.Tipos_Portatiles!.Id_Tipo_Portatil" />
+                       asp-for="@Model.Aseo_Elemento!.Id_Aseo_Elemento" />
 
                 <div>
                     <div class="form-group">
                         <label>
-                            Nombre
+                            Fecha_Vencimiento
+                        </label>
+                        <div class="col-6">
+                            <input id="inFecha_Vencimiento"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Aseo_Elemento!.Fecha_Vencimiento" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Cantidad
                         </label>
                         <div class="col-6">
                             <input id="inNombre"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Nombre" />
+                                   asp-for="@Model.Aseo_Elemento!.Cantidad" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Descripcion
+                            Marca
                         </label>
                         <div class="col-6">
-                            <input id="inDescripcion"
+                            <input id="inMarca"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Descripcion" />
+                                   asp-for="@Model.Aseo_Elemento!.Marca" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Altura
+                            Costo
                         </label>
                         <div class="col-6">
-                            <input id="inAltura"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Altura" />
+                            <input id="inCosto"
+                                   asp-for="@Model.Aseo_Elemento!.Costo" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Ancho
+                            Mantenimiento
                         </label>
                         <div class="col-6">
-                            <input id="inAncho"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Portatiles!.Ancho" />
+                            <input id="inMantenimiento"
+                                   asp-for="@Model.Aseo_Elemento!.Mantenimiento" />
                         </div>
-                        <div class="form-group">
-                            <label>
-                                Largo
-                            </label>
-                            <div class="col-6">
-                                <input id="inLargo"
-                                       class="cts_forms form-control"
-                                       asp-for="@Model.Tipos_Portatiles!.Largo" />
-                            </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>
+                            Tipo Aseo Elementos
+                        </label>
+                        <div class="col-6">
+                            <input id="inTipo_Aseo_Elementos"
+                                   asp-for="@Model.Aseo_Elemento!.Tipo_Aseo_Elementos" />
+                        </div>
+                    </div>
                 </div>
             }
             
@@ -95,7 +102,7 @@
                 ;
             }
 
-            @if (Model.Tipos_Portatiles != null && Model.Borrando)
+            @if (Model.Aseo_Elemento != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
@@ -105,10 +112,10 @@
                             </h2>
 
                             <h6 align="left">
-                                Desea borrar el Tipos_Portatiles?
+                                Desea borrar el Aseo_Elemento?
                             </h6>
                             <h6 align="left">
-                                @Model.Tipos_Portatiles!.Nombre
+                                @Model.Aseo_Elemento!.Fecha_Vencimiento
                             </h6>
                             
                             <input type="submit"
@@ -118,65 +125,74 @@
                             <input type="submit"
                                    value="Borrar"
                                    asp-page-handler="BtBorrar"
-                                   class="btn btn-danger" />
+                                   class="btn btn-secondary" />
                         </div>
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
             {
-                <table class="tb_data table table-striped table-bordered table-hover">
-                    <tr>
-                        <th>
-                            Nombre
-                        </th>
-                        <th>
-                            Descripcion
-                        </th>
-                        <th class="cl_hidden">
-                            Altura
-                        </th>
-                        <th class="cl_hidden">
-                            Ancho
-                        </th>
-                        <th class="cl_hidden">
-                            Largo
-                        </th>
-                    </tr>
+            <table class="tb_data table table-striped table-bordered table-hover">
+                <tr>
+                    <th>
+                        Fecha_Vencimiento
+                    </th>
+                    <th>
+                        Cantidad
+                    </th>
+                    <th class="cl_hidden">
+                        Costo
+                    </th>
+                    <th class="cl_hidden">
+                        Marca
+                    </th>
+                    <th class="cl_hidden">
+                        Mantenimiento
+                    </th>
+                     <th class="cl_hidden">
+                        Tipo Aseo Elementos
+                     </th>
+                    <th class="cl_actions">
+                        Acción
+                    </th>
+                </tr>
                 
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
                             <td>
-                                @elemento.Nombre
+                                @elemento.Fecha_Vencimiento
                             </td>
                             <td>
-                                @elemento.Descripcion
+                                @elemento.Cantidad
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Altura
+                                @elemento.Costo
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Ancho
+                                @elemento.Marca
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Largo
+                                @elemento.Mantenimiento
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Tipo_Aseo_Elementos
                             </td>
                             <td>
                                 <input type="submit"
                                        value="Modicar"
                                        asp-page-handler="BtModificar"
-                                       class="btn btn-warning"
-                                       asp-route-data="@elemento.Id_Tipo_Portatil" />
+                                       class="btn btn-secondary"
+                                       asp-route-data="@elemento.Id_Aseo_Elemento" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
-                                       class="btn btn-danger"
-                                       asp-route-data="@elemento.Id_Tipo_Portatil" />
+                                       class="btn btn-secondary"
+                                       asp-route-data="@elemento.Id_Aseo_Elemento" />
                             </td>
                         </tr>
-                    }
-                </table>
+                }
+            </table>
             }
         </form>
     </div>

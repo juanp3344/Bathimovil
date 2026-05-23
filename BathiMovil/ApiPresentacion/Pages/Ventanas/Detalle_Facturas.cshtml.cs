@@ -1,37 +1,25 @@
 using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
-
 namespace ApiPresentacion.Pages
 {
-    public class ComprasModel : PageModel
+    public class Detalle_FacturasModel : PageModel
     {
-        private ComprasPresentacion? ICompras_Presentacion;
-
-        [BindProperty] public int? Cantidad { get; set; }
-        [BindProperty] public List<Compras>? Lista { get; set; }
-        [BindProperty] public Compras? Compra { get; set; }
+        private IDetalle_FacturasPresentacion? IDetalle_FacturasPresentacion;
+        [BindProperty] public List<Detalle_Facturas>? Lista { get; set; }
+        [BindProperty] public Detalle_Facturas? Detalle_Factura { get; set; }
         [BindProperty] public bool Borrando { get; set; }
-        [BindProperty] public bool ConfirmarCantidad { get; set; }
 
-        public ComprasModel()
+        public Detalle_FacturasModel()
         {
-            ICompras_Presentacion = new ComprasPresentacion();
+            IDetalle_FacturasPresentacion = new Detalle_FacturasPresentacion();
         }
 
-        public void OnGet(bool nuevo)
+        public void OnGet()
         {
             OnPostBtRefrescar();
-
-
-            if (nuevo)
-            {
-                Compra = new Compras();
-                ConfirmarCantidad = true;
-            }
-
         }
 
 
@@ -39,10 +27,10 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (ICompras_Presentacion == null)
+                if (IDetalle_FacturasPresentacion == null)
                     return;
-                Lista = ICompras_Presentacion.Consultar();
-                Compra = null;
+                Lista = IDetalle_FacturasPresentacion.Consultar();
+                Detalle_Factura = null;
             }
             catch (Exception ex)
             {
@@ -51,13 +39,12 @@ namespace ApiPresentacion.Pages
         }
 
         
-
         public void OnPostBtModificar(int data)
         {
             try
             {
                 OnPostBtRefrescar();
-                Compra = Lista!.FirstOrDefault(x => x.Id_Compra == data);
+                Detalle_Factura = Lista!.FirstOrDefault(x => x.Id_Detalle == data);
                 Lista = null;
                 Borrando = false;
             }
@@ -71,13 +58,13 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Compra == null)
+                if (Detalle_Factura == null)
                     return;
-                if (Compra.Id_Compra == 0)
-                    Compra = ICompras_Presentacion!.Guardar(Compra!);
+                if (Detalle_Factura.Id_Detalle == 0)
+                    Detalle_Factura = IDetalle_FacturasPresentacion!.Guardar(Detalle_Factura!);
                 else
-                    Compra = ICompras_Presentacion!.Modificar(Compra!);
-                if (Compra.Id_Compra == 0)
+                    Detalle_Factura = IDetalle_FacturasPresentacion!.Modificar(Detalle_Factura!);
+                if (Detalle_Factura.Id_Detalle == 0)
                     return;
                 OnPostBtRefrescar();
             }
@@ -91,9 +78,9 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Compra == null)
+                if (Detalle_Factura == null)
                     return;
-                Compra = ICompras_Presentacion!.Eliminar(Compra!);
+                Detalle_Factura = IDetalle_FacturasPresentacion!.Eliminar(Detalle_Factura!);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)
@@ -107,7 +94,7 @@ namespace ApiPresentacion.Pages
             try
             {
                 OnPostBtRefrescar();
-                Compra = Lista!.FirstOrDefault(x => x.Id_Compra == data);
+                Detalle_Factura = Lista!.FirstOrDefault(x => x.Id_Detalle == data);
                 Lista = null;
                 Borrando = true;
             }
@@ -121,18 +108,6 @@ namespace ApiPresentacion.Pages
         {
             OnPostBtRefrescar();
             Borrando = false;
-        }
-
-        public IActionResult OnPostBtAceptar()
-        {
-            if (Cantidad == null || Cantidad <= 0)
-            {
-                ModelState.AddModelError("Cantidad", "No puedes ingresar valores incorrectos");
-                ConfirmarCantidad = true; 
-                return Page();
-            }
-
-            return Page();
         }
     }
 }

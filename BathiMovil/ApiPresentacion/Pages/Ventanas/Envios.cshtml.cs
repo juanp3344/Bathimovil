@@ -1,37 +1,25 @@
 using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
-
 namespace ApiPresentacion.Pages
 {
-    public class ComprasModel : PageModel
+    public class EnviosModel : PageModel
     {
-        private ComprasPresentacion? ICompras_Presentacion;
-
-        [BindProperty] public int? Cantidad { get; set; }
-        [BindProperty] public List<Compras>? Lista { get; set; }
-        [BindProperty] public Compras? Compra { get; set; }
+        private IEnviosPresentacion? IEnviosPresentacion;
+        [BindProperty] public List<Envios>? Lista { get; set; }
+        [BindProperty] public Envios? Envio { get; set; }
         [BindProperty] public bool Borrando { get; set; }
-        [BindProperty] public bool ConfirmarCantidad { get; set; }
 
-        public ComprasModel()
+        public EnviosModel()
         {
-            ICompras_Presentacion = new ComprasPresentacion();
+            IEnviosPresentacion = new EnviosPresentacion();
         }
 
-        public void OnGet(bool nuevo)
+        public void OnGet()
         {
             OnPostBtRefrescar();
-
-
-            if (nuevo)
-            {
-                Compra = new Compras();
-                ConfirmarCantidad = true;
-            }
-
         }
 
 
@@ -39,10 +27,10 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (ICompras_Presentacion == null)
+                if (IEnviosPresentacion == null)
                     return;
-                Lista = ICompras_Presentacion.Consultar();
-                Compra = null;
+                Lista = IEnviosPresentacion.Consultar();
+                Envio = null;
             }
             catch (Exception ex)
             {
@@ -51,13 +39,12 @@ namespace ApiPresentacion.Pages
         }
 
         
-
         public void OnPostBtModificar(int data)
         {
             try
             {
                 OnPostBtRefrescar();
-                Compra = Lista!.FirstOrDefault(x => x.Id_Compra == data);
+                Envio = Lista!.FirstOrDefault(x => x.Id_Envio == data);
                 Lista = null;
                 Borrando = false;
             }
@@ -71,13 +58,13 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Compra == null)
+                if (Envio == null)
                     return;
-                if (Compra.Id_Compra == 0)
-                    Compra = ICompras_Presentacion!.Guardar(Compra!);
+                if (Envio.Id_Envio == 0)
+                    Envio = IEnviosPresentacion!.Guardar(Envio!);
                 else
-                    Compra = ICompras_Presentacion!.Modificar(Compra!);
-                if (Compra.Id_Compra == 0)
+                    Envio = IEnviosPresentacion!.Modificar(Envio!);
+                if (Envio.Id_Envio == 0)
                     return;
                 OnPostBtRefrescar();
             }
@@ -91,9 +78,9 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Compra == null)
+                if (Envio == null)
                     return;
-                Compra = ICompras_Presentacion!.Eliminar(Compra!);
+                Envio = IEnviosPresentacion!.Eliminar(Envio!);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)
@@ -107,7 +94,7 @@ namespace ApiPresentacion.Pages
             try
             {
                 OnPostBtRefrescar();
-                Compra = Lista!.FirstOrDefault(x => x.Id_Compra == data);
+                Envio = Lista!.FirstOrDefault(x => x.Id_Envio == data);
                 Lista = null;
                 Borrando = true;
             }
@@ -121,18 +108,6 @@ namespace ApiPresentacion.Pages
         {
             OnPostBtRefrescar();
             Borrando = false;
-        }
-
-        public IActionResult OnPostBtAceptar()
-        {
-            if (Cantidad == null || Cantidad <= 0)
-            {
-                ModelState.AddModelError("Cantidad", "No puedes ingresar valores incorrectos");
-                ConfirmarCantidad = true; 
-                return Page();
-            }
-
-            return Page();
         }
     }
 }
