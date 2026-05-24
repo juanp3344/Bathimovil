@@ -16,21 +16,14 @@ namespace Unitarias
         private Tipo_Aseo_Elementos? entidad;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Tipo_Aseo_Elementos!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -38,16 +31,8 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad = new Tipo_Aseo_Elementos()
-            {
-
-    };
-            this.iConexion.Tipo_Aseo_Elementos!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Tipo_Aseo_Elemento != 0)
-                return;
+            this.entidad = DatosHelper.CrearTipo_Aseo_Elemento(this.iConexion);
+            if (this.entidad!.Id_Tipo_Aseo_Elemento != 0) return;
             throw new Exception("");
         }
 
@@ -55,15 +40,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad!.Uso = "Fregar";
-
+            this.entidad!.Uso = "Chowder";
             var entry = this.iConexion!.Entry<Tipo_Aseo_Elementos>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Tipo_Aseo_Elemento != 0)
-                return;
+            if (entidad!.Id_Tipo_Aseo_Elemento != 0) return;
             throw new Exception("");
         }
 
@@ -71,7 +52,6 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Tipo_Aseo_Elementos!.Remove(this.entidad!);
             this.iConexion.SaveChanges();
         }

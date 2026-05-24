@@ -16,21 +16,14 @@ namespace Unitarias
         private Personas? entidad;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Personas!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -38,16 +31,16 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.entidad = new Personas()
             {
-
-    };
+                Cedula = $"PER{DateTime.Now.Ticks}",
+                Nombre = "Persona Test",
+                Correo = "persona@test.com",
+                Telefono = "3001234567"
+            };
             this.iConexion.Personas!.Add(this.entidad!);
             this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Persona != 0)
-                return;
+            if (this.entidad!.Id_Persona != 0) return;
             throw new Exception("");
         }
 
@@ -55,15 +48,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad!.Nombre = "Elpen Sionado";
-
+            this.entidad!.Nombre = "Chowder";
             var entry = this.iConexion!.Entry<Personas>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Persona != 0)
-                return;
+            if (entidad!.Id_Persona != 0) return;
             throw new Exception("");
         }
 
@@ -71,7 +60,6 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Personas!.Remove(this.entidad!);
             this.iConexion.SaveChanges();
         }

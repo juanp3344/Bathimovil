@@ -16,21 +16,14 @@ namespace Unitarias
         private Clientes? entidad;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Clientes!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -38,16 +31,8 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad = new Clientes()
-            {
-
-            };
-            this.iConexion.Clientes!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Persona != 0)
-                return;
+            this.entidad = DatosHelper.CrearCliente(this.iConexion);
+            if (this.entidad!.Id_Persona != 0) return;
             throw new Exception("");
         }
 
@@ -55,15 +40,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad!.Razon_Social = "Ninguna";
-
+            this.entidad!.Nombre = "Chowder";
             var entry = this.iConexion!.Entry<Clientes>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Persona != 0)
-                return;
+            if (entidad!.Id_Persona != 0) return;
             throw new Exception("");
         }
 
@@ -71,7 +52,6 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Clientes!.Remove(this.entidad!);
             this.iConexion.SaveChanges();
         }

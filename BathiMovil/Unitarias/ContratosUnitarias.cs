@@ -14,23 +14,17 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Contratos? entidad;
+        private Clientes? entidadCliente;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Contratos!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -38,16 +32,9 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad = new Contratos()
-            {
-
-            };
-            this.iConexion.Contratos!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Contrato != 0)
-                return;
+            this.entidadCliente = DatosHelper.CrearCliente(this.iConexion);
+            this.entidad = DatosHelper.CrearContrato(this.iConexion, entidadCliente.Id_Persona);
+            if (this.entidad!.Id_Contrato != 0) return;
             throw new Exception("");
         }
 
@@ -55,15 +42,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.entidad!.Terminos = "Chowder";
-
             var entry = this.iConexion!.Entry<Contratos>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Contrato != 0)
-                return;
+            if (entidad!.Id_Contrato != 0) return;
             throw new Exception("");
         }
 
@@ -71,8 +54,9 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Contratos!.Remove(this.entidad!);
+            this.iConexion.SaveChanges();
+            this.iConexion.Clientes!.Remove(this.entidadCliente!);
             this.iConexion.SaveChanges();
         }
     }

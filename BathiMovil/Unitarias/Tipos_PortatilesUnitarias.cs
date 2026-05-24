@@ -16,21 +16,14 @@ namespace Unitarias
         private Tipos_Portatiles? entidad;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Tipos_Portatiles!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -38,17 +31,8 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad = new Tipos_Portatiles()
-            {
-
-
-    };
-            this.iConexion.Tipos_Portatiles!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Tipo_Portatil != 0)
-                return;
+            this.entidad = DatosHelper.CrearTipo_Portatil(this.iConexion);
+            if (this.entidad!.Id_Tipo_Portatil != 0) return;
             throw new Exception("");
         }
 
@@ -56,15 +40,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad!.Altura = 1.90m;
-
+            this.entidad!.Nombre = "Chowder";
             var entry = this.iConexion!.Entry<Tipos_Portatiles>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Tipo_Portatil != 0)
-                return;
+            if (entidad!.Id_Tipo_Portatil != 0) return;
             throw new Exception("");
         }
 
@@ -72,7 +52,6 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Tipos_Portatiles!.Remove(this.entidad!);
             this.iConexion.SaveChanges();
         }

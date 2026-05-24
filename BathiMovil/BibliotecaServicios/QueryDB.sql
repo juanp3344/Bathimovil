@@ -343,3 +343,8 @@ INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], 
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('3472478372848SF',GETDATE(),'Libre',2,1 )
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('54754897493AHDS',GETDATE(),'Libre',2,1 )
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('837482743274738',GETDATE(),'Libre',3,1 )
+
+
+
+EXEC sp_rename 'Aseo_Elementos.Tipo_Aseo_Elemento', 'Tipo_Aseo_Elementos', 'COLUMN';
+EXEC sp_rename 'Envios.Id_Envios', 'Id_Envio', 'COLUMN';

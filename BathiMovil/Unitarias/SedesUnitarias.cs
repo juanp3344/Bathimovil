@@ -18,21 +18,14 @@ namespace Unitarias
         private Sedes? entidad;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Sedes!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -40,17 +33,8 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad = new Sedes()
-            {
-
-
-    };
-            this.iConexion.Sedes!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Sede != 0)
-                return;
+            this.entidad = DatosHelper.CrearSede(this.iConexion);
+            if (this.entidad!.Id_Sede != 0) return;
             throw new Exception("");
         }
 
@@ -58,15 +42,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad!.Nombre = "Acevedo";
-
+            this.entidad!.Nombre = "Chowder";
             var entry = this.iConexion!.Entry<Sedes>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Sede != 0)
-                return;
+            if (entidad!.Id_Sede != 0) return;
             throw new Exception("");
         }
 
@@ -74,7 +54,6 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Sedes!.Remove(this.entidad!);
             this.iConexion.SaveChanges();
         }

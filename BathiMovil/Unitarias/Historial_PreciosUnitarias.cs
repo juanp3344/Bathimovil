@@ -14,23 +14,17 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Historial_Precios? entidad;
+        private Tipos_Portatiles? entidadTipo;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Historial_Precios!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -38,16 +32,9 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad = new Historial_Precios()
-            {
-
-            };
-            this.iConexion.Historial_Precios!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Historial != 0)
-                return;
+            this.entidadTipo = DatosHelper.CrearTipo_Portatil(this.iConexion);
+            this.entidad = DatosHelper.CrearHistorial_Precio(this.iConexion, entidadTipo.Id_Tipo_Portatil);
+            if (this.entidad!.Id_Historial != 0) return;
             throw new Exception("");
         }
 
@@ -55,15 +42,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.entidad!.Motivo_Cambio = "Chowder";
-
             var entry = this.iConexion!.Entry<Historial_Precios>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Historial != 0)
-                return;
+            if (entidad!.Id_Historial != 0) return;
             throw new Exception("");
         }
 
@@ -71,8 +54,9 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Historial_Precios!.Remove(this.entidad!);
+            this.iConexion.SaveChanges();
+            this.iConexion.Tipos_Portatiles!.Remove(this.entidadTipo!);
             this.iConexion.SaveChanges();
         }
     }

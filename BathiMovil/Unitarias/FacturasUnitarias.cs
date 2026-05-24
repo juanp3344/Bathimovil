@@ -14,23 +14,17 @@ namespace Unitarias
     {
         private IConexion? iConexion;
         private Facturas? entidad;
+        private Clientes? entidadCliente;
 
         [TestMethod]
-        public void Ejecutar()
-        {
-            Guardar();
-            Consultar();
-            Modificar();
-            Borrar();
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
 
         private void Consultar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             var lista = iConexion.Facturas!.ToList();
-            if (lista.Count > 0)
-                return;
+            if (lista.Count > 0) return;
             throw new Exception("");
         }
 
@@ -38,16 +32,9 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad = new Facturas()
-            {
-
-            };
-            this.iConexion.Facturas!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
-
-            if (this.entidad!.Id_Factura != 0)
-                return;
+            this.entidadCliente = DatosHelper.CrearCliente(this.iConexion);
+            this.entidad = DatosHelper.CrearFactura(this.iConexion, entidadCliente.Id_Persona);
+            if (this.entidad!.Id_Factura != 0) return;
             throw new Exception("");
         }
 
@@ -55,15 +42,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
-            this.entidad!.Numero = "Chowder";
-
+            this.entidad!.Total = 99;
             var entry = this.iConexion!.Entry<Facturas>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-
-            if (entidad!.Id_Factura != 0)
-                return;
+            if (entidad!.Id_Factura != 0) return;
             throw new Exception("");
         }
 
@@ -71,8 +54,9 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-
             this.iConexion.Facturas!.Remove(this.entidad!);
+            this.iConexion.SaveChanges();
+            this.iConexion.Clientes!.Remove(this.entidadCliente!);
             this.iConexion.SaveChanges();
         }
     }
