@@ -9,6 +9,7 @@ namespace BibliotecaServicios.Entidades
         public int Id_Tipo_Portatil { get; set; }
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }
+        public decimal Precio_Actual { get; set; }
         public decimal Altura { get; set; }
         public decimal Ancho { get; set; }
         public decimal Largo { get; set; }

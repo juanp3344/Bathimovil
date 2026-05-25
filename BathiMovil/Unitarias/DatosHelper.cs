@@ -328,7 +328,7 @@ namespace Unitarias
                 Cantidad = 5,
                 Marca = "CleanPro",
                 Costo = 25_000m,
-                Tipo_Aseo_Elementos = idTipo,
+                Tipo_Aseo_Elemento = idTipo,
                 Mantenimiento = idMantenimiento
             };
             conexion.Aseo_Elementos!.Add(e);

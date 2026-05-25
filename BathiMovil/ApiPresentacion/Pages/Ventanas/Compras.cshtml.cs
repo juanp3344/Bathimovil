@@ -10,32 +10,90 @@ namespace ApiPresentacion.Pages
     public class ComprasModel : PageModel
     {
         private ComprasPresentacion? ICompras_Presentacion;
-        [BindProperty] public int? Cantidad { get; set; }
-        [BindProperty] public int? id { get; set; }
         [BindProperty] public List<Compras>? Lista { get; set; }
         [BindProperty] public Compras? Compra { get; set; }
         [BindProperty] public bool Borrando { get; set; }
-        [BindProperty] public bool ConfirmarCantidad { get; set; }
+        [BindProperty] public bool VienePorCompra { get; set; }
+        [BindProperty] public bool ConfirmarCompra{ get; set; }
+        [BindProperty] public int Cantidad { get; set; }
+        [BindProperty] public int TPortatil { get; set; }
 
+        public bool MostrarConfirmacionSalida { get; set; } = false;
         public ComprasModel()
         {
             ICompras_Presentacion = new ComprasPresentacion();
         }
 
-        public void OnGet(bool nuevo, int dato)
+        public void OnGet(bool nuevo, int Id_Contrato, int CantidadCalculo, int Portatil) // por si viene de contrato para compra, entonces recibira estos valores 
         {
-            OnPostBtRefrescar();
 
+            Cantidad = CantidadCalculo;
+
+            TPortatil = Portatil;
 
             if (nuevo)
             {
-                Compra = new Compras();
-                ConfirmarCantidad = true;
-                id = dato;
+                Tipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
+                ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion(); // necesitamos este para poder realizar el linq y ver de que tipo portatil necesitan comprobar su cantidad
+
+                var Tportatil = ITiposPortatiles_Presentacion.Consultar().FirstOrDefault(p => p.Id_Tipo_Portatil == Portatil); 
+
+                var ValorTotal = CantidadCalculo * Tportatil!.Precio_Actual; //realiza el calculo dependiendo de los portatiles que pidio  el cliente  el tipo que requirio
+
+                VienePorCompra = nuevo;
+                Compra = new Compras()
+                {
+                    Fecha_Compra = DateTime.Now,
+                    Monto_Total = ValorTotal,
+                    Garantia_Meses = 12,
+                    Contrato = Id_Contrato
+
+                };
+
+                return;
             }
+            OnPostBtRefrescar();
 
         }
 
+
+        public void OnPostBtComprar()
+        {
+            try
+            {
+                PortatilesPresentacion? IPortatiles_Presentacion;
+                IPortatiles_Presentacion = new PortatilesPresentacion();
+
+                // Traer todos los portátiles libres del tipo seleccionado
+                var portatiles = IPortatiles_Presentacion.Consultar()
+                    .Where(p => p.Tipo_Portatil == TPortatil && p.Estado_Actual == "Libre")
+                    .Take(Cantidad)
+                    .ToList();
+
+                // Cambiar estado a "en proceso"
+                foreach (var portatil in portatiles)
+                {
+                    portatil.Estado_Actual = "en proceso";
+                    IPortatiles_Presentacion.Modificar(portatil);
+                }
+
+                OnPostBtGuardar();
+                ConfirmarCompra = true;
+            }
+            catch (Exception ex)
+            {
+                ViewData["Mensaje"] = ex.Message;
+                return;
+            }
+
+           
+        }
+
+        public IActionResult OnPostBtTerminar()
+        {
+           
+            return RedirectToPage("/Ventanas/Ventas");
+        }
 
         public void OnPostBtRefrescar()
         {
@@ -52,7 +110,7 @@ namespace ApiPresentacion.Pages
             }
         }
 
-        
+
 
         public void OnPostBtModificar(int data)
         {
@@ -125,31 +183,6 @@ namespace ApiPresentacion.Pages
             Borrando = false;
         }
 
-        public IActionResult OnPostBtAceptar()
-        {
 
-         PortatilesPresentacion? IPortatiles_Presentacion;
-         IPortatiles_Presentacion = new PortatilesPresentacion();//llamamos a la presentacion de portatiles para el metodo logico
-
-         Tipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
-         ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion(); // necesitamos este para poder realizar el linq y ver de que tipo portatil necesitan comprobar su cantidad
-
-         var Tportatil = ITiposPortatiles_Presentacion.Consultar().FirstOrDefault(p => p.Id_Tipo_Portatil == id); //realizamos linq para el tipo
-
-            var lista = IPortatiles_Presentacion.ComprobarTamanio(Tportatil!).Count; // hacemos el conteo ya con el tipo de portatil aquellos portatiles que son de aquel tipo y que esten disponibles
-            if (Cantidad == null || Cantidad <= 0) //si ingresa valores negativos o nulos en el texto del popup no lo dejara pasar
-            {
-                ModelState.AddModelError("Cantidad", "No puedes ingresar valores incorrectos");
-                ConfirmarCantidad = true; 
-                return Page();
-            } else if(lista < Cantidad) //si no existe la cantidad de ese tipo de portatiles que se quieren, tampoco lo dejara pasar
-            {
-                ModelState.AddModelError("Cantidad", "No existe esa cantidad para esos baños portatiles");
-                ConfirmarCantidad = true;
-                return Page();
-            }
-
-            return Page(); //ya con todo verificado lo manda a la compra, aunque antes debera definirse el precio segun la cantidad, y el contrato que hace el cliente
-        }
     }
 }

@@ -8,6 +8,8 @@
         <form method="POST"
               enctype="multipart/form-data">
             @Html.AntiForgeryToken()
+            <input type="hidden" asp-for="Cantidad" />
+            <input type="hidden" asp-for="TPortatil" />
 
             <div align="left">
                 <h3>Compras</h3>
@@ -17,17 +19,18 @@
                 <input type="submit"
                        value="Refrescar"
                        class="btn btn-secondary"
-                       asp-page-handler="BtRefrescar" />
+                       asp-page-handler="BtRefrescar" 
+                       disabled ="@(Model.VienePorCompra)"/>
                 <input type="submit"
                        value="Nuevo"
                        class="btn btn-success"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Compra != null)" />
+                       disabled="@(Model.Compra != null || Model.VienePorCompra)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Compra == null)" />
+                       disabled="@(Model.Compra == null || Model.VienePorCompra)" />
             </div>
 
             @if (Model.Compra != null)
@@ -36,36 +39,89 @@
                        asp-for="@Model.Compra!.Id_Compra" />
 
                 <div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>
                             Metodo de Pago
                         </label>
                         <div class="col-6">
                             <input id="inMetodo_Pago"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Metodo_Pago" />
+                                   asp-for="@Model.Compra!.Metodo_Pago"
+                                    />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>
                             Monto Total
                         </label>
                         <div class="col-6">
                             <input id="inMonto_Total"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Monto_Total" />
+                                   asp-for="@Model.Compra!.Monto_Total"
+                                   readonly="@Model.VienePorCompra" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
+                        <label>
+                          Mese de garantia 
+                        </label>
+                        <div class="col-6">
+                            <input id="inGarantia_Meses"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Compra!.Garantia_Meses"
+                                   readonly="@Model.VienePorCompra" />
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <label>
+                            Fecha_Compra
+                        </label>
+                        <div class="col-6">
+                            <input id="inFecha_Compra"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Compra!.Fecha_Compra"
+                                   readonly="@Model.VienePorCompra" />
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;">
                         <label>
                             Contrato relacionado
                         </label>
                         <div class="col-6">
                             <input id="inContrato"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Contrato" />
+                                   asp-for="@Model.Compra!.Contrato" 
+                                   readonly="@Model.VienePorCompra" />
                         </div>
                     </div>
+                        @if (Model.VienePorCompra)
+                        {
+                        <input type="hidden" asp-for="ConfirmarCompra" />
+                        <input type="submit"
+                               value="Comprar"
+                               asp-page-handler="BtComprar"
+                               class="btn btn-success" />
+                        }
+                </div>
+            }
+
+             @if(Model.ConfirmarCompra)
+            {
+                
+                <div class='popup' style="margin-top: 55px;">
+                    <div class='pp_ms_inner'>
+                        <div style='width:95%'>
+
+                            <h6 align="left">
+                                COMPRA EFECTUADA, EL ENVIO ESTA POR PROGRAMARSE
+                            </h6>
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtTerminar"
+                                   class="btn btn-secondary" 
+                                   style="margin-top: 55px;" />
+                    </div>
+                </div>
                 </div>
             }
             
@@ -113,6 +169,12 @@
                         <th>
                             Monto Total
                         </th>
+                        <th>
+                            Fecha de compra
+                        </th>
+                        <th>
+                            Garantia de meses
+                        </th>
                         <th class="cl_hidden">
                             Contrato
                         </th>
@@ -126,6 +188,12 @@
                             </td>
                             <td>
                                 @elemento.Monto_Total
+                            </td>
+                            <td>
+                                @elemento.Fecha_Compra
+                            </td>
+                            <td>
+                                @elemento.Garantia_Meses
                             </td>
                             <td class="cl_hidden">
                                 @elemento.Contrato
@@ -147,38 +215,29 @@
                 </table>
             }
 
-            @if (Model!.ConfirmarCantidad)
-            {
-                <div class='popup'>
-                    <div class='pp_ms_inner'>
-                        <div style='width:95%'>
-
-                            <input type="hidden" asp-for="id" />
-                            <div class="form-group d-flex flex-column align-items-center">
-                        <label>
-                            INGRESE LA CANTIDAD
-                        </label>
-                                <div class="col-6">
-                                    <input id="inCantidad"
-                                           class="cts_forms form-control"
-                                           asp-for="@Model.Cantidad" />
-
-                                    <span asp-validation-for="Cantidad"
-                                          class="text-danger d-block text-center"></span>
-                        </div>
-                    </div>
-                            <div class="popup-footer">
-                                <input type="submit"
-                                       value="Aceptar"
-                                       asp-page-handler="BtAceptar"
-                                       class="btn btn-secondary" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
-
+          @if (Model!.MostrarConfirmacionSalida)
+{
+    <div class='popup'>
+        <div class='pp_ms_inner'>
+            <div style='width:95%'>
+                <h6 align="left">
+                    ¿Seguro que deseas salir? Perderás tu compra.
+                </h6>
+                <input type="submit"
+                       value="Quedarse"
+                       asp-page-handler="BtCerrar"
+                       class="btn btn-success" />
+                <input type="submit"
+                       value="Salir de todas formas"
+                       asp-page-handler="BtRefrescarConfirmado"
+                       class="btn btn-secondary" />
+            </div>
+        </div>
+    </div>
+}
             
         </form>
+       
     </div>
 </center>
+

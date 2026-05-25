@@ -17,17 +17,18 @@
                 <input type="submit"
                        value="Refrescar"
                        class="btn btn-secondary"
-                       asp-page-handler="BtRefrescar" />
+                       asp-page-handler="BtRefrescar" 
+                       disabled="@(Model.VienePorCompra)" />
                 <input type="submit"
                        value="Nuevo"
                        class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Contrato != null)" />
+                       disabled="@(Model.Contrato != null || Model.VienePorCompra)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Contrato == null)" />
+                       disabled="@(Model.Contrato == null || Model.VienePorCompra)" />
             </div>
 
             @if (Model.Contrato != null)
@@ -36,49 +37,67 @@
                        asp-for="@Model.Contrato!.Id_Contrato" />
 
                 <div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>
                             Fecha Firma
                         </label>
                         <div class="col-6">
                             <input id="inFecha_Firma"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Contrato!.Fecha_Firma" />
+                                   asp-for="@Model.Contrato!.Fecha_Firma"
+                                   readonly="@Model.VienePorCompra" 
+                                   style="margin-top: 5px;" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>
                             Terminos
                         </label>
                         <div class="col-6">
                             <input id="inFecha_Firma"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Contrato!.Terminos" />
+                                   asp-for="@Model.Contrato!.Terminos" 
+                                   readonly="@Model.VienePorCompra"
+                                   style="margin-top: 5px;" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>
                             Fecha Expiracion
                         </label>
                         <div class="col-6">
                             <input id="inFecha_Expiracion"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Contrato!.Fecha_Expiracion" />
+                                   asp-for="@Model.Contrato!.Fecha_Expiracion" 
+                                   style="margin-top: 5px;" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>
                             Cliente
                         </label>
                         <div class="col-6">
                             <input id="inCliente"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Contrato!.Cliente" />
+                                   asp-for="@Model.Contrato!.Cliente" 
+                                   readonly="@Model.VienePorCompra"
+                                   style="margin-top: 5px;" />
                         </div>
                     </div>
                 </div>
             }
-            
+
+                @if (Model.VienePorCompra)
+                {
+                <input type="hidden" asp-for="CantidadCalculo" />
+                <input type="hidden" asp-for="Portatil" />
+                <input type="submit"
+                       value="Firmar"
+                       asp-page-handler="BtFirmar"
+                       class="btn btn-secondary" 
+                       style="margin-top: 50px;" />
+                }
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")

@@ -35,6 +35,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/TiposPortatiles">TiposPortatiles</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Contratos">Contratos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -59,3 +62,15 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+<script>
+    function confirmarNavegacion() {
+    // Preguntar solo si hay una compra en progreso
+    var hayCompra = '@(ViewData["CompraEnProgreso"])' === 'True';
+
+    if (hayCompra) {
+    return confirm('¿Seguro que deseas salir? Perderás tu compra.');
+    }
+    return true; // Si no hay compra, navega normal
+    }
+</script>

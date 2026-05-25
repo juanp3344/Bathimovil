@@ -58,6 +58,16 @@
                     </div>
                     <div class="form-group">
                         <label>
+                            Precio_Actual
+                        </label>
+                        <div class="col-6">
+                            <input id="inPrecio_Actual"
+                                   class="cts_forms form-control"
+                                   asp-for="@Model.Tipos_Portatiles!.Precio_Actual" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>
                             Altura
                         </label>
                         <div class="col-6">
@@ -133,6 +143,9 @@
                         <th>
                             Descripcion
                         </th>
+                        <th >
+                            Precio actual
+                        </th>
                         <th class="cl_hidden">
                             Altura
                         </th>
@@ -152,6 +165,9 @@
                             </td>
                             <td>
                                 @elemento.Descripcion
+                            </td>
+                            <td class="cl_hidden">
+                                @elemento.Precio_Actual
                             </td>
                             <td class="cl_hidden">
                                 @elemento.Altura

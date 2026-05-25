@@ -10,16 +10,47 @@ namespace ApiPresentacion.Pages
         private IContratosPresentacion? IContratosPresentacion;
         [BindProperty] public List<Contratos>? Lista { get; set; }
         [BindProperty] public Contratos? Contrato { get; set; }
+        [BindProperty] public bool VienePorCompra { get; set; }
         [BindProperty] public bool Borrando { get; set; }
+        [BindProperty] public int? CantidadCalculo { get; set; }
+         [BindProperty] public int? Portatil { get; set; }
+        [TempData] public int UltimoContratoId { get; set; }
+
 
         public ContratosModel()
         {
             IContratosPresentacion = new ContratosPresentacion();
         }
 
-        public void OnGet()
+        public void OnGet(bool nuevo, int Id_Cliente, int Cantidad, int Id_Portatil)
         {
+
+            if (nuevo)
+            {
+                VienePorCompra = true;
+                Contrato = new Contratos()
+                {
+                    Cliente = Id_Cliente,
+                    Fecha_Firma = DateTime.Now,
+                    Terminos = "Comprara el baño portatil programado a envio",
+                    Fecha_Expiracion = (DateTime.Now).AddMonths(12)
+
+                };
+
+                CantidadCalculo = Cantidad;
+                Portatil = Id_Portatil;
+
+                return;
+            }
             OnPostBtRefrescar();
+        }
+
+
+        public IActionResult OnPostBtFirmar()
+        {
+            OnPostBtGuardar();
+
+            return RedirectToPage("/Ventanas/Compras", new { nuevo = true, Id_Contrato = UltimoContratoId, CantidadCalculo = CantidadCalculo, Portatil = Portatil });
         }
 
 
@@ -29,6 +60,7 @@ namespace ApiPresentacion.Pages
             {
                 if (IContratosPresentacion == null)
                     return;
+                
                 Lista = IContratosPresentacion.Consultar();
                 Contrato = null;
             }
@@ -66,6 +98,7 @@ namespace ApiPresentacion.Pages
                     Contrato = IContratosPresentacion!.Modificar(Contrato!);
                 if (Contrato.Id_Contrato == 0)
                     return;
+                UltimoContratoId = Contrato.Id_Contrato;
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

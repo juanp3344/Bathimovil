@@ -10,6 +10,7 @@ CREATE TABLE [Tipos_Portatiles]
 [Id_Tipo_Portatil] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
 [Nombre] NVARCHAR(50) NOT NULL,
 [Descripcion] NVARCHAR(50) NOT NULL,
+[Precio_Actual] DECIMAL (10,2) NOT NULL,
 [Altura] DECIMAL (10,2) NOT NULL,
 [Ancho] DECIMAL (10,2) NOT NULL,
 [Largo] DECIMAL (10,2) NOT NULL
@@ -96,7 +97,9 @@ CONSTRAINT FK_Clientes_Personas
     REFERENCES Personas([Id_Persona])
 );
 
+INSERT INTO [Clientes]([Cedula],[Nombre], [Correo],[Telefono],[Razon_Social],[Nit_CC],[Direccion_Fiscal]) VALUES ('2173897128912', 'Juan Flores', 'j@gmail.com')
 
+INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
 
 CREATE TABLE [Empleados]
 (-- LISTA MANTENIMIENTO, ENVIOS
@@ -242,7 +245,7 @@ CREATE TABLE [Historial_Precios]
 
 CREATE TABLE [Envios]
 (
-[Id_Envios] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
+[Id_Envio] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
 [Fecha_Salida] SMALLDATETIME NOT NULL,
 [Destino] NVARCHAR(50) NOT NULL,
 [Costo_Envio] DECIMAL (10,2) NOT NULL,
@@ -335,16 +338,14 @@ CREATE TABLE [Permisos]
 );
 
 
-INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Altura],[Ancho],[Largo])VALUES('Portatil_Personal','Para clientes casuales', 12,10,4);
-INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Altura],[Ancho],[Largo])VALUES('Portatil_Empresarial','Para clientes Empresariales', 12,10,4);
+INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[Altura],[Ancho],[Largo])VALUES('Portatil_Personal','Para clientes casuales',60000, 12,10,4);
+INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[Altura],[Ancho],[Largo])VALUES('Portatil_Empresarial','Para clientes Empresariales',120000, 12,10,4);
 INSERT INTO Sedes ([Nombre],[Direccion],[Ciudad],[Telefono_Contacto]) VALUES ('BathiMovil','Medellin','Medellin','834278497AC');
 
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('3472478372848SF',GETDATE(),'Libre',2,1 )
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('54754897493AHDS',GETDATE(),'Libre',2,1 )
-INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('837482743274738',GETDATE(),'Libre',3,1 )
+INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('837482743274738',GETDATE(),'Libre',1,1 )
 
 
 
-EXEC sp_rename 'Aseo_Elementos.Tipo_Aseo_Elemento', 'Tipo_Aseo_Elementos', 'COLUMN';
-EXEC sp_rename 'Envios.Id_Envios', 'Id_Envio', 'COLUMN';

@@ -49,40 +49,59 @@
         </style>
     </head>
 <center>
+
+    <div class="catalogo">
+
+        @foreach (var tipo in Model.ListaTPortatiles!)
+        {
+            <div class="producto">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>@tipo.Nombre</h3>
+                <h3>@tipo.Precio_Actual</h3>
+
+                <form method="post">
+                    <input type="hidden" name="Id" value="@tipo.Id_Tipo_Portatil" />
+                    <input type="submit"
+                           value="Comprar"
+                           asp-page-handler="BtComprarPortatil"
+                           class="btn btn-primary" />
+                </form>
+            </div>
+        }
+
+    </div>
+
     <form method="post">
+        @if (Model!.ConfirmarCantidad)
+        {
+            <div class='popup'>
+                <div class='pp_ms_inner'>
+                    <div style='width:95%'>
 
-        <div class="catalogo">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-group d-flex flex-column align-items-center">
+                            <label>
+                                INGRESE LA CANTIDAD
+                            </label>
+                            <div class="col-6">
+                                <input id="inCantidad"
+                                       class="cts_forms form-control"
+                                       asp-for="@Model.Cantidad" />
 
-            <div class="producto">
-                <img src="https://via.placeholder.com/200" alt="">
-                <h3>Producto 1</h3>
-                <p>$100.000</p>
-                <button>Ver más</button>
+                                <span asp-validation-for="Cantidad"
+                                      class="text-danger d-block text-center"></span>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <input type="submit"
+                                   value="Aceptar"
+                                   asp-page-handler="BtAceptar"
+                                   class="btn btn-secondary" />
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="producto">
-                <img src="https://via.placeholder.com/200" alt="">
-                <h3>Producto 2</h3>
-                <p>$80.000</p>
-                <button>Ver más</button>
-            </div>
-
-            <div class="producto">
-                <img src="https://via.placeholder.com/200" alt="">
-                <h3>Baño portatil Premium</h3>
-                <p>$120.000</p>
-                <input type="submit"
-                       value="Comprar"
-                       asp-page-handler="BtComprarPortatilPersonal"
-                       class="btn btn-primary" />
-                <input type="submit"
-                       value="Prestar"
-                       asp-page-handler="BtPrestar"
-                       class="btn btn-primary" />
-            </div>
-
-        </div>
-        
+        }
        
     </form>
 
