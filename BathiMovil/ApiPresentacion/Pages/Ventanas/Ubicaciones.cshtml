@@ -1,0 +1,82 @@
+﻿@page
+@model ApiPresentacion.Pages.Ventanas.UbicacionesModel
+@{
+    ViewData["Title"] = "Ubicaciones de Portátiles";
+}
+
+<h2>Ubicaciones en tiempo real</h2>
+<partial name="~/Pages/Emergentes/Mensajes.cshtml" />
+
+<form method="post">
+    <!-- BOTONES -->
+    <button asp-page-handler="BtRefrescar">Refrescar</button>
+    <button asp-page-handler="BtNuevo">Nueva ubicación</button>
+
+    <!-- TABLA -->
+    @if (Model.Lista != null)
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Portátil</th>
+                    <th>Ciudad</th>
+                    <th>Dirección</th>
+                    <th>Observación</th>
+                    <th>Actualizado</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var u in Model.Lista)
+                {
+                    <tr>
+                        <td>@u.Id_Ubicacion</td>
+                        <td>@u.Portatil</td>
+                        <td>@u.Ciudad</td>
+                        <td>@u.Direccion</td>
+                        <td>
+                            <button asp-page-handler="BtModificar" value="@u.Id_Ubicacion">Editar</button>
+                            <button asp-page-handler="BtBorrar" value="@u.Id_Ubicacion">Borrar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <!-- FORMULARIO -->
+    @if (Model.Ubicacion != null)
+    {
+        <input type="hidden" asp-for="Ubicacion.Id_Ubicacion" />
+
+        <div>
+            <label>Portátil</label>
+            <select asp-for="Ubicacion.Portatil">
+                @foreach (var p in Model.ListaPortatiles)
+                {
+                    <option value="@p.Id_Portatil">@p.Numero_Serial — @p.Estado_Actual</option>
+                }
+            </select>
+        </div>
+
+        <div>
+            <label>Ciudad</label>
+            <input asp-for="Ubicacion.Ciudad" />
+        </div>
+        <div>
+            <label>Dirección</label>
+            <input asp-for="Ubicacion.Direccion" />
+        </div>
+
+        @if (!Model.Borrando)
+        {
+            <button asp-page-handler="BtGuardar">Guardar</button>
+        }
+        else
+        {
+            <p>¿Eliminar esta ubicación?</p>
+            <button asp-page-handler="BtEliminar">Confirmar eliminación</button>
+        }
+    }
+</form>

@@ -336,7 +336,13 @@ CREATE TABLE [Permisos]
 
 [Rol] INT NOT NULL REFERENCES [Roles]([Id_Rol])
 );
-
+CREATE TABLE [Ubicaciones] (
+    [Id_Ubicacion]      INT IDENTITY(1,1) PRIMARY KEY,
+    [Ciudad]            NVARCHAR(100),
+    [Direccion]         NVARCHAR(200),
+    [Portatil]          INT NOT NULL,
+    FOREIGN KEY (Portatil) REFERENCES Portatiles(Id_Portatil)
+);
 
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[Altura],[Ancho],[Largo])VALUES('Portatil_Personal','Para clientes casuales',60000, 12,10,4);
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[Altura],[Ancho],[Largo])VALUES('Portatil_Empresarial','Para clientes Empresariales',120000, 12,10,4);

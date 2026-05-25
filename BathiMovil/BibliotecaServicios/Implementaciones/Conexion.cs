@@ -56,5 +56,6 @@ namespace BibliotecaServicios.Implementaciones
         public DbSet<Tipos_Intermedia>? Tipos_Intermedia { get; set; }
         public DbSet<Tipos_Portatiles>? Tipos_Portatiles { get; set; }
         public DbSet<Usuarios>? Usuarios { get; set; }
+        public DbSet<Ubicaciones>? Ubicaciones { get; set; }
     }
 }
