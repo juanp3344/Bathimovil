@@ -69,15 +69,17 @@ namespace ApiPresentacion.Pages
                     .Where(p => p.Tipo_Portatil == TPortatil && p.Estado_Actual == "Libre")
                     .Take(Cantidad)
                     .ToList();
-
+                ConfirmarCompra = true;
+                OnPostBtGuardar();
                 // Cambiar estado a "en proceso"
                 foreach (var portatil in portatiles)
                 {
                     portatil.Estado_Actual = "en proceso";
+                    portatil.Compra = Compra!.Id_Compra;
                     IPortatiles_Presentacion.Modificar(portatil);
                 }
 
-                OnPostBtGuardar();
+                
                 ConfirmarCompra = true;
             }
             catch (Exception ex)
@@ -139,7 +141,10 @@ namespace ApiPresentacion.Pages
                     Compra = ICompras_Presentacion!.Modificar(Compra!);
                 if (Compra.Id_Compra == 0)
                     return;
-                OnPostBtRefrescar();
+                if (ConfirmarCompra)
+                    return;
+                    OnPostBtRefrescar();
+                
             }
             catch (Exception ex)
             {

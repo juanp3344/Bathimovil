@@ -96,5 +96,28 @@ namespace BibliotecaPresentacion.Implementaciones
             return JsonConvert.DeserializeObject<Usuarios>(
                 respuesta["Valor"].ToString()!)!;
         }
+
+        public Usuarios CosultarCredenciales(Usuarios entidad)
+        {
+            if (entidad.Id_Usuario != 0)
+                throw new Exception("Ya se guardo");
+
+            this.iComunicaciones = new Comunicaciones();
+
+            var datos = new Dictionary<string, object>();
+            datos["Url"] = "http://localhost:5010/Usuarios/ConsultarInformacion";
+            datos["Entidad"] = entidad;
+
+            this.iComunicaciones = new Comunicaciones();
+            var task = this.iComunicaciones.EjecutarPost(datos)!;
+            task.Wait();
+            var respuesta = task.Result;
+
+            if (!respuesta.ContainsKey("Valor"))
+                return new Usuarios();
+
+            return JsonConvert.DeserializeObject<Usuarios>(
+                respuesta["Valor"].ToString()!)!;
+        }
     }
 }

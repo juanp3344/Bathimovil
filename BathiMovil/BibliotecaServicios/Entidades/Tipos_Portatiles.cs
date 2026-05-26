@@ -10,6 +10,7 @@ namespace BibliotecaServicios.Entidades
         public string? Nombre { get; set; }
         public string? Descripcion { get; set; }
         public decimal Precio_Actual { get; set; }
+        public string? ImagenUrl { get; set; }
         public decimal Altura { get; set; }
         public decimal Ancho { get; set; }
         public decimal Largo { get; set; }

@@ -1,18 +1,16 @@
 ﻿@page
-@model UsuariosModel
+@model RolesModel
 @{
-    ViewData["Title"] = "Usuarios";
+    ViewData["Title"] = "Roles";
 }
 <center>
     <div>
-        
         <form method="POST"
               enctype="multipart/form-data">
             @Html.AntiForgeryToken()
-           
 
             <div align="left">
-                <h3>Usuarios</h3>
+                <h3>Roles</h3>
             </div>
             
             <div>
@@ -24,77 +22,50 @@
                        value="Nuevo"
                        class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Usuario != null)" />
+                       disabled="@(Model.Rol != null)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Usuario == null)" />
+                       disabled="@(Model.Rol == null)" />
             </div>
 
-            @if (Model.Usuario != null)
+            @if (Model.Rol != null)
             {
                 <input type="hidden"
-                       asp-for="@Model.Usuario!.Id_Usuario" />
-                <input type="hidden" asp-for="rolesLista" />
+                       asp-for="@Model.Rol!.Id_Rol" />
+
                 <div>
                     <div class="form-group">
                         <label>
-                            Username
+                            Nombre_Rol
                         </label>
                         <div class="col-6">
-                            <input id="inUsername"
+                            <input id="inNombre_Rol"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Usuario!.Username" />
+                                   asp-for="@Model.Rol!.Nombre_Rol" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Password_Hash
+                            Descripcion_Rol
                         </label>
                         <div class="col-6">
-                            <input id="inPassword_Hash"
+                            <input id="inDescripcion_Rol"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Usuario!.Password_Hash" />
+                                   asp-for="@Model.Rol!.Descripcion_Rol" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label>
-                            Activo
+                            Salario_Empleado
                         </label>
                         <div class="col-6">
-                            <input id="inActivo"
-                                   asp-for="@Model.Usuario!.Activo" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            Fecha_Ultimo_Acceso
-                        </label>
-                        <div class="col-6">
-                            <input id="inFecha_Ultimo_Acceso"
+                            <input id="inSalario_Empleado"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Usuario!.Fecha_Ultimo_Acceso" />
+                                   asp-for="@Model.Rol!.Salario_Empleado" />
                         </div>
                     </div>
-                    <div style="margin-top: 20px;">
-                    <select id="nmPersonas"
-                            class="form-control"
-                            asp-for="@Model.Usuario!.Persona"
-                            asp-items="@(new SelectList(Model.CargarPersonas(), "Id_Persona", "Cedula"))">
-                        <option value="">-- Seleccione un rol --</option>
-                    </select>
-                    </div>
-
-                    <div style="margin-top: 20px;">
-                    <select id="nmRoles"
-                            class="form-control"
-                            asp-for="@Model.Usuario!.Rol"
-                            asp-items="@(new SelectList(Model.CargarRoles(), "Id_Rol", "Nombre_Rol"))">
-                        <option value="">-- Seleccione un rol --</option>
-                    </select>
-                    </div>
-                    
                 </div>
             }
             
@@ -104,7 +75,7 @@
                 ;
             }
 
-            @if (Model.Usuario != null && Model.Borrando)
+            @if (Model.Rol != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
@@ -114,10 +85,10 @@
                             </h2>
 
                             <h6 align="left">
-                                Desea borrar el Usuario?
+                                Desea borrar el Rol?
                             </h6>
                             <h6 align="left">
-                                @Model.Usuario!.Username
+                                @Model.Rol!.Nombre_Rol
                             </h6>
                             
                             <input type="submit"
@@ -137,22 +108,13 @@
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>
-                            Username
+                            Nombre_Rol
                         </th>
                         <th>
-                            Password_Hash
+                            Descripcion_Rol
                         </th>
                         <th class="cl_hidden">
-                            Activo
-                        </th>
-                        <th class="cl_hidden">
-                            Fecha_Ultimo_Acceso
-                        </th>
-                        <th class="cl_hidden">
-                            Persona
-                        </th>
-                        <th class="cl_hidden">
-                            Rol
+                            Salario_Empleado
                         </th>
                     </tr>
                 
@@ -160,34 +122,25 @@
                     {
                         <tr>
                             <td>
-                                @elemento.Username
+                                @elemento.Nombre_Rol
                             </td>
                             <td>
-                                @elemento.Password_Hash
+                                @elemento.Descripcion_Rol
                             </td>
                             <td class="cl_hidden">
-                                @elemento.Activo
-                            </td>
-                            <td>
-                                @elemento.Fecha_Ultimo_Acceso
-                            </td>
-                            <td class="cl_hidden">
-                                @elemento.Persona
-                            </td>
-                            <td class="cl_hidden">
-                                @elemento.Rol
+                                @elemento.Salario_Empleado
                             </td>
                             <td>
                                 <input type="submit"
                                        value="Modicar"
                                        asp-page-handler="BtModificar"
                                        class="btn btn-warning"
-                                       asp-route-data="@elemento.Id_Usuario" />
+                                       asp-route-data="@elemento.Id_Rol" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
                                        class="btn btn-danger"
-                                       asp-route-data="@elemento.Id_Usuario" />
+                                       asp-route-data="@elemento.Id_Rol" />
                             </td>
                         </tr>
                     }

@@ -55,7 +55,7 @@
         @foreach (var tipo in Model.ListaTPortatiles!)
         {
             <div class="producto">
-                <img src="https://via.placeholder.com/200" alt="">
+                <img src= "@tipo.ImagenUrl" alt="@tipo.Nombre">
                 <h3>@tipo.Nombre</h3>
                 <h3>@tipo.Precio_Actual</h3>
 

@@ -11,6 +11,7 @@ CREATE TABLE [Tipos_Portatiles]
 [Nombre] NVARCHAR(50) NOT NULL,
 [Descripcion] NVARCHAR(50) NOT NULL,
 [Precio_Actual] DECIMAL (10,2) NOT NULL,
+[ImagenUrl] NVARCHAR(200) NOT NULL,
 [Altura] DECIMAL (10,2) NOT NULL,
 [Ancho] DECIMAL (10,2) NOT NULL,
 [Largo] DECIMAL (10,2) NOT NULL
@@ -65,7 +66,7 @@ CREATE TABLE [Roles]
 (
 [Id_Rol] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
 [Nombre_Rol] NVARCHAR(50) NOT NULL ,
-[Descripcion_Rol] NVARCHAR(50) NOT NULL,
+[Descripcion_Rol] NVARCHAR(100) NOT NULL,
 [Salario_Empleado] DECIMAL(10,2) NULL
 );
 
@@ -97,9 +98,7 @@ CONSTRAINT FK_Clientes_Personas
     REFERENCES Personas([Id_Persona])
 );
 
-INSERT INTO [Clientes]([Cedula],[Nombre], [Correo],[Telefono],[Razon_Social],[Nit_CC],[Direccion_Fiscal]) VALUES ('2173897128912', 'Juan Flores', 'j@gmail.com')
 
-INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
 
 CREATE TABLE [Empleados]
 (-- LISTA MANTENIMIENTO, ENVIOS
@@ -338,8 +337,8 @@ CREATE TABLE [Permisos]
 );
 
 
-INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[Altura],[Ancho],[Largo])VALUES('Portatil_Personal','Para clientes casuales',60000, 12,10,4);
-INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[Altura],[Ancho],[Largo])VALUES('Portatil_Empresarial','Para clientes Empresariales',120000, 12,10,4);
+INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil_Personal','Para clientes casuales',60000,'/global-azul.jpg', 12,10,4);
+INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil_Empresarial','Para clientes Empresariales',120000,'/BPortatilP.jfif', 12,10,4);
 INSERT INTO Sedes ([Nombre],[Direccion],[Ciudad],[Telefono_Contacto]) VALUES ('BathiMovil','Medellin','Medellin','834278497AC');
 
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
@@ -347,5 +346,14 @@ INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], 
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('54754897493AHDS',GETDATE(),'Libre',2,1 )
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('837482743274738',GETDATE(),'Libre',1,1 )
 
+
+INSERT INTO [Roles] 
+([Nombre_Rol], [Descripcion_Rol],[Salario_Empleado]) VALUES ('Administrador', 'Acceso completo del sistema', 40000000)
+
+INSERT INTO [Roles] 
+([Nombre_Rol], [Descripcion_Rol],[Salario_Empleado]) VALUES ('Mantenimiento', 'Acceso parcial del sistema', 20000000)
+
+INSERT INTO [Roles] 
+([Nombre_Rol], [Descripcion_Rol]) VALUES ('Cliente', 'Poco alcance  del sistema')
 
 

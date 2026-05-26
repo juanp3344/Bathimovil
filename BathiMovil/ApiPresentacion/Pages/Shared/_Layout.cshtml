@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,17 +30,16 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Ventas">Ventas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Compras">Compras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/TiposPortatiles">TiposPortatiles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Contratos">Contratos</a>
-                        </li>
+                        
                     </ul>
                 </div>
+                @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+                @if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null)
+                {
+                    <a href="/sesiones/Logout" class="btn btn-outline-danger btn-sm ml-auto">
+                        Cerrar sesión
+                    </a>
+                }
             </div>
         </nav>
     </header>

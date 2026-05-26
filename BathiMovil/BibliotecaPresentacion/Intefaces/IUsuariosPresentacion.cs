@@ -13,5 +13,6 @@ namespace BibliotecaPresentacion.Intefaces
         Usuarios Modificar(Usuarios entidad);
 
         Usuarios Eliminar(Usuarios entidad);
+        Usuarios CosultarCredenciales(Usuarios entidad);
     }
 }

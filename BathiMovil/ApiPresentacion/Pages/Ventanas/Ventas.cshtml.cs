@@ -3,7 +3,6 @@ using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ApiPresentacion.Pages
 {
@@ -25,6 +24,13 @@ namespace ApiPresentacion.Pages
             Tipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
             ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion();
             ListaTPortatiles = ITiposPortatiles_Presentacion.Consultar();
+
+            var variable_session = HttpContext.Session.GetString("Usuario");
+            if (String.IsNullOrEmpty(variable_session))
+            {
+                HttpContext.Response.Redirect("/");
+                return;
+            }
         }
 
 

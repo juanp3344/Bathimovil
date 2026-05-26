@@ -63,5 +63,13 @@ namespace BibliotecaServicios.Implementaciones
             iConexion.SaveChanges();
             return entidad;
         }
+
+        public Usuarios ComprobarCredenciales(Usuarios entidad)
+        {
+           var Comprobar = Consultar().
+           FirstOrDefault(p => p.Username == entidad.Username && p.Password_Hash == entidad.Password_Hash);
+
+            return Comprobar;
+        }
     }
 }

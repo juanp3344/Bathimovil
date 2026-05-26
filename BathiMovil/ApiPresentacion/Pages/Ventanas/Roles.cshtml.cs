@@ -1,54 +1,36 @@
 using BibliotecaPresentacion.Implementaciones;
-using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ApiPresentacion.Pages
 {
-    public class UsuariosModel : PageModel
+    public class RolesModel : PageModel
     {
-        private IRolesPresentacion? IRoles_Presentacion;
-        private IUsuariosPresentacion? IUsuarios_Presentacion;
-        private IPersonasPresentacion? IPersonasPresentacion;
-        [BindProperty] public List<Usuarios>? Lista { get; set; }
-        [BindProperty] public Usuarios? Usuario { get; set; }
-        [BindProperty] public List<Roles>? rolesLista { get; set; }
-        [BindProperty] public List<Personas>? Personas { get; set; }
+        private RolesPresentacion? IRoles_Presentacion;
+        [BindProperty] public List<Roles>? Lista { get; set; }
+        [BindProperty] public Roles? Rol { get; set; }
         [BindProperty] public bool Borrando { get; set; }
 
-        public UsuariosModel()
+        public RolesModel()
         {
-            IUsuarios_Presentacion = new UsuariosPresentacion();
-            IPersonasPresentacion = new PersonasPresentacion();
             IRoles_Presentacion = new RolesPresentacion();
         }
 
         public void OnGet()
         {
-           
-
-        OnPostBtRefrescar();
+            OnPostBtRefrescar();
         }
 
-        public List<Personas> CargarPersonas()
-        {
-            return Personas = IPersonasPresentacion!.Consultar();
-        }
-
-        public List<Roles> CargarRoles()
-        {
-            return rolesLista = IRoles_Presentacion!.Consultar();
-        }
 
         public void OnPostBtRefrescar()
         {
             try
             {
-                if (IUsuarios_Presentacion == null)
+                if (IRoles_Presentacion == null)
                     return;
-                Lista = IUsuarios_Presentacion.Consultar();
-                Usuario = null;
+                Lista = IRoles_Presentacion.Consultar();
+                Rol = null;
             }
             catch (Exception ex)
             {
@@ -63,7 +45,7 @@ namespace ApiPresentacion.Pages
             try
             {
                 OnPostBtRefrescar();
-                Usuario = Lista!.FirstOrDefault(x => x.Id_Usuario == data);
+                Rol = Lista!.FirstOrDefault(x => x.Id_Rol == data);
                 Lista = null;
                 Borrando = false;
             }
@@ -77,13 +59,13 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Usuario == null)
+                if (Rol == null)
                     return;
-                if (Usuario.Id_Usuario == 0)
-                    Usuario = IUsuarios_Presentacion!.Guardar(Usuario!);
+                if (Rol.Id_Rol == 0)
+                    Rol = IRoles_Presentacion!.Guardar(Rol!);
                 else
-                    Usuario = IUsuarios_Presentacion!.Modificar(Usuario!);
-                if (Usuario.Id_Usuario == 0)
+                    Rol = IRoles_Presentacion!.Modificar(Rol!);
+                if (Rol.Id_Rol == 0)
                     return;
                 OnPostBtRefrescar();
             }
@@ -97,9 +79,9 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Usuario == null)
+                if (Rol == null)
                     return;
-                Usuario = IUsuarios_Presentacion!.Eliminar(Usuario!);
+                Rol = IRoles_Presentacion!.Eliminar(Rol!);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)
@@ -113,7 +95,7 @@ namespace ApiPresentacion.Pages
             try
             {
                 OnPostBtRefrescar();
-                Usuario = Lista!.FirstOrDefault(x => x.Id_Usuario == data);
+                Rol = Lista!.FirstOrDefault(x => x.Id_Rol == data);
                 Lista = null;
                 Borrando = true;
             }

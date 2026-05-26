@@ -101,6 +101,8 @@ namespace Unitarias
             {
                 Nombre = "Tipo Portátil Test",
                 Descripcion = "Portátil estándar de prueba",
+                Precio_Actual = 1212312332,
+                ImagenUrl= "Imagen",
                 Altura = 25,
                 Ancho = 35,
                 Largo = 5

@@ -11,5 +11,6 @@ namespace BibliotecaServicios.Interfaces
         Usuarios Guardar(Usuarios entidad);
         Usuarios Modificar(Usuarios entidad);
         Usuarios Eliminar(Usuarios entidad);
+        Usuarios ComprobarCredenciales(Usuarios entidad);
     }
 }

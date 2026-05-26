@@ -52,5 +52,14 @@ namespace ApiServicios.Controllers
             return this.IUsuariosServicios!.Eliminar(id);
         }
 
+        [HttpPost]
+        public Usuarios ConsultarInformacion(Usuarios Usuario)
+        {
+            if (this.IUsuariosServicios == null)
+                throw new Exception("No implementado");
+            return this.IUsuariosServicios!.ComprobarCredenciales(Usuario);
+
+        }
+
     }
 }
