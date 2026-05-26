@@ -11,7 +11,6 @@ namespace BibliotecaServicios.Entidades
         public string? Ciudad { get; set; }
         public string? Direccion { get; set; }
 
-
         public int Portatil { get; set; }
 
         [ForeignKey("Portatil")]

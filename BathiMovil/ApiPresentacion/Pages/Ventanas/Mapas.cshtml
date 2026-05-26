@@ -1,0 +1,46 @@
+﻿@page
+@model ApiPresentacion.Pages.Ventanas.MapaModel
+@{
+    ViewData["Title"] = "Mapa de Portátiles";
+}
+
+<h3>📍 Mapa de Portátiles</h3>
+
+@if (!string.IsNullOrEmpty(Model.FiltroSerial))
+{
+    <p>
+        Mostrando ubicación del portátil: <strong>@Model.FiltroSerial</strong>
+        — <a href="/Ventanas/Mapa">Ver todos</a>
+    </p>
+}
+
+<div id="mapa" style="height: 600px; border-radius: 8px;"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    var mapa = L.map('mapa').setView([4.7110, -74.0721], 6);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+    }).addTo(mapa);
+
+    var ubicaciones = @Html.Raw(Model.UbicacionesJson);
+    var pines = [];
+
+    ubicaciones.forEach(function (u) {
+    var pin = L.marker([u.latitud, u.longitud])
+    .addTo(mapa)
+    .bindPopup(
+    "<b>Portátil: " + u.serial + "</b><br>" +
+    u.direccion + "<br>" + u.ciudad
+    );
+    pines.push(pin);
+    });
+
+    if (pines.length > 0) {
+    var grupo = L.featureGroup(pines);
+    mapa.fitBounds(grupo.getBounds().pad(0.3));
+    }
+</script>
