@@ -398,5 +398,19 @@ namespace Unitarias
             conexion.SaveChanges();
             return e;
         }
+
+        public static Ubicaciones CrearUbicacion(IConexion conexion, int idPortatil)
+        {
+            var e = new Ubicaciones()
+            {
+                Ciudad = "Medellín",
+                Direccion = $"Calle {DateTime.Now.Second} # {DateTime.Now.Millisecond}-10",
+                Portatil = idPortatil
+            };
+            conexion.Ubicaciones!.Add(e);
+            conexion.SaveChanges();
+            return e;
+        }
     }
+
 }

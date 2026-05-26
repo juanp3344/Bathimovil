@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\compras.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\compras.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\unitarias\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\sesiones\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\sesiones\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\compras.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\compras.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\ventas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\apipresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\apipresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\unitarias\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\tipos_portatiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\historial_precios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\historial_precios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\pages\\sesiones\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\sesiones\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\proyecto_programacion_de_software\\bathimovil\\bathimovil\\apipresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -273,110 +273,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Ventas.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
-              "ViewState": "AgIAAAQAAACgFye+2tUmwBYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T05:28:00.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAABcAAACApDUGnbAcwE0AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T04:54:01.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Tipos_Portatiles.cs",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
-              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
-              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T04:23:41.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Index.cshtml",
-              "ViewState": "AgIAANIAAAAAAAAAAAAwwPkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-25T20:14:11.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApiPresentacion",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\ApiPresentacion.csproj",
-              "RelativeDocumentMoniker": "ApiPresentacion\\ApiPresentacion.csproj",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\ApiPresentacion.csproj",
-              "RelativeToolTip": "ApiPresentacion\\ApiPresentacion.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-26T04:30:41.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Compras.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:37:37.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Usuarios.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
-              "ViewState": "AgIAAAUAAACAEru2twsHwCEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T03:26:38.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Usuarios.cshtml",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
-              "ViewState": "AgIAADoAAAAAoxQ7GpcAwF8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-26T03:25:59.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\sesiones\\Logout.cshtml.cs",
@@ -384,12 +280,132 @@
               "RelativeToolTip": "ApiPresentacion\\Pages\\sesiones\\Logout.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T02:49:46.016Z",
+              "WhenOpened": "2026-05-26T06:00:16.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ventas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "ViewState": "AgIAAAQAAACgFye+2tUmwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:00:16.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAPkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-26T06:00:16.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApiPresentacion.csproj",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\ApiPresentacion.csproj",
+              "RelativeDocumentMoniker": "ApiPresentacion\\ApiPresentacion.csproj",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\ApiPresentacion.csproj",
+              "RelativeToolTip": "ApiPresentacion\\ApiPresentacion.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-26T06:00:16.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-26T06:00:16.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatosHelper.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
+              "RelativeDocumentMoniker": "Unitarias\\DatosHelper.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
+              "RelativeToolTip": "Unitarias\\DatosHelper.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwGgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:00:16.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Tipos_Portatiles.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:00:16.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAABcAAACApDUGnbAcwE0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:00:16.584Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Compras.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:00:16.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Usuarios.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "ViewState": "AgIAAAUAAACAEru2twsHwCEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T06:00:16.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Usuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "ViewState": "AgIAADoAAAAAoxQ7GpcAwF8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-26T06:00:16.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Ventas.cshtml",
               "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
@@ -397,34 +413,7 @@
               "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
               "ViewState": "AgIAACIAAADgVN0jm38nwCsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-24T16:53:10.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAsAAAAAo5I6AUEpwB8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-26T05:26:38.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DatosHelper.cs",
-              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
-              "RelativeDocumentMoniker": "Unitarias\\DatosHelper.cs",
-              "ToolTip": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
-              "RelativeToolTip": "Unitarias\\DatosHelper.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAGgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T04:24:43.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T06:00:16.716Z"
             },
             {
               "$type": "Document",
@@ -436,8 +425,7 @@
               "RelativeToolTip": "ApiPresentacion\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T20:33:27.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T06:00:16.724Z"
             },
             {
               "$type": "Document",
@@ -449,7 +437,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Implementos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:35.599Z"
+              "WhenOpened": "2026-05-26T06:00:16.729Z"
             },
             {
               "$type": "Document",
@@ -461,7 +449,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Sedes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:47:53.327Z"
+              "WhenOpened": "2026-05-26T06:00:16.733Z"
             },
             {
               "$type": "Document",
@@ -473,11 +461,11 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Portatiles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:16.064Z"
+              "WhenOpened": "2026-05-26T06:00:16.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Historial_Precios.cshtml",
               "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml",
@@ -485,8 +473,7 @@
               "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml",
               "ViewState": "AgIAADYAAAAAj+kJS5wQwE4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-26T03:21:44.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T06:00:16.734Z"
             },
             {
               "$type": "Document",
@@ -498,7 +485,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Historial_Precios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:38.912Z"
+              "WhenOpened": "2026-05-26T06:00:16.739Z"
             },
             {
               "$type": "Document",
@@ -510,7 +497,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Facturas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:42.588Z"
+              "WhenOpened": "2026-05-26T06:00:16.739Z"
             },
             {
               "$type": "Document",
@@ -522,7 +509,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Envios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:47.121Z"
+              "WhenOpened": "2026-05-26T06:00:16.744Z"
             },
             {
               "$type": "Document",
@@ -534,7 +521,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Empleados.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:50.207Z"
+              "WhenOpened": "2026-05-26T06:00:16.748Z"
             },
             {
               "$type": "Document",
@@ -546,7 +533,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Detalle_Facturas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:46:35.017Z"
+              "WhenOpened": "2026-05-26T06:00:16.752Z"
             },
             {
               "$type": "Document",
@@ -558,7 +545,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Auditorias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:45:57.683Z"
+              "WhenOpened": "2026-05-26T06:00:16.754Z"
             },
             {
               "$type": "Document",
@@ -570,55 +557,51 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPrestamosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:33:31.383Z"
+              "WhenOpened": "2026-05-26T06:00:16.755Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "IBalones_Presentaciones.cs [Solo lectura]",
+              "Title": "IBalones_Presentaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
-              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs [Solo lectura]",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T04:14:18.478Z",
-              "EditorCaption": " [Solo lectura]"
+              "WhenOpened": "2026-05-26T06:00:16.77Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "IComunicaciones.cs [Solo lectura]",
+              "Title": "IComunicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
-              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs [Solo lectura]",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T04:13:30.78Z",
-              "EditorCaption": " [Solo lectura]"
+              "WhenOpened": "2026-05-26T06:00:16.774Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "Balones_Presentaciones.cs [Solo lectura]",
+              "Title": "Balones_Presentaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
-              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs [Solo lectura]",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T04:12:30.006Z",
-              "EditorCaption": " [Solo lectura]"
+              "WhenOpened": "2026-05-26T06:00:16.776Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Comunicaciones.cs [Solo lectura]",
+              "Title": "Comunicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
-              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs [Solo lectura]",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T04:11:32.284Z",
-              "EditorCaption": " [Solo lectura]"
+              "WhenOpened": "2026-05-26T06:00:16.78Z"
             },
             {
               "$type": "Document",
@@ -630,7 +613,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\ITipo_Aseo_ElementosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:34:34.718Z"
+              "WhenOpened": "2026-05-26T06:00:16.784Z"
             },
             {
               "$type": "Document",
@@ -642,7 +625,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipos_IntermediaServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T02:55:34.684Z"
+              "WhenOpened": "2026-05-26T06:00:16.787Z"
             },
             {
               "$type": "Document",
@@ -654,7 +637,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\ImplementosController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:36:43.275Z"
+              "WhenOpened": "2026-05-26T06:00:16.787Z"
             },
             {
               "$type": "Document",
@@ -666,7 +649,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipo_ImplementosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T03:01:13.431Z"
+              "WhenOpened": "2026-05-26T06:00:16.794Z"
             },
             {
               "$type": "Document",
@@ -678,7 +661,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\Prestamos_PortatilesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:39:02.943Z"
+              "WhenOpened": "2026-05-26T06:00:16.799Z"
             },
             {
               "$type": "Document",
@@ -690,7 +673,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\Aseo_ElementosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T01:01:07.944Z"
+              "WhenOpened": "2026-05-26T06:00:16.801Z"
             },
             {
               "$type": "Document",
@@ -702,7 +685,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\PagosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:38:02.534Z"
+              "WhenOpened": "2026-05-26T06:00:16.804Z"
             },
             {
               "$type": "Document",
@@ -714,7 +697,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\Tipos_PortatilesController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:41:44.654Z"
+              "WhenOpened": "2026-05-26T06:00:16.806Z"
             },
             {
               "$type": "Document",
@@ -726,7 +709,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\Tipo_Aseo_ElementosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:41:02.824Z"
+              "WhenOpened": "2026-05-26T06:00:16.81Z"
             },
             {
               "$type": "Document",
@@ -738,7 +721,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\PrestamosController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:38:46.371Z"
+              "WhenOpened": "2026-05-26T06:00:16.812Z"
             },
             {
               "$type": "Document",
@@ -750,7 +733,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T03:01:35.944Z"
+              "WhenOpened": "2026-05-26T06:00:16.816Z"
             },
             {
               "$type": "Document",
@@ -762,7 +745,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipo_Aseo_ElementosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T02:55:23.454Z"
+              "WhenOpened": "2026-05-26T06:00:16.818Z"
             },
             {
               "$type": "Document",
@@ -774,7 +757,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\SedesServicios.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAmwAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T03:00:40.92Z"
+              "WhenOpened": "2026-05-26T06:00:16.822Z"
             },
             {
               "$type": "Document",
@@ -786,7 +769,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T03:00:07.659Z"
+              "WhenOpened": "2026-05-26T06:00:16.824Z"
             },
             {
               "$type": "Document",
@@ -798,7 +781,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Prestamos_PortatilesServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T03:00:23.432Z"
+              "WhenOpened": "2026-05-26T06:00:16.826Z"
             },
             {
               "$type": "Document",
@@ -810,7 +793,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PersonasServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T02:58:08.269Z"
+              "WhenOpened": "2026-05-26T06:00:16.83Z"
             },
             {
               "$type": "Document",
@@ -822,7 +805,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PermisosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:54:55.995Z"
+              "WhenOpened": "2026-05-26T06:00:16.834Z"
             },
             {
               "$type": "Document",
@@ -834,7 +817,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PagosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T02:59:32.777Z"
+              "WhenOpened": "2026-05-26T06:00:16.838Z"
             },
             {
               "$type": "Document",
@@ -846,7 +829,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\ImplementosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T02:56:25.524Z"
+              "WhenOpened": "2026-05-26T06:00:16.84Z"
             },
             {
               "$type": "Document",
@@ -858,7 +841,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPagosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:32:31.359Z"
+              "WhenOpened": "2026-05-26T06:00:16.844Z"
             },
             {
               "$type": "Document",
@@ -870,7 +853,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPersonasServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:32:58.399Z"
+              "WhenOpened": "2026-05-26T06:00:16.85Z"
             },
             {
               "$type": "Document",
@@ -882,7 +865,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPrestamos_PortatilesServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:33:44.944Z"
+              "WhenOpened": "2026-05-26T06:00:16.85Z"
             },
             {
               "$type": "Document",
@@ -894,7 +877,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPermisosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:32:49.76Z"
+              "WhenOpened": "2026-05-26T06:00:16.854Z"
             },
             {
               "$type": "Document",
@@ -906,7 +889,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\BodegasServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T02:49:07.544Z"
+              "WhenOpened": "2026-05-26T06:00:16.854Z"
             },
             {
               "$type": "Document",
@@ -918,7 +901,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\PermisosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:38:10.805Z"
+              "WhenOpened": "2026-05-26T06:00:16.854Z"
             },
             {
               "$type": "Document",
@@ -930,7 +913,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\PersonasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:38:20.785Z"
+              "WhenOpened": "2026-05-26T06:00:16.866Z"
             },
             {
               "$type": "Document",
@@ -942,7 +925,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\SedesController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwCIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:40:45.212Z"
+              "WhenOpened": "2026-05-26T06:00:16.868Z"
             },
             {
               "$type": "Document",
@@ -954,7 +937,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\Tipos_ImplementosController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:41:16.065Z"
+              "WhenOpened": "2026-05-26T06:00:16.87Z"
             },
             {
               "$type": "Document",
@@ -966,7 +949,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\Tipos_IntermediaController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:41:33.134Z"
+              "WhenOpened": "2026-05-26T06:00:16.874Z"
             },
             {
               "$type": "Document",
@@ -978,7 +961,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\ITipos_PortatilesServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:35:25.653Z"
+              "WhenOpened": "2026-05-26T06:00:16.878Z"
             },
             {
               "$type": "Document",
@@ -990,7 +973,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IImplementosServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:31:23.961Z"
+              "WhenOpened": "2026-05-26T06:00:16.882Z"
             },
             {
               "$type": "Document",
@@ -1002,7 +985,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Interfaces\\ITipos_IntermediaServicios.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T22:34:57.555Z"
+              "WhenOpened": "2026-05-26T06:00:16.884Z"
             }
           ]
         }
