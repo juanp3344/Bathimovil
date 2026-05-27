@@ -9,5 +9,6 @@ namespace BibliotecaServicios.Interfaces
         Clientes Guardar(Clientes entidad);
         Clientes Modificar(Clientes entidad);
         Clientes Eliminar(Clientes entidad);
+        Clientes BuscarPorId(Clientes Clientes);
     }
 }

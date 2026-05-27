@@ -51,5 +51,13 @@ namespace ApiServicios.Controllers
             return this.IClientesServicios!.Eliminar(id);
         }
 
+        [HttpPost]
+        public Clientes BuscarPorId(Clientes Entidad)
+        {
+            if (this.IClientesServicios == null)
+                throw new Exception("No implementado");
+
+            return this.IClientesServicios!.BuscarPorId(Entidad);
+        }
     }
 }

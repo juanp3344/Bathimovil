@@ -96,5 +96,25 @@ namespace BibliotecaPresentacion.Implementaciones
             return JsonConvert.DeserializeObject<Clientes>(
                 respuesta["Valor"].ToString()!)!;
         }
+
+        public Clientes BuscarPorId(Clientes entidad)
+        {
+            this.iComunicaciones = new Comunicaciones();
+
+            var datos = new Dictionary<string, object>();
+            datos["Url"] = "http://localhost:5010/Clientes/BuscarPorId";
+            datos["Entidad"] = entidad;
+
+            this.iComunicaciones = new Comunicaciones();
+            var task = this.iComunicaciones.EjecutarPost(datos)!;
+            task.Wait();
+            var respuesta = task.Result;
+
+            if (!respuesta.ContainsKey("Valor"))
+                return new Clientes();
+
+            return JsonConvert.DeserializeObject<Clientes>(
+                respuesta["Valor"].ToString()!)!;
+        }
     }
 }

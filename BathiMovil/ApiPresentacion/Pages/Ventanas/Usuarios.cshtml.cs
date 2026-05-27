@@ -11,24 +11,27 @@ namespace ApiPresentacion.Pages
         private IRolesPresentacion? IRoles_Presentacion;
         private IUsuariosPresentacion? IUsuarios_Presentacion;
         private IPersonasPresentacion? IPersonasPresentacion;
+        private IClientesPresentacion? IClientesPresentacion;
         [BindProperty] public List<Usuarios>? Lista { get; set; }
         [BindProperty] public Usuarios? Usuario { get; set; }
         [BindProperty] public List<Roles>? rolesLista { get; set; }
         [BindProperty] public List<Personas>? Personas { get; set; }
         [BindProperty] public bool Borrando { get; set; }
+        [BindProperty] public bool Escliente { get; set; } = false;
 
         public UsuariosModel()
         {
             IUsuarios_Presentacion = new UsuariosPresentacion();
             IPersonasPresentacion = new PersonasPresentacion();
             IRoles_Presentacion = new RolesPresentacion();
+            IClientesPresentacion = new ClientesPresentacion();
         }
 
         public void OnGet()
         {
-           
 
-        OnPostBtRefrescar();
+
+            OnPostBtRefrescar();
         }
 
         public List<Personas> CargarPersonas()
@@ -56,7 +59,7 @@ namespace ApiPresentacion.Pages
             }
         }
 
-        
+
 
         public void OnPostBtModificar(int data)
         {
@@ -73,6 +76,11 @@ namespace ApiPresentacion.Pages
             }
         }
 
+        public IActionResult BtSeguirRegistrando()
+        {
+            return Page();
+        }
+
         public void OnPostBtGuardar()
         {
             try
@@ -80,7 +88,22 @@ namespace ApiPresentacion.Pages
                 if (Usuario == null)
                     return;
                 if (Usuario.Id_Usuario == 0)
+                {
+                    if (Usuario.Rol == 1 || Usuario.Rol == 2)
+                    {
+                        var id = new Clientes()
+                        {
+                            Id_Persona = Usuario.Persona
+                        };
+                        var cliente = IClientesPresentacion!.BuscarPorId(id);
+                        if (cliente != null)
+                        {
+                            Escliente = true;
+                            return;
+                        }
+                    }
                     Usuario = IUsuarios_Presentacion!.Guardar(Usuario!);
+                }
                 else
                     Usuario = IUsuarios_Presentacion!.Modificar(Usuario!);
                 if (Usuario.Id_Usuario == 0)

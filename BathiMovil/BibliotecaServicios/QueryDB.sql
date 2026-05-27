@@ -55,10 +55,10 @@ CREATE TABLE [Tipos_Implementos]
 CREATE TABLE [Personas]
 (-- LISTA CONTRATOS Y FACTURAS
 [Id_Persona] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Cedula] NVARCHAR(50) NOT NULL UNIQUE,
-[Nombre] NVARCHAR(50) NOT NULL,
-[Correo] NVARCHAR(50) NOT NULL,
-[Telefono] NVARCHAR(50) NOT NULL
+[Cedula] NVARCHAR(50)  NULL,
+[Nombre] NVARCHAR(50)  NULL,
+[Correo] NVARCHAR(50)  NULL,
+[Telefono] NVARCHAR(50)  NULL
 );
 
 
@@ -90,9 +90,9 @@ CREATE TABLE [Usuarios]
 CREATE TABLE [Clientes]
 (-- LISTA CONTRATOS Y FACTURAS
 [Id_Persona] int NOT NULL PRIMARY KEY,
-[Razon_Social] NVARCHAR(50) NOT NULL,
-[Nit_CC] NVARCHAR(50) NOT NULL,
-[Direccion_Fiscal] NVARCHAR(50) NOT NULL
+[Razon_Social] NVARCHAR(50)  NULL,
+[Nit_CC] NVARCHAR(50)  NULL,
+[Direccion_Fiscal] NVARCHAR(50)  NULL
 CONSTRAINT FK_Clientes_Personas
     FOREIGN KEY ([Id_Persona])
     REFERENCES Personas([Id_Persona])
@@ -363,3 +363,11 @@ INSERT INTO [Roles]
 ([Nombre_Rol], [Descripcion_Rol]) VALUES ('Cliente', 'Poco alcance  del sistema')
 
 
+
+INSERT INTO [Personas]([Cedula], [Nombre], [Correo],[Telefono] ) VALUES ('3482748937', 'Juan Flores', 'J@gmail.com', '213787821')
+
+
+INSERT INTO  [Empleados]([Id_Persona], [Fecha_Ingreso] ,[Salario_Base]) VALUES (1, GETDATE(), 4000000)
+
+
+INSERT INTO [Usuarios]([Username],[Password_Hash],[Activo],[Fecha_Ultimo_Acceso],[Rol],[Persona]) VALUES ('Jairo','1234', 1, GETDATE(),1,1)

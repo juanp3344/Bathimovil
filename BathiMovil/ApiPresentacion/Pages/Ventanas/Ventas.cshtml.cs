@@ -9,14 +9,25 @@ namespace ApiPresentacion.Pages
     public class VentasModel : PageModel
     {
         [BindProperty] public bool ConfirmarCantidad { get; set; }
+        [BindProperty] public bool NoEstaLogeado { get; set; } = false;
         [BindProperty] public int? Cantidad { get; set; }
         [BindProperty] public int? Id { get; set; }
         [BindProperty] public List<Tipos_Portatiles>? ListaTPortatiles { get; set; }
 
         public void OnPostBtComprarPortatil()
         {
+            if (HttpContext.Session.GetString("Usuario") == null)
+            {
+                NoEstaLogeado = true;
+                return;
+            }
             ConfirmarCantidad = true;
             Id = 1;
+        }
+
+        public void OnPostBtCerrar()
+        {
+            OnGet();
         }
 
         public void OnGet()
@@ -24,13 +35,6 @@ namespace ApiPresentacion.Pages
             Tipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
             ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion();
             ListaTPortatiles = ITiposPortatiles_Presentacion.Consultar();
-
-            var variable_session = HttpContext.Session.GetString("Usuario");
-            if (String.IsNullOrEmpty(variable_session))
-            {
-                HttpContext.Response.Redirect("/");
-                return;
-            }
         }
 
 
@@ -51,25 +55,12 @@ namespace ApiPresentacion.Pages
 
             var Tportatil = ITiposPortatiles_Presentacion.Consultar().FirstOrDefault(p => p.Id_Tipo_Portatil == Id);//realizamos linq para el tipo
 
-
-
             IClientesPresentacion? IClientesPresentacion;
             IClientesPresentacion = new ClientesPresentacion();
 
-          /*  var C = new Clientes()
-            {
-                Cedula = "2173897128912",
-                Nombre = "Juan",
-                Correo = "j@gmail.com",
-                Telefono = "3820984930",
-                Razon_Social = "2983908994AC",
-                Nit_CC = "494545390AC",
-                Direccion_Fiscal = "Medellin"
-            };
+            int? idCliente = HttpContext.Session.GetInt32("Id_Cliente");
 
-            IClientesPresentacion.Guardar(C);*/
-
-            var Cliente = IClientesPresentacion.Consultar().FirstOrDefault(p => p.Id_Persona == 1);
+            var Cliente = IClientesPresentacion.Consultar().FirstOrDefault(p => p.Id_Persona == idCliente);
 
             var lista = IPortatiles_Presentacion.ComprobarTamanio(Tportatil!).Count; // hacemos el conteo ya con el tipo de portatil aquellos portatiles que son de aquel tipo y que esten disponibles
             if (lista < Cantidad) //si no existe la cantidad de ese tipo de portatiles que se quieren, tampoco lo dejara pasar
@@ -78,8 +69,11 @@ namespace ApiPresentacion.Pages
                 ConfirmarCantidad = true;
                 return Page();
             }
-
-            return RedirectToPage("/Ventanas/Contratos", new { nuevo = true, Id_Cliente = Cliente!.Id_Persona , Cantidad = Cantidad, Id_Portatil = Tportatil!.Id_Tipo_Portatil }); //Con todo listo lo mandaremos a contrato para que rellene todo
+            TempData["Id_Cliente"] = Cliente!.Id_Persona;
+            TempData["TDCantidad"] = Cantidad;
+            TempData["Id_Portatil"] = Tportatil!.Id_Tipo_Portatil;
+            TempData["EnCompra"] = true;
+            return RedirectToPage("/Ventanas/Contratos"); //Con todo listo lo mandaremos a contrato para que rellene todo
         }
 
         

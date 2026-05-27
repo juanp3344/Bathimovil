@@ -16,7 +16,9 @@ namespace ApiPresentacion.Pages
         [BindProperty] public bool VienePorCompra { get; set; }
         [BindProperty] public bool ConfirmarCompra{ get; set; }
         [BindProperty] public int Cantidad { get; set; }
-        [BindProperty] public int TPortatil { get; set; }
+        [TempData] public int TPortatil { get; set; }
+        [TempData] public bool EnCompra { get; set; }
+
 
         public bool MostrarConfirmacionSalida { get; set; } = false;
         public ComprasModel()
@@ -24,30 +26,37 @@ namespace ApiPresentacion.Pages
             ICompras_Presentacion = new ComprasPresentacion();
         }
 
-        public void OnGet(bool nuevo, int Id_Contrato, int CantidadCalculo, int Portatil) // por si viene de contrato para compra, entonces recibira estos valores 
+        public void OnGet() // por si viene de contrato para compra, entonces recibira estos valores 
         {
 
-            Cantidad = CantidadCalculo;
+            
 
-            TPortatil = Portatil;
-
-            if (nuevo)
+            if (EnCompra)
             {
+                int idContrato = (int)TempData["Id_Contrato"]!;
+                int cantidadCalculo = (int)TempData["TDCantidad"]!;
+                int portatil = (int)TempData["Id_Portatil"]!;
+
+
+                Cantidad = cantidadCalculo;
+
+                TPortatil = portatil;
+
                 Tipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
-                ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion(); // necesitamos este para poder realizar el linq y ver de que tipo portatil necesitan comprobar su cantidad
+                ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion();
 
-                var Tportatil = ITiposPortatiles_Presentacion.Consultar().FirstOrDefault(p => p.Id_Tipo_Portatil == Portatil); 
+                var Tportatil = ITiposPortatiles_Presentacion.Consultar()
+                    .FirstOrDefault(p => p.Id_Tipo_Portatil == portatil);
 
-                var ValorTotal = CantidadCalculo * Tportatil!.Precio_Actual; //realiza el calculo dependiendo de los portatiles que pidio  el cliente  el tipo que requirio
+                var ValorTotal = cantidadCalculo * Tportatil!.Precio_Actual;
 
-                VienePorCompra = nuevo;
+                VienePorCompra = true;
                 Compra = new Compras()
                 {
                     Fecha_Compra = DateTime.Now,
                     Monto_Total = ValorTotal,
                     Garantia_Meses = 12,
-                    Contrato = Id_Contrato
-
+                    Contrato = idContrato
                 };
 
                 return;

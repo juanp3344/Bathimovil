@@ -12,5 +12,6 @@ namespace BibliotecaPresentacion.Intefaces
         Clientes Modificar(Clientes entidad);
 
         Clientes Eliminar(Clientes entidad);
+        Clientes BuscarPorId(Clientes entidad);
     }
 }

@@ -1,0 +1,385 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    @if (Model.EstaRegistrandose)
+    {
+        <div class="popup">
+            <div class="popup-dialog">
+                <div class="popup-body">
+                    <div class="popup-icon">👤</div>
+                    <div>
+                        <p class="popup-title">Registro</p>
+                        <p class="popup-message">
+                            Que tipo de <strong> cliente </strong> Eres?
+                        </p>
+                    </div>
+                </div>
+               <div style="display: flex; gap: 12px; justify-content: center;" class="popup-footer">
+  <form method="POST">
+    <input type="submit"
+           value="Casual👤"
+            asp-page-handler="BtSeguirCliente"
+           class="btn btn-danger" />
+
+    <input type="submit"
+           value="Empresarial🏪"
+           asp-page-handler="BtSeguirEmpresarial"
+           class="btn btn-danger" />
+                </form>
+             </div>
+        </div>
+    </div>
+    
+                }
+
+
+@if (Model.Siguiente)
+{
+    <form method="POST">
+        @* ← El form envuelve TODO el contenido *@
+        <div class="popup">
+            <div class="popup-dialog">
+                <div class="popup-body">
+                    <div class="popup-icon">👤</div>
+                    <div style="width: 100%;">
+                        <p class="popup-title">Crear cuenta</p>
+
+                        @if (Model.EsCliente == 1)
+                        {
+                            <input type="hidden" asp-for="@Model.Cliente!.Id_Persona" />
+                            <div class="form-group">
+                                <label>Nombre completo</label>
+                                <input asp-for="@Model.Cliente!.Nombre" class="form-control" placeholder="Juan García" />
+                                <span asp-validation-for="Cliente.Nombre" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Cedula</label>
+                                <input asp-for="@Model.Cliente!.Cedula" class="form-control" placeholder="3448923892" />
+                                <span asp-validation-for="Cliente.Cedula" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Correo electrónico</label>
+                                <input asp-for="@Model.Cliente!.Correo" type="email" class="form-control" placeholder="Example@correo.com" />
+                                <span asp-validation-for="Cliente.Correo" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Telefono</label>
+                                <input asp-for="@Model.Cliente!.Telefono" class="form-control" placeholder="Telefono" />
+                                <span asp-validation-for="Cliente.Telefono" class="text-danger"></span>
+                            </div>
+                        }
+
+                        @if (Model.EsCliente == 2)
+                        {
+                            <div class="form-group">
+                                <label>Codigo de empresa</label>
+                                <input asp-for="@Model.Cliente!.Nit_CC" class="form-control" placeholder="Codigo de empresa" />
+                                <span asp-validation-for="Cliente.Nit_CC" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Razon Social</label>
+                                <input asp-for="@Model.Cliente!.Razon_Social" class="form-control" placeholder="Razon social" />
+                                <span asp-validation-for="Cliente.Razon_Social" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Direccion Fiscal</label>
+                                <input asp-for="@Model.Cliente!.Direccion_Fiscal" class="form-control" placeholder="Direccion fiscal" />
+                                <span asp-validation-for="Cliente.Direccion_Fiscal" class="text-danger"></span>
+                            </div>
+                        }
+
+                        <div class="form-group">
+                            <label>Nombre de usuario</label>
+                            <input asp-for="@Model.Usuario!.Username" class="form-control" placeholder="Mínimo 8 caracteres" />
+                            <span asp-validation-for="Usuario.Username" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Contraseña</label>
+                            <input asp-for="@Model.Usuario!.Password_Hash" type="password" class="form-control" placeholder="Mínimo 8 caracteres" />
+                            <span asp-validation-for="Usuario.Password_Hash" class="text-danger"></span>
+                        </div>
+
+                        <div class="popup-footer" style="gap: 8px;">
+                            <input type="submit"
+                                   value="Cancelar"
+                                   asp-page-handler="BtCancelar"
+                                   class="btn btn-secondary" />
+                            <input type="submit"
+                                   value="Registrar"
+                                   asp-page-handler="BtRegistrar"
+                                   class="btn btn-primary" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>  
+}
+
+
+@if (!Model.EstaLogueado)
+{
+   <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div style="width: 400px;">
+        <h3>Iniciar Sesión</h3>
+
+        <form method="POST">
+            <div class="form-group">
+                <label class="control-label">Usuario:</label>
+                <input onchange="keyUp(this)"
+                       asp-for="@Model.Username"
+                       class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Contraseña:</label>
+                <input type="password"
+                       onchange="keyUp(this)"
+                       asp-for="@Model.Password_Hash"
+                       class="form-control" />
+            </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <input type="submit" value="Limpiar" asp-page-handler="BtClean" class="btn btn-outline-secondary" />
+                    <input type="submit" value="Entrar" asp-page-handler="BtEnter" class="btn btn-primary" />
+                    <input type="submit" value="¿Aun no te registras? REGISTRARSE" asp-page-handler="BtRegistrarse" class="btn btn-default" />
+                </div>
+
+                
+        </form>
+    </div>
+</div>
+}
+else
+{
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Bienvenido, @Model.Username</h2>
+            <form method="POST">
+                <input type="submit" value="Cerrar sesión"
+                       asp-page-handler="BtLogout"
+                       class="btn btn-outline-secondary btn-sm" />
+            </form>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="/Ventanas/Usuarios" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">👥 Usuarios</h5>
+                            <p class="card-text text-muted">Gestionar cuentas y permisos</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="/Ventanas/AseoElementos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🧹 Elementos de aseo</h5>
+                            <p class="card-text text-muted">Elementos de aseo para los baños portatiles</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="/Ventanas/Bodegas" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">📦 Bodegas</h5>
+                            <p class="card-text text-muted">Bodegas de la empresa</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="/Ventanas/Clientes" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">👤 Clientes</h5>
+                            <p class="card-text text-muted">Clientes frecuentes y casuales</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Compras" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">💵 Compras</h5>
+                            <p class="card-text text-muted">Compras de clientes</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Contratos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">📄 Contratos</h5>
+                            <p class="card-text text-muted">Contratos diligenciados por los clientes</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Detalle_Facturas" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">📄 Detalles de facturas</h5>
+                            <p class="card-text text-muted">Detalles de las facturas</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Empleado" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🧑‍🔧 Empleado</h5>
+                            <p class="card-text text-muted">Empleados de la empresa</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Facturas" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">📋 Facturas</h5>
+                            <p class="card-text text-muted">Facturas de las compras</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Historial_Precios" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">📄 Historial de precios</h5>
+                            <p class="card-text text-muted">El historial de precios de los baños portatiles</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Implementos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🚽 Implementos</h5>
+                            <p class="card-text text-muted">Implementos de los baños portatiles</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Mantenimientos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🔨🔧 Mantenimiento</h5>
+                            <p class="card-text text-muted">Mantenimiento de los baños portatiles</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Pagos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">💳 Pagos</h5>
+                            <p class="card-text text-muted">Pagos de los clientes</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Portatiles" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🚻 Baños Portatiles</h5>
+                            <p class="card-text text-muted">Los baños portatiles de la empresa</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Prestamos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🤝 Prestamos</h5>
+                            <p class="card-text text-muted">Prestamos de los baños portatiles</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Roles" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">👤 Roles</h5>
+                            <p class="card-text text-muted">Roles de todos los pertenecientes al sistema</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Sedes" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🏪 Sedes</h5>
+                            <p class="card-text text-muted">Sedes de la empresa</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Tipo_Aseo_Elementos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🧹 Tipos de elementos de aseo</h5>
+                            <p class="card-text text-muted">Tipos de elementos de aseo almacenados</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Tipos_Implementos" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🚽 Tipos de implementos</h5>
+                            <p class="card-text text-muted">Tipos de implementos de los baños portatiles</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/Tipos_Intermedia" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🚽 Tipos intermedias</h5>
+                            <p class="card-text text-muted">Tabla intermedia entre dos clases</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/Ventanas/TiposPortatiles" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">🚹 Tipos de baños portatiles</h5>
+                            <p class="card-text text-muted">Tipos de baños portatiles ofrecidos al cliente</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+}

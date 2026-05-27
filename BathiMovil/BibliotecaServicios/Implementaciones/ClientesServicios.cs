@@ -62,5 +62,18 @@ namespace BibliotecaServicios.Implementaciones
             iConexion.SaveChanges();
             return entidad;
         }
+
+        public Clientes BuscarPorId(Clientes Clientes)
+        {
+            this.iConexion = new Conexion();
+            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
+            var entidad = this.iConexion.Clientes!.FirstOrDefault(p => p.Id_Persona == Clientes.Id_Persona);
+
+            if (entidad == null)
+                return null;
+
+            return entidad;
+        }
     }
 }

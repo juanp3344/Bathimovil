@@ -71,37 +71,68 @@
 
     </div>
 
-    <form method="post">
-        @if (Model!.ConfirmarCantidad)
-        {
-            <div class='popup'>
-                <div class='pp_ms_inner'>
-                    <div style='width:95%'>
-
-                        <input type="hidden" asp-for="Id" />
-                        <div class="form-group d-flex flex-column align-items-center">
-                            <label>
-                                INGRESE LA CANTIDAD
-                            </label>
-                            <div class="col-6">
-                                <input id="inCantidad"
-                                       class="cts_forms form-control"
-                                       asp-for="@Model.Cantidad" />
-
-                                <span asp-validation-for="Cantidad"
-                                      class="text-danger d-block text-center"></span>
-                            </div>
-                        </div>
-                        <div class="popup-footer">
-                            <input type="submit"
-                                   value="Aceptar"
-                                   asp-page-handler="BtAceptar"
-                                   class="btn btn-secondary" />
-                        </div>
+    @if (Model.NoEstaLogeado)
+    {
+        <div class="popup">
+            <div class="popup-dialog">
+                <div class="popup-body">
+                    <div class="popup-icon">⚠️</div>
+                    <div>
+                        <p class="popup-title">No esta logueado</p>
+                        <p class="popup-message">
+                            Debes de estar <strong>logueado</strong> para comprar o prestar un baño portatil.
+                        </p>
                     </div>
                 </div>
+                 <form method="post">
+                <div class="popup-footer">
+                    <input type="submit"
+                           value="Cerrar"
+                           asp-page-handler="BtCerrar"
+                           class="btn btn-danger" />
+                </div>
+                </form>
             </div>
-        }
+        </div>
+    }
+
+    <form method="post">
+        @if (Model!.ConfirmarCantidad)
+{
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <form method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="modal-icon">
+                    <i class="ti ti-package"></i>
+                </div>
+
+                <p class="modal-title">Ingresar cantidad</p>
+                <p class="modal-sub">Especifica el valor antes de continuar</p>
+
+                <input id="inCantidad"
+                       type="number"
+                       class="modal-input"
+                       asp-for="@Model.Cantidad"
+                       placeholder="0" />
+
+                <span asp-validation-for="Cantidad" class="modal-error"></span>
+
+                <div class="modal-btn-row">
+                    <input type="submit"
+                           value="Aceptar"
+                           asp-page-handler="BtAceptar"
+                           class="btn-accept" />
+                    <input type="submit"
+                           value="Cerrar"
+                           asp-page-handler="BtCerrar"
+                           class="btn-close" />
+                </div>
+            </form>
+        </div>
+    </div>
+}
        
     </form>
 

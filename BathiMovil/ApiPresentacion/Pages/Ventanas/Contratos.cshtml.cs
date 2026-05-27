@@ -13,8 +13,9 @@ namespace ApiPresentacion.Pages
         [BindProperty] public bool VienePorCompra { get; set; }
         [BindProperty] public bool Borrando { get; set; }
         [BindProperty] public int? CantidadCalculo { get; set; }
-         [BindProperty] public int? Portatil { get; set; }
-        [TempData] public int UltimoContratoId { get; set; }
+        [BindProperty] public int? Portatil { get; set; }
+        [TempData] public int? Id_Cliente { get; set; }
+        [TempData] public int UltimoContratoId { get; set; }  // renombrados para no  
 
 
         public ContratosModel()
@@ -22,23 +23,25 @@ namespace ApiPresentacion.Pages
             IContratosPresentacion = new ContratosPresentacion();
         }
 
-        public void OnGet(bool nuevo, int Id_Cliente, int Cantidad, int Id_Portatil)
+        public void OnGet()
         {
+            bool EnCompra = (bool)TempData["EnCompra"]!;
 
-            if (nuevo)
+
+            if (EnCompra)
             {
                 VienePorCompra = true;
                 Contrato = new Contratos()
                 {
-                    Cliente = Id_Cliente,
+                    Cliente = (int)Id_Cliente!,
                     Fecha_Firma = DateTime.Now,
                     Terminos = "Comprara el baño portatil programado a envio",
-                    Fecha_Expiracion = (DateTime.Now).AddMonths(12)
+                    Fecha_Expiracion = DateTime.Now.AddMonths(12)
 
                 };
 
-                CantidadCalculo = Cantidad;
-                Portatil = Id_Portatil;
+                CantidadCalculo = (int)TempData["TDCantidad"]!;
+                Portatil = (int)TempData["Id_Portatil"]!;
 
                 return;
             }
@@ -50,7 +53,20 @@ namespace ApiPresentacion.Pages
         {
             OnPostBtGuardar();
 
-            return RedirectToPage("/Ventanas/Compras", new { nuevo = true, Id_Contrato = UltimoContratoId, CantidadCalculo = CantidadCalculo, Portatil = Portatil });
+            if (UltimoContratoId == 0)
+            {
+                ViewData["Mensaje"] = "Error al guardar el contrato";
+                VienePorCompra = true;
+                return Page();
+            }
+
+            
+            TempData["TDCantidad"] = CantidadCalculo;
+            TempData["Id_Portatil"] = Portatil;
+            TempData["Id_Contrato"] = UltimoContratoId;
+            TempData["EnCompra"] = true;
+
+            return RedirectToPage("/Ventanas/Compras");
         }
 
 

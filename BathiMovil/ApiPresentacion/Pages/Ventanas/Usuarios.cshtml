@@ -5,16 +5,16 @@
 }
 <center>
     <div>
-        
+
         <form method="POST"
               enctype="multipart/form-data">
             @Html.AntiForgeryToken()
-           
 
+           
             <div align="left">
                 <h3>Usuarios</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -78,30 +78,54 @@
                         </div>
                     </div>
                     <div style="margin-top: 20px;">
-                    <select id="nmPersonas"
-                            class="form-control"
-                            asp-for="@Model.Usuario!.Persona"
-                            asp-items="@(new SelectList(Model.CargarPersonas(), "Id_Persona", "Cedula"))">
-                        <option value="">-- Seleccione un rol --</option>
-                    </select>
+                        <select id="nmPersonas"
+                                class="form-control"
+                                asp-for="@Model.Usuario!.Persona"
+                                asp-items="@(new SelectList(Model.CargarPersonas(), "Id_Persona", "Nombre"))">
+                            <option value="">-- Seleccione una persona --</option>
+                        </select>
                     </div>
 
                     <div style="margin-top: 20px;">
-                    <select id="nmRoles"
-                            class="form-control"
-                            asp-for="@Model.Usuario!.Rol"
-                            asp-items="@(new SelectList(Model.CargarRoles(), "Id_Rol", "Nombre_Rol"))">
-                        <option value="">-- Seleccione un rol --</option>
-                    </select>
+                        <select id="nmRoles"
+                                class="form-control"
+                                asp-for="@Model.Usuario!.Rol"
+                                asp-items="@(new SelectList(Model.CargarRoles(), "Id_Rol", "Nombre_Rol"))">
+                            <option value="">-- Seleccione un rol --</option>
+                        </select>
                     </div>
-                    
+
                 </div>
             }
-            
+
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
                 ;
+            }
+
+            @if (Model.Escliente)
+            {
+                <div class="popup">
+                    <div class="popup-dialog">
+                        <div class="popup-body">
+                            <div class="popup-icon">⚠️</div>
+                            <div>
+                                <p class="popup-title">Rol no permitido</p>
+                                <p class="popup-message">
+                                    Un cliente no puede tener el rol de <strong>administrador</strong> ni de <strong>empleado</strong>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtSeguirRegistrando"
+                                   class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
             }
 
             @if (Model.Usuario != null && Model.Borrando)
@@ -119,7 +143,7 @@
                             <h6 align="left">
                                 @Model.Usuario!.Username
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -155,7 +179,7 @@
                             Rol
                         </th>
                     </tr>
-                
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
@@ -193,6 +217,7 @@
                     }
                 </table>
             }
+
         </form>
     </div>
 </center>

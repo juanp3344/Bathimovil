@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">BathiMovil</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Ventanas/Ventas">BathiMovil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,12 +34,17 @@
                     </ul>
                 </div>
                 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
                 @if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null)
                 {
-                    <a href="/sesiones/Logout" class="btn btn-outline-danger btn-sm ml-auto">
-                        Cerrar sesión
-                    </a>
+                    <span>Bienvenido, @HttpContextAccessor.HttpContext.Session.GetString("Usuario")👤  </span>
+                    <a href="/sesiones/Logout">Cerrar sesión</a>
                 }
+                else
+                {
+                    <a href="/sesiones/Login">Iniciar sesión</a>
+                }
+
             </div>
         </nav>
     </header>
@@ -49,11 +54,6 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Para tu comodidad, estaremos contigo sin descansar - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -63,14 +63,3 @@
 </body>
 </html>
 
-<script>
-    function confirmarNavegacion() {
-    // Preguntar solo si hay una compra en progreso
-    var hayCompra = '@(ViewData["CompraEnProgreso"])' === 'True';
-
-    if (hayCompra) {
-    return confirm('¿Seguro que deseas salir? Perderás tu compra.');
-    }
-    return true; // Si no hay compra, navega normal
-    }
-</script>
