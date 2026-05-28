@@ -9,5 +9,6 @@
   </Folder>
   <Folder Name="/3.  Pruebas Unitarias/">
     <Project Path="Unitarias/Unitarias.csproj" Id="ae380b24-8669-477f-bd77-f07996a1715c" />
+    <Project Path="UnitariasPresentacion/UnitariasPresentacion.csproj" Id="3da294b4-9989-4f8b-88d3-8c6f88791d39" />
   </Folder>
 </Solution>

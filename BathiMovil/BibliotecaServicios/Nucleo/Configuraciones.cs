@@ -6,7 +6,8 @@ namespace BibliotecaServicios.Nucleo
     {
         public static string obtener(string clave)
         {
-            return "server=localhost;database=uPortatiles_db;Integrated Security=True;TrustServerCertificate=true;";
+            return "server=DESKTOP-I490BT8\\DEV;database=uPortatiles_db;Integrated Security=True;TrustServerCertificate=true;";
         }
     }
 }
+// DESKTOP-I490BT8\DEV para Robledo 
