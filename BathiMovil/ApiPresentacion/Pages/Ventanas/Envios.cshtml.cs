@@ -8,13 +8,20 @@ namespace ApiPresentacion.Pages
     public class EnviosModel : PageModel
     {
         private IEnviosPresentacion? IEnviosPresentacion;
+        private IEmpleadosPresentacion? IEmpleadosPresentacion;
+        private IContratosPresentacion? IContratosPresentacion;
         [BindProperty] public List<Envios>? Lista { get; set; }
         [BindProperty] public Envios? Envio { get; set; }
         [BindProperty] public bool Borrando { get; set; }
+        [BindProperty] public List<Empleados>? Empleados { get; set; }
+        [BindProperty] public List<Contratos>? Contratos { get; set; }
 
         public EnviosModel()
         {
             IEnviosPresentacion = new EnviosPresentacion();
+            IEmpleadosPresentacion = new EmpleadosPresentacion();
+            IContratosPresentacion = new ContratosPresentacion();
+
         }
 
         public void OnGet()
@@ -22,6 +29,15 @@ namespace ApiPresentacion.Pages
             OnPostBtRefrescar();
         }
 
+        public List<Empleados> CargarEmpleados()
+        {
+            return Empleados = IEmpleadosPresentacion!.Consultar();
+        }
+
+        public List<Contratos> CargarContratos()
+        {
+            return Contratos = IContratosPresentacion!.Consultar();
+        }
 
         public void OnPostBtRefrescar()
         {

@@ -8,13 +8,16 @@ namespace ApiPresentacion.Pages
     public class Detalle_FacturasModel : PageModel
     {
         private IDetalle_FacturasPresentacion? IDetalle_FacturasPresentacion;
+        private IFacturasPresentacion? IFacturasPresentacion;
         [BindProperty] public List<Detalle_Facturas>? Lista { get; set; }
         [BindProperty] public Detalle_Facturas? Detalle_Factura { get; set; }
+        [BindProperty] public List<Facturas>? Facturas { get; set; }
         [BindProperty] public bool Borrando { get; set; }
 
         public Detalle_FacturasModel()
         {
             IDetalle_FacturasPresentacion = new Detalle_FacturasPresentacion();
+            IFacturasPresentacion = new FacturasPresentacion();
         }
 
         public void OnGet()
@@ -22,6 +25,11 @@ namespace ApiPresentacion.Pages
             OnPostBtRefrescar();
         }
 
+
+        public List<Facturas> CargarFacturas()
+        {
+            return Facturas = IFacturasPresentacion!.Consultar();
+        }
 
         public void OnPostBtRefrescar()
         {

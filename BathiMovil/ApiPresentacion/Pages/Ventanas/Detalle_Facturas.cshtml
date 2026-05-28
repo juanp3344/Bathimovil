@@ -86,6 +86,14 @@
                                    asp-for="@Model.Detalle_Factura!.Factura" />
                         </div>
                     </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmFactura"
+                                class="form-control"
+                                asp-for="@Model.Detalle_Factura!.Factura"
+                                asp-items="@(new SelectList(Model.CargarFacturas(), "Id_Factura", "Numero"))">
+                            <option value="">-- Seleccione una factura --</option>
+                        </select>
+                    </div>
                     </div>
             }
             
