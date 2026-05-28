@@ -1,59 +1,56 @@
-﻿using System;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BibliotecaServicios.Implementaciones;
-using BibliotecaServicios.Nucleo;
-using BibliotecaServicios.Entidades;
-using BibliotecaServicios.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Unitarias
 {
     [TestClass]
-    public class Tipo_Aseo_ElementosUnitaria
+    public class Tipo_Aseo_ElementosUnitariasPresentacion
     {
+        private ITipo_Aseo_ElementosPresentacion iPresentacion = new Tipo_Aseo_ElementosPresentacion();
         private IConexion? iConexion;
         private Tipo_Aseo_Elementos? entidad;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Tipo_Aseo_Elementos!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
             this.entidad = DatosHelper.CrearTipo_Aseo_Elemento(this.iConexion);
             if (this.entidad!.Id_Tipo_Aseo_Elemento != 0) return;
             throw new Exception("");
         }
 
-        private void Modificar()
+        private void Consultar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad!.Uso = "Chowder";
-            var entry = this.iConexion!.Entry<Tipo_Aseo_Elementos>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Tipo_Aseo_Elemento != 0) return;
+            List<Tipo_Aseo_Elementos> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Tipo_Aseo_Elementos!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
+            this.entidad!.Uso = "Chowder";
+            Tipo_Aseo_Elementos resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Tipo_Aseo_Elemento != 0) return;
+            throw new Exception("");
+        }
+
+        private void Eliminar()
+        {
+            Tipo_Aseo_Elementos resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

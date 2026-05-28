@@ -1,59 +1,56 @@
-﻿using System;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BibliotecaServicios.Implementaciones;
-using BibliotecaServicios.Nucleo;
-using BibliotecaServicios.Entidades;
-using BibliotecaServicios.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Unitarias
 {
     [TestClass]
-    public class Tipos_ImplementosUnitaria
+    public class Tipos_ImplementosUnitariasPresentacion
     {
+        private ITipos_ImplementosPresentacion iPresentacion = new Tipos_ImplementosPresentacion();
         private IConexion? iConexion;
         private Tipos_Implementos? entidad;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Tipos_Implementos!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
             this.entidad = DatosHelper.CrearTipo_Implemento(this.iConexion);
             if (this.entidad!.Id_Tipo_Implemento != 0) return;
             throw new Exception("");
         }
 
-        private void Modificar()
+        private void Consultar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad!.Nombre = "Chowder";
-            var entry = this.iConexion!.Entry<Tipos_Implementos>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Tipo_Implemento != 0) return;
+            List<Tipos_Implementos> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Tipos_Implementos!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
+            this.entidad!.Nombre = "Chowder";
+            Tipos_Implementos resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Tipo_Implemento != 0) return;
+            throw new Exception("");
+        }
+
+        private void Eliminar()
+        {
+            Tipos_Implementos resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

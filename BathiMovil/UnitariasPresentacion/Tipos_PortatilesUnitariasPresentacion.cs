@@ -1,59 +1,56 @@
-﻿using System;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BibliotecaServicios.Implementaciones;
-using BibliotecaServicios.Nucleo;
-using BibliotecaServicios.Entidades;
-using BibliotecaServicios.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Unitarias
 {
     [TestClass]
-    public class Tipos_PortatilesUnitaria
+    public class Tipos_PortatilesUnitariasPresentacion
     {
+        private ITipos_PortatilesPresentacion iPresentacion = new Tipos_PortatilesPresentacion();
         private IConexion? iConexion;
         private Tipos_Portatiles? entidad;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Tipos_Portatiles!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
             this.entidad = DatosHelper.CrearTipo_Portatil(this.iConexion);
             if (this.entidad!.Id_Tipo_Portatil != 0) return;
             throw new Exception("");
         }
 
-        private void Modificar()
+        private void Consultar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad!.Nombre = "Chowder";
-            var entry = this.iConexion!.Entry<Tipos_Portatiles>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Tipo_Portatil != 0) return;
+            List<Tipos_Portatiles> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Tipos_Portatiles!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
+            this.entidad!.Nombre = "Chowder";
+            Tipos_Portatiles resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Tipo_Portatil != 0) return;
+            throw new Exception("");
+        }
+
+        private void Eliminar()
+        {
+            Tipos_Portatiles resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

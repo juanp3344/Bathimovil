@@ -1,67 +1,56 @@
-﻿using System;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BibliotecaServicios.Implementaciones;
-using BibliotecaServicios.Nucleo;
-using BibliotecaServicios.Entidades;
-using BibliotecaServicios.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Unitarias
 {
     [TestClass]
-    public class PersonasUnitaria
+    public class PersonasUnitariasPresentacion
     {
+        private IPersonasPresentacion iPresentacion = new PersonasPresentacion();
         private IConexion? iConexion;
         private Personas? entidad;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Personas!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad = new Personas()
-            {
-                Cedula = $"PER{DateTime.Now.Ticks}",
-                Nombre = "Persona Test",
-                Correo = "persona@test.com",
-                Telefono = "3001234567"
-            };
-            this.iConexion.Personas!.Add(this.entidad!);
-            this.iConexion.SaveChanges();
+
+            this.entidad = DatosHelper.CrearPersona(this.iConexion);
             if (this.entidad!.Id_Persona != 0) return;
+            throw new Exception("");
+        }
+
+        private void Consultar()
+        {
+            List<Personas> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
         private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             this.entidad!.Nombre = "Chowder";
-            var entry = this.iConexion!.Entry<Personas>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Persona != 0) return;
+            Personas resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Persona != 0) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Eliminar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Personas!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
+            Personas resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

@@ -1,66 +1,59 @@
-﻿using System;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BibliotecaServicios.Implementaciones;
-using BibliotecaServicios.Nucleo;
-using BibliotecaServicios.Entidades;
-using BibliotecaServicios.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Unitarias
 {
     [TestClass]
-    public class UsuariosUnitaria
+    public class UsuariosUnitariasPresentacion
     {
+        private IUsuariosPresentacion iPresentacion = new UsuariosPresentacion();
         private IConexion? iConexion;
         private Usuarios? entidad;
-        private Clientes? entidadCliente;
-        private Roles? entidadRol;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Usuarios!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidadCliente = DatosHelper.CrearCliente(this.iConexion);
-            this.entidadRol = DatosHelper.CrearRol(this.iConexion);
-            this.entidad = DatosHelper.CrearUsuario(this.iConexion, entidadCliente.Id_Persona, entidadRol.Id_Rol);
+
+            Personas entidadPersona = DatosHelper.CrearPersona(this.iConexion);
+            Roles entidadRol = DatosHelper.CrearRol(this.iConexion);
+
+            this.entidad = DatosHelper.CrearUsuario(this.iConexion, entidadPersona.Id_Persona, entidadRol.Id_Rol);
             if (this.entidad!.Id_Usuario != 0) return;
+            throw new Exception("");
+        }
+
+        private void Consultar()
+        {
+            List<Usuarios> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
         private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             this.entidad!.Username = "Chowder";
-            var entry = this.iConexion!.Entry<Usuarios>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Usuario != 0) return;
+            Usuarios resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Usuario != 0) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Eliminar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Usuarios!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
-            this.iConexion.Clientes!.Remove(this.entidadCliente!);
-            this.iConexion.Roles!.Remove(this.entidadRol!);
-            this.iConexion.SaveChanges();
+            Usuarios resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

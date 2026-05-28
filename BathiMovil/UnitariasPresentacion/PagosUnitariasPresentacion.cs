@@ -1,67 +1,59 @@
-﻿using System;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BibliotecaServicios.Implementaciones;
-using BibliotecaServicios.Nucleo;
-using BibliotecaServicios.Entidades;
-using BibliotecaServicios.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Unitarias
 {
     [TestClass]
-    public class PagosUnitaria
+    public class PagosUnitariasPresentacion
     {
+        private IPagosPresentacion iPresentacion = new PagosPresentacion();
         private IConexion? iConexion;
         private Pagos? entidad;
-        private Facturas? entidadFactura;
-        private Clientes? entidadCliente;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Pagos!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidadCliente = DatosHelper.CrearCliente(this.iConexion);
-            this.entidadFactura = DatosHelper.CrearFactura(this.iConexion, entidadCliente.Id_Persona);
+
+            Clientes entidadCliente = DatosHelper.CrearCliente(this.iConexion);
+            Facturas entidadFactura = DatosHelper.CrearFactura(this.iConexion, entidadCliente.Id_Persona);
+
             this.entidad = DatosHelper.CrearPago(this.iConexion, entidadFactura.Id_Factura);
             if (this.entidad!.Id_Pago != 0) return;
             throw new Exception("");
         }
 
-        private void Modificar()
+        private void Consultar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad!.Metodo_Pago = "Chowder";
-            var entry = this.iConexion!.Entry<Pagos>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Pago != 0) return;
+            List<Pagos> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Pagos!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
-            this.iConexion.Facturas!.Remove(this.entidadFactura!);
-            this.iConexion.SaveChanges();
-            this.iConexion.Clientes!.Remove(this.entidadCliente!);
-            this.iConexion.SaveChanges();
+            this.entidad!.Metodo_Pago = "Chowder";
+            Pagos resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Pago != 0) return;
+            throw new Exception("");
+        }
+
+        private void Eliminar()
+        {
+            Pagos resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

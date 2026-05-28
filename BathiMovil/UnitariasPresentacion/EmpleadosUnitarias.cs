@@ -1,4 +1,6 @@
-﻿using BibliotecaServicios.Entidades;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
 using BibliotecaServicios.Implementaciones;
 using BibliotecaServicios.Interfaces;
 using BibliotecaServicios.Nucleo;
@@ -11,50 +13,45 @@ using System.Text;
 namespace Unitarias
 {
     [TestClass]
-    public class EmpleadosUnitaria
+    public class EmpleadosUnitariasPresentacion
     {
+        private IEmpleadosPresentacion iPresentacion = new EmpleadosPresentacion();
         private IConexion? iConexion;
         private Empleados? entidad;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Empleados!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
             this.entidad = DatosHelper.CrearEmpleado(this.iConexion);
             if (this.entidad!.Id_Persona != 0) return;
             throw new Exception("");
         }
 
-        private void Modificar()
+        private void Consultar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad!.Nombre = "Chowder";
-            var entry = this.iConexion!.Entry<Empleados>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Persona != 0) return;
+            List<Empleados> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Empleados!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
+            this.entidad!.Salario_Base = 9_999_999m;
+            Empleados resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Persona != 0) return;
+            throw new Exception("");
+        }
+
+        private void Eliminar()
+        {
+            Empleados resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

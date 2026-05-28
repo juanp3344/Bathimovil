@@ -17,8 +17,6 @@ namespace UnitariasPresentacion
         private IBodegasPresentacion iPresentacion = new BodegasPresentacion();
         private IConexion? iConexion;
         private Bodegas? entidad;
-        private Sedes? entidadSede;
-        private Empleados? entidadEmpleado;
 
         [TestMethod]
         public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
@@ -27,8 +25,10 @@ namespace UnitariasPresentacion
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidadSede = DatosHelper.CrearSede(this.iConexion);
-            this.entidadEmpleado = DatosHelper.CrearEmpleado(this.iConexion);
+
+            Sedes entidadSede = DatosHelper.CrearSede(this.iConexion);
+            Empleados entidadEmpleado = DatosHelper.CrearEmpleado(this.iConexion);
+
             this.entidad = DatosHelper.CrearBodega(this.iConexion, entidadSede.Id_Sede, entidadEmpleado.Id_Persona);
             if (this.entidad!.Id_Bodega != 0) return;
             throw new Exception("");
@@ -36,7 +36,7 @@ namespace UnitariasPresentacion
 
         private void Consultar()
         {
-            var lista = this.iPresentacion.Consultar();
+            List<Bodegas> lista = this.iPresentacion.Consultar();
             if (lista != null) return;
             throw new Exception("");
         }
@@ -44,17 +44,14 @@ namespace UnitariasPresentacion
         private void Modificar()
         {
             this.entidad!.Nombre = "Chowder";
-            var resultado = this.iPresentacion.Modificar(this.entidad!);
+            Bodegas resultado = this.iPresentacion.Modificar(this.entidad!);
             if (resultado!.Id_Bodega != 0) return;
             throw new Exception("");
         }
 
         private void Eliminar()
         {
-            var resultado = this.iPresentacion.Eliminar(this.entidad!);
-            this.iConexion!.Sedes!.Remove(this.entidadSede!);
-            this.iConexion!.Empleados!.Remove(this.entidadEmpleado!);
-            this.iConexion!.SaveChanges();
+            Bodegas resultado = this.iPresentacion.Eliminar(this.entidad!);
             if (resultado != null) return;
             throw new Exception("");
         }

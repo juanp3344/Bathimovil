@@ -1,63 +1,58 @@
-﻿using System;
+﻿using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
+using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
+using BibliotecaServicios.Interfaces;
+using BibliotecaServicios.Nucleo;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using BibliotecaServicios.Implementaciones;
-using BibliotecaServicios.Nucleo;
-using BibliotecaServicios.Entidades;
-using BibliotecaServicios.Interfaces;
-using Microsoft.EntityFrameworkCore;
 
 namespace Unitarias
 {
     [TestClass]
-    public class FacturasUnitaria
+    public class FacturasUnitariasPresentacion
     {
+        private IFacturasPresentacion iPresentacion = new FacturasPresentacion();
         private IConexion? iConexion;
         private Facturas? entidad;
-        private Clientes? entidadCliente;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Borrar(); }
-
-        private void Consultar()
-        {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            var lista = iConexion.Facturas!.ToList();
-            if (lista.Count > 0) return;
-            throw new Exception("");
-        }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
 
         private void Guardar()
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidadCliente = DatosHelper.CrearCliente(this.iConexion);
+
+            Clientes entidadCliente = DatosHelper.CrearCliente(this.iConexion);
+
             this.entidad = DatosHelper.CrearFactura(this.iConexion, entidadCliente.Id_Persona);
             if (this.entidad!.Id_Factura != 0) return;
             throw new Exception("");
         }
 
-        private void Modificar()
+        private void Consultar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad!.Total = 99;
-            var entry = this.iConexion!.Entry<Facturas>(this.entidad!);
-            entry.State = EntityState.Modified;
-            this.iConexion!.SaveChanges();
-            if (entidad!.Id_Factura != 0) return;
+            List<Facturas> lista = this.iPresentacion.Consultar();
+            if (lista != null) return;
             throw new Exception("");
         }
 
-        private void Borrar()
+        private void Modificar()
         {
-            this.iConexion = new Conexion();
-            this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.iConexion.Facturas!.Remove(this.entidad!);
-            this.iConexion.SaveChanges();
-            this.iConexion.Clientes!.Remove(this.entidadCliente!);
-            this.iConexion.SaveChanges();
+            this.entidad!.Total = 9_999_999m;
+            Facturas resultado = this.iPresentacion.Modificar(this.entidad!);
+            if (resultado!.Id_Factura != 0) return;
+            throw new Exception("");
+        }
+
+        private void Eliminar()
+        {
+            Facturas resultado = this.iPresentacion.Eliminar(this.entidad!);
+            if (resultado != null) return;
+            throw new Exception("");
         }
     }
 }

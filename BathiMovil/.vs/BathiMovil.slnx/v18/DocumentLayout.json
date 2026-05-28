@@ -3,20 +3,183 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\prestamos_portatilesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\prestamos_portatilesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\personasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\personasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\historial_preciosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\historial_preciosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\clientesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\clientesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\portatilesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\portatilesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\permisosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\permisosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\prestamos_portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\prestamos_portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\iprestamos_portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\iprestamos_portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\ubicacionesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\ubicacionesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\ubicacionesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\ubicacionesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\tipos_portatilesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\tipos_portatilesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\ubicacionespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\ubicacionespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\prestamos_portatiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\prestamos_portatiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\prestamospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\prestamospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\sedespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\sedespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\rolespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\rolespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\rolesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\rolesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\tipos_implementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\tipos_implementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\itipos_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\itipos_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\tipos_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\tipos_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\tipo_aseo_elementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\tipo_aseo_elementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\usuariosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\usuariosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\tipos_intermediaunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\tipos_intermediaunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\comunicacionesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\comunicacionesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\bodegasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\bodegasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\contratosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\contratosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\comprasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\comprasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\aseo_elementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\aseo_elementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\empleadosunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\empleadosunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\prestamosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\prestamosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\sedesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\sedesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\unitariaspresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\unitariaspresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\pagosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\pagosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\mantenimientosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\mantenimientosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\implementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\implementosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\facturasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\facturasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\enviosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\enviosunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\detalle_facturasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\detalle_facturasunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\aseo_elementosunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\aseo_elementosunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\bodegasunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\bodegasunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\UnitariasPresentacion_Imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\rolesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\rolesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\nucleo\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\nucleo\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\tipos_portatilesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\tipos_portatilesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -24,10 +187,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\BodegasUnitariasPresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\comunicacionesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\comunicacionesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\PruebasPresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -42,20 +201,8 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\PresentacionUnitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\rolesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\rolesunitariaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\bodegasunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\bodegasunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\historial_preciosunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\historial_preciosunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitariaspresentacion\\unitariaspresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\unitariaspresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\querydb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
@@ -74,20 +221,12 @@
       "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\tipos_portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\nucleo\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\nucleo\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\apipresentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\bibliotecaservicios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\bibliotecaservicios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\ubicacionesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\ubicacionesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\usuariosunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -124,10 +263,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\iubicacionesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\iubicacionesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\ubicacionespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\ubicacionespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -266,10 +401,6 @@
       "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\sedesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\unitarias\\rolesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\rolesunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\tipo_aseo_elementos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\tipo_aseo_elementos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -296,10 +427,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\DatosHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\prestamos_portatiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\prestamos_portatiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\tipo_aseo_elementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -358,14 +485,6 @@
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\itipos_implementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\tipo_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\tipo_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\itipo_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\itipo_implementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\itipo_aseo_elementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\itipo_aseo_elementospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -394,24 +513,8 @@
       "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\ipagospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\iprestamos_portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\iprestamos_portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\tipos_intermediapresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\tipos_intermediapresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\sedespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\sedespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\rolespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\rolespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\prestamospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\prestamospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\portatilespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -542,10 +645,6 @@
       "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\tipos_portatilesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\tipos_portatilesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\tipo_aseo_elementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\tipo_aseo_elementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -643,7 +742,7 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -664,155 +763,220 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Aseo_ElementosUnitariasPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
-              "RelativeDocumentMoniker": "UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
-              "RelativeToolTip": "UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T03:55:13.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BodegasUnitariasPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
-              "RelativeDocumentMoniker": "UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
-              "RelativeToolTip": "UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T03:55:47.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Aseo_ElementosUnitarias.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Aseo_ElementosUnitarias.cs",
-              "RelativeDocumentMoniker": "Unitarias\\Aseo_ElementosUnitarias.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Aseo_ElementosUnitarias.cs",
-              "RelativeToolTip": "Unitarias\\Aseo_ElementosUnitarias.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T14:18:01.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "DatosHelper.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\DatosHelper.cs",
               "RelativeDocumentMoniker": "UnitariasPresentacion\\DatosHelper.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\DatosHelper.cs",
               "RelativeToolTip": "UnitariasPresentacion\\DatosHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAiwGwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-28T05:30:00.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DatosHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
-              "RelativeDocumentMoniker": "Unitarias\\DatosHelper.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
-              "RelativeToolTip": "Unitarias\\DatosHelper.cs",
-              "ViewState": "AgIAAHsBAAAAAAAAAADwv58BAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PersonasUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PersonasUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\PersonasUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PersonasUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\PersonasUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T22:25:34.31Z",
+              "WhenOpened": "2026-05-28T16:38:59.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Prestamos_PortatilesUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Prestamos_PortatilesUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Prestamos_PortatilesUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Prestamos_PortatilesUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Prestamos_PortatilesUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:39:20.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Historial_PreciosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Historial_PreciosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Historial_PreciosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Historial_PreciosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Historial_PreciosUnitariasPresentacion.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wBEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:37:45.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientesUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ClientesUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\ClientesUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ClientesUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\ClientesUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAApwB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:25:10.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BodegasUnitariasPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\BodegasUnitariasPresentacion.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\BodegasUnitariasPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\BodegasUnitariasPresentacion.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\BodegasUnitariasPresentacion.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PortatilesUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PortatilesUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\PortatilesUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PortatilesUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\PortatilesUnitariasPresentacion.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwDwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T05:24:57.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ComunicacionesUnitariasPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
-              "RelativeDocumentMoniker": "UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
-              "RelativeToolTip": "UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T04:25:38.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PruebasPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PruebasPresentacion.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\PruebasPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PruebasPresentacion.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\PruebasPresentacion.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T05:13:15.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ComunicacionesUnitarias.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T04:34:23.687Z",
+              "WhenOpened": "2026-05-28T16:39:05.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ComunicacionesUnitarias (1).cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias (1).cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias (1).cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias (1).cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias (1).cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Title": "IPrestamos_PortatilesPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T04:41:07.577Z",
+              "WhenOpened": "2026-05-20T18:31:56.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PermisosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PermisosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\PermisosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PermisosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\PermisosUnitariasPresentacion.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwDkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:38:40.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "PresentacionUnitarias.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PresentacionUnitarias.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\PresentacionUnitarias.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PresentacionUnitarias.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\PresentacionUnitarias.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UbicacionesUnitarias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\UbicacionesUnitarias.cs",
+              "RelativeDocumentMoniker": "Unitarias\\UbicacionesUnitarias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\UbicacionesUnitarias.cs",
+              "RelativeToolTip": "Unitarias\\UbicacionesUnitarias.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwE8AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T03:45:25.509Z",
+              "WhenOpened": "2026-05-25T17:00:54.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Prestamos_PortatilesPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Prestamos_PortatilesPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Prestamos_PortatilesPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Prestamos_PortatilesPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\Prestamos_PortatilesPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:02:59.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UbicacionesUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UbicacionesUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\UbicacionesUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UbicacionesUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\UbicacionesUnitariasPresentacion.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowCwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:04:53.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Tipos_PortatilesUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipos_PortatilesUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Tipos_PortatilesUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipos_PortatilesUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Tipos_PortatilesUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:42:18.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Prestamos_Portatiles.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T15:48:08.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PrestamosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T18:19:59.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SedesPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T18:20:33.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RolesPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T18:20:10.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "RolesUnitariasPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\RolesUnitariasPresentacion.cs",
               "RelativeDocumentMoniker": "UnitariasPresentacion\\RolesUnitariasPresentacion.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\RolesUnitariasPresentacion.cs",
               "RelativeToolTip": "UnitariasPresentacion\\RolesUnitariasPresentacion.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwDgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-28T04:42:18.887Z",
               "EditorCaption": ""
@@ -820,18 +984,442 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "UbicacionesPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:05:50.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Tipos_ImplementosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipos_ImplementosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Tipos_ImplementosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipos_ImplementosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Tipos_ImplementosUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:42:07.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ITipos_ImplementosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ITipos_ImplementosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\ITipos_ImplementosPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ITipos_ImplementosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\ITipos_ImplementosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T18:34:05.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Tipos_ImplementosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Tipos_ImplementosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Tipos_ImplementosPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Tipos_ImplementosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\Tipos_ImplementosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T18:21:15.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Tipo_Aseo_ElementosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipo_Aseo_ElementosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Tipo_Aseo_ElementosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipo_Aseo_ElementosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Tipo_Aseo_ElementosUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:41:59.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UsuariosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UsuariosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\UsuariosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UsuariosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\UsuariosUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:42:22.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Tipos_IntermediaUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipos_IntermediaUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Tipos_IntermediaUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Tipos_IntermediaUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Tipos_IntermediaUnitariasPresentacion.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwDkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:42:12.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ComunicacionesUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\ComunicacionesUnitariasPresentacion.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:56:51.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BodegasUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\BodegasUnitariasPresentacion.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T03:55:47.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ContratosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ContratosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\ContratosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ContratosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\ContratosUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:35:13.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ComprasUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ComprasUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\ComprasUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ComprasUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\ComprasUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:25:34.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Aseo_ElementosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Aseo_ElementosUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T03:55:13.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EmpleadosUnitarias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\EmpleadosUnitarias.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\EmpleadosUnitarias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\EmpleadosUnitarias.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\EmpleadosUnitarias.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:53:09.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PrestamosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PrestamosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\PrestamosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PrestamosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\PrestamosUnitariasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:40:33.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SedesUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\SedesUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\SedesUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\SedesUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\SedesUnitariasPresentacion.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:34:38.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UnitariasPresentacion.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "RelativeToolTip": "UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-28T03:52:15.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PagosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PagosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\PagosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\PagosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\PagosUnitariasPresentacion.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwDkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:38:23.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MantenimientosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\MantenimientosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\MantenimientosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\MantenimientosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\MantenimientosUnitariasPresentacion.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwD8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:38:10.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ImplementosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ImplementosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\ImplementosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\ImplementosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\ImplementosUnitariasPresentacion.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:37:58.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "FacturasUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\FacturasUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\FacturasUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\FacturasUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\FacturasUnitariasPresentacion.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwDgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:37:24.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EnviosUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\EnviosUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\EnviosUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\EnviosUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\EnviosUnitariasPresentacion.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:37:09.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Detalle_FacturasUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Detalle_FacturasUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\Detalle_FacturasUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\Detalle_FacturasUnitariasPresentacion.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\Detalle_FacturasUnitariasPresentacion.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwDkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:35:32.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Aseo_ElementosUnitarias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Aseo_ElementosUnitarias.cs",
+              "RelativeDocumentMoniker": "Unitarias\\Aseo_ElementosUnitarias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Aseo_ElementosUnitarias.cs",
+              "RelativeToolTip": "Unitarias\\Aseo_ElementosUnitarias.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T14:18:01.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "BodegasUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\BodegasUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\BodegasUnitarias.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\BodegasUnitarias.cs",
               "RelativeToolTip": "Unitarias\\BodegasUnitarias.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAA1wCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T14:18:24.669Z"
+              "WhenOpened": "2026-05-15T14:18:24.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 41,
+              "Title": "UnitariasPresentacion_Imagen.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\UnitariasPresentacion_Imagen.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\UnitariasPresentacion_Imagen.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\UnitariasPresentacion_Imagen.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\UnitariasPresentacion_Imagen.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAANkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T16:12:56.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RolesUnitarias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\RolesUnitarias.cs",
+              "RelativeDocumentMoniker": "Unitarias\\RolesUnitarias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\RolesUnitarias.cs",
+              "RelativeToolTip": "Unitarias\\RolesUnitarias.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T14:21:40.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Configuraciones.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T23:38:37.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DatosHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
+              "RelativeDocumentMoniker": "Unitarias\\DatosHelper.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
+              "RelativeToolTip": "Unitarias\\DatosHelper.cs",
+              "ViewState": "AgIAAHsBAAAAAAAAAADwv58BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T22:25:34.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "BodegasUnitariasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\BodegasUnitariasPresentacion.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\BodegasUnitariasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\BodegasUnitariasPresentacion.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\BodegasUnitariasPresentacion.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T05:24:57.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PruebasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PruebasPresentacion.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\PruebasPresentacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PruebasPresentacion.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\PruebasPresentacion.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T05:13:15.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Tipos_PortatilesServicios.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T03:01:35.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ComunicacionesUnitarias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T04:34:23.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ComunicacionesUnitarias (1).cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias (1).cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias (1).cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\ComunicacionesUnitarias (1).cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\ComunicacionesUnitarias (1).cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T04:41:07.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "PresentacionUnitarias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\PresentacionUnitarias.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\PresentacionUnitarias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\PresentacionUnitarias.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\PresentacionUnitarias.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T03:45:25.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
               "Title": "Historial_PreciosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Historial_PreciosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\Historial_PreciosUnitarias.cs",
@@ -843,19 +1431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UnitariasPresentacion.csproj",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UnitariasPresentacion.csproj",
-              "RelativeDocumentMoniker": "UnitariasPresentacion\\UnitariasPresentacion.csproj",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UnitariasPresentacion.csproj",
-              "RelativeToolTip": "UnitariasPresentacion\\UnitariasPresentacion.csproj",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-28T03:52:15.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 54,
               "Title": "ApiServicios.csproj",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\ApiServicios.csproj",
               "RelativeDocumentMoniker": "ApiServicios\\ApiServicios.csproj",
@@ -867,7 +1443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 52,
               "Title": "QueryDB.sql",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\QueryDB.sql",
               "RelativeDocumentMoniker": "BibliotecaServicios\\QueryDB.sql",
@@ -878,7 +1454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 53,
               "Title": "UsuariosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\UsuariosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\UsuariosServicios.cs",
@@ -890,7 +1466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 55,
               "Title": "Tipos_PortatilesPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Tipos_PortatilesPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Tipos_PortatilesPresentacion.cs",
@@ -902,7 +1478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 56,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Index.cshtml",
@@ -914,19 +1490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Configuraciones.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Nucleo\\Configuraciones.cs",
-              "RelativeDocumentMoniker": "BibliotecaServicios\\Nucleo\\Configuraciones.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Nucleo\\Configuraciones.cs",
-              "RelativeToolTip": "BibliotecaServicios\\Nucleo\\Configuraciones.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T23:38:37.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 58,
               "Title": "UsuariosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\UsuariosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\UsuariosUnitarias.cs",
@@ -938,19 +1502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UbicacionesUnitarias.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\UbicacionesUnitarias.cs",
-              "RelativeDocumentMoniker": "Unitarias\\UbicacionesUnitarias.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\UbicacionesUnitarias.cs",
-              "RelativeToolTip": "Unitarias\\UbicacionesUnitarias.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwE8AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T17:00:54.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 60,
               "Title": "ApiPresentacion",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiPresentacion\\ApiPresentacion.csproj",
               "RelativeDocumentMoniker": "ApiPresentacion\\ApiPresentacion.csproj",
@@ -961,7 +1513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 62,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ApiServicios\\Properties\\launchSettings.json",
@@ -973,7 +1525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 61,
               "Title": "Ubicaciones.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml",
@@ -985,19 +1537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UbicacionesPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
-              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
-              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\UbicacionesPresentacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T17:05:50.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 57,
               "Title": "BibliotecaServicios.csproj",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\BibliotecaServicios.csproj",
               "RelativeDocumentMoniker": "BibliotecaServicios\\BibliotecaServicios.csproj",
@@ -1009,7 +1549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 66,
               "Title": "IUbicacionesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IUbicacionesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IUbicacionesServicios.cs",
@@ -1021,7 +1561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 59,
               "Title": "Ubicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Ubicaciones.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Ubicaciones.cs",
@@ -1033,7 +1573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 64,
               "Title": "Mapas.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Mapas.cshtml.cs",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Mapas.cshtml.cs",
@@ -1045,7 +1585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 63,
               "Title": "Mapas.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Mapas.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Mapas.cshtml",
@@ -1057,7 +1597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 65,
               "Title": "UbicacionesController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\UbicacionesController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\UbicacionesController.cs",
@@ -1069,7 +1609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 69,
               "Title": "UsuariosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\UsuariosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\UsuariosPresentacion.cs",
@@ -1081,7 +1621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 70,
               "Title": "IUbicacionesPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IUbicacionesPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IUbicacionesPresentacion.cs",
@@ -1093,7 +1633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 71,
               "Title": "IUsuariosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IUsuariosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IUsuariosPresentacion.cs",
@@ -1105,7 +1645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 68,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\UsuariosController.cs",
@@ -1117,7 +1657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 67,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Conexion.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Conexion.cs",
@@ -1129,7 +1669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 72,
               "Title": "UbicacionesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\UbicacionesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\UbicacionesServicios.cs",
@@ -1141,7 +1681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 73,
               "Title": "ITipos_PortatilesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipos_PortatilesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ITipos_PortatilesServicios.cs",
@@ -1153,7 +1693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 74,
               "Title": "ITipos_PortatilesPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ITipos_PortatilesPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\ITipos_PortatilesPresentacion.cs",
@@ -1165,7 +1705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 75,
               "Title": "Ubicaciones.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml.cs",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml.cs",
@@ -1177,7 +1717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 76,
               "Title": "PagosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\PagosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\PagosUnitarias.cs",
@@ -1189,7 +1729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 77,
               "Title": "IBodegasPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IBodegasPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IBodegasPresentacion.cs",
@@ -1201,7 +1741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 78,
               "Title": "Detalle_FacturasUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Detalle_FacturasUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\Detalle_FacturasUnitarias.cs",
@@ -1213,7 +1753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 81,
               "Title": "ContratosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\ContratosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\ContratosUnitarias.cs",
@@ -1225,7 +1765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 80,
               "Title": "Prestamos_PortatilesUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Prestamos_PortatilesUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\Prestamos_PortatilesUnitarias.cs",
@@ -1237,7 +1777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 79,
               "Title": "ComprasUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\ComprasUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\ComprasUnitarias.cs",
@@ -1249,7 +1789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 82,
               "Title": "IConexion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IConexion.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IConexion.cs",
@@ -1261,7 +1801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 85,
               "Title": "Tipos_ImplementosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Tipos_ImplementosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\Tipos_ImplementosUnitarias.cs",
@@ -1273,7 +1813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 86,
               "Title": "EmpleadosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\EmpleadosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\EmpleadosUnitarias.cs",
@@ -1285,7 +1825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 89,
               "Title": "ClientesUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\ClientesUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\ClientesUnitarias.cs",
@@ -1297,7 +1837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 83,
               "Title": "BodegasServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\BodegasServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\BodegasServicios.cs",
@@ -1309,7 +1849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 88,
               "Title": "MantenimientosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\MantenimientosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\MantenimientosUnitarias.cs",
@@ -1321,7 +1861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 84,
               "Title": "PagosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PagosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PagosServicios.cs",
@@ -1333,7 +1873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 87,
               "Title": "AuditoriasUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\AuditoriasUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\AuditoriasUnitarias.cs",
@@ -1345,7 +1885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 90,
               "Title": "PersonasUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\PersonasUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\PersonasUnitarias.cs",
@@ -1357,7 +1897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 91,
               "Title": "PermisosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\PermisosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\PermisosUnitarias.cs",
@@ -1369,7 +1909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 92,
               "Title": "Tipos_IntermediaUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Tipos_IntermediaUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\Tipos_IntermediaUnitarias.cs",
@@ -1381,7 +1921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 93,
               "Title": "ImplementosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\ImplementosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\ImplementosUnitarias.cs",
@@ -1393,7 +1933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 94,
               "Title": "FacturasUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\FacturasUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\FacturasUnitarias.cs",
@@ -1405,7 +1945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 95,
               "Title": "EnviosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\EnviosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\EnviosUnitarias.cs",
@@ -1417,7 +1957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 96,
               "Title": "PrestamosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\PrestamosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\PrestamosUnitarias.cs",
@@ -1429,7 +1969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 97,
               "Title": "PortatilesUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\PortatilesUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\PortatilesUnitarias.cs",
@@ -1441,7 +1981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 98,
               "Title": "Tipo_Aseo_ElementosUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Tipo_Aseo_ElementosUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\Tipo_Aseo_ElementosUnitarias.cs",
@@ -1453,7 +1993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 99,
               "Title": "Tipos_PortatilesUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\Tipos_PortatilesUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\Tipos_PortatilesUnitarias.cs",
@@ -1465,7 +2005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 100,
               "Title": "SedesUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\SedesUnitarias.cs",
               "RelativeDocumentMoniker": "Unitarias\\SedesUnitarias.cs",
@@ -1477,19 +2017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "RolesUnitarias.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\RolesUnitarias.cs",
-              "RelativeDocumentMoniker": "Unitarias\\RolesUnitarias.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\Unitarias\\RolesUnitarias.cs",
-              "RelativeToolTip": "Unitarias\\RolesUnitarias.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T14:21:40.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 101,
               "Title": "Tipo_Aseo_Elementos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Tipo_Aseo_Elementos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Tipo_Aseo_Elementos.cs",
@@ -1501,7 +2029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 102,
               "Title": "TodasUnitarias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\TodasUnitarias.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\TodasUnitarias.cs",
@@ -1513,7 +2041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 105,
               "Title": "Aseo_Elementos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Aseo_Elementos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Aseo_Elementos.cs",
@@ -1525,7 +2053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 103,
               "Title": "Aseo_ElementosUnitaria.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Aseo_ElementosUnitaria.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\Aseo_ElementosUnitaria.cs",
@@ -1537,7 +2065,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 108,
               "Title": "DatosHelper.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DatosHelper.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\DatosHelper.cs",
@@ -1549,7 +2077,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 104,
               "Title": "Usuarios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Usuarios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Usuarios.cs",
@@ -1561,7 +2089,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 107,
               "Title": "DatosHelper (1).cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\DatosHelper (1).cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\DatosHelper (1).cs",
@@ -1573,7 +2101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 106,
               "Title": "Permisos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Permisos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Permisos.cs",
@@ -1585,19 +2113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "Prestamos_Portatiles.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
-              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
-              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Prestamos_Portatiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:08.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 109,
               "Title": "Tipo_Aseo_ElementosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Tipo_Aseo_ElementosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Tipo_Aseo_ElementosPresentacion.cs",
@@ -1609,7 +2125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 110,
               "Title": "Compras.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Compras.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Compras.cs",
@@ -1621,7 +2137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 111,
               "Title": "Pagos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Pagos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Pagos.cs",
@@ -1633,7 +2149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 112,
               "Title": "Contratos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Contratos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Contratos.cs",
@@ -1645,7 +2161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 113,
               "Title": "IAseo_ElementosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IAseo_ElementosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IAseo_ElementosServicios.cs",
@@ -1657,7 +2173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 114,
               "Title": "Bodegas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Bodegas.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Bodegas.cs",
@@ -1669,7 +2185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 116,
               "Title": "PortatilesController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PortatilesController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PortatilesController.cs",
@@ -1681,7 +2197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 115,
               "Title": "MantenimientosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\MantenimientosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\MantenimientosController.cs",
@@ -1693,7 +2209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 117,
               "Title": "PermisosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PermisosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\PermisosPresentacion.cs",
@@ -1705,7 +2221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 118,
               "Title": "PagosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PagosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\PagosPresentacion.cs",
@@ -1717,7 +2233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 119,
               "Title": "ISedesPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ISedesPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\ISedesPresentacion.cs",
@@ -1729,7 +2245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 120,
               "Title": "ITipos_IntermediaPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ITipos_IntermediaPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\ITipos_IntermediaPresentacion.cs",
@@ -1741,7 +2257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 121,
               "Title": "ISedesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ISedesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ISedesServicios.cs",
@@ -1753,7 +2269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 122,
               "Title": "ITipos_ImplementosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipos_ImplementosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ITipos_ImplementosServicios.cs",
@@ -1765,31 +2281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
-              "Title": "Tipo_ImplementosPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Tipo_ImplementosPresentacion.cs",
-              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Tipo_ImplementosPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Tipo_ImplementosPresentacion.cs",
-              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\Tipo_ImplementosPresentacion.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwE4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T18:21:15.557Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 92,
-              "Title": "ITipo_ImplementosPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ITipo_ImplementosPresentacion.cs",
-              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\ITipo_ImplementosPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ITipo_ImplementosPresentacion.cs",
-              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\ITipo_ImplementosPresentacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T18:34:05.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 123,
               "Title": "ITipo_Aseo_ElementosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\ITipo_Aseo_ElementosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\ITipo_Aseo_ElementosPresentacion.cs",
@@ -1801,7 +2293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 124,
               "Title": "IRolesPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IRolesPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IRolesPresentacion.cs",
@@ -1813,7 +2305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 125,
               "Title": "IPrestamosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPrestamosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPrestamosPresentacion.cs",
@@ -1825,7 +2317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 126,
               "Title": "IPortatilesPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPortatilesPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPortatilesPresentacion.cs",
@@ -1837,7 +2329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 127,
               "Title": "IPersonasPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPersonasPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPersonasPresentacion.cs",
@@ -1849,7 +2341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 128,
               "Title": "IPermisosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPermisosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPermisosPresentacion.cs",
@@ -1861,7 +2353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 129,
               "Title": "IPagosPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPagosPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPagosPresentacion.cs",
@@ -1873,19 +2365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
-              "Title": "IPrestamos_PortatilesPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
-              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
-              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IPrestamos_PortatilesPresentacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T18:31:56.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 130,
               "Title": "Tipos_IntermediaPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Tipos_IntermediaPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Tipos_IntermediaPresentacion.cs",
@@ -1897,43 +2377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
-              "Title": "SedesPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
-              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
-              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\SedesPresentacion.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T18:20:33.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 103,
-              "Title": "RolesPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
-              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
-              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\RolesPresentacion.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T18:20:10.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 104,
-              "Title": "PrestamosPresentacion.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
-              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
-              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\PrestamosPresentacion.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T18:19:59.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 131,
               "Title": "PortatilesPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PortatilesPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\PortatilesPresentacion.cs",
@@ -1945,7 +2389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 132,
               "Title": "PersonasPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PersonasPresentacion.cs",
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\PersonasPresentacion.cs",
@@ -1957,7 +2401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 133,
               "Title": "MantenimientosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\MantenimientosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\MantenimientosServicios.cs",
@@ -1969,7 +2413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 134,
               "Title": "Clientes.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Clientes.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Clientes.cs",
@@ -1981,7 +2425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 135,
               "Title": "Implementos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Implementos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Implementos.cs",
@@ -1993,7 +2437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 136,
               "Title": "Tipos_Portatiles.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Tipos_Portatiles.cs",
@@ -2005,7 +2449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 137,
               "Title": "Tipos_Intermedia.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Tipos_Intermedia.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Tipos_Intermedia.cs",
@@ -2017,7 +2461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 138,
               "Title": "Sedes.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Sedes.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Sedes.cs",
@@ -2029,7 +2473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 139,
               "Title": "Prestamos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Prestamos.cs",
@@ -2041,7 +2485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 140,
               "Title": "Portatiles.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Portatiles.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Portatiles.cs",
@@ -2053,7 +2497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 141,
               "Title": "Personas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Personas.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Personas.cs",
@@ -2065,7 +2509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 142,
               "Title": "Historial_Precios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Historial_Precios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Historial_Precios.cs",
@@ -2077,7 +2521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 143,
               "Title": "Facturas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Facturas.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Facturas.cs",
@@ -2089,7 +2533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 144,
               "Title": "Envios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Envios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Envios.cs",
@@ -2101,7 +2545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 145,
               "Title": "Empleados.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Empleados.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Empleados.cs",
@@ -2113,7 +2557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 146,
               "Title": "Detalle_Facturas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Detalle_Facturas.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Detalle_Facturas.cs",
@@ -2125,7 +2569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 147,
               "Title": "Auditorias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Auditorias.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Auditorias.cs",
@@ -2137,7 +2581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 148,
               "Title": "IUsuariosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IUsuariosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IUsuariosServicios.cs",
@@ -2149,7 +2593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 149,
               "Title": "IPrestamosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPrestamosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPrestamosServicios.cs",
@@ -2161,7 +2605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 150,
               "Title": "IBalones_Presentaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
@@ -2173,7 +2617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 151,
               "Title": "IComunicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
@@ -2185,7 +2629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 154,
               "Title": "Balones_Presentaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
@@ -2197,7 +2641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 152,
               "Title": "Comunicaciones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
@@ -2209,7 +2653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 156,
               "Title": "ITipo_Aseo_ElementosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipo_Aseo_ElementosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ITipo_Aseo_ElementosServicios.cs",
@@ -2221,7 +2665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 153,
               "Title": "Tipos_IntermediaServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipos_IntermediaServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipos_IntermediaServicios.cs",
@@ -2233,7 +2677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 157,
               "Title": "ImplementosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\ImplementosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\ImplementosController.cs",
@@ -2245,7 +2689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 155,
               "Title": "Tipo_ImplementosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipo_ImplementosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipo_ImplementosServicios.cs",
@@ -2257,7 +2701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 158,
               "Title": "Prestamos_PortatilesController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Prestamos_PortatilesController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Prestamos_PortatilesController.cs",
@@ -2269,7 +2713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 159,
               "Title": "Aseo_ElementosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Aseo_ElementosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Aseo_ElementosController.cs",
@@ -2281,7 +2725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 160,
               "Title": "PagosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PagosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PagosController.cs",
@@ -2293,7 +2737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 161,
               "Title": "Tipos_PortatilesController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_PortatilesController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipos_PortatilesController.cs",
@@ -2305,7 +2749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 162,
               "Title": "Tipo_Aseo_ElementosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipo_Aseo_ElementosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipo_Aseo_ElementosController.cs",
@@ -2317,7 +2761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 163,
               "Title": "PrestamosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PrestamosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PrestamosController.cs",
@@ -2329,19 +2773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
-              "Title": "Tipos_PortatilesServicios.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
-              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
-              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipos_PortatilesServicios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T03:01:35.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 164,
               "Title": "Tipo_Aseo_ElementosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipo_Aseo_ElementosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipo_Aseo_ElementosServicios.cs",
@@ -2353,7 +2785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 165,
               "Title": "SedesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\SedesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\SedesServicios.cs",
@@ -2365,7 +2797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 166,
               "Title": "PrestamosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
@@ -2377,7 +2809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 167,
               "Title": "Prestamos_PortatilesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Prestamos_PortatilesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Prestamos_PortatilesServicios.cs",
@@ -2389,7 +2821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 168,
               "Title": "PortatilesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PortatilesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PortatilesServicios.cs",
@@ -2401,7 +2833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 169,
               "Title": "PersonasServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PersonasServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PersonasServicios.cs",
@@ -2413,7 +2845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 170,
               "Title": "PermisosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PermisosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PermisosServicios.cs",
@@ -2425,7 +2857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 171,
               "Title": "ImplementosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\ImplementosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\ImplementosServicios.cs",
@@ -2437,7 +2869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 172,
               "Title": "IPagosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPagosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPagosServicios.cs",
@@ -2449,7 +2881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 173,
               "Title": "IPersonasServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPersonasServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPersonasServicios.cs",
@@ -2461,7 +2893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 174,
               "Title": "IPrestamos_PortatilesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPrestamos_PortatilesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPrestamos_PortatilesServicios.cs",
@@ -2473,7 +2905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 175,
               "Title": "IPermisosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPermisosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPermisosServicios.cs",
@@ -2485,7 +2917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 176,
               "Title": "PermisosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PermisosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PermisosController.cs",
@@ -2497,7 +2929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 177,
               "Title": "PersonasController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PersonasController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PersonasController.cs",
@@ -2509,7 +2941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 178,
               "Title": "SedesController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\SedesController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\SedesController.cs",
@@ -2521,7 +2953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 179,
               "Title": "Tipos_ImplementosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_ImplementosController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipos_ImplementosController.cs",
@@ -2533,7 +2965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 180,
               "Title": "Tipos_IntermediaController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_IntermediaController.cs",
               "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipos_IntermediaController.cs",
@@ -2545,7 +2977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 181,
               "Title": "IImplementosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IImplementosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IImplementosServicios.cs",
@@ -2557,7 +2989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 182,
               "Title": "IPortatilesServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPortatilesServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPortatilesServicios.cs",
@@ -2569,7 +3001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 183,
               "Title": "ITipos_IntermediaServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipos_IntermediaServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ITipos_IntermediaServicios.cs",
