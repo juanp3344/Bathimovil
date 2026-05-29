@@ -136,21 +136,6 @@ CREATE TABLE [Contratos](
 [Cliente] INT NOT NULL REFERENCES [Clientes]([Id_Persona])
 );
 
-
-
-
-CREATE TABLE [Prestamos]
-(-- LISTAS PRESTAMOS_PORTATILES, MANTENIMIENTO
-[Id_Prestamo] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Fecha_Inicio] SMALLDATETIME NOT NULL,
-[Fecha_Fin_Prevista] SMALLDATETIME NOT NULL,
-[Estado_Prestamo] BIT NOT NULL,
-[Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato])
-);
-
-
-
-
 CREATE TABLE [Compras]
 (
 [Id_Compra] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
@@ -161,10 +146,6 @@ CREATE TABLE [Compras]
 
 [Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato]),
 );
-
-
-
-
 
 
 CREATE TABLE [Portatiles]
@@ -179,6 +160,17 @@ CREATE TABLE [Portatiles]
 [Compra] INT NULL REFERENCES [Compras]([Id_Compra])
 );
 
+
+CREATE TABLE [Prestamos]
+(-- LISTAS PRESTAMOS_PORTATILES, MANTENIMIENTO
+[Id_Prestamo] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
+[Fecha_Inicio] SMALLDATETIME NOT NULL,
+[Fecha_Fin_Prevista] SMALLDATETIME NOT NULL,
+[Estado_Prestamo] BIT NOT NULL,
+[Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato]),
+[Portatil] INT NOT NULL,
+FOREIGN KEY (Portatil) REFERENCES Portatiles(Id_Portatil)
+);
 
 
 CREATE TABLE [Implementos]
