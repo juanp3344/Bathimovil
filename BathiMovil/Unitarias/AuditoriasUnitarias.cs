@@ -33,7 +33,7 @@ namespace Unitarias
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
             this.entidad = DatosHelper.CrearAuditoria(this.iConexion);
-            if (this.entidad!.Id_Auditoria != 0) return;
+            if (this.entidad!.Id != 0) return;
             throw new Exception("");
         }
 
@@ -41,11 +41,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
-            this.entidad!.Descripcion = "Chowder";
+            this.entidad!.Nombre = "Chowder";
             var entry = this.iConexion!.Entry<Auditorias>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();
-            if (entidad!.Id_Auditoria != 0) return;
+            if (entidad!.Id != 0) return;
             throw new Exception("");
         }
 
