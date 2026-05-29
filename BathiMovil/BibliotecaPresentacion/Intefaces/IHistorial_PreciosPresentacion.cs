@@ -12,5 +12,6 @@ namespace BibliotecaPresentacion.Intefaces
         Historial_Precios Modificar(Historial_Precios entidad);
 
         Historial_Precios Eliminar(Historial_Precios entidad);
+        Task<byte[]> ExportarPdf();
     }
 }

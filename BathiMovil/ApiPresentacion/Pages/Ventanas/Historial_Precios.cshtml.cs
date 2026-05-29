@@ -24,6 +24,17 @@ namespace ApiPresentacion.Pages
 
         }
 
+        public async Task<IActionResult> OnPostExportarPdf()
+        {
+            var pdf = await IHistorialPrecios_Presentacion!.ExportarPdf();
+
+            return File(
+                pdf,
+                "application/pdf",
+                "Historial de precios.pdf"
+            );
+        }
+
         public void OnGet()
         {
             OnPostBtRefrescar();

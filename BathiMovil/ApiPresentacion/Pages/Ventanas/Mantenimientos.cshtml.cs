@@ -50,6 +50,7 @@ namespace ApiPresentacion.Pages
 
         }
 
+
         public void OnPostBtRefrescar()
         {
             try
@@ -68,6 +69,16 @@ namespace ApiPresentacion.Pages
             }
         }
 
+        public async Task<IActionResult> OnPostExportarPdf()
+        {
+            var pdf = await IMantenimientos_Presentacion!.ExportarPdf();
+
+            return File(
+                pdf,
+                "application/pdf",
+                "Mantenimientos.pdf"
+            );
+        }
         public void OnPostBtVolver()
         {
             OnPostBtRefrescar();

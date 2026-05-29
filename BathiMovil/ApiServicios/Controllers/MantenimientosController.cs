@@ -11,11 +11,12 @@ namespace ApiServicios.Controllers
     {
         private IMantenimientosServicios? IMantenimientosServicios;
 
-
+        private readonly IPdfServicios _pdfServicio;
 
         public MantenimientosController()
         {
             this.IMantenimientosServicios = new MantenimientosServicios();
+            this._pdfServicio = new PdfServicios();
         }
 
         [HttpGet]
@@ -51,5 +52,18 @@ namespace ApiServicios.Controllers
             return this.IMantenimientosServicios!.Eliminar(id);
         }
 
+        [HttpGet]
+        public IActionResult ExportarPdf()
+        {
+            var lista = IMantenimientosServicios!.Consultar();
+
+            var pdf = _pdfServicio.GenerarPdf(lista, "Reporte Mantenimientos");
+
+            return File(
+                pdf,
+                "application/pdf",
+                "Mantenimientos.pdf"
+            );
+        }
     }
 }

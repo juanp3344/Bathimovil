@@ -12,5 +12,6 @@ namespace BibliotecaPresentacion.Intefaces
         Mantenimientos Modificar(Mantenimientos entidad);
 
         Mantenimientos Eliminar(Mantenimientos entidad);
+        Task<byte[]> ExportarPdf();
     }
 }

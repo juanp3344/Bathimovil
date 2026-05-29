@@ -22,6 +22,7 @@ namespace ApiPresentacion.Pages
             IBodegasPresentacion = new BodegasPresentacion();
             ISedesPresentacion = new SedesPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
+            IEmpleadosPresentacion = new EmpleadosPresentacion();
         }
 
         public void OnGet()
@@ -31,7 +32,7 @@ namespace ApiPresentacion.Pages
 
         public List<Empleados> CargarEmpleados()
         {
-            return Empleados = IEmpleadosPresentacion!.Consultar();
+            return IEmpleadosPresentacion!.Consultar();
         }
 
         public List<Sedes> CargarSedes()

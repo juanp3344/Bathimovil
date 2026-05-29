@@ -12,5 +12,6 @@ namespace BibliotecaPresentacion.Intefaces
         Empleados Modificar(Empleados entidad);
 
         Empleados Eliminar(Empleados entidad);
+        Task<byte[]> ExportarPdf();
     }
 }

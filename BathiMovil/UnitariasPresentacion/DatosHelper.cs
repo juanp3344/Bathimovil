@@ -14,9 +14,10 @@ namespace Unitarias
         {
             var e = new Auditorias()
             {
-                Fecha = DateTime.Now,
-                Descripcion = "Auditoría de prueba",
-                Nombre_Ejecutor = "Tester"
+                HoraAccion = DateTime.Now.ToString("HH:mm:ss"),
+                Nivel_Cambio = "bajo",
+                Operacion = "reviso una entidad",
+                Nombre = "tester"
             };
             conexion.Auditorias!.Add(e);
             conexion.SaveChanges();

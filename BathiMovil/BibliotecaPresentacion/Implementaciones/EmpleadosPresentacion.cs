@@ -96,5 +96,14 @@ namespace BibliotecaPresentacion.Implementaciones
             return JsonConvert.DeserializeObject<Empleados>(
                 respuesta["Valor"].ToString()!)!;
         }
+
+        public async Task<byte[]> ExportarPdf()
+        {
+            var httpClient = new HttpClient();
+            HttpResponseMessage respuesta =
+                await httpClient.GetAsync("http://localhost:5010/Empleados/ExportarPdf");
+
+            return await respuesta.Content.ReadAsByteArrayAsync();
+        }
     }
 }
