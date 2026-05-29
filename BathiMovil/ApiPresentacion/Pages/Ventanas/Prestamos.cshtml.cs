@@ -50,7 +50,8 @@ namespace ApiPresentacion.Pages
                     Fecha_Inicio = DateTime.Now,
                     Fecha_Fin_Prevista = DateTime.Now.AddMonths(1),
                     Estado_Prestamo = true,
-                    Contrato = idContrato
+                    Contrato = idContrato,
+                    Portatil = portatil
                 };
                 return;
             }
@@ -77,7 +78,6 @@ namespace ApiPresentacion.Pages
                 foreach (var portatil in portatiles)
                 {
                     portatil.Estado_Actual = "En préstamo";
-                    portatil.Compra = Prestamo!.Id_Prestamo;
                     IPortatiles_Presentacion.Modificar(portatil);
                 }
 
