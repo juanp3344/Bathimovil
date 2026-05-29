@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BibliotecaPresentacion.Intefaces
 {
-    public interface ITipo_ImplementosPresentacion
+    public interface ITipos_ImplementosPresentacion
     {
         List<Tipos_Implementos> Consultar();
         Tipos_Implementos Guardar(Tipos_Implementos entidad);

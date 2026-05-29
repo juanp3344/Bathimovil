@@ -25,7 +25,6 @@ namespace ApiPresentacion.Pages
             IContratosPresentacion = new ContratosPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
 
-
         }
 
         public void OnGet()

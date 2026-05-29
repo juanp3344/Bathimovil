@@ -11,7 +11,7 @@ namespace ApiPresentacion.Pages
         private IImplementosPresentacion? IImplementos_Presentacion;
         private IPortatilesPresentacion? IPortatilesPresentacion;
         private IBodegasPresentacion? IBodegasPresentacion;
-        private ITipo_ImplementosPresentacion? ITipo_ImplementosPresentacion;
+        private ITipos_ImplementosPresentacion? ITipo_ImplementosPresentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
 
         [BindProperty] public List<Implementos>? Lista { get; set; }

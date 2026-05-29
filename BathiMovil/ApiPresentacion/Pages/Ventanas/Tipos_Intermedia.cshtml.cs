@@ -10,7 +10,7 @@ namespace ApiPresentacion.Pages
     public class Tipos_IntermediaModel : PageModel
     {
         private ITipos_IntermediaPresentacion? ITipos_Intermedia_Presentacion;
-        private ITipo_ImplementosPresentacion? ITipo_ImplementosPresentacion;
+        private ITipos_ImplementosPresentacion? ITipo_ImplementosPresentacion;
         private ITipos_PortatilesPresentacion? ITipos_PortatilesPresentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
 

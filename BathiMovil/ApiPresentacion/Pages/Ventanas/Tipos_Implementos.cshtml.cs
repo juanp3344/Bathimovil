@@ -8,7 +8,7 @@ namespace ApiPresentacion.Pages
 {
     public class Tipos_ImplementosModel : PageModel
     {
-        private ITipo_ImplementosPresentacion? ITipos_Implementos_Presentacion;
+        private ITipos_ImplementosPresentacion? ITipos_Implementos_Presentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
 
         [BindProperty] public List<Tipos_Implementos>? Lista { get; set; }
