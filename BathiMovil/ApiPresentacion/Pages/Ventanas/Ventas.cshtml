@@ -407,6 +407,8 @@
     </div>
 </div>
 
+
+
 <div class="catalogo">
     @foreach (var tipo in Model.ListaTPortatiles!)
     {
@@ -439,10 +441,18 @@
                            value="Comprar"
                            asp-page-handler="BtComprarPortatil"
                            class="btn-comprar @btnClass" />
+                    
+                    <input type="hidden" name="Id" value="@tipo.Id_Tipo_Portatil" />
+                    <input type="submit"
+                           value="Prestar"
+                           asp-page-handler="BtPrestarPortatil"
+                           class="btn-comprar @btnClass" />
                 </form>
             </div>
         </div>
-    }
+        }
+
+   
 </div>
 
 @if (Model.NoEstaLogeado)

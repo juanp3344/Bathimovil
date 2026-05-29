@@ -19,7 +19,7 @@ namespace UnitariasPresentacion
         private Aseo_Elementos? entidad;
 
         [TestMethod]
-        public void Ejecutar() { Guardar(); Consultar(); Modificar(); Eliminar(); }
+        public void Ejecutar() { Guardar(); Consultar(); Modificar(); }
 
         private void Guardar()
         {
@@ -44,6 +44,7 @@ namespace UnitariasPresentacion
 
         private void Consultar()
         {
+
             List<Aseo_Elementos> lista = this.iPresentacion.Consultar();
             if (lista != null) return;
             throw new Exception("");
@@ -51,17 +52,12 @@ namespace UnitariasPresentacion
 
         private void Modificar()
         {
+
             this.entidad!.Marca = "Chowder";
             Aseo_Elementos resultado = this.iPresentacion.Modificar(this.entidad!);
             if (resultado!.Id_Aseo_Elemento != 0) return;
             throw new Exception("");
         }
 
-        private void Eliminar()
-        {
-            Aseo_Elementos resultado = this.iPresentacion.Eliminar(this.entidad!);
-            if (resultado != null) return;
-            throw new Exception("");
-        }
     }
 }

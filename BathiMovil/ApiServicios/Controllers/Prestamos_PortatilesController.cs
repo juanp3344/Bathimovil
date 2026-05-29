@@ -44,7 +44,6 @@ namespace ApiServicios.Controllers
         }
 
         [HttpDelete]
-
         public Prestamos_Portatiles Eliminar(Prestamos_Portatiles id)
         {
             if (this.IPrestamos_PortatilesServicios == null)

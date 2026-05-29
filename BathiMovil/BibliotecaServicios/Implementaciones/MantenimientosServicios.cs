@@ -59,8 +59,21 @@ namespace BibliotecaServicios.Implementaciones
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
 
-            this.iConexion.Mantenimientos!.Remove(entidad!);
-            iConexion.SaveChanges();
+            // ← Primero borra los hijos
+            var hijos = this.iConexion.Aseo_Elementos!
+                            .Where(x => x.Mantenimiento == entidad.Id_Mantenimiento)
+                            .ToList();
+            this.iConexion.Aseo_Elementos!.RemoveRange(hijos);
+
+            // ← Luego borra el padre
+            var local = this.iConexion.Mantenimientos!
+                            .FirstOrDefault(x => x.Id_Mantenimiento == entidad.Id_Mantenimiento);
+
+            if (local == null)
+                throw new Exception("No se encontró el registro");
+
+            this.iConexion.Mantenimientos!.Remove(local);
+            this.iConexion.SaveChanges();
             return entidad;
         }
     }

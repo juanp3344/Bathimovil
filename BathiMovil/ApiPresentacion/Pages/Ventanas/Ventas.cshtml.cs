@@ -29,7 +29,17 @@ namespace ApiPresentacion.Pages
             }
             ConfirmarCantidad = true;
         }
+        public IActionResult OnPostBtPrestarPortatil()
+        {
+            if (HttpContext.Session.GetString("Usuario") == null)
+            {
+                NoEstaLogeado = true;
+                return Page();
+            }
 
+            TempData["EnPrestamo"] = true;
+            return RedirectToPage("/Ventanas/Prestamos");
+        }
         public void OnPostBtCerrar()
         {
             OnGet();
@@ -84,8 +94,3 @@ namespace ApiPresentacion.Pages
         
     }
 }
-
-
-
-
-
