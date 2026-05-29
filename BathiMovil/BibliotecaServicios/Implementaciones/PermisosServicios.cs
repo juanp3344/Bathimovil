@@ -65,5 +65,15 @@ namespace BibliotecaServicios.Implementaciones
             iConexion.SaveChanges();
             return entidad;
         }
+
+        public Permisos ComprobarPermiso(Permisos entidad)
+        {
+            iConexion = new Conexion();
+            iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
+            var lista = Consultar().FirstOrDefault(p => p.Nombre_Permiso == entidad.Nombre_Permiso);
+
+            return lista!;
+        }
     }
 }

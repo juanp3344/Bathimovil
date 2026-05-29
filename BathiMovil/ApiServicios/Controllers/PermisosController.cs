@@ -55,5 +55,13 @@ namespace ApiServicios.Controllers
             return this.IPermisosServicios!.Eliminar(id);
         }
 
+        [HttpPost]
+        public Permisos ComprobarPermiso(Permisos entidad)
+        {
+            if (this.IPermisosServicios == null)
+                throw new Exception("No implementado");
+            return this.IPermisosServicios!.ComprobarPermiso(entidad);
+        }
+
     }
 }

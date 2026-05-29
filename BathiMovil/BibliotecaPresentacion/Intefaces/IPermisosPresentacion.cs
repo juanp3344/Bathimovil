@@ -13,5 +13,6 @@ namespace BibliotecaPresentacion.Intefaces
         Permisos Modificar(Permisos entidad);
 
         Permisos Eliminar(Permisos entidad);
+        Permisos ComprobarPermiso(Permisos entidad);
     }
 }

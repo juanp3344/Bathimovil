@@ -84,15 +84,22 @@
                                    asp-for="@Model.Aseo_Elemento!.Mantenimiento" />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            Tipo Aseo Elementos
-                        </label>
-                        <div class="col-6">
-                            <input id="inTipo_Aseo_Elementos"
-                                   asp-for="@Model.Aseo_Elemento!.Tipo_Aseo_Elemento" />
-                        </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmRoles"
+                                class="form-control"
+                                asp-for="@Model.Aseo_Elemento!.Mantenimiento"
+                                asp-items="@(new SelectList(Model.CargarMantenimientos(), "Id_Mantenimiento", "Fecha_Servicio"))">
+                            <option value="">-- Seleccione un mantenimiento --</option>
+                        </select>
                     </div>
+                     <div style="margin-top: 20px;">
+                     <select id="nmRoles"
+                             class="form-control"
+                            asp-for="@Model.Aseo_Elemento!.Tipo_Aseo_Elemento"
+                                asp-items="@(new SelectList(Model.CargarTiposAseo(), "Id_Aseo_Elemento", "Uso"))">
+                         <option value="">-- Seleccione un tipo de elemento de aseo --</option>
+                     </select>
+                 </div>
                 </div>
             }
             

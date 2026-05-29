@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Pagos</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -76,19 +76,19 @@
                                    asp-for="@Model.Pago!.Metodo_Pago" />
                         </div>
                     </div>
-                        <div class="form-group">
-                            <label>
-                                Factura
-                            </label>
-                            <div class="col-6">
-                                <input id="inFactura"
-                                       class="cts_forms form-control"
-                                       asp-for="@Model.Pago!.Factura" />
-                            </div>
-                </div>
+
+                    <div style="margin-top: 20px;">
+                        <select id="nmFactura"
+                                class="form-control"
+                                asp-for="@Model.Pago!.Factura"
+                                asp-items="@(new SelectList(Model.CargarFacturas(), "Id_Factura", "Numero"))">
+                            <option value="">-- Seleccione una factura --</option>
+                        </select>
+                    </div>
+
                 </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -110,7 +110,7 @@
                             <h6 align="left">
                                 @Model.Pago!.Total_Pagado
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -143,7 +143,7 @@
                             Factura
                         </th>
                     </tr>
-                
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>

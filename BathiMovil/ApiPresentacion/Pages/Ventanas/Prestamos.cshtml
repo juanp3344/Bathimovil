@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Prestamos</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -66,19 +66,18 @@
                                    asp-for="@Model.Prestamo!.Estado_Prestamo" />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            Contrato
-                        </label>
-                        <div class="col-6">
-                            <input id="inContrato"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Prestamo!.Contrato" />
-                        </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmContrato"
+                                class="form-control"
+                                asp-for="@Model.Prestamo!.Contrato"
+                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Id_Contrato"))">
+                            <option value="">-- Seleccione un Contrato --</option>
+                        </select>
                     </div>
+
                 </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -100,7 +99,7 @@
                             <h6 align="left">
                                 @Model.Prestamo!.Fecha_Inicio
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -130,7 +129,7 @@
                             Contrato
                         </th>
                     </tr>
-                
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>

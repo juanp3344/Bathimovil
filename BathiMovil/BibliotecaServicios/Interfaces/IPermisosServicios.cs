@@ -8,5 +8,6 @@ namespace BibliotecaServicios.Interfaces
         Permisos Guardar(Permisos entidad);
         Permisos Modificar(Permisos entidad);
         Permisos Eliminar(Permisos entidad);
+        Permisos ComprobarPermiso(Permisos entidad);
     }
 }

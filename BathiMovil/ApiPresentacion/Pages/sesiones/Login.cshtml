@@ -156,6 +156,7 @@
 }
 else
 {
+    @if (HttpContext.Session.GetInt32("Rol")== 1){
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>Bienvenido, @Model.Username</h2>
@@ -178,17 +179,7 @@ else
                 </a>
             </div>
 
-            <div class="col">
-                <a href="/Ventanas/AseoElementos" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">🧹 Elementos de aseo</h5>
-                            <p class="card-text text-muted">Elementos de aseo para los baños portatiles</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
+            
             <div class="col">
                 <a href="/Ventanas/Bodegas" class="text-decoration-none">
                     <div class="card h-100 shadow-sm">
@@ -270,26 +261,7 @@ else
                     </div>
                 </a>
             </div>
-            <div class="col">
-                <a href="/Ventanas/Implementos" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">🚽 Implementos</h5>
-                            <p class="card-text text-muted">Implementos de los baños portatiles</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/Ventanas/Mantenimientos" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">🔨🔧 Mantenimiento</h5>
-                            <p class="card-text text-muted">Mantenimiento de los baños portatiles</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            
             <div class="col">
                 <a href="/Ventanas/Pagos" class="text-decoration-none">
                     <div class="card h-100 shadow-sm">
@@ -300,16 +272,8 @@ else
                     </div>
                 </a>
             </div>
-            <div class="col">
-                <a href="/Ventanas/Portatiles" class="text-decoration-none">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">🚻 Baños Portatiles</h5>
-                            <p class="card-text text-muted">Los baños portatiles de la empresa</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+
+            
             <div class="col">
                 <a href="/Ventanas/Prestamos" class="text-decoration-none">
                     <div class="card h-100 shadow-sm">
@@ -391,6 +355,102 @@ else
                     </div>
                 </a>
             </div>
+                <div class="col">
+                    <a href="/Ventanas/AseoElementos" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">🧹 Elementos de aseo</h5>
+                                <p class="card-text text-muted">Elementos de aseo para los baños portatiles</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="/Ventanas/Implementos" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">🚽 Implementos</h5>
+                                <p class="card-text text-muted">Implementos de los baños portatiles</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="/Ventanas/Mantenimientos" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">🔨🔧 Mantenimiento</h5>
+                                <p class="card-text text-muted">Mantenimiento de los baños portatiles</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="/Ventanas/Portatiles" class="text-decoration-none">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">🚻 Baños Portatiles</h5>
+                                <p class="card-text text-muted">Los baños portatiles de la empresa</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
         </div>
+       
     </div>
+    }
+    else if (HttpContext.Session.GetInt32("Rol") == 1 || HttpContext.Session.GetInt32("Rol") == 2)
+    {
+        <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <a href="/Ventanas/AseoElementos" class="text-decoration-none">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">🧹 Elementos de aseo</h5>
+                        <p class="card-text text-muted">Elementos de aseo para los baños portatiles</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="/Ventanas/Implementos" class="text-decoration-none">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">🚽 Implementos</h5>
+                        <p class="card-text text-muted">Implementos de los baños portatiles</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="/Ventanas/Mantenimientos" class="text-decoration-none">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">🔨🔧 Mantenimiento</h5>
+                        <p class="card-text text-muted">Mantenimiento de los baños portatiles</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="/Ventanas/Portatiles" class="text-decoration-none">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">🚻 Baños Portatiles</h5>
+                        <p class="card-text text-muted">Los baños portatiles de la empresa</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        </div>
+        </div>
+    }
 }

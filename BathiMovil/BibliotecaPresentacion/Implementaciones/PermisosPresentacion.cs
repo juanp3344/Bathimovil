@@ -96,5 +96,28 @@ namespace BibliotecaPresentacion.Implementaciones
             return JsonConvert.DeserializeObject<Permisos>(
                 respuesta["Valor"].ToString()!)!;
         }
+
+        public Permisos ComprobarPermiso(Permisos entidad)
+        {
+            if (entidad.Id_Permiso != 0)
+                throw new Exception("Ya se guardo");
+
+            this.iComunicaciones = new Comunicaciones();
+
+            var datos = new Dictionary<string, object>();
+            datos["Url"] = "http://localhost:5010/Permisos/ComprobarPermiso";
+            datos["Entidad"] = entidad;
+
+            this.iComunicaciones = new Comunicaciones();
+            var task = this.iComunicaciones.EjecutarPost(datos)!;
+            task.Wait();
+            var respuesta = task.Result;
+
+            if (!respuesta.ContainsKey("Valor"))
+                return new Permisos();
+
+            return JsonConvert.DeserializeObject<Permisos>(
+                respuesta["Valor"].ToString()!)!;
+        }
     }
 }

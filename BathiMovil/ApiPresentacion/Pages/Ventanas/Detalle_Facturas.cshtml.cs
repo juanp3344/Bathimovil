@@ -9,6 +9,8 @@ namespace ApiPresentacion.Pages
     {
         private IDetalle_FacturasPresentacion? IDetalle_FacturasPresentacion;
         private IFacturasPresentacion? IFacturasPresentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
+
         [BindProperty] public List<Detalle_Facturas>? Lista { get; set; }
         [BindProperty] public Detalle_Facturas? Detalle_Factura { get; set; }
         [BindProperty] public List<Facturas>? Facturas { get; set; }
@@ -18,6 +20,8 @@ namespace ApiPresentacion.Pages
         {
             IDetalle_FacturasPresentacion = new Detalle_FacturasPresentacion();
             IFacturasPresentacion = new FacturasPresentacion();
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
+
         }
 
         public void OnGet()
@@ -38,6 +42,9 @@ namespace ApiPresentacion.Pages
                 if (IDetalle_FacturasPresentacion == null)
                     return;
                 Lista = IDetalle_FacturasPresentacion.Consultar();
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista detalles factura", usuario);
                 Detalle_Factura = null;
             }
             catch (Exception ex)
@@ -46,7 +53,7 @@ namespace ApiPresentacion.Pages
             }
         }
 
-        
+
         public void OnPostBtModificar(int data)
         {
             try
@@ -66,12 +73,18 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var usuario = HttpContext.Session.GetString("Usuario");
+
                 if (Detalle_Factura == null)
                     return;
                 if (Detalle_Factura.Id_Detalle == 0)
+                {
                     Detalle_Factura = IDetalle_FacturasPresentacion!.Guardar(Detalle_Factura!);
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un detalle factura", usuario);
+                }
                 else
                     Detalle_Factura = IDetalle_FacturasPresentacion!.Modificar(Detalle_Factura!);
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un cliente", usuario);
                 if (Detalle_Factura.Id_Detalle == 0)
                     return;
                 OnPostBtRefrescar();
@@ -89,6 +102,8 @@ namespace ApiPresentacion.Pages
                 if (Detalle_Factura == null)
                     return;
                 Detalle_Factura = IDetalle_FacturasPresentacion!.Eliminar(Detalle_Factura!);
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un detalle factura", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

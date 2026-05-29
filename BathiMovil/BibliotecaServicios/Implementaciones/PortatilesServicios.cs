@@ -78,5 +78,7 @@ namespace BibliotecaServicios.Implementaciones
 
             return portatilesFiltrados;
         }
+
+     
     }
 }

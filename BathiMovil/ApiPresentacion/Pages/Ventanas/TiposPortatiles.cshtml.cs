@@ -1,4 +1,5 @@
 using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -7,14 +8,16 @@ namespace ApiPresentacion.Pages
 {
     public class TiposPortatilesModel : PageModel
     {
-        private Tipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
+        private ITipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
         [BindProperty] public List<Tipos_Portatiles>? Lista { get; set; }
         [BindProperty] public Tipos_Portatiles? Tipos_Portatiles { get; set; }
         [BindProperty] public bool Borrando { get; set; }
 
         public TiposPortatilesModel()
         {
-            ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion();
+            ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion(); 
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
 
         public void OnGet()
@@ -30,6 +33,8 @@ namespace ApiPresentacion.Pages
                 if (ITiposPortatiles_Presentacion == null)
                     return;
                 Lista = ITiposPortatiles_Presentacion.Consultar();
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista t portatil", usuario);
                 Tipos_Portatiles = null;
             }
             catch (Exception ex)
@@ -59,12 +64,18 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var usuario = HttpContext.Session.GetString("Usuario");
                 if (Tipos_Portatiles == null)
                     return;
                 if (Tipos_Portatiles.Id_Tipo_Portatil == 0)
+                {
                     Tipos_Portatiles = ITiposPortatiles_Presentacion!.Guardar(Tipos_Portatiles!);
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un t portatil", usuario);
+                }
                 else
                     Tipos_Portatiles = ITiposPortatiles_Presentacion!.Modificar(Tipos_Portatiles!);
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un t portatil", usuario);
+
                 if (Tipos_Portatiles.Id_Tipo_Portatil == 0)
                     return;
                 OnPostBtRefrescar();
@@ -82,6 +93,9 @@ namespace ApiPresentacion.Pages
                 if (Tipos_Portatiles == null)
                     return;
                 Tipos_Portatiles = ITiposPortatiles_Presentacion!.Eliminar(Tipos_Portatiles!);
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un t portatil", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)
