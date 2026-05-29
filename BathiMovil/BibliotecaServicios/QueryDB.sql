@@ -322,8 +322,11 @@ CREATE TABLE [Ubicaciones] (
 );
 
 
+
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil Personal','Para clientes casuales',60000,'/global-azul.jpg', 12,10,4);
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil Empresarial','Para clientes Empresariales',120000,'/BPortatilP.jfif', 12,10,4);
+INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Baño portatil de Construccion','Especializado para constructoras',300000,'/PConstructora.jpg', 12,10,4);
+
 INSERT INTO Sedes ([Nombre],[Direccion],[Ciudad],[Telefono_Contacto]) VALUES ('BathiMovil','Medellin','Medellin','834278497AC');
 
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
@@ -353,6 +356,7 @@ INSERT INTO [Roles]
 
 INSERT INTO [Roles] 
 ([Nombre_Rol], [Descripcion_Rol],[Salario_Empleado]) VALUES ('Mantenimiento', 'Acceso parcial del sistema', 20000000)
+
 
 INSERT INTO [Roles] 
 ([Nombre_Rol], [Descripcion_Rol]) VALUES ('Cliente', 'Poco alcance  del sistema')

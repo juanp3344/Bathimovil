@@ -13,11 +13,12 @@ namespace ApiServicios.Controllers
     {
         private IHistorial_PreciosServicios? IHistorial_PreciosServicios;
 
-       
+        private readonly IPdfServicios _pdfServicio;
 
         public Historial_PreciosController()
         {
             this.IHistorial_PreciosServicios = new Historial_PreciosServicios();
+            this._pdfServicio = new PdfServicios();
         }
 
         [HttpGet]
@@ -52,6 +53,20 @@ namespace ApiServicios.Controllers
             if (this.IHistorial_PreciosServicios == null)
                 throw new Exception("No implementado");
             return this.IHistorial_PreciosServicios!.Eliminar(id);
+        }
+
+        [HttpGet]
+        public IActionResult ExportarPdf()
+        {
+            var lista = IHistorial_PreciosServicios!.Consultar();
+
+            var pdf = _pdfServicio.GenerarPdf(lista, "Reporte Historial Precios");
+
+            return File(
+                pdf,
+                "application/pdf",
+                "Historial Precios.pdf"
+            );
         }
 
     }

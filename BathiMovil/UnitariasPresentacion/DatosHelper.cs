@@ -14,10 +14,17 @@ namespace Unitarias
         {
             var e = new Auditorias()
             {
+<<<<<<< HEAD
+                HoraAccion = DateTime.Now.ToString("HH:mm:ss"),
+                Nivel_Cambio = "bajo",
+                Operacion = "reviso una entidad",
+                Nombre = "tester"
+=======
                 HoraAccion = "12:00",
                 Nivel_Cambio = "2",
                 Nombre = "Auditor",
                 Operacion = "1"
+>>>>>>> d48d689a7c11055b80cf8ff769397ff8c99b15b1
             };
             conexion.Auditorias!.Add(e);
             conexion.SaveChanges();

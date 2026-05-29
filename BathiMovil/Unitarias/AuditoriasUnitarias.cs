@@ -41,7 +41,11 @@ namespace Unitarias
         {
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+<<<<<<< HEAD
+            this.entidad!.Nivel_Cambio = "Chowder";
+=======
             this.entidad!.Nombre = "Chowder";
+>>>>>>> d48d689a7c11055b80cf8ff769397ff8c99b15b1
             var entry = this.iConexion!.Entry<Auditorias>(this.entidad!);
             entry.State = EntityState.Modified;
             this.iConexion!.SaveChanges();

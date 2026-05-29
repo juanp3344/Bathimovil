@@ -41,6 +41,11 @@ namespace ApiPresentacion.Pages
                 NoEstaLogeado = true;
                 return;
             }
+            else if (HttpContext.Session.GetInt32("Rol") == 1 || HttpContext.Session.GetInt32("Rol") == 2)
+            {
+                ErrorRol = true;
+                return;
+            }
             ConfirmarCantidadPrestamo = true;
         }
 

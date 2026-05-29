@@ -13,11 +13,12 @@ namespace ApiServicios.Controllers
     {
         private IEmpleadosServicios? IEmpleadosServicios;
 
-       
+        private readonly IPdfServicios _pdfServicio;
 
         public EmpleadosController()
         {
             this.IEmpleadosServicios = new EmpleadosServicios();
+            this._pdfServicio = new PdfServicios();
         }
 
         [HttpGet]
@@ -53,6 +54,18 @@ namespace ApiServicios.Controllers
                 throw new Exception("No implementado");
             return this.IEmpleadosServicios!.Eliminar(id);
         }
+        [HttpGet]
+        public IActionResult ExportarPdf()
+        {
+            var lista = IEmpleadosServicios!.Consultar();
 
+            var pdf = _pdfServicio.GenerarPdf(lista, "Reporte Empleados");
+
+            return File(
+                pdf,
+                "application/pdf",
+                "Empleados.pdf"
+            );
+        }
     }
 }

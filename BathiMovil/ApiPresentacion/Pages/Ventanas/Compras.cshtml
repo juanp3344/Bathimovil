@@ -31,10 +31,11 @@
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
                        disabled="@(Model.Compra == null || Model.VienePorCompra)" />
-                <button asp-page-handler="ExportarPdf"
+                <button asp-page-handler="ExportarPdf" disabled="@(Model.VienePorCompra ? "disabled" : null)"
                         class="btn btn-danger">
                     Exportar PDF
                 </button>
+                
             </div>
 
             @if (Model.Compra != null)
@@ -67,7 +68,7 @@
                     </div>
                     <div style="margin-top: 20px;">
                         <label>
-                          Mese de garantia 
+                          Meses de garantia 
                         </label>
                         <div class="col-6">
                             <input id="inGarantia_Meses"
@@ -87,18 +88,20 @@
                                    readonly="@Model.VienePorCompra" />
                         </div>
                     </div>
-                    <div style="margin-top: 20px;">
-                        <select id="nmRoles"
-                                class="form-control"
+
+                        <div style="margin-top: 20px;">
+                            <select id="nmCliente"
+                                    class="form-control"
                                 asp-for="@Model.Compra!.Contrato"
-                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Fecha_Firma"))"
-                                readonly="@Model.VienePorCompra">
-                            <option value="">-- Seleccione un contrato --</option>
-                             
-                        </select>
-                    </div>
+                                    asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Fecha_Firma"))"
+                                    disabled="@(Model.VienePorCompra ? "disabled" : null)">
+                                <option value="">-- Seleccione un contrato --</option>
+                            </select>
+                        </div>
+
                         @if (Model.VienePorCompra)
                         {
+                        <input type="hidden" asp-for="@Model.Compra!.Contrato" />
                         <input type="hidden" asp-for="ConfirmarCompra" />
                         <input type="submit"
                                value="Comprar"
@@ -110,7 +113,13 @@
 
              @if(Model.ConfirmarCompra)
             {
-                
+
+                <input type="hidden" asp-for="@Model.Compra!.Contrato" />
+                <input type="hidden" asp-for="@Model.Compra!.Metodo_Pago" />
+                <input type="hidden" asp-for="@Model.Compra!.Monto_Total" />
+                <input type="hidden" asp-for="@Model.Compra!.Garantia_Meses" />
+                <input type="hidden" asp-for="@Model.Compra!.Fecha_Compra" />
+                <input type="hidden" asp-for="@Model.TPortatil" />
                 <div class='popup' style="margin-top: 55px;">
                     <div class='pp_ms_inner'>
                         <div style='width:95%'>

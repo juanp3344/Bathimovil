@@ -10,12 +10,15 @@ namespace ApiPresentacion.Pages
     {
         private ITipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
+        private readonly IWebHostEnvironment _env; // ← AGREGAR
         [BindProperty] public List<Tipos_Portatiles>? Lista { get; set; }
         [BindProperty] public Tipos_Portatiles? Tipos_Portatiles { get; set; }
         [BindProperty] public bool Borrando { get; set; }
+        [BindProperty] public IFormFile? ImagenFile { get; set; }
 
-        public TiposPortatilesModel()
+        public TiposPortatilesModel(IWebHostEnvironment env)
         {
+               _env = env; 
             ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion(); 
             IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
@@ -60,13 +63,38 @@ namespace ApiPresentacion.Pages
             }
         }
 
-        public void OnPostBtGuardar()
+        public async Task OnPostBtGuardar() 
         {
             try
             {
                 var usuario = HttpContext.Session.GetString("Usuario");
                 if (Tipos_Portatiles == null)
                     return;
+
+                if (ImagenFile != null && ImagenFile.Length > 0)
+                {
+                    var carpeta = Path.Combine(_env.WebRootPath, "images", "portatiles");
+                    Directory.CreateDirectory(carpeta); // crea carpeta si no existe
+
+                    // Borrar imagen anterior si existe
+                    if (!string.IsNullOrEmpty(Tipos_Portatiles.ImagenUrl))
+                    {
+                        var rutaAnterior = Path.Combine(_env.WebRootPath,
+                                           Tipos_Portatiles.ImagenUrl.TrimStart('/'));
+                        if (System.IO.File.Exists(rutaAnterior))
+                            System.IO.File.Delete(rutaAnterior);
+                    }
+
+                    var nombreArchivo = Guid.NewGuid() + Path.GetExtension(ImagenFile.FileName);
+                    var rutaCompleta = Path.Combine(carpeta, nombreArchivo);
+
+                    using var stream = new FileStream(rutaCompleta, FileMode.Create);
+                    await ImagenFile.CopyToAsync(stream);
+
+                    Tipos_Portatiles.ImagenUrl = "/images/portatiles/" + nombreArchivo;
+                }
+                // ── FIN BLOQUE IMAGEN ─────────────────────────
+
                 if (Tipos_Portatiles.Id_Tipo_Portatil == 0)
                 {
                     Tipos_Portatiles = ITiposPortatiles_Presentacion!.Guardar(Tipos_Portatiles!);
@@ -124,5 +152,8 @@ namespace ApiPresentacion.Pages
             OnPostBtRefrescar();
             Borrando = false;
         }
+
     }
-}
+
+    
+    }

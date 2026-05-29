@@ -5,7 +5,7 @@
 }
 <center>
     <div>
-        <form method="POST"
+        <form method="POST" 
               enctype="multipart/form-data">
             @Html.AntiForgeryToken()
 
@@ -85,6 +85,7 @@
                                    class="cts_forms form-control"
                                    asp-for="@Model.Tipos_Portatiles!.Ancho" />
                         </div>
+                    </div>
                         <div class="form-group">
                             <label>
                                 Largo
@@ -95,7 +96,35 @@
                                        asp-for="@Model.Tipos_Portatiles!.Largo" />
                             </div>
                     </div>
-                </div>
+                  <div class="form-group">
+                        <label>Imagen</label>
+                        <div class="col-6">
+                            <!-- Guarda la URL actual -->
+                            <input type="hidden" asp-for="@Model.Tipos_Portatiles!.ImagenUrl" />
+
+                            <!-- Input para subir archivo -->
+                            <input type="file"
+                                   id="inputImagen"
+                                   name="ImagenFile"
+                                   class="form-control"
+                                   accept="image/*"
+                                   onchange="previewImagen(this)" />
+
+                            <!-- Preview -->
+                            @{
+                                var urlImagen = Model.Tipos_Portatiles?.ImagenUrl;
+                                var display = string.IsNullOrEmpty(urlImagen) ? "none" : "block";
+                            }
+                            <div class="mt-2">
+                                <img id="imgPreview"
+                                     src="@urlImagen"
+                                     alt="Preview"
+                                     style="max-width: 200px; display: @display"
+                                     class="img-thumbnail"
+                                     onerror="this.style.display='none'" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             }
             
@@ -196,4 +225,18 @@
             }
         </form>
     </div>
+    @section Scripts {
+        <script>
+                function previewDesdeUrl(url) {
+                    const preview = document.getElementById('imgPreview');
+                    if (url) {
+                        preview.src = url;
+                        preview.style.display = 'block';
+                    } else {
+                        preview.style.display = 'none';
+                    }
+                }
+        </script>
+    }
 </center>
+

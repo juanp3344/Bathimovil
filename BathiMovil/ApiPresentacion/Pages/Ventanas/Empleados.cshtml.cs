@@ -25,6 +25,16 @@ namespace ApiPresentacion.Pages
             OnPostBtRefrescar();
         }
 
+        public async Task<IActionResult> OnPostExportarPdf()
+        {
+            var pdf = await IEmpleadosPresentacion!.ExportarPdf();
+
+            return File(
+                pdf,
+                "application/pdf",
+                "Empleados.pdf"
+            );
+        }
 
         public void OnPostBtRefrescar()
         {

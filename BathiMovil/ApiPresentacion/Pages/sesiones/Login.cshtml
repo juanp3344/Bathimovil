@@ -74,6 +74,7 @@
 
                         @if (Model.EsCliente == 2)
                         {
+                            <input type="hidden" asp-for="EsCliente" />
                             <div class="form-group">
                                 <label>Codigo de empresa</label>
                                 <input asp-for="@Model.Cliente!.Nit_CC" class="form-control" placeholder="Codigo de empresa" />
@@ -121,6 +122,12 @@
     </form>  
 }
 
+@if (ViewData["Mensaje"] != null)
+{
+    <div class="alert alert-danger">
+        @ViewData["Mensaje"]
+    </div>
+}
 
 @if (!Model.EstaLogueado)
 {
@@ -159,12 +166,7 @@ else
     @if (HttpContext.Session.GetInt32("Rol")== 1){
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Bienvenido, @Model.Username</h2>
-            <form method="POST">
-                <input type="submit" value="Cerrar sesión"
-                       asp-page-handler="BtLogout"
-                       class="btn btn-outline-secondary btn-sm" />
-            </form>
+                <h2>Bienvenido, @HttpContext.Session.GetString("Usuario")</h2>
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">

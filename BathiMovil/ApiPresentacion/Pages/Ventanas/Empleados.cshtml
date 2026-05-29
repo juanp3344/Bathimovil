@@ -28,6 +28,10 @@
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
                        disabled="@(Model.Empleado == null)" />
+                <button asp-page-handler="ExportarPdf"
+                        class="btn btn-danger">
+                    Exportar PDF
+                </button>
             </div>
 
             @if (Model.Empleado != null)

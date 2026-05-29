@@ -46,6 +46,10 @@ namespace ApiPresentacion.Pages
                     return;
                 if (Usuario.Id_Usuario == 0)
                 {
+                    if(EsCliente == 2)
+                    {
+                        Cliente!.Nombre = "Empresa";
+                    }
                     
                     Usuario.Rol = 3;
                     Usuario.Fecha_Ultimo_Acceso = DateTime.Now;
