@@ -136,21 +136,6 @@ CREATE TABLE [Contratos](
 [Cliente] INT NOT NULL REFERENCES [Clientes]([Id_Persona])
 );
 
-
-
-
-CREATE TABLE [Prestamos]
-(-- LISTAS PRESTAMOS_PORTATILES, MANTENIMIENTO
-[Id_Prestamo] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Fecha_Inicio] SMALLDATETIME NOT NULL,
-[Fecha_Fin_Prevista] SMALLDATETIME NOT NULL,
-[Estado_Prestamo] BIT NOT NULL,
-[Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato])
-);
-
-
-
-
 CREATE TABLE [Compras]
 (
 [Id_Compra] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
@@ -161,10 +146,6 @@ CREATE TABLE [Compras]
 
 [Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato]),
 );
-
-
-
-
 
 
 CREATE TABLE [Portatiles]
@@ -179,6 +160,17 @@ CREATE TABLE [Portatiles]
 [Compra] INT NULL REFERENCES [Compras]([Id_Compra])
 );
 
+
+CREATE TABLE [Prestamos]
+(-- LISTAS PRESTAMOS_PORTATILES, MANTENIMIENTO
+[Id_Prestamo] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
+[Fecha_Inicio] SMALLDATETIME NOT NULL,
+[Fecha_Fin_Prevista] SMALLDATETIME NOT NULL,
+[Estado_Prestamo] BIT NOT NULL,
+[Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato]),
+[Portatil] INT NOT NULL,
+FOREIGN KEY (Portatil) REFERENCES Portatiles(Id_Portatil)
+);
 
 
 CREATE TABLE [Implementos]
@@ -284,9 +276,6 @@ CREATE TABLE [Detalle_Facturas]
 );
 
 
-
-
-
 CREATE TABLE [Pagos]
 (
 [Id_Pago] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
@@ -296,18 +285,6 @@ CREATE TABLE [Pagos]
 [Metodo_Pago] NVARCHAR(50) NOT NULL,
 
 [Factura] INT NOT NULL REFERENCES [Facturas]([Id_Factura])
-);
-
-
-
-
-
-CREATE TABLE [Prestamos_Portatiles]
-(
-[Id_Prestamo_Portatil] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-
-[Prestamo] INT NOT NULL REFERENCES [Prestamos]([Id_Prestamo]),
-[Portatil] INT NOT NULL REFERENCES [Portatiles]([Id_Portatil])
 );
 
 
@@ -345,8 +322,11 @@ CREATE TABLE [Ubicaciones] (
 );
 
 
+
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil Personal','Para clientes casuales',60000,'/global-azul.jpg', 12,10,4);
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil Empresarial','Para clientes Empresariales',120000,'/BPortatilP.jfif', 12,10,4);
+INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Baño portatil de Construccion','Especializado para constructoras',300000,'/PConstructora.jpg', 12,10,4);
+
 INSERT INTO Sedes ([Nombre],[Direccion],[Ciudad],[Telefono_Contacto]) VALUES ('BathiMovil','Medellin','Medellin','834278497AC');
 
 INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
@@ -360,6 +340,7 @@ INSERT INTO [Roles]
 
 INSERT INTO [Roles] 
 ([Nombre_Rol], [Descripcion_Rol],[Salario_Empleado]) VALUES ('Mantenimiento', 'Acceso parcial del sistema', 20000000)
+
 
 INSERT INTO [Roles] 
 ([Nombre_Rol], [Descripcion_Rol]) VALUES ('Cliente', 'Poco alcance  del sistema')

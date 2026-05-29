@@ -3,6 +3,7 @@ using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+
 namespace ApiPresentacion.Pages
 {
     public class ContratosModel : PageModel
@@ -10,54 +11,54 @@ namespace ApiPresentacion.Pages
         private IContratosPresentacion? IContratosPresentacion;
         private IClientesPresentacion? IClientesPresentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
+
         [BindProperty] public List<Contratos>? Lista { get; set; }
         [BindProperty] public Contratos? Contrato { get; set; }
         [BindProperty] public bool VienePorCompra { get; set; }
+        [BindProperty] public bool VienePorPrestamo { get; set; }           // nuevo flag para préstamo
         [BindProperty] public bool Borrando { get; set; }
         [BindProperty] public int? CantidadCalculo { get; set; }
         [BindProperty] public int? Portatil { get; set; }
-        [TempData] public int? Id_Cliente { get; set; }
-        [TempData] public int UltimoContratoId { get; set; }  // renombrados para no  
 
+        [TempData] public int? Id_Cliente { get; set; }
+        [TempData] public int UltimoContratoId { get; set; }
 
         public ContratosModel()
         {
             IContratosPresentacion = new ContratosPresentacion();
-            IClientesPresentacion =  new ClientesPresentacion();
+            IClientesPresentacion = new ClientesPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
 
         public void OnGet()
         {
+            bool enCompra = TempData.ContainsKey("EnCompra") && (bool)TempData["EnCompra"]!;
+            bool enPrestamo = TempData.ContainsKey("EnPrestamo") && (bool)TempData["EnPrestamo"]!;
 
-            bool EnCompra = false;
-            if (TempData.ContainsKey("EnCompra"))
+            if (enCompra || enPrestamo)
             {
-                EnCompra = (bool)TempData["EnCompra"]!;
-            }
+                VienePorCompra = enCompra;
+                VienePorPrestamo = enPrestamo;
 
-
-            if (EnCompra)
-            {
-                VienePorCompra = true;
                 Contrato = new Contratos()
                 {
                     Cliente = (int)Id_Cliente!,
                     Fecha_Firma = DateTime.Now,
-                    Terminos = "Comprara el baño portatil programado a envio",
+                    Terminos = enPrestamo
+                                        ? "Préstamo de baño portátil"
+                                        : "Comprará el baño portátil programado a envío",
                     Fecha_Expiracion = DateTime.Now.AddMonths(12)
-
                 };
 
                 CantidadCalculo = (int)TempData["TDCantidad"]!;
                 Portatil = (int)TempData["Id_Portatil"]!;
-
                 return;
             }
+
             OnPostBtRefrescar();
         }
 
-
+        // ── Firmar: guarda el contrato y redirige a Compras o Prestamos ──
         public IActionResult OnPostBtFirmar()
         {
             OnPostBtGuardar();
@@ -65,16 +66,22 @@ namespace ApiPresentacion.Pages
             if (UltimoContratoId == 0)
             {
                 ViewData["Mensaje"] = "Error al guardar el contrato";
-                VienePorCompra = true;
+                VienePorCompra = VienePorCompra;
+                VienePorPrestamo = VienePorPrestamo;
                 return Page();
             }
 
-            
             TempData["TDCantidad"] = CantidadCalculo;
             TempData["Id_Portatil"] = Portatil;
             TempData["Id_Contrato"] = UltimoContratoId;
-            TempData["EnCompra"] = true;
 
+            if (VienePorPrestamo)
+            {
+                TempData["EnPrestamo"] = true;
+                return RedirectToPage("/Ventanas/Prestamos");
+            }
+
+            TempData["EnCompra"] = true;
             return RedirectToPage("/Ventanas/Compras");
         }
 
@@ -89,11 +96,9 @@ namespace ApiPresentacion.Pages
             {
                 if (IContratosPresentacion == null)
                     return;
-                
                 Lista = IContratosPresentacion.Consultar();
                 var usuario = HttpContext.Session.GetString("Usuario");
-                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista contratos", usuario);
-
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado la lista contratos", usuario);
                 Contrato = null;
             }
             catch (Exception ex)
@@ -102,7 +107,6 @@ namespace ApiPresentacion.Pages
             }
         }
 
-        
         public void OnPostBtModificar(int data)
         {
             try
@@ -126,16 +130,21 @@ namespace ApiPresentacion.Pages
 
                 if (Contrato == null)
                     return;
+
                 if (Contrato.Id_Contrato == 0)
                 {
                     Contrato = IContratosPresentacion!.Guardar(Contrato!);
                     IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un contrato", usuario);
                 }
                 else
+                {
                     Contrato = IContratosPresentacion!.Modificar(Contrato!);
-                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un contrato", usuario);
+                    IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado un contrato", usuario);
+                }
+
                 if (Contrato.Id_Contrato == 0)
                     return;
+
                 UltimoContratoId = Contrato.Id_Contrato;
                 OnPostBtRefrescar();
             }

@@ -13,12 +13,11 @@ namespace BibliotecaServicios.Entidades
 
 
         // N:1
+        public int Portatil {  get; set; }
         public int Contrato { get; set; }
         [ForeignKey("Contrato")] public Contratos? _Contrato { get; set; }
-
-
+        [ForeignKey("Portatil")]public Portatiles? _Portatil { get; set; } = null;
         // 1:N
         [NotMapped] public List<Mantenimientos>? Mantenimientos { get; set; }
-        [NotMapped] public List<Prestamos_Portatiles>? Prestamos_Portatiles { get; set; }
     }
 }

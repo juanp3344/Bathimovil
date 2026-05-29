@@ -27,7 +27,6 @@ namespace BibliotecaServicios.Interfaces
         public DbSet<Personas>? Personas { get; set; }
         public DbSet<Portatiles>? Portatiles { get; set; }
         public DbSet<Prestamos>? Prestamos { get; set; }
-        public DbSet<Prestamos_Portatiles>? Prestamos_Portatiles { get; set; }
         public DbSet<Roles>? Roles { get; set; }
         public DbSet<Sedes>? Sedes { get; set; }
         public DbSet<Tipo_Aseo_Elementos>? Tipo_Aseo_Elementos { get; set; }
