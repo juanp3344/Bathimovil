@@ -24,5 +24,6 @@ namespace BibliotecaServicios.Entidades
         [ForeignKey("Compra")] public Compras? _Compra { get; set; }
    
         [NotMapped] public List<Ubicaciones>? Ubicaciones { get; set;  }
+        [NotMapped] public List<Prestamos>? Prestamos { get; set; }
     }
 }

@@ -284,9 +284,6 @@ CREATE TABLE [Detalle_Facturas]
 );
 
 
-
-
-
 CREATE TABLE [Pagos]
 (
 [Id_Pago] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
@@ -296,18 +293,6 @@ CREATE TABLE [Pagos]
 [Metodo_Pago] NVARCHAR(50) NOT NULL,
 
 [Factura] INT NOT NULL REFERENCES [Facturas]([Id_Factura])
-);
-
-
-
-
-
-CREATE TABLE [Prestamos_Portatiles]
-(
-[Id_Prestamo_Portatil] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-
-[Prestamo] INT NOT NULL REFERENCES [Prestamos]([Id_Prestamo]),
-[Portatil] INT NOT NULL REFERENCES [Portatiles]([Id_Portatil])
 );
 
 

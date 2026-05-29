@@ -296,17 +296,6 @@ namespace Unitarias
             return e;
         }
 
-        public static Prestamos_Portatiles CrearPrestamo_Portatil(IConexion conexion, int idPrestamo, int idPortatil)
-        {
-            var e = new Prestamos_Portatiles()
-            {
-                Prestamo = idPrestamo,
-                Portatil = idPortatil
-            };
-            conexion.Prestamos_Portatiles!.Add(e);
-            conexion.SaveChanges();
-            return e;
-        }
 
         public static Mantenimientos CrearMantenimiento(IConexion conexion, int idPrestamo, int idEmpleado, int idPortatil)
         {
