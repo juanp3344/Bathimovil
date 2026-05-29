@@ -3,7 +3,6 @@ using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.ComponentModel.DataAnnotations;
 
 namespace ApiPresentacion.Pages
 {
@@ -11,6 +10,8 @@ namespace ApiPresentacion.Pages
     {
         private IPrestamosPresentacion? IPrestamos_Presentacion;
         private IContratosPresentacion? IContratosPresentacion;
+        private IPortatilesPresentacion? IPortatiles_Presentacion;
+        private ITipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
 
         [BindProperty] public List<Prestamos>? Lista { get; set; }
@@ -19,6 +20,7 @@ namespace ApiPresentacion.Pages
         [BindProperty] public bool VienePorPrestamo { get; set; }
         [BindProperty] public bool ConfirmarPrestamo { get; set; }
         [BindProperty] public int Cantidad { get; set; }
+
         [TempData] public int TPortatil { get; set; }
         [TempData] public bool EnPrestamo { get; set; }
 
@@ -26,6 +28,8 @@ namespace ApiPresentacion.Pages
         {
             IPrestamos_Presentacion = new PrestamosPresentacion();
             IContratosPresentacion = new ContratosPresentacion();
+            IPortatiles_Presentacion = new PortatilesPresentacion();
+            ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
 
@@ -44,11 +48,10 @@ namespace ApiPresentacion.Pages
                 Prestamo = new Prestamos()
                 {
                     Fecha_Inicio = DateTime.Now,
-                    Fecha_Fin_Prevista = DateTime.Now.AddDays(15), // 15 días estimados por defecto
+                    Fecha_Fin_Prevista = DateTime.Now.AddMonths(1),
                     Estado_Prestamo = true,
                     Contrato = idContrato
                 };
-
                 return;
             }
             OnPostBtRefrescar();
@@ -63,25 +66,18 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                IPortatilesPresentacion? IPortatiles_Presentacion;
-                IPortatiles_Presentacion = new PortatilesPresentacion();
+                ConfirmarPrestamo = true;
+                OnPostBtGuardar();
 
-                var portatiles = IPortatiles_Presentacion.Consultar()
+                var portatiles = IPortatiles_Presentacion!.Consultar()
                     .Where(p => p.Tipo_Portatil == TPortatil && p.Estado_Actual == "Libre")
                     .Take(Cantidad)
                     .ToList();
 
-                ConfirmarPrestamo = true;
-                OnPostBtGuardar();
-
                 foreach (var portatil in portatiles)
                 {
-                    portatil.Estado_Actual = "Prestado";
-                    portatil.Compra = null; // Nos aseguramos que no interfiera con compras
-
-                    // Al mapear la nueva FK en la base de datos, guardamos el ID del préstamo actual en la tabla principal si es necesario, 
-                    // o dejo que el registro de Préstamo apunte a él. Como puse la FK en Prestamos, el objeto 'Prestamo' ya tiene el Id_Portatil asignado en OnPostBtGuardar.
-
+                    portatil.Estado_Actual = "En préstamo";
+                    portatil.Compra = Prestamo!.Id_Prestamo;
                     IPortatiles_Presentacion.Modificar(portatil);
                 }
 
@@ -90,7 +86,6 @@ namespace ApiPresentacion.Pages
             catch (Exception ex)
             {
                 ViewData["Mensaje"] = ex.Message;
-                return;
             }
         }
 
@@ -107,9 +102,7 @@ namespace ApiPresentacion.Pages
                     return;
                 Lista = IPrestamos_Presentacion.Consultar();
                 var usuario = HttpContext.Session.GetString("Usuario");
-
-                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista prestamos", usuario);
-
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado la lista de Prestamos", usuario);
                 Prestamo = null;
             }
             catch (Exception ex)
@@ -138,30 +131,21 @@ namespace ApiPresentacion.Pages
             try
             {
                 var usuario = HttpContext.Session.GetString("Usuario");
-
-                if (Prestamo == null)
-                    return;
-
-                // Asignamos el ID del portátil al objeto Préstamo antes de guardar
-                Prestamo.Portatil = TPortatil;
+                if (Prestamo == null) return;
 
                 if (Prestamo.Id_Prestamo == 0)
                 {
                     Prestamo = IPrestamos_Presentacion!.Guardar(Prestamo!);
-                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un prestamo", usuario);
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un Prestamo", usuario);
                 }
                 else
                 {
                     Prestamo = IPrestamos_Presentacion!.Modificar(Prestamo!);
-                    IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado un prestamo", usuario);
+                    IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado un Prestamo", usuario);
                 }
 
-                if (Prestamo.Id_Prestamo == 0)
-                    return;
-
-                if (ConfirmarPrestamo)
-                    return;
-
+                if (Prestamo.Id_Prestamo == 0) return;
+                if (ConfirmarPrestamo) return;
                 OnPostBtRefrescar();
             }
             catch (Exception ex)
@@ -174,11 +158,10 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Prestamo == null)
-                    return;
+                if (Prestamo == null) return;
                 Prestamo = IPrestamos_Presentacion!.Eliminar(Prestamo!);
                 var usuario = HttpContext.Session.GetString("Usuario");
-                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un prestamo", usuario);
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un Prestamo", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

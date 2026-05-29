@@ -7,25 +7,16 @@
     <div>
         <form method="POST" enctype="multipart/form-data">
             @Html.AntiForgeryToken()
-            <input type="hidden" asp-for="Cantidad" />
-            <input type="hidden" asp-for="TPortatil" />
-            <input type="hidden" asp-for="Prestamo" />
-            
+
             <div align="left">
-                <h3>Prestamos de Portátiles</h3>
+                <h3>Préstamos</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
                        class="btn btn-secondary"
-                       asp-page-handler="BtRefrescar"
-                       disabled="@(Model.VienePorPrestamo)" />
-                <input type="submit"
-                       value="Nuevo"
-                       class="btn btn-success"
-                       asp-page-handler="BtNuevo"
-                       disabled="@(Model.Prestamo != null || Model.VienePorPrestamo)" />
+                       asp-page-handler="BtRefrescar" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
@@ -33,95 +24,104 @@
                        disabled="@(Model.Prestamo == null || Model.VienePorPrestamo)" />
             </div>
 
+            @* ── Formulario del préstamo ── *@
             @if (Model.Prestamo != null)
             {
                 <input type="hidden" asp-for="@Model.Prestamo!.Id_Prestamo" />
+                <input type="hidden" asp-for="VienePorPrestamo" />
+                <input type="hidden" asp-for="Cantidad" />
+                <input type="hidden" asp-for="TPortatil" />
 
                 <div>
-                    <div style="margin-top: 20px;">
-                        <label>Fecha de Inicio</label>
+                    <div class="form-group">
+                        <label>Fecha Inicio</label>
                         <div class="col-6">
                             <input id="inFecha_Inicio"
                                    class="cts_forms form-control"
+                                   type="datetime-local"
                                    asp-for="@Model.Prestamo!.Fecha_Inicio" />
                         </div>
                     </div>
-                    <div style="margin-top: 20px;">
-                        <label>Fecha de Fin Prevista</label>
+
+                    <div class="form-group">
+                        <label>Fecha Fin Prevista</label>
                         <div class="col-6">
                             <input id="inFecha_Fin_Prevista"
                                    class="cts_forms form-control"
-                                   asp-for="@Model.Prestamo!.Fecha_Fin_Prevista"
-                                   readonly="@Model.VienePorPrestamo" />
+                                   type="datetime-local"
+                                   asp-for="@Model.Prestamo!.Fecha_Fin_Prevista" />
                         </div>
                     </div>
+
                     <div style="margin-top: 20px;">
-                        <label>Estado del Préstamo (Activo)</label>
-                        <div class="col-6">
-                            <input type="checkbox"
-                                   asp-for="@Model.Prestamo!.Estado_Prestamo"
-                                   disabled="@Model.VienePorPrestamo" />
-                        </div>
-                    </div>
-                    <div style="margin-top: 20px;">
-                        <select id="nmContratos"
+                        <label>Contrato</label>
+                        <select id="nmContrato"
                                 class="form-control"
                                 asp-for="@Model.Prestamo!.Contrato"
-                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Fecha_Firma"))"
-                                readonly="@Model.VienePorPrestamo">
-                            <option value="">-- Seleccione un contrato --</option>
+                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Id_Contrato"))">
+                            <option value="">-- Seleccione un Contrato --</option>
                         </select>
                     </div>
-                    
+
                     @if (Model.VienePorPrestamo)
                     {
-                        <input type="hidden" asp-for="ConfirmarPrestamo" />
-                        <input type="submit"
-                               value="Confirmar Préstamo"
-                               asp-page-handler="BtPrestar"
-                               class="btn btn-success" />
+                        <div style="margin-top: 20px;">
+                            <input type="submit"
+                                   value="Confirmar Préstamo"
+                                   class="btn btn-primary"
+                                   asp-page-handler="BtPrestar" />
+                        </div>
                     }
                 </div>
             }
 
+            @* ── Mensaje de error ── *@
+            @if (ViewData.ContainsKey("Mensaje"))
+            {
+                @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
+                ;
+            }
+
+            @* ── Confirmación: préstamo registrado correctamente ── *@
             @if (Model.ConfirmarPrestamo)
             {
-                <div class='popup' style="margin-top: 55px;">
+                <div class='popup'>
                     <div class='pp_ms_inner'>
                         <div style='width:95%'>
-                            <h6 align="left">
-                                PRÉSTAMO PROCESADO CORRECTAMENTE Y EQUIPO ASIGNADO
-                            </h6>
+                            <h2 align="left">Préstamo registrado</h2>
+                            <h6 align="left">El préstamo se ha registrado exitosamente.</h6>
                             <input type="submit"
-                                   value="Cerrar"
+                                   value="Volver a Ventas"
                                    asp-page-handler="BtTerminar"
-                                   class="btn btn-secondary"
-                                   style="margin-top: 55px;" />
+                                   class="btn btn-primary" />
                         </div>
                     </div>
                 </div>
             }
-            
-            @if (ViewData.ContainsKey("Mensaje"))
-            {
-                @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
-            }
 
+            @* ── Confirmación de borrado ── *@
             @if (Model.Prestamo != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
                         <div style='width:95%'>
                             <h2 align="left">Mensaje</h2>
-                            <h6 align="left">¿Desea borrar el Registro de Préstamo?</h6>
-                            
-                            <input type="submit" value="Cerrar" asp-page-handler="BtCerrar" class="btn btn-secondary" />
-                            <input type="submit" value="Borrar" asp-page-handler="BtBorrar" class="btn btn-secondary" />
+                            <h6 align="left">¿Desea borrar el Préstamo?</h6>
+                            <h6 align="left">@Model.Prestamo!.Fecha_Inicio</h6>
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtCerrar"
+                                   class="btn btn-secondary" />
+                            <input type="submit"
+                                   value="Borrar"
+                                   asp-page-handler="BtBorrar"
+                                   class="btn btn-danger" />
                         </div>
                     </div>
                 </div>
             }
 
+            @* ── Tabla de préstamos existentes ── *@
             @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
             {
                 <table class="tb_data table table-striped table-bordered table-hover">
@@ -130,26 +130,25 @@
                         <th>Fecha Fin Prevista</th>
                         <th>Estado</th>
                         <th>Contrato</th>
-                        <th>Acciones</th>
+                        <th></th>
                     </tr>
-                
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
                             <td>@elemento.Fecha_Inicio</td>
                             <td>@elemento.Fecha_Fin_Prevista</td>
-                            <td>@elemento.Estado_Prestamo</td>
+                            <td>@(elemento.Estado_Prestamo ? "Activo" : "Inactivo")</td>
                             <td>@elemento.Contrato</td>
                             <td>
                                 <input type="submit"
                                        value="Modificar"
                                        asp-page-handler="BtModificar"
-                                       class="btn btn-secondary"
+                                       class="btn btn-warning"
                                        asp-route-data="@elemento.Id_Prestamo" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
-                                       class="btn btn-secondary"
+                                       class="btn btn-danger"
                                        asp-route-data="@elemento.Id_Prestamo" />
                             </td>
                         </tr>
