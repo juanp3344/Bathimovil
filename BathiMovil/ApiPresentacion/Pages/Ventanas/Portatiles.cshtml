@@ -61,9 +61,7 @@
 
                 <div>
                     <div class="form-group">
-                        <label>
-                            Numero_Serial
-                        </label>
+                        <label>Numero_Serial</label>
                         <div class="col-6">
                             <input id="inNumero_Serial"
                                    class="cts_forms form-control"
@@ -71,9 +69,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>
-                            Fecha_Fabricacion
-                        </label>
+                        <label>Fecha_Fabricacion</label>
                         <div class="col-6">
                             <input id="inFecha_Fabricacion"
                                    class="cts_forms form-control"
@@ -81,9 +77,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>
-                            Estado_Actual
-                        </label>
+                        <label>Estado_Actual</label>
                         <div class="col-6">
                             <input id="inEstado_Actual"
                                    class="cts_forms form-control"
@@ -105,17 +99,38 @@
                                 class="form-control"
                                 asp-for="@Model.Portatil!.Compra"
                                 asp-items="@(new SelectList(Model.CargarCompras(), "Id_Compra", "Contrato"))">
-                            <option value="">-- Seleccione una sede--</option>
+                            <option value="">-- Seleccione una compra--</option>
                         </select>
                     </div>
 
                     <div style="margin-top: 20px;">
-                        <select id="nmSede"
+                        <select id="nmTipo"
                                 class="form-control"
                                 asp-for="@Model.Portatil!.Tipo_Portatil"
                                 asp-items="@(new SelectList(Model.CargarTipos(), "Id_Tipo_Portatil", "Nombre"))">
                             <option value="">-- Seleccione un tipo portatil--</option>
                         </select>
+                    </div>
+
+                    @* ── Ubicación ── *@
+                    <div style="margin-top: 30px; border-top: 1px solid #ccc; padding-top: 15px;">
+                        <h6>📍 Ubicación del portátil</h6>
+                        <div class="form-group">
+                            <label>Ciudad</label>
+                            <div class="col-6">
+                                <input class="cts_forms form-control"
+                                       asp-for="UbicacionCiudad"
+                                       placeholder="Ej: Medellín" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Dirección</label>
+                            <div class="col-6">
+                                <input class="cts_forms form-control"
+                                       asp-for="UbicacionDireccion"
+                                       placeholder="Ej: Calle 10 # 43-12" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             }
@@ -136,7 +151,7 @@
                                 <h6 align="left">
                                     @Model.Portatil!.Numero_Serial
                                 </h6>
-                                <p class="popup-title">Eliminar bañor portatil</p>
+                                <p class="popup-title">Eliminar baño portatil</p>
                                 <p class="popup-message">
                                     ESTAS SEGURO DE <strong>ELIMINAR</strong> ESTE BAÑO
                                 </p>
@@ -157,50 +172,26 @@
             {
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
-                        <th>
-                            Numero_Serial
-                        </th>
-                        <th>
-                            Fecha_Fabricacion
-                        </th>
-                        <th class="cl_hidden">
-                            Estado_Actual
-                        </th>
-                        <th class="cl_hidden">
-                            Sede
-                        </th>
-                        <th class="cl_hidden">
-                            Compra
-                        </th>
-                        <th class="cl_hidden">
-                            Tipo Portatil
-                        </th>
+                        <th>Numero_Serial</th>
+                        <th>Fecha_Fabricacion</th>
+                        <th class="cl_hidden">Estado_Actual</th>
+                        <th class="cl_hidden">Sede</th>
+                        <th class="cl_hidden">Compra</th>
+                        <th class="cl_hidden">Tipo Portatil</th>
                     </tr>
 
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
-                            <td>
-                                @elemento.Numero_Serial
-                            </td>
-                            <td>
-                                @elemento.Fecha_Fabricacion
-                            </td>
-                            <td>
-                                @elemento.Estado_Actual
-                            </td>
-                            <td class="cl_hidden">
-                                @elemento.Sede
-                            </td>
-                            <td class="cl_hidden">
-                                @elemento.Compra
-                            </td>
-                            <td class="cl_hidden">
-                                @elemento.Tipo_Portatil
-                            </td>
+                            <td>@elemento.Numero_Serial</td>
+                            <td>@elemento.Fecha_Fabricacion</td>
+                            <td>@elemento.Estado_Actual</td>
+                            <td class="cl_hidden">@elemento.Sede</td>
+                            <td class="cl_hidden">@elemento.Compra</td>
+                            <td class="cl_hidden">@elemento.Tipo_Portatil</td>
                             <td>
                                 <input type="submit"
-                                       value="Modicar"
+                                       value="Modificar"
                                        asp-page-handler="BtModificar"
                                        class="btn btn-warning"
                                        asp-route-data="@elemento.Id_Portatil" />

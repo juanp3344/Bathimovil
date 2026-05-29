@@ -28,6 +28,7 @@
             @if (Model.Prestamo != null)
             {
                 <input type="hidden" asp-for="@Model.Prestamo!.Id_Prestamo" />
+                <input type="hidden" asp-for="@Model.Prestamo!.Portatil" />
                 <input type="hidden" asp-for="VienePorPrestamo" />
                 <input type="hidden" asp-for="Cantidad" />
                 <input type="hidden" asp-for="TPortatil" />

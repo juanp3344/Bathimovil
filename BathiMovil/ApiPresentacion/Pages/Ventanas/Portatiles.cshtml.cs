@@ -1,6 +1,7 @@
 using BibliotecaPresentacion.Implementaciones;
 using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
+using BibliotecaServicios.Implementaciones;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -14,11 +15,16 @@ namespace ApiPresentacion.Pages
         private IComprasPresentacion? IComprasPresentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
         private IPermisosPresentacion? IPermisosPresentacion;
+        private UbicacionesServicios? IUbicaciones;
 
         [BindProperty] public List<Portatiles>? Lista { get; set; }
         [BindProperty] public Portatiles? Portatil { get; set; }
         [BindProperty] public bool Borrando { get; set; }
         [BindProperty] public bool ErrorRol { get; set; }
+
+        // Campos de ubicación que se muestran en el formulario
+        [BindProperty] public string? UbicacionCiudad { get; set; }
+        [BindProperty] public string? UbicacionDireccion { get; set; }
 
         public PortatilesModel()
         {
@@ -28,7 +34,7 @@ namespace ApiPresentacion.Pages
             IComprasPresentacion = new ComprasPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
             IPermisosPresentacion = new PermisosPresentacion();
-
+            IUbicaciones = new UbicacionesServicios();
         }
 
         public void OnGet()
@@ -60,9 +66,10 @@ namespace ApiPresentacion.Pages
                     return;
                 Lista = IPortatiles_Presentacion.Consultar();
                 var usuario = HttpContext.Session.GetString("Usuario");
-
                 IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista portatiles", usuario);
                 Portatil = null;
+                UbicacionCiudad = null;
+                UbicacionDireccion = null;
             }
             catch (Exception ex)
             {
@@ -81,9 +88,7 @@ namespace ApiPresentacion.Pages
             if (Permiso.Rol != id_rol)
             {
                 ErrorRol = true;
-
             }
-
         }
 
         public void OnPostBtModificar(int data)
@@ -99,12 +104,20 @@ namespace ApiPresentacion.Pages
                 if (Permiso.Rol != id_rol)
                 {
                     ErrorRol = true;
-
                 }
                 OnPostBtRefrescar();
                 Portatil = Lista!.FirstOrDefault(x => x.Id_Portatil == data);
                 Lista = null;
                 Borrando = false;
+
+                // Cargar ubicación existente del portátil si tiene una
+                var ubicacion = IUbicaciones!.Consultar()
+                    .FirstOrDefault(u => u.Portatil == data);
+                if (ubicacion != null)
+                {
+                    UbicacionCiudad = ubicacion.Ciudad;
+                    UbicacionDireccion = ubicacion.Direccion;
+                }
             }
             catch (Exception ex)
             {
@@ -119,16 +132,46 @@ namespace ApiPresentacion.Pages
                 var usuario = HttpContext.Session.GetString("Usuario");
                 if (Portatil == null)
                     return;
+
                 if (Portatil.Id_Portatil == 0)
                 {
                     Portatil = IPortatiles_Presentacion!.Guardar(Portatil!);
                     IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un baño Portatil", usuario);
                 }
                 else
+                {
                     Portatil = IPortatiles_Presentacion!.Modificar(Portatil!);
-                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un baño Portatil", usuario);
+                    IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un baño Portatil", usuario);
+                }
+
                 if (Portatil.Id_Portatil == 0)
                     return;
+
+                // Guardar o actualizar ubicación si el usuario ingresó ciudad/dirección
+                if (!string.IsNullOrWhiteSpace(UbicacionCiudad) || !string.IsNullOrWhiteSpace(UbicacionDireccion))
+                {
+                    var ubicacionExistente = IUbicaciones!.Consultar()
+                        .FirstOrDefault(u => u.Portatil == Portatil.Id_Portatil);
+
+                    if (ubicacionExistente == null)
+                    {
+                        // Nueva ubicación
+                        IUbicaciones!.Guardar(new Ubicaciones
+                        {
+                            Ciudad = UbicacionCiudad,
+                            Direccion = UbicacionDireccion,
+                            Portatil = Portatil.Id_Portatil
+                        });
+                    }
+                    else
+                    {
+                        // Actualizar ubicación existente
+                        ubicacionExistente.Ciudad = UbicacionCiudad;
+                        ubicacionExistente.Direccion = UbicacionDireccion;
+                        IUbicaciones!.Modificar(ubicacionExistente);
+                    }
+                }
+
                 OnPostBtRefrescar();
             }
             catch (Exception ex)
@@ -144,11 +187,14 @@ namespace ApiPresentacion.Pages
                 if (Portatil == null)
                     return;
 
+                // Borrar ubicación asociada primero
+                var ubicacion = IUbicaciones!.Consultar()
+                    .FirstOrDefault(u => u.Portatil == Portatil.Id_Portatil);
+                if (ubicacion != null)
+                    IUbicaciones.Eliminar(ubicacion);
 
                 Portatil = IPortatiles_Presentacion!.Eliminar(Portatil!);
-
                 var usuario = HttpContext.Session.GetString("Usuario");
-
                 IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un baño Portatil", usuario);
                 OnPostBtRefrescar();
             }
