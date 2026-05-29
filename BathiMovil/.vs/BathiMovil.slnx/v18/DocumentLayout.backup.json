@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\bibliotecaservicios\\querydb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\querydb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\apipresentacion\\pages\\ventanas\\prestamos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\prestamos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -34,10 +38,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\bibliotecaservicios\\entidades\\prestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\prestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\bibliotecaservicios\\querydb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\querydb.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\unitariaspresentacion\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -787,12 +787,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -800,19 +796,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Prestamos (2).cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Prestamos (2).cshtml",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\Prestamos (2).cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Prestamos (2).cshtml",
-              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\Prestamos (2).cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-29T23:19:46.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Prestamos.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml",
@@ -825,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Portatiles.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml",
@@ -838,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Portatiles.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml.cs",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml.cs",
@@ -851,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Portatiles.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Portatiles.cshtml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\Portatiles.cshtml.cs",
@@ -864,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Prestamos.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml.cs",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml.cs",
@@ -877,7 +860,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "QueryDB.sql ",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\QueryDB.sql",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\QueryDB.sql",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\QueryDB.sql",
+              "RelativeToolTip": "BibliotecaServicios\\QueryDB.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-29T20:05:52.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PrestamosServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
@@ -903,19 +902,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "QueryDB.sql ",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\QueryDB.sql",
-              "RelativeDocumentMoniker": "BibliotecaServicios\\QueryDB.sql",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\QueryDB.sql",
-              "RelativeToolTip": "BibliotecaServicios\\QueryDB.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-29T20:05:52.84Z",
+              "DocumentIndex": 2,
+              "Title": "Prestamos (2).cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Prestamos (2).cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\Prestamos (2).cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Prestamos (2).cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\Prestamos (2).cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T23:19:46.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Prestamos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Prestamos.cs",
@@ -928,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Portatiles.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Portatiles.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Desktop\\Portatiles.cshtml",
