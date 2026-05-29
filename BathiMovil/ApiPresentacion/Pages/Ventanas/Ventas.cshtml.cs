@@ -1,6 +1,7 @@
 ﻿using BibliotecaPresentacion.Implementaciones;
 using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
+using iTextSharp.text.pdf.qrcode;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -10,6 +11,7 @@ namespace ApiPresentacion.Pages
     {
         [BindProperty] public bool ConfirmarCantidad { get; set; }
         [BindProperty] public bool NoEstaLogeado { get; set; } = false;
+        [BindProperty] public bool ErrorRol { get; set; } = false;
         [BindProperty] public int? Cantidad { get; set; }
         [BindProperty] public int? Id { get; set; }
         [BindProperty] public List<Tipos_Portatiles>? ListaTPortatiles { get; set; }
@@ -20,9 +22,12 @@ namespace ApiPresentacion.Pages
             {
                 NoEstaLogeado = true;
                 return;
+            } else if (HttpContext.Session.GetInt32("Rol") == 1 || HttpContext.Session.GetInt32("Rol") == 2)
+            {
+                ErrorRol = true;
+                return;
             }
             ConfirmarCantidad = true;
-            Id = 1;
         }
 
         public void OnPostBtCerrar()

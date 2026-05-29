@@ -31,6 +31,10 @@
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
                        disabled="@(Model.Compra == null || Model.VienePorCompra)" />
+                <button asp-page-handler="ExportarPdf"
+                        class="btn btn-danger">
+                    Exportar PDF
+                </button>
             </div>
 
             @if (Model.Compra != null)

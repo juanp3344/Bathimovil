@@ -13,5 +13,6 @@ namespace BibliotecaPresentacion.Intefaces
         Compras Modificar(Compras entidad);
 
         Compras Eliminar(Compras entidad);
+        Task<byte[]> ExportarPdf();
     }
 }

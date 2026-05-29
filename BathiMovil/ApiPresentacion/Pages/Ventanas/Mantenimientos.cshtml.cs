@@ -68,26 +68,28 @@ namespace ApiPresentacion.Pages
             }
         }
 
-        public void OnPostBtNuevo()
+        public void OnPostBtVolver()
         {
-            var permiso = new Permisos
-            {
-                Nombre_Permiso = "MODIFICAR_MANTENIMIENTO"
-            };
-            var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
-            var id_rol = HttpContext.Session.GetInt32("Rol");
-            if (Permiso.Rol != id_rol)
-            {
-                ErrorRol = true;
-
-            }
-
+            OnPostBtRefrescar();
         }
+
+    
 
         public void OnPostBtModificar(int data)
         {
             try
             {
+                var permiso = new Permisos
+                {
+                    Nombre_Permiso = "MODIFICAR_MANTENIMIENTO"
+                };
+                var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
+                var id_rol = HttpContext.Session.GetInt32("Rol");
+                if (Permiso.Rol != id_rol)
+                {
+                    ErrorRol = true;
+                    return;
+                }
                 OnPostBtRefrescar();
                 Mantenimiento = Lista!.FirstOrDefault(x => x.Id_Mantenimiento == data);
                 Lista = null;
@@ -108,6 +110,7 @@ namespace ApiPresentacion.Pages
                     return;
                 if (Mantenimiento.Id_Mantenimiento == 0)
                 {
+                   
                     Mantenimiento = IMantenimientos_Presentacion!.Guardar(Mantenimiento!);
                     IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un Mantenimiento", usuario);
 
@@ -148,6 +151,17 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var permiso = new Permisos
+                {
+                    Nombre_Permiso = "ELIMINAR_MANTENIMIENTO"
+                };
+                var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
+                var id_rol = HttpContext.Session.GetInt32("Rol");
+                if (Permiso.Rol != id_rol)
+                {
+                    ErrorRol = true;
+                    return;
+                }
                 OnPostBtRefrescar();
                 Mantenimiento = Lista!.FirstOrDefault(x => x.Id_Mantenimiento == data);
                 Lista = null;

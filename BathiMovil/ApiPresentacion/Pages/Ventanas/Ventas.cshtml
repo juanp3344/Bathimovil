@@ -4,136 +4,528 @@
     ViewData["Title"] = "Catalogo";
 }
 
-    <h1>@ViewData["Title"]</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Catálogo</title>
+    <style>
+            body {
+                font-family: 'DM Sans', sans-serif;
+                background: #f4f5f7;
+                margin: 0;
+                padding: 0;
+                color: #1a1a2e;
+            }
 
-        <style>
+            .page-header {
+                padding: 2.5rem 2rem 0.5rem;
+            }
+
+                .page-header h1 {
+                    font-size: 28px;
+                    font-weight: 600;
+                    margin: 0 0 4px;
+                    color: #1a1a2e;
+                }
+
+                .page-header p {
+                    font-size: 14px;
+                    color: #6b7280;
+                    margin: 0;
+                }
+
+            .page-divider {
+                border: none;
+                border-top: 1px solid #e5e7eb;
+                margin: 1rem 2rem;
+            }
+
             .catalogo {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 20px;
-                padding: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 22px;
+                padding: 0 2rem 2.5rem;
+                max-width: 1100px;
             }
 
             .producto {
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                padding: 10px;
-                text-align: center;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                background: #ffffff;
+                border: 1px solid #e5e7eb;
+                border-radius: 14px;
+                overflow: hidden;
+                transition: border-color 0.2s, box-shadow 0.2s;
+                display: flex;
+                flex-direction: column;
             }
+
+                .producto:hover {
+                    border-color: #c3c9d3;
+                    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+                }
 
                 .producto img {
                     width: 100%;
-                    height: 400px;
+                    height: 220px;
                     object-fit: cover;
-                    border-radius: 8px;
+                    display: block;
                 }
 
-                .producto button {
-                    margin-top: 10px;
-                    padding: 8px 15px;
-                    border: none;
-                    background: #007bff;
-                    color: white;
-                    border-radius: 5px;
-                    cursor: pointer;
+            .producto-body {
+                padding: 1rem 1.25rem;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .producto-badge {
+                display: inline-block;
+                font-size: 11px;
+                font-weight: 600;
+                padding: 3px 10px;
+                border-radius: 6px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+            }
+
+            .badge-personal {
+                background: #e0eeff;
+                color: #1a56a8;
+            }
+
+            .badge-empresarial {
+                background: #d4f0e4;
+                color: #0a6640;
+            }
+
+            .producto-nombre {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 0 4px;
+                color: #1a1a2e;
+            }
+
+            .producto-desc {
+                font-size: 13px;
+                color: #6b7280;
+                margin: 0 0 14px;
+                line-height: 1.5;
+            }
+
+            .producto-precio-row {
+                display: flex;
+                align-items: baseline;
+                gap: 5px;
+                margin-bottom: 16px;
+            }
+
+            .producto-precio {
+                font-size: 22px;
+                font-weight: 600;
+                color: #1a1a2e;
+            }
+
+            .producto-moneda {
+                font-size: 13px;
+                color: #9ca3af;
+            }
+
+            .producto form {
+                margin-top: auto;
+            }
+
+            .btn-comprar {
+                width: 100%;
+                padding: 10px 0;
+                border: none;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: opacity 0.15s, transform 0.1s;
+                font-family: 'DM Sans', sans-serif;
+                letter-spacing: 0.01em;
+            }
+
+                .btn-comprar:hover {
+                    opacity: 0.88;
                 }
 
-                    .producto button:hover {
-                        background: red;
-                    }
-        </style>
-    </head>
-<center>
+                .btn-comprar:active {
+                    transform: scale(0.98);
+                }
 
-    <div class="catalogo">
+            .btn-personal {
+                background: #1a56a8;
+                color: #fff;
+            }
 
-        @foreach (var tipo in Model.ListaTPortatiles!)
-        {
-            <div class="producto">
-                <img src= "@tipo.ImagenUrl" alt="@tipo.Nombre">
-                <h3>@tipo.Nombre</h3>
-                <h3>@tipo.Precio_Actual</h3>
+            .btn-empresarial {
+                background: #0a6640;
+                color: #fff;
+            }
+
+            /* ── Popup de no logueado ── */
+            .popup {
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.35);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 100;
+            }
+
+            .popup-dialog {
+                background: #fff;
+                border-radius: 14px;
+                padding: 1.75rem;
+                max-width: 380px;
+                width: 90%;
+                box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            }
+
+            .popup-body {
+                display: flex;
+                gap: 14px;
+                align-items: flex-start;
+                margin-bottom: 1.25rem;
+            }
+
+            .popup-icon {
+                font-size: 28px;
+                line-height: 1;
+            }
+
+            .popup-title {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 0 4px;
+                color: #1a1a2e;
+            }
+
+            .popup-message {
+                font-size: 14px;
+                color: #6b7280;
+                margin: 0;
+                line-height: 1.5;
+            }
+
+            .popup-footer {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .btn-cerrar-popup {
+                padding: 8px 20px;
+                background: #ef4444;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                font-family: 'DM Sans', sans-serif;
+                transition: opacity 0.15s;
+            }
+
+                .btn-cerrar-popup:hover {
+                    opacity: 0.85;
+                }
+
+            /* ── Modal de cantidad ── */
+            .modal-overlay {
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.35);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 100;
+            }
+
+            .modal-box {
+                background: #fff;
+                border-radius: 14px;
+                padding: 2rem 1.75rem;
+                max-width: 360px;
+                width: 90%;
+                box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            }
+
+            .modal-icon {
+                font-size: 32px;
+                margin-bottom: 12px;
+                color: #1a56a8;
+            }
+
+            .modal-title {
+                font-size: 17px;
+                font-weight: 600;
+                margin: 0 0 4px;
+                color: #1a1a2e;
+            }
+
+            .modal-sub {
+                font-size: 13px;
+                color: #6b7280;
+                margin: 0 0 18px;
+            }
+
+            .modal-input {
+                width: 100%;
+                padding: 10px 12px;
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
+                font-size: 15px;
+                font-family: 'DM Sans', sans-serif;
+                box-sizing: border-box;
+                margin-bottom: 6px;
+                outline: none;
+                transition: border-color 0.15s;
+            }
+
+                .modal-input:focus {
+                    border-color: #1a56a8;
+                }
+
+            .modal-error {
+                font-size: 12px;
+                color: #ef4444;
+                display: block;
+                margin-bottom: 14px;
+            }
+
+            .modal-btn-row {
+                display: flex;
+                gap: 10px;
+            }
+
+            .btn-accept {
+                flex: 1;
+                padding: 10px 0;
+                background: #1a56a8;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                font-family: 'DM Sans', sans-serif;
+                transition: opacity 0.15s;
+            }
+
+                .btn-accept:hover {
+                    opacity: 0.88;
+                }
+
+            .btn-close {
+                flex: 1;
+                padding: 10px 0;
+                background: #f3f4f6;
+                color: #374151;
+                border: 1px solid #e5e7eb;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                font-family: 'DM Sans', sans-serif;
+                transition: background 0.15s;
+            }
+
+                .btn-close:hover {
+                    background: #e5e7eb;
+                }
+
+            .banner {
+                position: relative;
+                width: 100%;
+                height: 320px;
+                border-radius: 14px;
+                overflow: hidden;
+                margin: 0 0 2rem;
+            }
+
+                .banner img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 56% 20%;
+                }
+
+            .banner-overlay {
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(to right, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.15));
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 2.5rem;
+            }
+
+            .banner-tag {
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #7ee8c2;
+                margin-bottom: 10px;
+            }
+
+            .banner-title {
+                font-size: 32px;
+                font-weight: 700;
+                color: #ffffff;
+                margin: 0 0 8px;
+                max-width: 480px;
+            }
+
+            .banner-sub {
+                font-size: 15px;
+                color: rgba(255,255,255,0.75);
+                margin: 0 0 22px;
+                max-width: 400px;
+            }
+    </style>
+</head>
+
+<div class="page-header">
+    <h1>@ViewData["Title"]</h1>
+    <p>Soluciones de sanitarios portátiles para cada necesidad</p>
+</div>
+<hr class="page-divider" />
+
+<div class="banner">
+    <img src="/Banner.jpg" alt="Banner catálogo" />
+    <div class="banner-overlay">
+        <span class="banner-tag">Catálogo 2025</span>
+        <h2 class="banner-title">Sanitarios portátiles para cada necesidad</h2>
+        <p class="banner-sub">Soluciones higiénicas para eventos, obras y empresas.</p>
+        <a href="#catalogo">Ver productos ↓</a>
+    </div>
+</div>
+
+<div class="catalogo">
+    @foreach (var tipo in Model.ListaTPortatiles!)
+    {
+        <div class="producto">
+            <img src="@tipo.ImagenUrl" alt="@tipo.Nombre" />
+
+            <div class="producto-body">
+                @{
+                    bool esEmpresarial = tipo.Nombre != null && tipo.Nombre.Contains("Empresarial");
+                    string badgeClass = esEmpresarial ? "badge-empresarial" : "badge-personal";
+                    string badgeText = esEmpresarial ? "Más popular" : "Uso personal";
+                    string btnClass = esEmpresarial ? "btn-empresarial" : "btn-personal";
+                    string descText = esEmpresarial
+                        ? "Diseñado para obras, eventos masivos y empresas"
+                        : "Ideal para eventos pequeños y uso familiar";
+                }
+
+                <span class="producto-badge @badgeClass">@badgeText</span>
+                <p class="producto-nombre">@tipo.Nombre</p>
+                <p class="producto-desc">@descText</p>
+
+                <div class="producto-precio-row">
+                    <span class="producto-precio">$@tipo.Precio_Actual.ToString("N0")</span>
+                    <span class="producto-moneda">COP</span>
+                </div>
 
                 <form method="post">
                     <input type="hidden" name="Id" value="@tipo.Id_Tipo_Portatil" />
                     <input type="submit"
                            value="Comprar"
                            asp-page-handler="BtComprarPortatil"
-                           class="btn btn-primary" />
-                </form>
-            </div>
-        }
-
-    </div>
-
-    @if (Model.NoEstaLogeado)
-    {
-        <div class="popup">
-            <div class="popup-dialog">
-                <div class="popup-body">
-                    <div class="popup-icon">⚠️</div>
-                    <div>
-                        <p class="popup-title">No esta logueado</p>
-                        <p class="popup-message">
-                            Debes de estar <strong>logueado</strong> para comprar o prestar un baño portatil.
-                        </p>
-                    </div>
-                </div>
-                 <form method="post">
-                <div class="popup-footer">
-                    <input type="submit"
-                           value="Cerrar"
-                           asp-page-handler="BtCerrar"
-                           class="btn btn-danger" />
-                </div>
+                           class="btn-comprar @btnClass" />
                 </form>
             </div>
         </div>
     }
+</div>
 
-    <form method="post">
-        @if (Model!.ConfirmarCantidad)
+@if (Model.NoEstaLogeado)
 {
-    <div class="modal-overlay">
-        <div class="modal-box">
-            <form method="post">
-                <input type="hidden" asp-for="Id" />
-
-                <div class="modal-icon">
-                    <i class="ti ti-package"></i>
+    <div class="popup">
+        <div class="popup-dialog">
+            <div class="popup-body">
+                <div class="popup-icon">⚠️</div>
+                <div>
+                    <p class="popup-title">No está logueado</p>
+                    <p class="popup-message">
+                        Debes estar <strong>logueado</strong> para comprar o prestar un baño portátil.
+                    </p>
                 </div>
-
-                <p class="modal-title">Ingresar cantidad</p>
-                <p class="modal-sub">Especifica el valor antes de continuar</p>
-
-                <input id="inCantidad"
-                       type="number"
-                       class="modal-input"
-                       asp-for="@Model.Cantidad"
-                       placeholder="0" />
-
-                <span asp-validation-for="Cantidad" class="modal-error"></span>
-
-                <div class="modal-btn-row">
-                    <input type="submit"
-                           value="Aceptar"
-                           asp-page-handler="BtAceptar"
-                           class="btn-accept" />
+            </div>
+            <form method="post">
+                <div class="popup-footer">
                     <input type="submit"
                            value="Cerrar"
                            asp-page-handler="BtCerrar"
-                           class="btn-close" />
+                           class="btn-cerrar-popup" />
                 </div>
             </form>
         </div>
     </div>
 }
-       
-    </form>
 
-</center>
+@if (Model.ErrorRol)
+{
+    <div class="popup">
+        <div class="popup-dialog">
+            <div class="popup-body">
+                <div class="popup-icon">⚠️</div>
+                <div>
+                    <p class="popup-title">No está logueado</p>
+                    <p class="popup-message">
+                        Los empleados <strong>No</strong> pueden comprar baños portatiles desde cuentas de la empresa.
+                    </p>
+                </div>
+            </div>
+            <form method="post">
+                <div class="popup-footer">
+                    <input type="submit"
+                           value="Cerrar"
+                           asp-page-handler="BtCerrar"
+                           class="btn-cerrar-popup" />
+                </div>
+            </form>
+        </div>
+    </div>
+}
+<form method="post">
+    @if (Model!.ConfirmarCantidad)
+    {
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <form method="post">
+                    <input type="hidden" asp-for="Id" />
+
+                    <div class="modal-icon">📦</div>
+                    <p class="modal-title">Ingresar cantidad</p>
+                    <p class="modal-sub">Especifica el valor antes de continuar</p>
+
+                    <input id="inCantidad"
+                           type="number"
+                           class="modal-input"
+                           asp-for="@Model.Cantidad"
+                           placeholder="0" />
+
+                    <span asp-validation-for="Cantidad" class="modal-error"></span>
+
+                    <div class="modal-btn-row">
+                        <input type="submit"
+                               value="Aceptar"
+                               asp-page-handler="BtAceptar"
+                               class="btn-accept" />
+                        <input type="submit"
+                               value="Cerrar"
+                               asp-page-handler="BtCerrar"
+                               class="btn-close" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+</form>

@@ -13,11 +13,12 @@ namespace ApiServicios.Controllers
     {
         private IComprasServicios? IComprasServicios;
 
-        
+        private readonly IPdfServicios _pdfServicio;
 
         public ComprasController()
         {
             this.IComprasServicios = new ComprasServicios();
+            this._pdfServicio = new PdfServicios();
         }
 
         [HttpGet]
@@ -52,6 +53,19 @@ namespace ApiServicios.Controllers
             if (this.IComprasServicios == null)
                 throw new Exception("No implementado");
             return this.IComprasServicios!.Eliminar(id);
+        }
+        [HttpGet]
+        public IActionResult ExportarPdf()
+        {
+            var lista = IComprasServicios!.Consultar();
+
+            var pdf = _pdfServicio.GenerarPdf(lista, "Reporte Compras");
+
+            return File(
+                pdf,
+                "application/pdf",
+                "compras.pdf"
+            );
         }
 
     }

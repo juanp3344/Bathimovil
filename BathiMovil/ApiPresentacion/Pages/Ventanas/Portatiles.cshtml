@@ -1,7 +1,7 @@
 ﻿@page
 @model PortatilesModel
 @{
-    ViewData["Title"] = "Portatils";
+    ViewData["Title"] = "Portatiles";
 }
 <center>
     <div>
@@ -29,6 +29,30 @@
                        asp-page-handler="BtGuardar"
                        disabled="@(Model.Portatil == null)" />
             </div>
+
+
+            @if (Model.ErrorRol)
+            {
+                <div class="popup">
+                    <div class="popup-dialog">
+                        <div class="popup-body">
+                            <div class="popup-icon">⚠️</div>
+                            <div>
+                                <p class="popup-title">Rol no permitido</p>
+                                <p class="popup-message">
+                                    El rol que tienes <strong>NO</strong> es valido para esta opción.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtVolver"
+                                   class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+            }
 
             @if (Model.Portatil != null)
             {
@@ -104,29 +128,28 @@
 
             @if (Model.Portatil != null && Model.Borrando)
             {
-                <div class='popup'>
-                    <div class='pp_ms_inner'>
-                        <div style='width:95%'>
-                            <h2 align="left">
-                                Mensaje
-                            </h2>
-
-                            <h6 align="left">
-                                Desea borrar el Portatil?
-                            </h6>
-                            <h6 align="left">
-                                @Model.Portatil!.Numero_Serial
-                            </h6>
-
-                            <input type="submit"
-                                   value="Cerrar"
-                                   asp-page-handler="BtCerrar"
-                                   class="btn btn-secondary" />
-                            <input type="submit"
-                                   value="Borrar"
-                                   asp-page-handler="BtBorrar"
-                                   class="btn btn-danger" />
+                <div class="popup">
+                    <div class="popup-dialog">
+                        <div class="popup-body">
+                            <div class="popup-icon">⚠️</div>
+                            <div>
+                                <h6 align="left">
+                                    @Model.Portatil!.Numero_Serial
+                                </h6>
+                                <p class="popup-title">Eliminar bañor portatil</p>
+                                <p class="popup-message">
+                                    ESTAS SEGURO DE <strong>ELIMINAR</strong> ESTE BAÑO
+                                </p>
+                            </div>
                         </div>
+                        <input type="submit"
+                               value="Cerrar"
+                               asp-page-handler="BtCerrar"
+                               class="btn btn-secondary" />
+                        <input type="submit"
+                               value="Borrar"
+                               asp-page-handler="BtBorrar"
+                               class="btn btn-danger" />
                     </div>
                 </div>
             }

@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\BPortatilP.jfif" />
-    <None Include="wwwroot\global-azul.jpg" />
+    <Content Remove="wwwroot\global-azul.jpg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.5" />
   </ItemGroup>
 
   <ItemGroup>
