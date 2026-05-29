@@ -44,8 +44,7 @@ namespace ApiServicios.Controllers
         }
 
         [HttpDelete]
-
-        public Mantenimientos Eliminar(Mantenimientos id)
+        public Mantenimientos Eliminar([FromBody] Mantenimientos id)
         {
             if (this.IMantenimientosServicios == null)
                 throw new Exception("No implementado");
