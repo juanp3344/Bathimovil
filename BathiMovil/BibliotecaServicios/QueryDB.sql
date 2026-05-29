@@ -329,27 +329,7 @@ INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl
 
 INSERT INTO Sedes ([Nombre],[Direccion],[Ciudad],[Telefono_Contacto]) VALUES ('BathiMovil','Medellin','Medellin','834278497AC');
 
-INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
-INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('3472478372848SF',GETDATE(),'Libre',2,1 )
-INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('54754897493AHDS',GETDATE(),'Libre',2,1 )
-INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('837482743274738',GETDATE(),'Libre',1,1 )
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-001-2024XABC', GETDATE(), 'Libre', 2, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-002-2024XDEF', GETDATE(), 'Libre', 2, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-003-2024XGHI', GETDATE(), 'Libre', 2, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-004-2024XJKL', GETDATE(), 'Libre', 2, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-005-2024XMNO', GETDATE(), 'Libre', 2, 1)
- 
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-006-2023XPQR', GETDATE(), 'Prestado',         2, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-007-2023XSTU', GETDATE(), 'En mantenimiento',  2, 1)
- 
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-001-2024YABC', GETDATE(), 'Libre', 1, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-002-2024YDEF', GETDATE(), 'Libre', 1, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-003-2024YGHI', GETDATE(), 'Libre', 1, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-004-2024YJKL', GETDATE(), 'Libre', 1, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-005-2024YMNO', GETDATE(), 'Libre', 1, 1)
- 
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-006-2023YPQR', GETDATE(), 'Prestado',         1, 1)
-INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-007-2023YSTU', GETDATE(), 'En mantenimiento',  1, 1)
+
 
 INSERT INTO [Roles] 
 ([Nombre_Rol], [Descripcion_Rol],[Salario_Empleado]) VALUES ('Administrador', 'Acceso completo del sistema', 40000000)
@@ -382,3 +362,25 @@ INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('GUARDAR_PORTATILES', 1)
 
 INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('ELIMINAR_IMPLEMENTO', 1)
 INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('MODIFICAR_IMPLEMENTO', 1)
+
+INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('643278Y78E78327',GETDATE(),'Libre',2,1 )
+INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('3472478372848SF',GETDATE(),'Libre',2,1 )
+INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('54754897493AHDS',GETDATE(),'Libre',2,1 )
+INSERT INTO [Portatiles]([Numero_Serial], [Fecha_Fabricacion], [Estado_Actual], [Tipo_Portatil], [Sede]) VALUES ('837482743274738',GETDATE(),'Libre',1,1 )
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-001-2024XABC', GETDATE(), 'Libre', 2, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-002-2024XDEF', GETDATE(), 'Libre', 2, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-003-2024XGHI', GETDATE(), 'Libre', 2, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-004-2024XJKL', GETDATE(), 'Libre', 2, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-005-2024XMNO', GETDATE(), 'Libre', 2, 1)
+ 
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-006-2023XPQR', GETDATE(), 'Prestado',         2, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('EMP-007-2023XSTU', GETDATE(), 'En mantenimiento',  2, 1)
+ 
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-001-2024YABC', GETDATE(), 'Libre', 1, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-002-2024YDEF', GETDATE(), 'Libre', 1, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-003-2024YGHI', GETDATE(), 'Libre', 1, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-004-2024YJKL', GETDATE(), 'Libre', 1, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-005-2024YMNO', GETDATE(), 'Libre', 1, 1)
+ 
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-006-2023YPQR', GETDATE(), 'Prestado',         1, 1)
+INSERT INTO [Portatiles]([Numero_Serial],[Fecha_Fabricacion],[Estado_Actual],[Tipo_Portatil],[Sede]) VALUES ('PER-007-2023YSTU', GETDATE(), 'En mantenimiento',  1, 1)
