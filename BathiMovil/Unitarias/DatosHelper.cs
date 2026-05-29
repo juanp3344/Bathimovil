@@ -1,5 +1,6 @@
 ﻿using BibliotecaServicios.Entidades;
 using BibliotecaServicios.Interfaces;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 
 namespace Unitarias
@@ -14,10 +15,12 @@ namespace Unitarias
         {
             var e = new Auditorias()
             {
-                Fecha = DateTime.Now,
-                Descripcion = "Auditoría de prueba",
-                Nombre_Ejecutor = "Tester"
-            };
+
+                HoraAccion = "12:00",
+                Nivel_Cambio = "2",
+                Nombre = "Auditor",
+                Operacion = "1"
+    };
             conexion.Auditorias!.Add(e);
             conexion.SaveChanges();
             return e;

@@ -8,6 +8,7 @@ namespace ApiPresentacion.Pages
 {
     public class ImplementosModel : PageModel
     {
+        private IPermisosPresentacion? IPermisosPresentacion;
         private IImplementosPresentacion? IImplementos_Presentacion;
         private IPortatilesPresentacion? IPortatilesPresentacion;
         private IBodegasPresentacion? IBodegasPresentacion;
@@ -17,6 +18,7 @@ namespace ApiPresentacion.Pages
         [BindProperty] public List<Implementos>? Lista { get; set; }
         [BindProperty] public Implementos? Implemento { get; set; }
         [BindProperty] public bool Borrando { get; set; }
+        [BindProperty] public bool ErrorRol { get; set; }
 
         public ImplementosModel()
         {
@@ -25,7 +27,7 @@ namespace ApiPresentacion.Pages
             IBodegasPresentacion = new BodegasPresentacion();
             ITipo_ImplementosPresentacion = new Tipos_ImplementosPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
-
+            IPermisosPresentacion = new PermisosPresentacion();
         }
 
         public void OnGet()
@@ -73,6 +75,18 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var permiso = new Permisos
+                {
+                    Nombre_Permiso = "MODIFICAR_IMPLEMENTO"
+                };
+                var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
+                var id_rol = HttpContext.Session.GetInt32("Rol");
+                if (Permiso.Rol != id_rol)
+                {
+                    ErrorRol = true;
+                    return;
+
+                }
                 OnPostBtRefrescar();
                 Implemento = Lista!.FirstOrDefault(x => x.Id_Implemento == data);
                 Lista = null;
@@ -128,8 +142,25 @@ namespace ApiPresentacion.Pages
             }
         }
 
+        public void OnPostBtVolver()
+        {
+            OnPostBtRefrescar();
+        }
+
         public void OnPostBtBorrarVal(int data)
         {
+            var permiso = new Permisos
+            {
+                Nombre_Permiso = "ELIMINAR_IMPLEMENTO"
+            };
+            var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
+            var id_rol = HttpContext.Session.GetInt32("Rol");
+            if (Permiso.Rol != id_rol)
+            {
+                ErrorRol = true;
+                return;
+
+            }
             try
             {
                 OnPostBtRefrescar();

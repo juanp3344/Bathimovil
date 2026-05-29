@@ -72,29 +72,39 @@
                                    style="margin-top: 5px;" />
                         </div>
                     </div>
+
                     <div style="margin-top: 20px;">
                         <select id="nmCliente"
                                 class="form-control"
                                 asp-for="@Model.Contrato!.Cliente"
                                 asp-items="@(new SelectList(Model.CargarClientes(), "Id_Persona", "Nombre"))"
-                                readonly="@Model.VienePorCompra">
+                                disabled="@(Model.VienePorCompra ? "disabled" : null)">
                             <option value="">-- Seleccione un cliente --</option>
-
                         </select>
                     </div>
+
+                    
                 </div>
+
+                
+                
             }
 
-                @if (Model.VienePorCompra)
-                {
+            @if (Model.VienePorCompra)
+            {
+                <input type="hidden" asp-for="@Model.Contrato!.Cliente" />
+                <input type="hidden" asp-for="@Model.Contrato!.Fecha_Firma" />
+                <input type="hidden" asp-for="@Model.Contrato!.Terminos" />
+                <input type="hidden" asp-for="@Model.Contrato!.Fecha_Expiracion" />
                 <input type="hidden" asp-for="CantidadCalculo" />
                 <input type="hidden" asp-for="Portatil" />
                 <input type="submit"
                        value="Firmar"
                        asp-page-handler="BtFirmar"
-                       class="btn btn-secondary" 
+                       class="btn btn-secondary"
                        style="margin-top: 50px;" />
-                }
+            }
+
 
             @if (ViewData.ContainsKey("Mensaje"))
             {

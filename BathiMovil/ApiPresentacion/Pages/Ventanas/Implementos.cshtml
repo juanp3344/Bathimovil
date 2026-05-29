@@ -119,6 +119,29 @@
                 </div>
             }
 
+            @if (Model.ErrorRol)
+            {
+                <div class="popup">
+                    <div class="popup-dialog">
+                        <div class="popup-body">
+                            <div class="popup-icon">⚠️</div>
+                            <div>
+                                <p class="popup-title">Rol no permitido</p>
+                                <p class="popup-message">
+                                    El rol que tienes <strong>NO</strong> es valido para esta opción.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtVolver"
+                                   class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+            }
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")

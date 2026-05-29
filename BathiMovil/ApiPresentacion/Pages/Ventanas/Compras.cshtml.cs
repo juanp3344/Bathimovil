@@ -31,6 +31,16 @@ namespace ApiPresentacion.Pages
             IAuditoriasPresentacion = new AuditoriasPresentacion();
 
         }
+        public async Task<IActionResult> OnPostExportarPdf()
+        {
+            var pdf = await ICompras_Presentacion!.ExportarPdf();
+
+            return File(
+                pdf,
+                "application/pdf",
+                "compras.pdf"
+            );
+        }
 
         public void OnGet() // por si viene de contrato para compra, entonces recibira estos valores 
         {

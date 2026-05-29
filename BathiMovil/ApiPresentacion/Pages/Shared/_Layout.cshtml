@@ -282,7 +282,7 @@
             </a>
             @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
-            @if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null)
+            @if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null && HttpContextAccessor.HttpContext!.Session.GetInt32("Rol") ==1)
             {
                 <a class="bm-nav-link" asp-page="/Ventanas/Contratos">
                     <span class="bm-nav-icon">📋</span> Contratos
@@ -291,6 +291,16 @@
                     <span class="bm-nav-icon">🚚</span> Envíos
                 </a>
             }
+            else if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null && HttpContextAccessor.HttpContext!.Session.GetInt32("Rol") == 2)
+            {
+                <a class="bm-nav-link" asp-page="/Ventanas/Mantenimientos">
+                    <span class="bm-nav-icon">🔧</span> Mantenimientos
+                </a>
+                <a class="bm-nav-link" asp-page="/Ventanas/Implementos">
+                    <span class="bm-nav-icon">–🔨</span> Implementos
+                </a>
+            }
+
 
         </nav>
 

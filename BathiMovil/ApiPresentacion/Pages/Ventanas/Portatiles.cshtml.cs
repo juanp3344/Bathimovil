@@ -13,10 +13,12 @@ namespace ApiPresentacion.Pages
         private ITipos_PortatilesPresentacion? ITipos_PortatilesPresentacion;
         private IComprasPresentacion? IComprasPresentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
+        private IPermisosPresentacion? IPermisosPresentacion;
 
         [BindProperty] public List<Portatiles>? Lista { get; set; }
         [BindProperty] public Portatiles? Portatil { get; set; }
         [BindProperty] public bool Borrando { get; set; }
+        [BindProperty] public bool ErrorRol { get; set; }
 
         public PortatilesModel()
         {
@@ -25,6 +27,7 @@ namespace ApiPresentacion.Pages
             ITipos_PortatilesPresentacion = new Tipos_PortatilesPresentacion();
             IComprasPresentacion = new ComprasPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
+            IPermisosPresentacion = new PermisosPresentacion();
 
         }
 
@@ -32,7 +35,10 @@ namespace ApiPresentacion.Pages
         {
             OnPostBtRefrescar();
         }
-
+        public void OnPostBtVolver()
+        {
+            OnPostBtRefrescar();
+        }
         public List<Sedes> CargarSedes()
         {
             return ISedesPresentacion!.Consultar();
@@ -64,12 +70,37 @@ namespace ApiPresentacion.Pages
             }
         }
 
+        public void OnPostBtNuevo()
+        {
+            var permiso = new Permisos
+            {
+                Nombre_Permiso = "GUARDAR_PORTATILES"
+            };
+            var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
+            var id_rol = HttpContext.Session.GetInt32("Rol");
+            if (Permiso.Rol != id_rol)
+            {
+                ErrorRol = true;
 
+            }
+
+        }
 
         public void OnPostBtModificar(int data)
         {
             try
             {
+                var permiso = new Permisos
+                {
+                    Nombre_Permiso = "MODIFICAR_PORTATILES"
+                };
+                var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
+                var id_rol = HttpContext.Session.GetInt32("Rol");
+                if (Permiso.Rol != id_rol)
+                {
+                    ErrorRol = true;
+
+                }
                 OnPostBtRefrescar();
                 Portatil = Lista!.FirstOrDefault(x => x.Id_Portatil == data);
                 Lista = null;
@@ -112,6 +143,8 @@ namespace ApiPresentacion.Pages
             {
                 if (Portatil == null)
                     return;
+
+
                 Portatil = IPortatiles_Presentacion!.Eliminar(Portatil!);
 
                 var usuario = HttpContext.Session.GetString("Usuario");
@@ -129,6 +162,17 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var permiso = new Permisos
+                {
+                    Nombre_Permiso = "ELIMINAR_PORTATILES"
+                };
+                var Permiso = IPermisosPresentacion!.ComprobarPermiso(permiso);
+                var id_rol = HttpContext.Session.GetInt32("Rol");
+                if (Permiso.Rol != id_rol)
+                {
+                    ErrorRol = true;
+                    return;
+                }
                 OnPostBtRefrescar();
                 Portatil = Lista!.FirstOrDefault(x => x.Id_Portatil == data);
                 Lista = null;
