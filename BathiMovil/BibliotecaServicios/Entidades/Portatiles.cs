@@ -11,6 +11,8 @@ namespace BibliotecaServicios.Entidades
         public DateTime Fecha_Fabricacion { get; set; }
         public string? Estado_Actual { get; set; }
 
+
+
         // N:1
         public int Tipo_Portatil { get; set; }
         public int Sede { get; set; }
@@ -20,5 +22,7 @@ namespace BibliotecaServicios.Entidades
         [ForeignKey("Tipo_Portatil")] public Tipos_Portatiles? _Tipo_Portatil { get; set; }
         [ForeignKey("Sede")] public Sedes? _Sede { get; set; }
         [ForeignKey("Compra")] public Compras? _Compra { get; set; }
+   
+        [NotMapped] public List<Ubicaciones>? Ubicaciones { get; set;  }
     }
 }

@@ -101,7 +101,7 @@ namespace Unitarias
             {
                 Nombre = "Tipo Portátil Test",
                 Descripcion = "Portátil estándar de prueba",
-                Precio_Actual = 1212312332,
+                Precio_Actual = 1212312,
                 ImagenUrl= "Imagen",
                 Altura = 25,
                 Ancho = 35,
@@ -133,7 +133,7 @@ namespace Unitarias
             {
                 Uso = "Limpieza de pantalla",
                 Instrucciones_Uso = "Aplicar con paño suave",
-                Medida_litros = 0.5m,
+                Medida_Litros = 0.5m,
                 Toxicidad = "Baja"
             };
             conexion.Tipo_Aseo_Elementos!.Add(e);
