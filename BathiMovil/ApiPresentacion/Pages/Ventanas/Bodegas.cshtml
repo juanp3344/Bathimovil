@@ -66,27 +66,25 @@
                                    asp-for="@Model.Bodega!.Capacidad_Maxima" />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            Empleado
-                        </label>
-                        <div class="col-6">
-                            <input id="inEmpleado"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Bodega!.Empleado" />
-                        </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmRoles"
+                                class="form-control"
+                                asp-for="@Model.Bodega!.Empleado"
+                                asp-items="@(new SelectList(Model.CargarEmpleados(), "Id_Persona", "Nombre"))">
+                            <option value="">-- Seleccione un rol --</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <label>
-                           Sede
-                        </label>
-                        <div class="col-6">
-                            <input id="inSede"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Bodega!.Sede" />
-                        </div>
+
+                    <div style="margin-top: 20px;">
+                        <select id="nmRoles"
+                                class="form-control"
+                                asp-for="@Model.Bodega!.Sede"
+                                asp-items="@(new SelectList(Model.CargarSedes(), "Id_Sede", "Nombre"))">
+                            <option value="">-- Seleccione un rol --</option>
+                        </select>
                     </div>
                 </div>
+                
             }
             
             @if (ViewData.ContainsKey("Mensaje"))

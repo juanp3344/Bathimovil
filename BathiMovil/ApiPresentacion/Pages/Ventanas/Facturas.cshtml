@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Facturas</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -75,8 +75,8 @@
                                    class="cts_forms form-control"
                                    asp-for="@Model.Factura!.Impuesto_Iva" />
                         </div>
-                   
-                </div>
+
+                    </div>
                     <div class="form-group">
                         <label>
                             Cliente
@@ -88,9 +88,18 @@
                         </div>
 
                     </div>
+
+                    <div style="margin-top: 20px;">
+                        <select id="nmCliente"
+                                class="form-control"
+                                asp-for="@Model.Factura!.Cliente"
+                                asp-items="@(new SelectList(Model.CargarClientes(), "Id_Persona", "Nombre"))">
+                            <option value="">-- Seleccione un cliente --</option>
+                        </select>
+                    </div>
                 </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -112,7 +121,7 @@
                             <h6 align="left">
                                 @Model.Factura!.Numero
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -125,30 +134,30 @@
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
             {
-            <table class="tb_data table table-striped table-bordered table-hover">
-                <tr>
-                    <th>
-                        Numero
-                    </th>
-                    <th>
-                        Fecha Emision
-                    </th>
-                    <th class="cl_hidden">
-                        Total
-                    </th>
-                      <th class="cl_hidden">
-                        Impuesto Iva
-                     </th>
-                     <th class="cl_hidden">
-                        Cliente
-                    </th>
-                    <th class="cl_actions">
-                        Acción
-                    </th>
-                </tr>
-                
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>
+                            Numero
+                        </th>
+                        <th>
+                            Fecha Emision
+                        </th>
+                        <th class="cl_hidden">
+                            Total
+                        </th>
+                        <th class="cl_hidden">
+                            Impuesto Iva
+                        </th>
+                        <th class="cl_hidden">
+                            Cliente
+                        </th>
+                        <th class="cl_actions">
+                            Acción
+                        </th>
+                    </tr>
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
@@ -180,8 +189,8 @@
                                        asp-route-data="@elemento.Id_Factura" />
                             </td>
                         </tr>
-                }
-            </table>
+                    }
+                </table>
             }
         </form>
     </div>

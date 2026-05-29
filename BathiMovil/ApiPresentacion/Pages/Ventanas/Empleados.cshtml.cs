@@ -8,6 +8,7 @@ namespace ApiPresentacion.Pages
     public class EmpleadosModel : PageModel
     {
         private IEmpleadosPresentacion? IEmpleadosPresentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
         [BindProperty] public List<Empleados>? Lista { get; set; }
         [BindProperty] public Empleados? Empleado { get; set; }
         [BindProperty] public bool Borrando { get; set; }
@@ -15,6 +16,8 @@ namespace ApiPresentacion.Pages
         public EmpleadosModel()
         {
             IEmpleadosPresentacion = new EmpleadosPresentacion();
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
+
         }
 
         public void OnGet()
@@ -30,6 +33,11 @@ namespace ApiPresentacion.Pages
                 if (IEmpleadosPresentacion == null)
                     return;
                 Lista = IEmpleadosPresentacion.Consultar();
+
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista empleados", usuario);
+
                 Empleado = null;
             }
             catch (Exception ex)
@@ -58,12 +66,18 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var usuario = HttpContext.Session.GetString("Usuario");
+
                 if (Empleado == null)
                     return;
                 if (Empleado.Id_Persona == 0)
+                {
                     Empleado = IEmpleadosPresentacion!.Guardar(Empleado!);
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un empleado", usuario);
+                }
                 else
                     Empleado = IEmpleadosPresentacion!.Modificar(Empleado!);
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un empleado", usuario);
                 if (Empleado.Id_Persona == 0)
                     return;
                 OnPostBtRefrescar();
@@ -81,6 +95,8 @@ namespace ApiPresentacion.Pages
                 if (Empleado == null)
                     return;
                 Empleado = IEmpleadosPresentacion!.Eliminar(Empleado!);
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un empleado", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

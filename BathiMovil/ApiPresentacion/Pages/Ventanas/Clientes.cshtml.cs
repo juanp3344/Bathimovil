@@ -8,6 +8,7 @@ namespace ApiPresentacion.Pages
     public class ClientesModel : PageModel
     {
         private IClientesPresentacion? IClientesPresentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
         [BindProperty] public List<Clientes>? Lista { get; set; }
         [BindProperty] public Clientes? Cliente { get; set; }
         [BindProperty] public bool Borrando { get; set; }
@@ -15,6 +16,7 @@ namespace ApiPresentacion.Pages
         public ClientesModel()
         {
             IClientesPresentacion = new ClientesPresentacion();
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
 
         public void OnGet()
@@ -29,6 +31,9 @@ namespace ApiPresentacion.Pages
             {
                 if (IClientesPresentacion == null)
                     return;
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista clientes", usuario);
                 Lista = IClientesPresentacion.Consultar();
                 Cliente = null;
             }
@@ -58,12 +63,18 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+
+                var usuario = HttpContext.Session.GetString("Usuario");
                 if (Cliente == null)
                     return;
                 if (Cliente.Id_Persona == 0)
+                {
                     Cliente = IClientesPresentacion!.Guardar(Cliente!);
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un cliente", usuario);
+                }
                 else
                     Cliente = IClientesPresentacion!.Modificar(Cliente!);
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un cliente", usuario);
                 if (Cliente.Id_Persona == 0)
                     return;
                 OnPostBtRefrescar();
@@ -81,6 +92,9 @@ namespace ApiPresentacion.Pages
                 if (Cliente == null)
                     return;
                 Cliente = IClientesPresentacion!.Eliminar(Cliente!);
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un cliente", usuario);
+
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

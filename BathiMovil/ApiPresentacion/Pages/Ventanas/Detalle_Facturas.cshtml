@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Detalle facturas</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -86,9 +86,17 @@
                                    asp-for="@Model.Detalle_Factura!.Factura" />
                         </div>
                     </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmFactura"
+                                class="form-control"
+                                asp-for="@Model.Detalle_Factura!.Factura"
+                                asp-items="@(new SelectList(Model.CargarFacturas(), "Id_Factura", "Numero"))">
+                            <option value="">-- Seleccione una factura --</option>
+                        </select>
                     </div>
+                </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -110,7 +118,7 @@
                             <h6 align="left">
                                 @Model.Detalle_Factura!.Cantidad
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -123,30 +131,30 @@
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
             {
-            <table class="tb_data table table-striped table-bordered table-hover">
-                <tr>
-                    <th>
-                        Cantidad
-                    </th>
-                    <th>
-                        Costo_Unitario
-                    </th>
-                    <th class="cl_hidden">
-                        Descuento_Aplicado
-                    </th>
-                      <th class="cl_hidden">
-                        Subtotal
-                     </th>
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>
+                            Cantidad
+                        </th>
+                        <th>
+                            Costo_Unitario
+                        </th>
+                        <th class="cl_hidden">
+                            Descuento_Aplicado
+                        </th>
+                        <th class="cl_hidden">
+                            Subtotal
+                        </th>
                         <th class="cl_hidden">
                             Factura
                         </th>
-                    <th class="cl_actions">
-                        Acción
-                    </th>
-                </tr>
-                
+                        <th class="cl_actions">
+                            Acción
+                        </th>
+                    </tr>
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
@@ -178,8 +186,8 @@
                                        asp-route-data="@elemento.Id_Detalle" />
                             </td>
                         </tr>
-                }
-            </table>
+                    }
+                </table>
             }
         </form>
     </div>

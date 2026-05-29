@@ -1,4 +1,5 @@
 using BibliotecaPresentacion.Implementaciones;
+using BibliotecaPresentacion.Intefaces;
 using BibliotecaServicios.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -7,7 +8,12 @@ namespace ApiPresentacion.Pages
 {
     public class PortatilesModel : PageModel
     {
-        private PortatilesPresentacion? IPortatiles_Presentacion;
+        private IPortatilesPresentacion? IPortatiles_Presentacion;
+        private ISedesPresentacion? ISedesPresentacion;
+        private ITipos_PortatilesPresentacion? ITipos_PortatilesPresentacion;
+        private IComprasPresentacion? IComprasPresentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
+
         [BindProperty] public List<Portatiles>? Lista { get; set; }
         [BindProperty] public Portatiles? Portatil { get; set; }
         [BindProperty] public bool Borrando { get; set; }
@@ -15,6 +21,11 @@ namespace ApiPresentacion.Pages
         public PortatilesModel()
         {
             IPortatiles_Presentacion = new PortatilesPresentacion();
+            ISedesPresentacion = new SedesPresentacion();
+            ITipos_PortatilesPresentacion = new Tipos_PortatilesPresentacion();
+            IComprasPresentacion = new ComprasPresentacion();
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
+
         }
 
         public void OnGet()
@@ -22,6 +33,18 @@ namespace ApiPresentacion.Pages
             OnPostBtRefrescar();
         }
 
+        public List<Sedes> CargarSedes()
+        {
+            return ISedesPresentacion!.Consultar();
+        }
+        public List<Tipos_Portatiles> CargarTipos()
+        {
+            return ITipos_PortatilesPresentacion!.Consultar();
+        }
+        public List<Compras> CargarCompras()
+        {
+            return IComprasPresentacion!.Consultar();
+        }
 
         public void OnPostBtRefrescar()
         {
@@ -30,6 +53,9 @@ namespace ApiPresentacion.Pages
                 if (IPortatiles_Presentacion == null)
                     return;
                 Lista = IPortatiles_Presentacion.Consultar();
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista portatiles", usuario);
                 Portatil = null;
             }
             catch (Exception ex)
@@ -38,7 +64,7 @@ namespace ApiPresentacion.Pages
             }
         }
 
-        
+
 
         public void OnPostBtModificar(int data)
         {
@@ -59,12 +85,17 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var usuario = HttpContext.Session.GetString("Usuario");
                 if (Portatil == null)
                     return;
                 if (Portatil.Id_Portatil == 0)
+                {
                     Portatil = IPortatiles_Presentacion!.Guardar(Portatil!);
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un baño Portatil", usuario);
+                }
                 else
                     Portatil = IPortatiles_Presentacion!.Modificar(Portatil!);
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un baño Portatil", usuario);
                 if (Portatil.Id_Portatil == 0)
                     return;
                 OnPostBtRefrescar();
@@ -82,6 +113,10 @@ namespace ApiPresentacion.Pages
                 if (Portatil == null)
                     return;
                 Portatil = IPortatiles_Presentacion!.Eliminar(Portatil!);
+
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un baño Portatil", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

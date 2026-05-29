@@ -1,65 +1,350 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ApiPresentacion</title>
+    <title>@ViewData["Title"] - BathiMovil</title>
     <script type="importmap"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ApiPresentacion.styles.css" asp-append-version="true" />
+    <style>
+        :root {
+        --sidebar-w: 260px;
+        --sidebar-bg: #0d1b2a;
+        --sidebar-accent: #1a2f47;
+        --sidebar-active: #1e6fbf;
+        --sidebar-text: #a8bdd4;
+        --sidebar-text-bright: #e8f1fa;
+        --sidebar-group: #4a6785;
+        --topbar-h: 64px;
+        --body-bg: #f0f4f8;
+        --accent: #1e6fbf;
+        --accent-light: #e8f3ff;
+        --text-main: #1a2535;
+        --border: #dce6f0;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'DM Sans', sans-serif;
+        background: var(--body-bg);
+        color: var(--text-main);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        }
+
+        /* ── SIDEBAR ── */
+        .bm-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: var(--sidebar-w);
+        height: 100vh;
+        background: var(--sidebar-bg);
+        display: flex;
+        flex-direction: column;
+        z-index: 200;
+        overflow-y: auto;
+        overflow-x: hidden;
+        }
+
+        .bm-sidebar::-webkit-scrollbar {
+        width: 4px;
+        }
+
+        .bm-sidebar::-webkit-scrollbar-track {
+        background: transparent;
+        }
+
+        .bm-sidebar::-webkit-scrollbar-thumb {
+        background: #2a4a6a;
+        border-radius: 2px;
+        }
+
+        .bm-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 22px 20px 18px;
+        border-bottom: 1px solid #1a2f47;
+        }
+
+        .bm-brand-icon {
+        width: 38px;
+        height: 38px;
+        background: linear-gradient(135deg, #1e6fbf, #0f9fe8);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        flex-shrink: 0;
+        }
+
+        .bm-brand-name {
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        color: var(--sidebar-text-bright);
+        letter-spacing: -0.3px;
+        }
+
+        .bm-brand-sub {
+        font-size: 10px;
+        color: var(--sidebar-text);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        }
+
+        .bm-nav {
+        padding: 12px 0 8px;
+        flex: 1;
+        }
+
+        .bm-nav-group {
+        padding: 14px 20px 4px;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: var(--sidebar-group);
+        }
+
+        .bm-nav-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 20px;
+        margin: 1px 8px;
+        border-radius: 8px;
+        text-decoration: none !important;
+        color: var(--sidebar-text);
+        font-size: 13.5px;
+        font-weight: 400;
+        transition: all 0.15s ease;
+        }
+
+        .bm-nav-link:hover {
+        background: var(--sidebar-accent);
+        color: var(--sidebar-text-bright);
+        }
+
+        .bm-nav-link.active {
+        background: var(--sidebar-active);
+        color: #fff;
+        font-weight: 500;
+        }
+
+        .bm-nav-icon {
+        font-size: 15px;
+        width: 18px;
+        text-align: center;
+        flex-shrink: 0;
+        }
+
+        .bm-sidebar-footer {
+        padding: 14px 16px;
+        border-top: 1px solid #1a2f47;
+        }
+
+        .bm-user-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        background: var(--sidebar-accent);
+        border-radius: 10px;
+        }
+
+        .bm-user-avatar {
+        width: 34px;
+        height: 34px;
+        background: linear-gradient(135deg, #1e6fbf, #0f9fe8);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: white;
+        flex-shrink: 0;
+        }
+
+        .bm-user-name {
+        font-size: 13px;
+        color: var(--sidebar-text-bright);
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+        .bm-logout-btn {
+        font-size: 11px;
+        color: var(--sidebar-text);
+        text-decoration: none;
+        display: block;
+        margin-top: 2px;
+        transition: color 0.15s;
+        }
+
+        .bm-logout-btn:hover {
+        color: #ff7070;
+        }
+
+        /* ── TOPBAR ── */
+        .bm-topbar {
+        position: fixed;
+        top: 0;
+        left: var(--sidebar-w);
+        right: 0;
+        height: var(--topbar-h);
+        background: #ffffff;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        padding: 0 28px;
+        z-index: 100;
+        gap: 16px;
+        }
+
+        .bm-page-title {
+        font-family: 'Sora', sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--text-main);
+        flex: 1;
+        }
+
+        .bm-topbar-btn {
+        width: 36px;
+        height: 36px;
+        background: var(--body-bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--text-main);
+        text-decoration: none;
+        transition: all 0.15s;
+        }
+
+        .bm-topbar-btn:hover {
+        background: var(--accent-light);
+        color: var(--accent);
+        border-color: var(--accent);
+        }
+
+        /* ── MAIN CONTENT ── */
+        .bm-main {
+        margin-left: var(--sidebar-w);
+        padding-top: var(--topbar-h);
+        min-height: 100vh;
+        }
+
+        .bm-content {
+        padding: 28px;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Ventanas/Ventas">BathiMovil</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Descripcion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ventanas/Ventas">Ventas</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
-                @if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null)
-                {
-                    <span>Bienvenido, @HttpContextAccessor.HttpContext.Session.GetString("Usuario")👤  </span>
-                    <a href="/sesiones/Logout">Cerrar sesión</a>
-                }
-                else
-                {
-                    <a href="/sesiones/Login">Iniciar sesión</a>
-                }
-
+    
+    <!-- SIDEBAR -->
+    <aside class="bm-sidebar">
+        <div class="bm-brand">
+            <div class="bm-brand-icon">🚿</div>
+            <div>
+                <div class="bm-brand-name">BathiMovil</div>
+                <div class="bm-brand-sub">Gestión empresarial</div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        </div>
 
+        <nav class="bm-nav">
+            <a class="bm-nav-link" asp-page="/Index">
+                <span class="bm-nav-icon">🏠</span> Inicio
+            </a>
+
+            <div class="bm-nav-group">Operaciones</div>
+            <a class="bm-nav-link" asp-page="/Ventanas/Ventas">
+                <span class="bm-nav-icon">🛒</span> Ventas
+            </a>
+            @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+            @if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null)
+            {
+                <a class="bm-nav-link" asp-page="/Ventanas/Contratos">
+                    <span class="bm-nav-icon">📋</span> Contratos
+                </a>
+                <a class="bm-nav-link" asp-page="/Ventanas/Envios">
+                    <span class="bm-nav-icon">🚚</span> Envíos
+                </a>
+            }
+
+        </nav>
+
+        <div class="bm-sidebar-footer">
+            @if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null)
+            {
+                <div class="bm-user-card">
+                    <div class="bm-user-avatar">👤</div>
+                    <div style="overflow:hidden;">
+                        <div class="bm-user-name">@HttpContextAccessor.HttpContext.Session.GetString("Usuario")</div>
+                        <a href="/sesiones/Logout" class="bm-logout-btn">Cerrar sesión</a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <a href="/sesiones/Login" class="bm-nav-link" style="margin:0; justify-content:center; background:#1a2f47;">
+                    <span class="bm-nav-icon">🔐</span> Iniciar sesión
+                </a>
+            }
+        </div>
+    </aside>
+
+    <!-- TOPBAR -->
+    <header class="bm-topbar">
+        <div class="bm-page-title">@(ViewData["Title"] ?? "BathiMovil")</div>
+        <a asp-page="/Index" class="bm-topbar-btn" title="Inicio">🏠</a>
+    </header>
+
+    <!-- MAIN -->
+    <div class="bm-main">
+        <div class="bm-content">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+    <script>
+        (function () {
+        const path = window.location.pathname.toLowerCase();
+        document.querySelectorAll('.bm-nav-link').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && path.endsWith(href.toLowerCase())) {
+        link.classList.add('active');
+        }
+        });
+        })();
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-

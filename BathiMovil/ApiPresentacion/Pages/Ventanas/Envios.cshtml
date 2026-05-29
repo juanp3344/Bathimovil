@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Envios</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -75,33 +75,29 @@
                                    class="cts_forms form-control"
                                    asp-for="@Model.Envio!.Fecha_Entrega_Estimada" />
                         </div>
-                   
-                </div>
-                <div class="form-group">
-                        <label>
-                            Contrato
-                        </label>
-                        <div class="col-6">
-                            <input id="inContrato"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Envio!.Contrato" />
-                        </div>
-                   
-                </div>
-                    <div class="form-group">
-                        <label>
-                           Empleado
-                        </label>
-                        <div class="col-6">
-                            <input id="inEmpleado"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Envio!.Empleado" />
-                        </div>
 
                     </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmEmpleado"
+                                class="form-control"
+                                asp-for="@Model.Envio!.Empleado"
+                                asp-items="@(new SelectList(Model.CargarEmpleados(), "Id_Persona", "Nombre"))">
+                            <option value="">-- Seleccione un empleado --</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <select id="nmContrato"
+                                class="form-control"
+                                asp-for="@Model.Envio!.Contrato"
+                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Id_Contrato"))">
+                            <option value="">-- Seleccione un Contrato --</option>
+                        </select>
+                    </div>
+
                 </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -123,7 +119,7 @@
                             <h6 align="left">
                                 @Model.Envio!.Fecha_Salida
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -136,34 +132,34 @@
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
             {
-            <table class="tb_data table table-striped table-bordered table-hover">
-                <tr>
-                    <th>
-                        Fecha_Salida
-                    </th>
-                    <th>
-                        Destino
-                    </th>
-                    <th class="cl_hidden">
-                        Costo Envio
-                    </th>
-                      <th>
-                        Fecha Entrega Estimada
-                     </th>
-                      <th>
-                        Contrato
-                     </th>
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>
+                            Fecha_Salida
+                        </th>
+                        <th>
+                            Destino
+                        </th>
+                        <th class="cl_hidden">
+                            Costo Envio
+                        </th>
+                        <th>
+                            Fecha Entrega Estimada
+                        </th>
+                        <th>
+                            Contrato
+                        </th>
                         <th>
                             Empleado
                         </th>
-                   
-                    <th class="cl_actions">
-                        Acción
-                    </th>
-                </tr>
-                
+
+                        <th class="cl_actions">
+                            Acción
+                        </th>
+                    </tr>
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
@@ -198,8 +194,8 @@
                                        asp-route-data="@elemento.Id_Envio" />
                             </td>
                         </tr>
-                }
-            </table>
+                    }
+                </table>
             }
         </form>
     </div>

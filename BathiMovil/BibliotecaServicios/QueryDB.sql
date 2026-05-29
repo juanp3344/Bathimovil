@@ -320,12 +320,12 @@ CREATE TABLE [Tipos_Intermedia]
 [Tipo_Portatil] INT NOT NULL REFERENCES [Tipos_Portatiles]([Id_Tipo_Portatil])
 );
 
-CREATE TABLE [Auditorias]
-(
-[Id_Auditoria] int NOT NULL IDENTITY (1,1) PRIMARY KEY,
-[Fecha] SMALLDATETIME NOT NULL,
-[Descripcion] NVARCHAR(50) NOT NULL,
-[Nombre_Ejecutor] NVARCHAR(50) NOT NULL
+CREATE TABLE [Auditorias](
+Id INT PRIMARY KEY IDENTITY (1,1),
+HoraAccion NVARCHAR(30) NOT NULL,
+Nivel_Cambio NVARCHAR(50) NOT NULL,
+Nombre NVARCHAR(50) NOT NULL,
+Operacion NVARCHAR(50) NOT NULL
 );
 
 CREATE TABLE [Permisos]
@@ -335,6 +335,7 @@ CREATE TABLE [Permisos]
 
 [Rol] INT NOT NULL REFERENCES [Roles]([Id_Rol])
 );
+
 CREATE TABLE [Ubicaciones] (
     [Id_Ubicacion]      INT IDENTITY(1,1) PRIMARY KEY,
     [Ciudad]            NVARCHAR(100),
@@ -342,6 +343,7 @@ CREATE TABLE [Ubicaciones] (
     [Portatil]          INT NOT NULL,
     FOREIGN KEY (Portatil) REFERENCES Portatiles(Id_Portatil)
 );
+
 
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil_Personal','Para clientes casuales',60000,'/global-azul.jpg', 12,10,4);
 INSERT INTO [Tipos_Portatiles]([Nombre],[Descripcion],[Precio_Actual],[ImagenUrl],[Altura],[Ancho],[Largo])VALUES('Portatil_Empresarial','Para clientes Empresariales',120000,'/BPortatilP.jfif', 12,10,4);
@@ -371,3 +373,15 @@ INSERT INTO  [Empleados]([Id_Persona], [Fecha_Ingreso] ,[Salario_Base]) VALUES (
 
 
 INSERT INTO [Usuarios]([Username],[Password_Hash],[Activo],[Fecha_Ultimo_Acceso],[Rol],[Persona]) VALUES ('Jairo','1234', 1, GETDATE(),1,1)
+
+
+INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('MODIFICAR_MANTENIMIENTO', 1)
+
+INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('ELIMINAR_MANTENIMIENTO', 1)
+
+INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('ELIMINAR_PORTATILES', 1)
+INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('MODIFICAR_PORTATILES', 1)
+INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('GUARDAR_PORTATILES', 1)
+
+INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('ELIMINAR_IMPLEMENTO', 1)
+INSERT INTO [Permisos]([Nombre_Permiso], [Rol]) VALUES ('MODIFICAR_IMPLEMENTO', 1)

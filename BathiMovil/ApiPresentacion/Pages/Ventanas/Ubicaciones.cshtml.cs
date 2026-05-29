@@ -11,6 +11,7 @@ namespace ApiPresentacion.Pages.Ventanas
     {
         private UbicacionesServicios? svc;
 
+
         [BindProperty] public List<Ubicaciones>? Lista { get; set; }
         [BindProperty] public Ubicaciones? Ubicacion { get; set; }
         [BindProperty] public bool Borrando { get; set; }

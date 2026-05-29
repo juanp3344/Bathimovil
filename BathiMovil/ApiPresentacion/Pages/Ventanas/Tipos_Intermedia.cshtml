@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Tipos_Intermedia</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -46,15 +46,13 @@
                                    asp-for="@Model.Tipos_Intermedia!.Posicion_Montaje" />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            Tipo_Implemento
-                        </label>
-                        <div class="col-6">
-                            <input id="inTipo_Implemento"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Intermedia!.Tipo_Implemento" />
-                        </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmTipo"
+                                class="form-control"
+                                asp-for="@Model.Tipos_Intermedia!.Tipo_Implemento"
+                                asp-items="@(new SelectList(Model.CargarTipos(), "Id_Tipo_Implemento", "Nombre"))">
+                            <option value="">-- Seleccione un tipo de implemento--</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>
@@ -66,9 +64,18 @@
                                    asp-for="@Model.Tipos_Intermedia!.Tipo_Portatil" />
                         </div>
                     </div>
+                    <div style="margin-top: 20px;">
+                        <select id="nmTipoPorta"
+                                class="form-control"
+                                asp-for="@Model.Tipos_Intermedia!.Tipo_Portatil"
+                                asp-items="@(new SelectList(Model.CargarTipoPorta(), "Id_Tipo_Portatil", "Nombre"))">
+                            <option value="">-- Seleccione un tipo de portatil--</option>
+                        </select>
+                    </div>
+
                 </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -90,7 +97,7 @@
                             <h6 align="left">
                                 @Model.Tipos_Intermedia!.Posicion_Montaje
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -117,7 +124,7 @@
                             Tipo_Portatil
                         </th>
                     </tr>
-                
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>

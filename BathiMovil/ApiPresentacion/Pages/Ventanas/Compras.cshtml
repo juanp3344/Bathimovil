@@ -84,15 +84,14 @@
                         </div>
                     </div>
                     <div style="margin-top: 20px;">
-                        <label>
-                            Contrato relacionado
-                        </label>
-                        <div class="col-6">
-                            <input id="inContrato"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Compra!.Contrato" 
-                                   readonly="@Model.VienePorCompra" />
-                        </div>
+                        <select id="nmRoles"
+                                class="form-control"
+                                asp-for="@Model.Compra!.Contrato"
+                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Fecha_Firma"))"
+                                readonly="@Model.VienePorCompra">
+                            <option value="">-- Seleccione un contrato --</option>
+                             
+                        </select>
                     </div>
                         @if (Model.VienePorCompra)
                         {

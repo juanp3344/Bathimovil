@@ -87,38 +87,31 @@
                             </div>
                     
                 </div>
-                    <div class="form-group">
-                        <label>
-                            Portatil
-                        </label>
-                        <div class="col-6">
-                            <input id="inPortatil"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Mantenimiento!.Portatil" />
-                        </div>
-
+                    <div style="margin-top: 20px;">
+                        <select id="nmPortatil"
+                                class="form-control"
+                                asp-for="@Model.Mantenimiento!.Portatil"
+                                asp-items="@(new SelectList(Model.CargarPortatiles(), "Id_Portatil", "Numero_Serial"))">
+                            <option value="">-- Seleccione un baño portatil --</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            Empleado
-                        </label>
-                        <div class="col-6">
-                            <input id="inEmpleado"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Mantenimiento!.Empleado" />
-                        </div>
 
+                    <div style="margin-top: 20px;">
+                        <select id="nmPrestamo"
+                                class="form-control"
+                                asp-for="@Model.Mantenimiento!.Empleado"
+                                asp-items="@(new SelectList(Model.CargarPrestamos(), "Id_Prestamo", "Fecha_Fin_Prevista"))">
+                            <option value="">-- Seleccione el prestamo --</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            Prestamo
-                        </label>
-                        <div class="col-6">
-                            <input id="inPrestamo"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Mantenimiento!.Prestamo" />
-                        </div>
 
+                    <div style="margin-top: 20px;">
+                        <select id="nmEmpleado"
+                                class="form-control"
+                                asp-for="@Model.Mantenimiento!.Empleado"
+                                asp-items="@(new SelectList(Model.CargarEmpleados(), "Id_Persona", "Nombre"))">
+                            <option value="">-- Seleccione el empleado --</option>
+                        </select>
                     </div>
                 </div>
             }
@@ -127,6 +120,29 @@
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
                 ;
+            }
+
+            @if (Model.ErrorRol)
+            {
+                <div class="popup">
+                    <div class="popup-dialog">
+                        <div class="popup-body">
+                            <div class="popup-icon">⚠️</div>
+                            <div>
+                                <p class="popup-title">Rol no permitido</p>
+                                <p class="popup-message">
+                                    El rol que tienes <strong>NO</strong> es valido para esta opción.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-footer">
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtVolver"
+                                   class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
             }
 
             @if (Model.Mantenimiento != null && Model.Borrando)

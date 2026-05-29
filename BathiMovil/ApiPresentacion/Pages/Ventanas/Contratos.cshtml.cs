@@ -8,6 +8,8 @@ namespace ApiPresentacion.Pages
     public class ContratosModel : PageModel
     {
         private IContratosPresentacion? IContratosPresentacion;
+        private IClientesPresentacion? IClientesPresentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
         [BindProperty] public List<Contratos>? Lista { get; set; }
         [BindProperty] public Contratos? Contrato { get; set; }
         [BindProperty] public bool VienePorCompra { get; set; }
@@ -21,11 +23,18 @@ namespace ApiPresentacion.Pages
         public ContratosModel()
         {
             IContratosPresentacion = new ContratosPresentacion();
+            IClientesPresentacion =  new ClientesPresentacion();
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
 
         public void OnGet()
         {
-            bool EnCompra = (bool)TempData["EnCompra"]!;
+
+            bool EnCompra = false;
+            if (TempData.ContainsKey("EnCompra"))
+            {
+                EnCompra = (bool)TempData["EnCompra"]!;
+            }
 
 
             if (EnCompra)
@@ -69,6 +78,10 @@ namespace ApiPresentacion.Pages
             return RedirectToPage("/Ventanas/Compras");
         }
 
+        public List<Clientes> CargarClientes()
+        {
+            return IClientesPresentacion!.Consultar();
+        }
 
         public void OnPostBtRefrescar()
         {
@@ -78,6 +91,9 @@ namespace ApiPresentacion.Pages
                     return;
                 
                 Lista = IContratosPresentacion.Consultar();
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista contratos", usuario);
+
                 Contrato = null;
             }
             catch (Exception ex)
@@ -106,12 +122,18 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var usuario = HttpContext.Session.GetString("Usuario");
+
                 if (Contrato == null)
                     return;
                 if (Contrato.Id_Contrato == 0)
+                {
                     Contrato = IContratosPresentacion!.Guardar(Contrato!);
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un contrato", usuario);
+                }
                 else
                     Contrato = IContratosPresentacion!.Modificar(Contrato!);
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un contrato", usuario);
                 if (Contrato.Id_Contrato == 0)
                     return;
                 UltimoContratoId = Contrato.Id_Contrato;
@@ -130,6 +152,8 @@ namespace ApiPresentacion.Pages
                 if (Contrato == null)
                     return;
                 Contrato = IContratosPresentacion!.Eliminar(Contrato!);
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un contrato", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

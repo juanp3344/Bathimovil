@@ -9,7 +9,10 @@ namespace ApiPresentacion.Pages
 {
     public class ComprasModel : PageModel
     {
-        private ComprasPresentacion? ICompras_Presentacion;
+        private IComprasPresentacion? ICompras_Presentacion;
+        private IContratosPresentacion? IContratosPresentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
+
         [BindProperty] public List<Compras>? Lista { get; set; }
         [BindProperty] public Compras? Compra { get; set; }
         [BindProperty] public bool Borrando { get; set; }
@@ -24,13 +27,13 @@ namespace ApiPresentacion.Pages
         public ComprasModel()
         {
             ICompras_Presentacion = new ComprasPresentacion();
+            IContratosPresentacion = new ContratosPresentacion();
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
+
         }
 
         public void OnGet() // por si viene de contrato para compra, entonces recibira estos valores 
         {
-
-            
-
             if (EnCompra)
             {
                 int idContrato = (int)TempData["Id_Contrato"]!;
@@ -63,6 +66,11 @@ namespace ApiPresentacion.Pages
             }
             OnPostBtRefrescar();
 
+        }
+
+        public List<Contratos> CargarContratos()
+        {
+            return IContratosPresentacion!.Consultar();
         }
 
 
@@ -113,6 +121,11 @@ namespace ApiPresentacion.Pages
                 if (ICompras_Presentacion == null)
                     return;
                 Lista = ICompras_Presentacion.Consultar();
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista clientes", usuario);
+
+
                 Compra = null;
             }
             catch (Exception ex)
@@ -142,12 +155,20 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var usuario = HttpContext.Session.GetString("Usuario");
+
                 if (Compra == null)
                     return;
                 if (Compra.Id_Compra == 0)
+                {
                     Compra = ICompras_Presentacion!.Guardar(Compra!);
+
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado una compra", usuario);
+                }
+
                 else
                     Compra = ICompras_Presentacion!.Modificar(Compra!);
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a una compra", usuario);
                 if (Compra.Id_Compra == 0)
                     return;
                 if (ConfirmarCompra)
@@ -168,6 +189,8 @@ namespace ApiPresentacion.Pages
                 if (Compra == null)
                     return;
                 Compra = ICompras_Presentacion!.Eliminar(Compra!);
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un cliente", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

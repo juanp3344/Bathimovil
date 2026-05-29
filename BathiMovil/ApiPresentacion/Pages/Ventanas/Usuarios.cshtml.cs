@@ -12,6 +12,7 @@ namespace ApiPresentacion.Pages
         private IUsuariosPresentacion? IUsuarios_Presentacion;
         private IPersonasPresentacion? IPersonasPresentacion;
         private IClientesPresentacion? IClientesPresentacion;
+        private IAuditoriasPresentacion? IAuditoriasPresentacion;
         [BindProperty] public List<Usuarios>? Lista { get; set; }
         [BindProperty] public Usuarios? Usuario { get; set; }
         [BindProperty] public List<Roles>? rolesLista { get; set; }
@@ -25,6 +26,7 @@ namespace ApiPresentacion.Pages
             IPersonasPresentacion = new PersonasPresentacion();
             IRoles_Presentacion = new RolesPresentacion();
             IClientesPresentacion = new ClientesPresentacion();
+            IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
 
         public void OnGet()
@@ -51,6 +53,11 @@ namespace ApiPresentacion.Pages
                 if (IUsuarios_Presentacion == null)
                     return;
                 Lista = IUsuarios_Presentacion.Consultar();
+
+                var usuario = HttpContext.Session.GetString("Usuario");
+
+                IAuditoriasPresentacion!.Guardar("Bajo", "Se ha consultado a la lista clientes", usuario);
+
                 Usuario = null;
             }
             catch (Exception ex)
@@ -85,6 +92,7 @@ namespace ApiPresentacion.Pages
         {
             try
             {
+                var usuario = HttpContext.Session.GetString("Usuario");
                 if (Usuario == null)
                     return;
                 if (Usuario.Id_Usuario == 0)
@@ -102,10 +110,15 @@ namespace ApiPresentacion.Pages
                             return;
                         }
                     }
+
+
+                    IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un cliente", usuario);
                     Usuario = IUsuarios_Presentacion!.Guardar(Usuario!);
                 }
                 else
-                    Usuario = IUsuarios_Presentacion!.Modificar(Usuario!);
+
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado a un cliente", usuario);
+                Usuario = IUsuarios_Presentacion!.Modificar(Usuario!);
                 if (Usuario.Id_Usuario == 0)
                     return;
                 OnPostBtRefrescar();
@@ -123,6 +136,8 @@ namespace ApiPresentacion.Pages
                 if (Usuario == null)
                     return;
                 Usuario = IUsuarios_Presentacion!.Eliminar(Usuario!);
+                var usuario = HttpContext.Session.GetString("Usuario");
+                IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un cliente", usuario);
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

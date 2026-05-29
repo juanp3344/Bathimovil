@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Historial Precio</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -75,22 +75,20 @@
                                    class="cts_forms form-control"
                                    asp-for="@Model.Historial_Precio!.Motivo_Cambio" />
                         </div>
-                        
-                </div>
-                    <div class="form-group">
-                        <label>
-                            Tipo Portatil
-                        </label>
-                        <div class="col-6">
-                            <input id="inTipo_Portatil"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Historial_Precio!.Tipo_Portatil" />
-                        </div>
 
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <select id="nmTipo_Portatil"
+                                class="form-control"
+                                asp-for="@Model.Historial_Precio!.Tipo_Portatil"
+                                asp-items="@(new SelectList(Model.CargarTipo(), "Id_Tipo_Portatil", "Nombre"))">
+                            <option value="">-- Seleccione un tipo portatil --</option>
+                        </select>
                     </div>
                 </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -112,7 +110,7 @@
                             <h6 align="left">
                                 @Model.Historial_Precio!.Valor
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -145,7 +143,7 @@
                             Tipo Portatil
                         </th>
                     </tr>
-                
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
