@@ -10,51 +10,24 @@ namespace ApiPresentacion.Pages
     {
         private IPrestamosPresentacion? IPrestamos_Presentacion;
         private IContratosPresentacion? IContratosPresentacion;
-        private IPortatilesPresentacion? IPortatiles_Presentacion;
-        private ITipos_PortatilesPresentacion? ITiposPortatiles_Presentacion;
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
+        private IPortatilesPresentacion? IPortatilesPresentacion;
 
         [BindProperty] public List<Prestamos>? Lista { get; set; }
         [BindProperty] public Prestamos? Prestamo { get; set; }
         [BindProperty] public bool Borrando { get; set; }
-        [BindProperty] public bool VienePorPrestamo { get; set; }
-        [BindProperty] public bool ConfirmarPrestamo { get; set; }
         [BindProperty] public int Cantidad { get; set; }
-
-        [TempData] public int TPortatil { get; set; }
-        [TempData] public bool EnPrestamo { get; set; }
 
         public PrestamosModel()
         {
             IPrestamos_Presentacion = new PrestamosPresentacion();
             IContratosPresentacion = new ContratosPresentacion();
-            IPortatiles_Presentacion = new PortatilesPresentacion();
-            ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion();
+            IPortatilesPresentacion = new PortatilesPresentacion();
             IAuditoriasPresentacion = new AuditoriasPresentacion();
         }
 
         public void OnGet()
         {
-            if (EnPrestamo)
-            {
-                int idContrato = (int)TempData["Id_Contrato"]!;
-                int cantidadCalculo = (int)TempData["TDCantidad"]!;
-                int portatil = (int)TempData["Id_Portatil"]!;
-
-                Cantidad = cantidadCalculo;
-                TPortatil = portatil;
-
-                VienePorPrestamo = true;
-                Prestamo = new Prestamos()
-                {
-                    Fecha_Inicio = DateTime.Now,
-                    Fecha_Fin_Prevista = DateTime.Now.AddMonths(1),
-                    Estado_Prestamo = true,
-                    Contrato = idContrato,
-                    Portatil = portatil
-                };
-                return;
-            }
             OnPostBtRefrescar();
         }
 
@@ -63,36 +36,14 @@ namespace ApiPresentacion.Pages
             return IContratosPresentacion!.Consultar();
         }
 
-        public void OnPostBtPrestar()
+        public List<Portatiles> CargarPortatiles()
         {
-            try
-            {
-                ConfirmarPrestamo = true;
-                OnPostBtGuardar();
-
-                var portatiles = IPortatiles_Presentacion!.Consultar()
-                    .Where(p => p.Tipo_Portatil == TPortatil && p.Estado_Actual == "Libre")
-                    .Take(Cantidad)
-                    .ToList();
-
-                foreach (var portatil in portatiles)
-                {
-                    portatil.Estado_Actual = "En préstamo";
-                    IPortatiles_Presentacion.Modificar(portatil);
-                }
-
-                ConfirmarPrestamo = true;
-            }
-            catch (Exception ex)
-            {
-                ViewData["Mensaje"] = ex.Message;
-            }
+            return IPortatilesPresentacion!.Consultar();
         }
 
-        public IActionResult OnPostBtTerminar()
-        {
-            return RedirectToPage("/Ventanas/Ventas");
-        }
+
+
+
 
         public void OnPostBtRefrescar()
         {
@@ -145,7 +96,6 @@ namespace ApiPresentacion.Pages
                 }
 
                 if (Prestamo.Id_Prestamo == 0) return;
-                if (ConfirmarPrestamo) return;
                 OnPostBtRefrescar();
             }
             catch (Exception ex)

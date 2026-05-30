@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xkyEpzlx6aQ=",
+  "dgSpecHash": "G4uxO/3M1TI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\GADO\\Desktop\\PROYECTO_PROGRAMACION_DE_SOFTWARE\\Bathimovil\\BathiMovil\\BibliotecaServicios\\BibliotecaServicios.csproj",
+  "projectFilePath": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\BibliotecaServicios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GADO\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\GADO\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

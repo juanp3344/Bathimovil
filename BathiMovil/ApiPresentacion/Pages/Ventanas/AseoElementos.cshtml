@@ -12,7 +12,7 @@
             <div align="left">
                 <h3>Aseo Elementos</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
@@ -75,34 +75,27 @@
                                    asp-for="@Model.Aseo_Elemento!.Costo" />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label>
-                            Mantenimiento
-                        </label>
-                        <div class="col-6">
-                            <input id="inMantenimiento"
-                                   asp-for="@Model.Aseo_Elemento!.Mantenimiento" />
-                        </div>
-                    </div>
+
                     <div style="margin-top: 20px;">
-                        <select id="nmRoles"
+                        <select id="nmMantenimientos"
                                 class="form-control"
                                 asp-for="@Model.Aseo_Elemento!.Mantenimiento"
                                 asp-items="@(new SelectList(Model.CargarMantenimientos(), "Id_Mantenimiento", "Fecha_Servicio"))">
                             <option value="">-- Seleccione un mantenimiento --</option>
                         </select>
                     </div>
-                     <div style="margin-top: 20px;">
-                     <select id="nmRoles"
-                             class="form-control"
-                            asp-for="@Model.Aseo_Elemento!.Tipo_Aseo_Elemento"
-                                asp-items="@(new SelectList(Model.CargarTiposAseo(), "Id_Aseo_Elemento", "Uso"))">
-                         <option value="">-- Seleccione un tipo de elemento de aseo --</option>
-                     </select>
-                 </div>
+
+                    <div style="margin-top: 20px;">
+                        <select id="nmTiposAseo"
+                                class="form-control"
+                                asp-for="@Model.Aseo_Elemento!.Tipo_Aseo_Elemento"
+                                asp-items="@(new SelectList(Model.CargarTiposAseo(), "Id_Tipo_Aseo_Elemento", "Uso"))">
+                            <option value="">-- Seleccione un tipo de elemento de aseo --</option>
+                        </select>
+                    </div>
                 </div>
             }
-            
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
@@ -124,7 +117,7 @@
                             <h6 align="left">
                                 @Model.Aseo_Elemento!.Fecha_Vencimiento
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -137,33 +130,33 @@
                     </div>
                 </div>
             }
-            @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
+            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
             {
-            <table class="tb_data table table-striped table-bordered table-hover">
-                <tr>
-                    <th>
-                        Fecha_Vencimiento
-                    </th>
-                    <th>
-                        Cantidad
-                    </th>
-                    <th class="cl_hidden">
-                        Costo
-                    </th>
-                    <th class="cl_hidden">
-                        Marca
-                    </th>
-                    <th class="cl_hidden">
-                        Mantenimiento
-                    </th>
-                     <th class="cl_hidden">
-                        Tipo Aseo Elementos
-                     </th>
-                    <th class="cl_actions">
-                        Acción
-                    </th>
-                </tr>
-                
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>
+                            Fecha_Vencimiento
+                        </th>
+                        <th>
+                            Cantidad
+                        </th>
+                        <th class="cl_hidden">
+                            Costo
+                        </th>
+                        <th class="cl_hidden">
+                            Marca
+                        </th>
+                        <th class="cl_hidden">
+                            Mantenimiento
+                        </th>
+                        <th class="cl_hidden">
+                            Tipo Aseo Elementos
+                        </th>
+                        <th class="cl_actions">
+                            Acción
+                        </th>
+                    </tr>
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
@@ -198,8 +191,8 @@
                                        asp-route-data="@elemento.Id_Aseo_Elemento" />
                             </td>
                         </tr>
-                }
-            </table>
+                    }
+                </table>
             }
         </form>
     </div>

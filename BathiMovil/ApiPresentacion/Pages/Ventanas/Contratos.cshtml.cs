@@ -15,7 +15,6 @@ namespace ApiPresentacion.Pages
         [BindProperty] public List<Contratos>? Lista { get; set; }
         [BindProperty] public Contratos? Contrato { get; set; }
         [BindProperty] public bool VienePorCompra { get; set; }
-        [BindProperty] public bool VienePorPrestamo { get; set; }           // nuevo flag para préstamo
         [BindProperty] public bool Borrando { get; set; }
         [BindProperty] public int? CantidadCalculo { get; set; }
         [BindProperty] public int? Portatil { get; set; }
@@ -33,20 +32,16 @@ namespace ApiPresentacion.Pages
         public void OnGet()
         {
             bool enCompra = TempData.ContainsKey("EnCompra") && (bool)TempData["EnCompra"]!;
-            bool enPrestamo = TempData.ContainsKey("EnPrestamo") && (bool)TempData["EnPrestamo"]!;
 
-            if (enCompra || enPrestamo)
+            if (enCompra)
             {
                 VienePorCompra = enCompra;
-                VienePorPrestamo = enPrestamo;
 
                 Contrato = new Contratos()
                 {
                     Cliente = (int)Id_Cliente!,
                     Fecha_Firma = DateTime.Now,
-                    Terminos = enPrestamo
-                                        ? "Préstamo de baño portátil"
-                                        : "Comprará el baño portátil programado a envío",
+                    Terminos = "Portatil prestado proximo a programar envio",
                     Fecha_Expiracion = DateTime.Now.AddMonths(12)
                 };
 
@@ -58,7 +53,7 @@ namespace ApiPresentacion.Pages
             OnPostBtRefrescar();
         }
 
-        // ── Firmar: guarda el contrato y redirige a Compras o Prestamos ──
+        // ── Firmar: guarda el contrato y redirige a Compras 
         public IActionResult OnPostBtFirmar()
         {
             OnPostBtGuardar();
@@ -67,20 +62,12 @@ namespace ApiPresentacion.Pages
             {
                 ViewData["Mensaje"] = "Error al guardar el contrato";
                 VienePorCompra = VienePorCompra;
-                VienePorPrestamo = VienePorPrestamo;
                 return Page();
             }
 
             TempData["TDCantidad"] = CantidadCalculo;
             TempData["Id_Portatil"] = Portatil;
             TempData["Id_Contrato"] = UltimoContratoId;
-
-            if (VienePorPrestamo)
-            {
-                TempData["EnPrestamo"] = true;
-                return RedirectToPage("/Ventanas/Prestamos");
-            }
-
             TempData["EnCompra"] = true;
             return RedirectToPage("/Ventanas/Compras");
         }
@@ -89,6 +76,7 @@ namespace ApiPresentacion.Pages
         {
             return IClientesPresentacion!.Consultar();
         }
+
 
         public void OnPostBtRefrescar()
         {

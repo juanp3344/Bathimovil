@@ -12,23 +12,23 @@
             <div align="left">
                 <h3>Contratos</h3>
             </div>
-            
+
             <div>
                 <input type="submit"
                        value="Refrescar"
                        class="btn btn-secondary"
                        asp-page-handler="BtRefrescar"
-                       disabled="@(Model.VienePorCompra || Model.VienePorPrestamo)" />
+                       disabled="@(Model.VienePorCompra )" />
                 <input type="submit"
                        value="Nuevo"
                        class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Contrato != null || Model.VienePorCompra || Model.VienePorPrestamo)" />
+                       disabled="@(Model.Contrato != null || Model.VienePorCompra )" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Contrato == null || Model.VienePorCompra || Model.VienePorPrestamo)" />
+                       disabled="@(Model.Contrato == null || Model.VienePorCompra)" />
             </div>
 
             @if (Model.Contrato != null)
@@ -45,7 +45,7 @@
                             <input id="inFecha_Firma"
                                    class="cts_forms form-control"
                                    asp-for="@Model.Contrato!.Fecha_Firma"
-                                   readonly="@(Model.VienePorCompra || Model.VienePorPrestamo)"
+                                   readonly="@(Model.VienePorCompra)"
                                    style="margin-top: 5px;" />
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                             <input id="inFecha_Firma"
                                    class="cts_forms form-control"
                                    asp-for="@Model.Contrato!.Terminos"
-                                   readonly="@(Model.VienePorCompra || Model.VienePorPrestamo)"
+                                   readonly="@(Model.VienePorCompra)"
                                    style="margin-top: 5px;" />
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                 class="form-control"
                                 asp-for="@Model.Contrato!.Cliente"
                                 asp-items="@(new SelectList(Model.CargarClientes(), "Id_Persona", "Nombre"))"
-                                disabled="@((Model.VienePorCompra || Model.VienePorPrestamo) ? "disabled" : null)">
+                                disabled="@((Model.VienePorCompra) ? "disabled" : null)">
                             <option value="">-- Seleccione un cliente --</option>
                         </select>
                     </div>
@@ -90,7 +90,7 @@
                 
             }
 
-            @if (Model.VienePorCompra || Model.VienePorPrestamo)
+            @if (Model.VienePorCompra)
             {
                 <input type="hidden" asp-for="@Model.Contrato!.Cliente" />
                 <input type="hidden" asp-for="@Model.Contrato!.Fecha_Firma" />
@@ -98,7 +98,6 @@
                 <input type="hidden" asp-for="@Model.Contrato!.Fecha_Expiracion" />
                 <input type="hidden" asp-for="CantidadCalculo" />
                 <input type="hidden" asp-for="Portatil" />
-                <input type="hidden" asp-for="VienePorPrestamo" />
                 <input type="submit"
                        value="Firmar"
                        asp-page-handler="BtFirmar"
@@ -128,7 +127,7 @@
                             <h6 align="left">
                                 @Model.Contrato!.Fecha_Firma
                             </h6>
-                            
+
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -161,7 +160,7 @@
                             Acción
                         </th>
                     </tr>
-                
+
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
