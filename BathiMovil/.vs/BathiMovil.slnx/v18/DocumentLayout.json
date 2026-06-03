@@ -809,15 +809,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -878,7 +874,7 @@
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
               "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
-              "ViewState": "AgIAAPcBAAAAAAAAAAAiwMQBAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAC0CAAAAAAAAAAAiwPoBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-29T00:19:08.751Z",
               "EditorCaption": ""
@@ -891,10 +887,14 @@
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
               "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwIIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T20:11:17.375Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",

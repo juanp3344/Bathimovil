@@ -24,5 +24,14 @@ namespace BibliotecaServicios.Implementaciones
             iConexion.SaveChanges();
             return entidad;
         }
+
+        public List<Auditorias> Consultar()
+        {
+            iConexion = new Conexion();
+            iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
+            var lista = iConexion.Auditorias!.ToList();
+            return lista;
+        }
     }
 }

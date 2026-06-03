@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\",
   "Documents": [
     {
@@ -699,6 +700,475 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\bibliotecaservicios\\interfaces\\iprestamosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\sesiones\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\sesiones\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\auditorias.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\auditorias.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\empleados.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\empleados.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\auditorias.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\auditorias.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\empleados.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\empleados.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\iauditoriaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\iauditoriaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\auditoriaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\auditoriaspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\empleadospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\empleadospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\auditoriasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\auditoriasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\iauditoriasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\iauditoriasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\bodegasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\bodegasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\aseoelementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\aseoelementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\ventas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\ventas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tipos_implementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tipos_implementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tipos_intermedia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tipos_intermedia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tipo_aseo_elementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tipo_aseo_elementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\sedes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\sedes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\bodegas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\bodegas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tipos_implementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tipos_implementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\contratos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\contratos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tipos_intermedia.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tipos_intermedia.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\contratos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\contratos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\compras.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\compras.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\prestamos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\prestamos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\prestamos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\prestamos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\ventas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\ventas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\usuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\usuarios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\usuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\usuarios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\sesiones\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\sesiones\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\prestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\prestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\portatiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\portatiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\prestamosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\prestamosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\portatiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\portatiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\portatiles.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\portatiles.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\nucleo\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\nucleo\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\compras.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\compras.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\detalle_facturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\detalle_facturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\unitariaspresentacion\\unitariaspresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\unitariaspresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\unitarias\\auditoriasunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\auditoriasunitarias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\unitarias\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE380B24-8669-477F-BD77-F07996A1715C}|Unitarias\\Unitarias.csproj|solutionrelative:unitarias\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\unitariaspresentacion\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DA294B4-9989-4F8B-88D3-8C6F88791D39}|UnitariasPresentacion\\UnitariasPresentacion.csproj|solutionrelative:unitariaspresentacion\\datoshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\historial_precios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\historial_precios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\mantenimientos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\mantenimientos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\mantenimientos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\mantenimientos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\historial_precios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\historial_precios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\imantenimientospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\imantenimientospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\mantenimientospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\mantenimientospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\ihistorial_preciospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\ihistorial_preciospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\historial_preciospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\historial_preciospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\iempleadospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\iempleadospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\compraspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\compraspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\mantenimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\mantenimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\historial_precioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\historial_precioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\comprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\comprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\implementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\implementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tiposportatiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tiposportatiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\sedesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\sedesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tiposportatiles.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tiposportatiles.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\facturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\facturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\bodegas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\bodegas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\aseoelementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\aseoelementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\bibliotecaservicios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\bibliotecaservicios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\implementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\implementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\implementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\implementos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\icompraspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\icompraspresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\pdfservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\pdfservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\ipdfservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\ipdfservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\apiservicios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\apiservicios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\tipo_aseo_elementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\tipo_aseo_elementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\implementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\implementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\itipo_aseo_elementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\itipo_aseo_elementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\itipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\itipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\envios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\envios.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\detalle_facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\detalle_facturas.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\pagosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\pagosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\ipagosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\ipagosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\ubicaciones.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\ubicaciones.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\tipo_aseo_elementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\tipo_aseo_elementos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\sedes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\sedes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\roles.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\roles.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\pagos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\pagos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\pagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\pagos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\envios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\envios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\ventanas\\clientes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\ventanas\\clientes.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\usuariosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\usuariosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\auditorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\auditorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\apipresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\apipresentacion.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\pages\\sesiones\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\sesiones\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\aseo_elementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\aseo_elementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\permisosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\permisosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\permisospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\permisospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\ipermisospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\ipermisospresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\ipermisosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\ipermisosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apipresentacion\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GADO\\AppData\\Local\\SourceServer\\b53b57430ed7e2473b5330b54483647bf608535461b1f956e540ee86631cd5c7\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\clientesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\clientesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\intefaces\\iclientespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\intefaces\\iclientespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecapresentacion\\implementaciones\\clientespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692840E1-2BD8-475F-99F6-447AD995075A}|BibliotecaPresentacion\\BibliotecaPresentacion.csproj|solutionrelative:bibliotecapresentacion\\implementaciones\\clientespresentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\iclientesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\iclientesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\implementos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\implementos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\sedes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\sedes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\historial_precios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\historial_precios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\envios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\envios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\entidades\\detalle_facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\entidades\\detalle_facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\iprestamosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\iprestamosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -711,6 +1181,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -800,6 +1271,65 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\bibliotecaservicios\\interfaces\\itipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\itipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\tipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\tipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\tipo_implementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\tipo_implementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\tipos_portatilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\tipos_portatilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\tipo_aseo_elementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\tipo_aseo_elementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\implementaciones\\personasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\implementaciones\\personasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\ipersonasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\ipersonasservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\sedescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\sedescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\tipos_implementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\tipos_implementoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\apiservicios\\controllers\\tipos_intermediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0E875A-2EA4-4021-ACED-3C3783E925F1}|ApiServicios\\ApiServicios.csproj|solutionrelative:apiservicios\\controllers\\tipos_intermediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\iimplementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\iimplementosservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\gado\\desktop\\www\\bathimovil\\bathimovil\\bibliotecaservicios\\interfaces\\itipos_portatilesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\itipos_portatilesservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
     }
   ],
   "DocumentGroupContainers": [
@@ -811,6 +1341,14 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -830,16 +1368,12 @@
               "Title": "Compras.cshtml",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml*",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml*",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAHkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-03T21:54:28.448Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -881,6 +1415,23 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Compras.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:11:17.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Program.cs",
@@ -890,19 +1441,6 @@
               "ViewState": "AgIAABsAAAAAAAAAAAAswC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-02T00:42:09.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Compras.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
-              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs*",
-              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T20:11:17.375Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -931,10 +1469,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Prestamos.cs",
@@ -946,10 +1480,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-09T15:48:12.463Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -3345,6 +3875,1632 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
+<<<<<<< HEAD
+=======
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmpleadosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\EmpleadosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\EmpleadosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\EmpleadosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\EmpleadosPresentacion.cs",
+              "ViewState": "AgIAAEQAAAAAbBFRTD4LwGMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:08:46.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuditoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\AuditoriasController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\AuditoriasController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\AuditoriasController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\AuditoriasController.cs",
+              "ViewState": "AgIAABkAAAAAM1cG1QYMwDAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T21:10:25.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuditoriasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\AuditoriasPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\AuditoriasPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\AuditoriasPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\AuditoriasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuditoriasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IAuditoriasPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IAuditoriasPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IAuditoriasPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IAuditoriasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Empleados.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml",
+              "ViewState": "AgIAAFUAAAAApb4s7SwpwDEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T20:12:31.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Auditorias.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T21:05:59.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmpleadosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\EmpleadosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\EmpleadosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\EmpleadosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\EmpleadosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:01:16.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAALIAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAAACUBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Empleados.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Empleados.cshtml.cs",
+              "ViewState": "AgIAAAwAAABsx5v8FlM0wBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Auditorias.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Auditorias.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T21:12:06.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuditoriasServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\AuditoriasServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\AuditoriasServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\AuditoriasServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\AuditoriasServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T21:08:38.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAuditoriasServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IAuditoriasServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IAuditoriasServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IAuditoriasServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IAuditoriasServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T21:09:51.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Ventas.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Prestamos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAIhecwbckwI8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Tipos_Implementos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Tipos_Intermedia.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Sedes.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAAIUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T19:40:16.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Tipos_Intermedia.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Intermedia.cshtml.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BodegasServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\BodegasServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\BodegasServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\BodegasServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\BodegasServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Tipo_Aseo_Elementos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Bodegas.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AseoElementos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAwMYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Tipos_Implementos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Tipos_Implementos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Contratos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml",
+              "ViewState": "AgIAAFgAAACwOxbbpAYwwGMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Contratos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml.cs",
+              "ViewState": "AgIAAEUAAAAADDOJetEHwD8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Compras.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Prestamos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Prestamos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Ventas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Usuarios.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml.cs",
+              "ViewState": "AgIAADoAAAAA4tyYngAEwE0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Usuarios.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Usuarios.cshtml",
+              "ViewState": "AgIAAEEAAAAAv2A3bJMbwFgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PrestamosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PrestamosServicios.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAhwCMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Portatiles.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml.cs",
+              "ViewState": "AgIAAJsAAAAAjoLg8c0RwCUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\sesiones\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Login.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\sesiones\\Login.cshtml.cs",
+              "ViewState": "AgIAAHQAAACAwkXu6U4hwDMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Prestamos.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Prestamos.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Prestamos.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Prestamos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T22:32:20.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Portatiles.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Portatiles.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Portatiles.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Portatiles.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Portatiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Portatiles.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Portatiles.cshtml",
+              "ViewState": "AgIAANMAAAAAvAM8afEuwAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Configuraciones.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Nucleo\\Configuraciones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Compras.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Compras.cshtml.cs",
+              "ViewState": "AgIAACcAAAAAylGAKHjwv2UAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Detalle_Facturas.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml",
+              "ViewState": "AgIAADYAAACwYcCSq2wuwE0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Mantenimientos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml.cs",
+              "ViewState": "AgIAACkAAAAABQvuBwAmwE4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Mantenimientos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Mantenimientos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Historial_Precios.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DatosHelper.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\DatosHelper.cs",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\DatosHelper.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\DatosHelper.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\DatosHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:33:20.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UnitariasPresentacion.csproj",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "RelativeDocumentMoniker": "UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "RelativeToolTip": "UnitariasPresentacion\\UnitariasPresentacion.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T20:39:22.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DatosHelper.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
+              "RelativeDocumentMoniker": "Unitarias\\DatosHelper.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\Unitarias\\DatosHelper.cs",
+              "RelativeToolTip": "Unitarias\\DatosHelper.cs",
+              "ViewState": "AgIAAAQAAADg9X04SMj6vxUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Historial_Precios.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Historial_Precios.cshtml.cs",
+              "ViewState": "AgIAAAAAAACAJHTQJSAowCEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AuditoriasUnitarias.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\Unitarias\\AuditoriasUnitarias.cs",
+              "RelativeDocumentMoniker": "Unitarias\\AuditoriasUnitarias.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\Unitarias\\AuditoriasUnitarias.cs",
+              "RelativeToolTip": "Unitarias\\AuditoriasUnitarias.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAnwDMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:38:34.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IMantenimientosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IMantenimientosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IMantenimientosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IMantenimientosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IMantenimientosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:13:49.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "MantenimientosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\MantenimientosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\MantenimientosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\MantenimientosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\MantenimientosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:09:56.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IHistorial_PreciosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IHistorial_PreciosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IHistorial_PreciosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IHistorial_PreciosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IHistorial_PreciosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:13:32.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Historial_PreciosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Historial_PreciosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Historial_PreciosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Historial_PreciosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\Historial_PreciosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:09:10.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IEmpleadosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IEmpleadosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IEmpleadosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IEmpleadosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IEmpleadosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:13:20.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "MantenimientosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\MantenimientosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\MantenimientosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\MantenimientosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\MantenimientosController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowEAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:01:33.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Historial_PreciosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Historial_PreciosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Historial_PreciosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Historial_PreciosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\Historial_PreciosController.cs",
+              "ViewState": "AgIAADAAAADAMUCiCfAnwDkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T20:01:57.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ComprasController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\ComprasController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\ComprasController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\ComprasController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\ComprasController.cs",
+              "ViewState": "AgIAACkAAACABitOtfYdwDgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAB0AAADAeoZwzAYmwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ComprasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\ComprasPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\ComprasPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\ComprasPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\ComprasPresentacion.cs",
+              "ViewState": "AgIAAEoAAAD4er5mudQwwGMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "TiposPortatiles.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml",
+              "ViewState": "AgIAAF4AAAAAAPRtwVLwv34AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:55:15.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ImplementosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\ImplementosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\ImplementosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\ImplementosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\ImplementosController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Bodegas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Bodegas.cshtml.cs",
+              "ViewState": "AgIAAAkAAABsE5hO67oiwBgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "TiposPortatiles.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\TiposPortatiles.cshtml.cs",
+              "ViewState": "AgIAADsAAAAAozmy8nkwwEEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "AseoElementos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\AseoElementos.cshtml.cs",
+              "ViewState": "AgIAAF0AAAAAc9HJUnMswHEAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "Facturas.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml",
+              "ViewState": "AgIAADsAAAAQya60jAwtwE4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Facturas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Facturas.cshtml.cs",
+              "ViewState": "AgIAAE4AAAAayw9c5bEowGwAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "SedesServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\SedesServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\SedesServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\SedesServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\SedesServicios.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAlwD4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "BibliotecaServicios.csproj",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\BibliotecaServicios.csproj",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\BibliotecaServicios.csproj",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\BibliotecaServicios.csproj",
+              "RelativeToolTip": "BibliotecaServicios\\BibliotecaServicios.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T17:42:36.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Implementos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml",
+              "ViewState": "AgIAAGYAAACAf3fy6X0jwI4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Program.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Program.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Program.cs",
+              "RelativeToolTip": "ApiServicios\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Implementos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Implementos.cshtml.cs",
+              "ViewState": "AgIAAG4AAAAASYBh+SsqwIcAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "PdfServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PdfServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PdfServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PdfServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PdfServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "IPdfServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPdfServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPdfServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPdfServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPdfServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "IComprasPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IComprasPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IComprasPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IComprasPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IComprasPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "ApiServicios.csproj",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\ApiServicios.csproj",
+              "RelativeDocumentMoniker": "ApiServicios\\ApiServicios.csproj",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\ApiServicios.csproj",
+              "RelativeToolTip": "ApiServicios\\ApiServicios.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T17:42:36.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "ImplementosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\ImplementosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\ImplementosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\ImplementosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\ImplementosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "ITipos_IntermediaServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipos_IntermediaServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ITipos_IntermediaServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipos_IntermediaServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\ITipos_IntermediaServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "ITipo_Aseo_ElementosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipo_Aseo_ElementosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ITipo_Aseo_ElementosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipo_Aseo_ElementosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\ITipo_Aseo_ElementosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Tipo_Aseo_ElementosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipo_Aseo_ElementosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipo_Aseo_ElementosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipo_Aseo_ElementosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipo_Aseo_ElementosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Envios.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml.cs",
+              "ViewState": "AgIAABAAAACg8iGoGj04wCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Detalle_Facturas.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Detalle_Facturas.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "PagosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PagosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PagosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PagosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PagosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "IPagosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPagosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPagosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPagosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPagosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Roles.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Roles.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Roles.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Roles.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Roles.cshtml.cs",
+              "ViewState": "AgIAAEUAAAAAh4+IKTklwGYAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Sedes.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Sedes.cshtml.cs",
+              "ViewState": "AgIAAAoAAAC40QX1LWMwwGMAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Tipo_Aseo_Elementos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Tipo_Aseo_Elementos.cshtml.cs",
+              "ViewState": "AgIAAEoAAAAA3gVKCmQVwGQAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Ubicaciones.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ubicaciones.cshtml.cs",
+              "ViewState": "AgIAAEEAAACAUFH1Kx8wwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "Pagos.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml",
+              "ViewState": "AgIAADYAAAAAeGYtBcT2v7YAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "Pagos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Pagos.cshtml.cs",
+              "ViewState": "AgIAAFAAAACQ6gJeZqgfwGsAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Envios.cshtml",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Envios.cshtml",
+              "ViewState": "AgIAAC8AAAAAXO7MBIP0v8kAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-29T17:42:36.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "Clientes.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Clientes.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Clientes.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Clientes.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Clientes.cshtml.cs",
+              "ViewState": "AgIAAFIAAAAAcLvQXAfzv18AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "UsuariosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\UsuariosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\UsuariosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\UsuariosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\UsuariosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "Auditorias.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Auditorias.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Auditorias.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Auditorias.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Auditorias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Empleados.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Empleados.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Empleados.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Empleados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "PermisosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PermisosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\PermisosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\PermisosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\PermisosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\sesiones\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Logout.cshtml.cs",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\sesiones\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "ApiPresentacion.csproj",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\ApiPresentacion.csproj",
+              "RelativeDocumentMoniker": "ApiPresentacion\\ApiPresentacion.csproj",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\ApiPresentacion.csproj",
+              "RelativeToolTip": "ApiPresentacion\\ApiPresentacion.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-29T17:42:36.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "PermisosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PermisosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PermisosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PermisosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\PermisosController.cs",
+              "ViewState": "AgIAACAAAACAzM8NTZc8wD4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "PermisosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PermisosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PermisosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PermisosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PermisosServicios.cs",
+              "ViewState": "AgIAACoAAAAA6CEa3cHhv0QAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "Aseo_ElementosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Aseo_ElementosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Aseo_ElementosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Aseo_ElementosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\Aseo_ElementosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "IPermisosPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPermisosPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IPermisosPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IPermisosPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IPermisosPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "IPermisosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPermisosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPermisosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPermisosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPermisosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\AppData\\Local\\SourceServer\\b53b57430ed7e2473b5330b54483647bf608535461b1f956e540ee86631cd5c7\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\b53b57430ed7e2473b5330b54483647bf608535461b1f956e540ee86631cd5c7\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\GADO\\AppData\\Local\\SourceServer\\b53b57430ed7e2473b5330b54483647bf608535461b1f956e540ee86631cd5c7\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\b53b57430ed7e2473b5330b54483647bf608535461b1f956e540ee86631cd5c7\\BathiMovil\\ApiPresentacion\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAlwDEAAAAUAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ApiPresentacion\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ApiPresentacion\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAADEAAACAHCPZI3AowLkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-29T17:42:36.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Program.cs",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Program.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiPresentacion\\Program.cs",
+              "RelativeToolTip": "ApiPresentacion\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "IClientesServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IClientesServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IClientesServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IClientesServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IClientesServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "ClientesServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\ClientesServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\ClientesServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\ClientesServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\ClientesServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "ClientesPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\ClientesPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\ClientesPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\ClientesPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\ClientesPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "IClientesPresentacion.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IClientesPresentacion.cs",
+              "RelativeDocumentMoniker": "BibliotecaPresentacion\\Intefaces\\IClientesPresentacion.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaPresentacion\\Intefaces\\IClientesPresentacion.cs",
+              "RelativeToolTip": "BibliotecaPresentacion\\Intefaces\\IClientesPresentacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "Implementos.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Implementos.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Implementos.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Implementos.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Implementos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "Sedes.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Sedes.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Sedes.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Sedes.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Sedes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "Historial_Precios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Historial_Precios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Historial_Precios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Historial_Precios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Historial_Precios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "Facturas.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Facturas.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Facturas.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Facturas.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Facturas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 114,
+              "Title": "Envios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Envios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Envios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Envios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Envios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 115,
+              "Title": "Detalle_Facturas.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Detalle_Facturas.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Detalle_Facturas.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Entidades\\Detalle_Facturas.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Entidades\\Detalle_Facturas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 116,
+              "Title": "IPrestamosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPrestamosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPrestamosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPrestamosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPrestamosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 117,
+              "Title": "IBalones_Presentaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\b8a4e974-143f-4d88-b83e-90f67d40320d_Balones_solucion.zip.20d\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IBalones_Presentaciones.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 118,
+              "Title": "IComunicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\1f3853a8-6be0-4097-9e5d-ad3aabadafc9_Balones_solucion.zip.fc9\\Balones_solucion\\Lib_Presentaciones\\Interfaces\\IComunicaciones.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 121,
+              "Title": "Balones_Presentaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\2421c6fb-f933-483b-ad5a-303e2a2ff95e_Balones_solucion.zip.95e\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Balones_Presentaciones.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 119,
+              "Title": "Comunicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
+              "ToolTip": "C:\\Users\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\AppData\\Local\\Temp\\a5bca46c-447d-4d83-92f4-2f0ff7138b43_Balones_solucion.zip.b43\\Balones_solucion\\Lib_Presentaciones\\Implementaciones\\Comunicaciones.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 120,
+              "Title": "Tipos_IntermediaServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipos_IntermediaServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipos_IntermediaServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipos_IntermediaServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipos_IntermediaServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 122,
+              "Title": "Tipo_ImplementosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipo_ImplementosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\Tipo_ImplementosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\Tipo_ImplementosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\Tipo_ImplementosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 123,
+              "Title": "PagosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PagosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PagosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PagosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\PagosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 124,
+              "Title": "Tipos_PortatilesController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_PortatilesController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipos_PortatilesController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_PortatilesController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\Tipos_PortatilesController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 125,
+              "Title": "Tipo_Aseo_ElementosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipo_Aseo_ElementosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipo_Aseo_ElementosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipo_Aseo_ElementosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\Tipo_Aseo_ElementosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 126,
+              "Title": "PrestamosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PrestamosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PrestamosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PrestamosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\PrestamosController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 127,
+              "Title": "PersonasServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PersonasServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\PersonasServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Implementaciones\\PersonasServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PersonasServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 128,
+              "Title": "IPersonasServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPersonasServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IPersonasServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IPersonasServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IPersonasServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 129,
+              "Title": "PersonasController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PersonasController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\PersonasController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\PersonasController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\PersonasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 130,
+              "Title": "SedesController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\SedesController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\SedesController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\SedesController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\SedesController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 131,
+              "Title": "Tipos_ImplementosController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_ImplementosController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipos_ImplementosController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_ImplementosController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\Tipos_ImplementosController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 132,
+              "Title": "Tipos_IntermediaController.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_IntermediaController.cs",
+              "RelativeDocumentMoniker": "ApiServicios\\Controllers\\Tipos_IntermediaController.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\ApiServicios\\Controllers\\Tipos_IntermediaController.cs",
+              "RelativeToolTip": "ApiServicios\\Controllers\\Tipos_IntermediaController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 134,
+              "Title": "ITipos_PortatilesServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipos_PortatilesServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\ITipos_PortatilesServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\ITipos_PortatilesServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\ITipos_PortatilesServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 133,
+              "Title": "IImplementosServicios.cs",
+              "DocumentMoniker": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IImplementosServicios.cs",
+              "RelativeDocumentMoniker": "BibliotecaServicios\\Interfaces\\IImplementosServicios.cs",
+              "ToolTip": "C:\\Users\\GADO\\Desktop\\WWW\\Bathimovil\\BathiMovil\\BibliotecaServicios\\Interfaces\\IImplementosServicios.cs",
+              "RelativeToolTip": "BibliotecaServicios\\Interfaces\\IImplementosServicios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T17:42:36.734Z"
+            }
+          ]
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
         }
       ]
     }

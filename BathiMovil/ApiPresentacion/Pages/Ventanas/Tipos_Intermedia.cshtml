@@ -1,7 +1,7 @@
 ﻿@page
 @model Tipos_IntermediaModel
 @{
-    ViewData["Title"] = "Tipos_Intermedia";
+    ViewData["Title"] = "Tipos Intermedia";
 }
 <center>
     <div>
@@ -10,7 +10,7 @@
             @Html.AntiForgeryToken()
 
             <div align="left">
-                <h3>Tipos_Intermedia</h3>
+                <h3>Tipos Intermedia</h3>
             </div>
 
             <div>
@@ -53,16 +53,6 @@
                                 asp-items="@(new SelectList(Model.CargarTipos(), "Id_Tipo_Implemento", "Nombre"))">
                             <option value="">-- Seleccione un tipo de implemento--</option>
                         </select>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            Tipo_Portatil
-                        </label>
-                        <div class="col-6">
-                            <input id="inTipo_Portatil"
-                                   class="cts_forms form-control"
-                                   asp-for="@Model.Tipos_Intermedia!.Tipo_Portatil" />
-                        </div>
                     </div>
                     <div style="margin-top: 20px;">
                         <select id="nmTipoPorta"

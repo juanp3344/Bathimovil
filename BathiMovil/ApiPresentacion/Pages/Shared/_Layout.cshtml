@@ -290,6 +290,9 @@
                 <a class="bm-nav-link" asp-page="/Ventanas/Envios">
                     <span class="bm-nav-icon">🚚</span> Envíos
                 </a>
+                <a class="bm-nav-link" asp-page="/Ventanas/Auditorias">
+                    <span class="bm-nav-icon">📄</span> Auditorias
+                </a>
             }
             else if (HttpContextAccessor.HttpContext!.Session.GetString("Usuario") != null && HttpContextAccessor.HttpContext!.Session.GetInt32("Rol") == 2)
             {

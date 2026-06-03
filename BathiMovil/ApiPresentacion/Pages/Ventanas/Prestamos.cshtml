@@ -1,0 +1,157 @@
+﻿@page
+@model PrestamosModel
+@{
+    ViewData["Title"] = "Prestamos";
+}
+<center>
+    <div>
+        <form method="POST" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+
+            <div align="left">
+                <h3>Préstamos</h3>
+            </div>
+
+            <div>
+                <input type="submit"
+                       value="Refrescar"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtRefrescar" />
+                <input type="submit"
+                       value="Nuevo"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtNuevo"
+                       disabled="@(Model.Prestamo != null)" />
+                <input type="submit"
+                       value="Guardar"
+                       class="btn btn-secondary"
+                       asp-page-handler="BtGuardar"
+                       disabled="@(Model.Prestamo == null)" />
+            </div>
+
+            @* ── Formulario del préstamo ── *@
+            @if (Model.Prestamo != null)
+            {
+                <input type="hidden" asp-for="@Model.Prestamo!.Id_Prestamo" />
+                <input type="hidden" asp-for="Cantidad" />
+
+                <div>
+                    <div class="form-group">
+                        <label>Fecha Inicio</label>
+                        <div class="col-6">
+                            <input id="inFecha_Inicio"
+                                   class="cts_forms form-control"
+                                   type="datetime-local"
+                                   asp-for="@Model.Prestamo!.Fecha_Inicio" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Fecha Fin Prevista</label>
+                        <div class="col-6">
+                            <input id="inFecha_Fin_Prevista"
+                                   class="cts_forms form-control"
+                                   type="datetime-local"
+                                   asp-for="@Model.Prestamo!.Fecha_Fin_Prevista" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Estado Préstamo</label>
+                        <input type="checkbox" asp-for="@Model.Prestamo!.Estado_Prestamo" />
+                        <span>Activo</span>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <label>Contrato</label>
+                        <select id="nmContrato"
+                                class="form-control"
+                                asp-for="@Model.Prestamo!.Contrato"
+                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Id_Contrato"))">
+                            <option value="">-- Seleccione un Contrato --</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <label>Portatil</label>
+                        <select id="nmPortatil"
+                                class="form-control"
+                                asp-for="@Model.Prestamo!.Portatil"
+                                asp-items="@(new SelectList(Model.CargarPortatiles(), "Id_Portatil", "Numero_Serial"))">
+                            <option value="">-- Seleccione un portatil --</option>
+                        </select>
+                    </div>
+
+                   
+                </div>
+            }
+
+            @* ── Mensaje de error ── *@
+            @if (ViewData.ContainsKey("Mensaje"))
+            {
+                @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
+                ;
+            }
+
+
+            @* ── Confirmación de borrado ── *@
+            @if (Model.Prestamo != null && Model.Borrando)
+            {
+                <div class='popup'>
+                    <div class='pp_ms_inner'>
+                        <div style='width:95%'>
+                            <h2 align="left">Mensaje</h2>
+                            <h6 align="left">¿Desea borrar el Préstamo?</h6>
+                            <h6 align="left">@Model.Prestamo!.Fecha_Inicio</h6>
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtCerrar"
+                                   class="btn btn-secondary" />
+                            <input type="submit"
+                                   value="Borrar"
+                                   asp-page-handler="BtBorrar"
+                                   class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @* ── Tabla de préstamos existentes ── *@
+            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            {
+                <table class="tb_data table table-striped table-bordered table-hover">
+                    <tr>
+                        <th>Fecha Inicio</th>
+                        <th>Fecha Fin Prevista</th>
+                        <th>Estado</th>
+                        <th>Contrato</th>
+                        <th>Portatil</th>
+                        <th></th>
+                    </tr>
+                    @foreach (var elemento in Model.Lista)
+                    {
+                        <tr>
+                            <td>@elemento.Fecha_Inicio</td>
+                            <td>@elemento.Fecha_Fin_Prevista</td>
+                            <td>@(elemento.Estado_Prestamo ? "Activo" : "Inactivo")</td>
+                            <td>@elemento.Contrato</td>
+                            <td>@elemento.Portatil</td>
+                            <td>
+                                <input type="submit"
+                                       value="Modificar"
+                                       asp-page-handler="BtModificar"
+                                       class="btn btn-warning"
+                                       asp-route-data="@elemento.Id_Prestamo" />
+                                <input type="submit"
+                                       value="Borrar"
+                                       asp-page-handler="BtBorrarVal"
+                                       class="btn btn-danger"
+                                       asp-route-data="@elemento.Id_Prestamo" />
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+        </form>
+    </div>
+</center>

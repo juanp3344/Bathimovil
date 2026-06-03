@@ -168,8 +168,7 @@ CREATE TABLE [Prestamos]
 [Fecha_Fin_Prevista] SMALLDATETIME NOT NULL,
 [Estado_Prestamo] BIT NOT NULL,
 [Contrato] INT NOT NULL REFERENCES [Contratos]([Id_Contrato]),
-[Portatil] INT NOT NULL,
-FOREIGN KEY (Portatil) REFERENCES Portatiles(Id_Portatil)
+[Portatil] INT NOT NULL REFERENCES Portatiles(Id_Portatil),
 );
 
 
@@ -320,6 +319,7 @@ CREATE TABLE [Ubicaciones] (
     [Portatil]          INT NOT NULL,
     FOREIGN KEY (Portatil) REFERENCES Portatiles(Id_Portatil)
 );
+
 
 
 

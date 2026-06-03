@@ -30,6 +30,7 @@ namespace ApiPresentacion.Pages
             }
             ConfirmarCantidad = true;
         }
+<<<<<<< HEAD
         public IActionResult OnPostBtPrestarPortatil()
         {
             if (HttpContext.Session.GetString("Usuario") == null)
@@ -37,6 +38,10 @@ namespace ApiPresentacion.Pages
                 NoEstaLogeado = true;
                 return Page();
             }
+=======
+
+
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
 
             TempData["EnPrestamo"] = true;
             return RedirectToPage("/Ventanas/Prestamos");

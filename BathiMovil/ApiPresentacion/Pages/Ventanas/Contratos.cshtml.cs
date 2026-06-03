@@ -32,12 +32,20 @@ namespace ApiPresentacion.Pages
 
         public void OnGet()
         {
+<<<<<<< HEAD
 
             bool EnCompra = false;
             if (TempData.ContainsKey("EnCompra"))
             {
                 EnCompra = (bool)TempData["EnCompra"]!;
             }
+=======
+            bool enCompra = TempData.ContainsKey("EnCompra") && (bool)TempData["EnCompra"]!;
+
+            if (enCompra)
+            {
+                VienePorCompra = enCompra;
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
 
 
             if (EnCompra)
@@ -47,7 +55,11 @@ namespace ApiPresentacion.Pages
                 {
                     Cliente = (int)Id_Cliente!,
                     Fecha_Firma = DateTime.Now,
+<<<<<<< HEAD
                     Terminos = "Comprara el baño portatil programado a envio",
+=======
+                    Terminos = "Portatil prestado proximo a programar envio",
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                     Fecha_Expiracion = DateTime.Now.AddMonths(12)
 
                 };
@@ -60,7 +72,11 @@ namespace ApiPresentacion.Pages
             OnPostBtRefrescar();
         }
 
+<<<<<<< HEAD
 
+=======
+        // ── Firmar: guarda el contrato y redirige a Compras 
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
         public IActionResult OnPostBtFirmar()
         {
             OnPostBtGuardar();
@@ -68,7 +84,11 @@ namespace ApiPresentacion.Pages
             if (UltimoContratoId == 0)
             {
                 ViewData["Mensaje"] = "Error al guardar el contrato";
+<<<<<<< HEAD
                 VienePorCompra = true;
+=======
+                VienePorCompra = VienePorCompra;
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                 return Page();
             }
 
@@ -85,6 +105,7 @@ namespace ApiPresentacion.Pages
         {
             return IClientesPresentacion!.Consultar();
         }
+
 
         public void OnPostBtRefrescar()
         {

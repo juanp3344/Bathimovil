@@ -157,6 +157,24 @@
                 .btn-comprar:active {
                     transform: scale(0.98);
                 }
+<<<<<<< HEAD
+=======
+
+            .btn-personal {
+                background: #1a56a8;
+                color: #fff;
+            }
+
+            .btn-empresarial {
+                background: #0a6640;
+                color: #fff;
+            }
+
+            .btn-prestar {
+                background: #7c3aed;
+                color: #fff;
+            }
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
 
             .btn-personal {
                 background: #1a56a8;
@@ -257,6 +275,7 @@
             }
 
             .modal-icon {
+<<<<<<< HEAD
                 font-size: 32px;
                 margin-bottom: 12px;
                 color: #1a56a8;
@@ -264,6 +283,14 @@
 
             .modal-title {
                 font-size: 17px;
+=======
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+
+            .modal-title {
+                font-size: 18px;
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                 font-weight: 600;
                 margin: 0 0 4px;
                 color: #1a1a2e;
@@ -317,8 +344,31 @@
                 font-family: 'DM Sans', sans-serif;
                 transition: opacity 0.15s;
             }
+<<<<<<< HEAD
 
                 .btn-accept:hover {
+=======
+
+                .btn-accept:hover {
+                    opacity: 0.88;
+                }
+
+            .btn-accept-prestamo {
+                flex: 1;
+                padding: 10px 0;
+                background: #7c3aed;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                font-family: 'DM Sans', sans-serif;
+                transition: opacity 0.15s;
+            }
+
+                .btn-accept-prestamo:hover {
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                     opacity: 0.88;
                 }
 
@@ -442,6 +492,10 @@
                            value="Comprar"
                            asp-page-handler="BtComprarPortatil"
                            class="btn-comprar @btnClass" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                 </form>
             </div>
         </div>
@@ -519,6 +573,7 @@
 
                     <span asp-validation-for="Cantidad" class="modal-error"></span>
 
+<<<<<<< HEAD
                     <div class="modal-btn-row">
                         <input type="submit"
                                value="Aceptar"
@@ -534,3 +589,16 @@
         </div>
     }
 </form>
+=======
+                <span asp-validation-for="Cantidad" class="modal-error"></span>
+
+                <div class="modal-btn-row">
+                    <input type="submit" value="Aceptar" asp-page-handler="BtAceptar" class="btn-accept" />
+                    <input type="submit" value="Cerrar" asp-page-handler="BtCerrar" class="btn-close" />
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+>>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
