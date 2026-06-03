@@ -103,6 +103,27 @@
                         {
                         <input type="hidden" asp-for="@Model.Compra!.Contrato" />
                         <input type="hidden" asp-for="ConfirmarCompra" />
+                        <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 15px;">
+                            <h6 align="left" style="color: #6c757d;">
+                                📍 Ubicación de entrega (opcional — aparecerá en el mapa)
+                            </h6>
+                            <div style="margin-top: 10px;">
+                                <label>Dirección</label>
+                                <div class="col-6">
+                                    <input class="cts_forms form-control"
+                                           asp-for="DireccionEntrega"
+                                           placeholder="Ej: Calle 10 # 20-30" />
+                                </div>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <label>Ciudad</label>
+                                <div class="col-6">
+                                    <input class="cts_forms form-control"
+                                           asp-for="CiudadEntrega"
+                                           placeholder="Ej: Medellín" />
+                                </div>
+                            </div>
+                        </div>
                         <input type="submit"
                                value="Comprar"
                                asp-page-handler="BtComprar"

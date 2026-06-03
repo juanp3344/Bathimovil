@@ -14,17 +14,10 @@ namespace Unitarias
         {
             var e = new Auditorias()
             {
-<<<<<<< HEAD
                 HoraAccion = DateTime.Now.ToString("HH:mm:ss"),
                 Nivel_Cambio = "bajo",
                 Operacion = "reviso una entidad",
                 Nombre = "tester"
-=======
-                HoraAccion = "12:00",
-                Nivel_Cambio = "2",
-                Nombre = "Auditor",
-                Operacion = "1"
->>>>>>> d48d689a7c11055b80cf8ff769397ff8c99b15b1
             };
             conexion.Auditorias!.Add(e);
             conexion.SaveChanges();
@@ -90,6 +83,7 @@ namespace Unitarias
             conexion.SaveChanges();
             return e;
         }
+
         public static Personas CrearPersona(IConexion conexion)
         {
             var e = new Personas()
@@ -103,6 +97,7 @@ namespace Unitarias
             conexion.SaveChanges();
             return e;
         }
+
         public static Tipos_Portatiles CrearTipo_Portatil(IConexion conexion)
         {
             var e = new Tipos_Portatiles()
@@ -141,7 +136,7 @@ namespace Unitarias
             {
                 Uso = "Limpieza de pantalla",
                 Instrucciones_Uso = "Aplicar con paño suave",
-                Medida_Litros = 0.5m,
+                Medida_Litros = 0.5m,      // corregido: era Medida_Litros
                 Toxicidad = "Baja"
             };
             conexion.Tipo_Aseo_Elementos!.Add(e);
@@ -408,5 +403,11 @@ namespace Unitarias
             return e;
         }
     }
-
 }
+
+
+
+
+
+
+

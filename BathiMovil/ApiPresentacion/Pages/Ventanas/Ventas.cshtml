@@ -1,4 +1,5 @@
-﻿@page
+﻿﻿
+@page
 @model VentasModel
 @{
     ViewData["Title"] = "Catalogo";
@@ -90,8 +91,15 @@
                 letter-spacing: 0.04em;
             }
 
-            .badge-personal    { background: #e0eeff; color: #1a56a8; }
-            .badge-empresarial { background: #d4f0e4; color: #0a6640; }
+            .badge-personal {
+                background: #e0eeff;
+                color: #1a56a8;
+            }
+
+            .badge-empresarial {
+                background: #d4f0e4;
+                color: #0a6640;
+            }
 
             .producto-nombre {
                 font-size: 16px;
@@ -114,15 +122,24 @@
                 margin-bottom: 16px;
             }
 
-            .producto-precio  { font-size: 22px; font-weight: 600; color: #1a1a2e; }
-            .producto-moneda  { font-size: 13px; color: #9ca3af; }
+            .producto-precio {
+                font-size: 22px;
+                font-weight: 600;
+                color: #1a1a2e;
+            }
 
-            .producto form { margin-top: auto; }
+            .producto-moneda {
+                font-size: 13px;
+                color: #9ca3af;
+            }
+
+            .producto form {
+                margin-top: auto;
+            }
 
             .btn-comprar {
                 width: 100%;
                 padding: 10px 0;
-                margin-bottom: 6px;
                 border: none;
                 border-radius: 8px;
                 font-size: 14px;
@@ -133,14 +150,25 @@
                 letter-spacing: 0.01em;
             }
 
-                .btn-comprar:hover  { opacity: 0.88; }
-                .btn-comprar:active { transform: scale(0.98); }
+                .btn-comprar:hover {
+                    opacity: 0.88;
+                }
 
-            .btn-personal    { background: #1a56a8; color: #fff; }
-            .btn-empresarial { background: #0a6640; color: #fff; }
-            .btn-prestar     { background: #7c3aed; color: #fff; }
+                .btn-comprar:active {
+                    transform: scale(0.98);
+                }
 
-            /* ── Popup de aviso ── */
+            .btn-personal {
+                background: #1a56a8;
+                color: #fff;
+            }
+
+            .btn-empresarial {
+                background: #0a6640;
+                color: #fff;
+            }
+
+            /* ── Popup de no logueado ── */
             .popup {
                 position: fixed;
                 inset: 0;
@@ -167,10 +195,29 @@
                 margin-bottom: 1.25rem;
             }
 
-            .popup-icon    { font-size: 28px; line-height: 1; }
-            .popup-title   { font-size: 16px; font-weight: 600; margin: 0 0 4px; color: #1a1a2e; }
-            .popup-message { font-size: 14px; color: #6b7280; margin: 0; line-height: 1.5; }
-            .popup-footer  { display: flex; justify-content: flex-end; }
+            .popup-icon {
+                font-size: 28px;
+                line-height: 1;
+            }
+
+            .popup-title {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 0 4px;
+                color: #1a1a2e;
+            }
+
+            .popup-message {
+                font-size: 14px;
+                color: #6b7280;
+                margin: 0;
+                line-height: 1.5;
+            }
+
+            .popup-footer {
+                display: flex;
+                justify-content: flex-end;
+            }
 
             .btn-cerrar-popup {
                 padding: 8px 20px;
@@ -184,7 +231,10 @@
                 font-family: 'DM Sans', sans-serif;
                 transition: opacity 0.15s;
             }
-                .btn-cerrar-popup:hover { opacity: 0.85; }
+
+                .btn-cerrar-popup:hover {
+                    opacity: 0.85;
+                }
 
             /* ── Modal de cantidad ── */
             .modal-overlay {
@@ -204,17 +254,31 @@
                 max-width: 360px;
                 width: 90%;
                 box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-                text-align: center;
             }
 
-            .modal-icon  { font-size: 36px; margin-bottom: 10px; }
-            .modal-title { font-size: 18px; font-weight: 600; margin: 0 0 4px; color: #1a1a2e; }
-            .modal-sub   { font-size: 13px; color: #6b7280; margin: 0 0 18px; }
+            .modal-icon {
+                font-size: 32px;
+                margin-bottom: 12px;
+                color: #1a56a8;
+            }
+
+            .modal-title {
+                font-size: 17px;
+                font-weight: 600;
+                margin: 0 0 4px;
+                color: #1a1a2e;
+            }
+
+            .modal-sub {
+                font-size: 13px;
+                color: #6b7280;
+                margin: 0 0 18px;
+            }
 
             .modal-input {
                 width: 100%;
-                padding: 10px 14px;
-                border: 1.5px solid #e5e7eb;
+                padding: 10px 12px;
+                border: 1px solid #d1d5db;
                 border-radius: 8px;
                 font-size: 15px;
                 font-family: 'DM Sans', sans-serif;
@@ -223,7 +287,10 @@
                 outline: none;
                 transition: border-color 0.15s;
             }
-                .modal-input:focus { border-color: #1a56a8; }
+
+                .modal-input:focus {
+                    border-color: #1a56a8;
+                }
 
             .modal-error {
                 font-size: 12px;
@@ -232,7 +299,10 @@
                 margin-bottom: 14px;
             }
 
-            .modal-btn-row { display: flex; gap: 10px; }
+            .modal-btn-row {
+                display: flex;
+                gap: 10px;
+            }
 
             .btn-accept {
                 flex: 1;
@@ -247,22 +317,10 @@
                 font-family: 'DM Sans', sans-serif;
                 transition: opacity 0.15s;
             }
-                .btn-accept:hover { opacity: 0.88; }
 
-            .btn-accept-prestamo {
-                flex: 1;
-                padding: 10px 0;
-                background: #7c3aed;
-                color: #fff;
-                border: none;
-                border-radius: 8px;
-                font-size: 14px;
-                font-weight: 500;
-                cursor: pointer;
-                font-family: 'DM Sans', sans-serif;
-                transition: opacity 0.15s;
-            }
-                .btn-accept-prestamo:hover { opacity: 0.88; }
+                .btn-accept:hover {
+                    opacity: 0.88;
+                }
 
             .btn-close {
                 flex: 1;
@@ -277,7 +335,10 @@
                 font-family: 'DM Sans', sans-serif;
                 transition: background 0.15s;
             }
-                .btn-close:hover { background: #e5e7eb; }
+
+                .btn-close:hover {
+                    background: #e5e7eb;
+                }
 
             .banner {
                 position: relative;
@@ -287,6 +348,7 @@
                 overflow: hidden;
                 margin: 0 0 2rem;
             }
+
                 .banner img {
                     width: 100%;
                     height: 100%;
@@ -304,9 +366,29 @@
                 padding: 0 2.5rem;
             }
 
-            .banner-tag   { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #7ee8c2; margin-bottom: 10px; }
-            .banner-title { font-size: 32px; font-weight: 700; color: #ffffff; margin: 0 0 8px; max-width: 480px; }
-            .banner-sub   { font-size: 15px; color: rgba(255,255,255,0.75); margin: 0 0 22px; max-width: 400px; }
+            .banner-tag {
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #7ee8c2;
+                margin-bottom: 10px;
+            }
+
+            .banner-title {
+                font-size: 32px;
+                font-weight: 700;
+                color: #ffffff;
+                margin: 0 0 8px;
+                max-width: 480px;
+            }
+
+            .banner-sub {
+                font-size: 15px;
+                color: rgba(255,255,255,0.75);
+                margin: 0 0 22px;
+                max-width: 400px;
+            }
     </style>
 </head>
 
@@ -326,6 +408,8 @@
     </div>
 </div>
 
+
+
 <div class="catalogo">
     @foreach (var tipo in Model.ListaTPortatiles!)
     {
@@ -336,9 +420,9 @@
                 @{
                     bool esEmpresarial = tipo.Nombre != null && tipo.Nombre.Contains("Empresarial");
                     string badgeClass = esEmpresarial ? "badge-empresarial" : "badge-personal";
-                    string badgeText  = esEmpresarial ? "Más popular" : "Uso personal";
-                    string btnClass   = esEmpresarial ? "btn-empresarial" : "btn-personal";
-                    string descText   = esEmpresarial
+                    string badgeText = esEmpresarial ? "Más popular" : "Uso personal";
+                    string btnClass = esEmpresarial ? "btn-empresarial" : "btn-personal";
+                    string descText = esEmpresarial
                         ? "Diseñado para obras, eventos masivos y empresas"
                         : "Ideal para eventos pequeños y uso familiar";
                 }
@@ -352,27 +436,20 @@
                     <span class="producto-moneda">COP</span>
                 </div>
 
-                
                 <form method="post">
-                    @Html.AntiForgeryToken()
                     <input type="hidden" name="Id" value="@tipo.Id_Tipo_Portatil" />
-
                     <input type="submit"
                            value="Comprar"
                            asp-page-handler="BtComprarPortatil"
                            class="btn-comprar @btnClass" />
-
-                    <input type="submit"
-                           value="Prestar"
-                           asp-page-handler="BtPrestarPortatil"
-                           class="btn-comprar btn-prestar" />
                 </form>
             </div>
         </div>
-    }
+        }
+
+   
 </div>
 
-@* ── Popup: no logueado ── *@
 @if (Model.NoEstaLogeado)
 {
     <div class="popup">
@@ -387,16 +464,17 @@
                 </div>
             </div>
             <form method="post">
-                @Html.AntiForgeryToken()
                 <div class="popup-footer">
-                    <input type="submit" value="Cerrar" asp-page-handler="BtCerrar" class="btn-cerrar-popup" />
+                    <input type="submit"
+                           value="Cerrar"
+                           asp-page-handler="BtCerrar"
+                           class="btn-cerrar-popup" />
                 </div>
             </form>
         </div>
     </div>
 }
 
-@* ── Popup: rol no permitido ── *@
 @if (Model.ErrorRol)
 {
     <div class="popup">
@@ -404,78 +482,55 @@
             <div class="popup-body">
                 <div class="popup-icon">⚠️</div>
                 <div>
-                    <p class="popup-title">Rol no permitido</p>
+                    <p class="popup-title">No está logueado</p>
                     <p class="popup-message">
-                        Los empleados <strong>No</strong> pueden comprar baños portátiles desde cuentas de la empresa.
+                        Los empleados <strong>No</strong> pueden comprar baños portatiles desde cuentas de la empresa.
                     </p>
                 </div>
             </div>
             <form method="post">
-                @Html.AntiForgeryToken()
                 <div class="popup-footer">
-                    <input type="submit" value="Cerrar" asp-page-handler="BtCerrar" class="btn-cerrar-popup" />
+                    <input type="submit"
+                           value="Cerrar"
+                           asp-page-handler="BtCerrar"
+                           class="btn-cerrar-popup" />
                 </div>
             </form>
         </div>
     </div>
 }
+<form method="post">
+    @if (Model!.ConfirmarCantidad)
+    {
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <form method="post">
+                    <input type="hidden" asp-for="Id" />
 
-@* ── Modal: cantidad para COMPRAR ── *@
-@if (Model.ConfirmarCantidad)
-{
-    <div class="modal-overlay">
-        <div class="modal-box">
-            <form method="post">
-                @Html.AntiForgeryToken()
-                <input type="hidden" asp-for="Id" />
+                    <div class="modal-icon">📦</div>
+                    <p class="modal-title">Ingresar cantidad</p>
+                    <p class="modal-sub">Especifica el valor antes de continuar</p>
 
-                <div class="modal-icon">📦</div>
-                <p class="modal-title">¿Cuántos quieres comprar?</p>
-                <p class="modal-sub">Especifica la cantidad antes de continuar</p>
+                    <input id="inCantidad"
+                           type="number"
+                           class="modal-input"
+                           asp-for="@Model.Cantidad"
+                           placeholder="0" />
 
-                <input id="inCantidad"
-                       type="number"
-                       class="modal-input"
-                       asp-for="@Model.Cantidad"
-                       placeholder="0" />
+                    <span asp-validation-for="Cantidad" class="modal-error"></span>
 
-                <span asp-validation-for="Cantidad" class="modal-error"></span>
-
-                <div class="modal-btn-row">
-                    <input type="submit" value="Aceptar" asp-page-handler="BtAceptar"  class="btn-accept" />
-                    <input type="submit" value="Cerrar"  asp-page-handler="BtCerrar"   class="btn-close" />
-                </div>
-            </form>
+                    <div class="modal-btn-row">
+                        <input type="submit"
+                               value="Aceptar"
+                               asp-page-handler="BtAceptar"
+                               class="btn-accept" />
+                        <input type="submit"
+                               value="Cerrar"
+                               asp-page-handler="BtCerrar"
+                               class="btn-close" />
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-}
-
-@* ── Modal: cantidad para PRESTAR ── *@
-@if (Model.ConfirmarCantidadPrestamo)
-{
-    <div class="modal-overlay">
-        <div class="modal-box">
-            <form method="post">
-                @Html.AntiForgeryToken()
-                <input type="hidden" asp-for="Id" />
-
-                <div class="modal-icon">🤝</div>
-                <p class="modal-title">¿Cuántos quieres prestar?</p>
-                <p class="modal-sub">Especifica la cantidad antes de continuar</p>
-
-                <input id="inCantidadPrestamo"
-                       type="number"
-                       class="modal-input"
-                       asp-for="@Model.CantidadPrestamo"
-                       placeholder="0" />
-
-                <span asp-validation-for="CantidadPrestamo" class="modal-error"></span>
-
-                <div class="modal-btn-row">
-                    <input type="submit" value="Aceptar" asp-page-handler="BtAceptarPrestamo" class="btn-accept-prestamo" />
-                    <input type="submit" value="Cerrar"  asp-page-handler="BtCerrar"          class="btn-close" />
-                </div>
-            </form>
-        </div>
-    </div>
-}
+    }
+</form>

@@ -22,6 +22,10 @@ namespace ApiPresentacion.Pages
         [TempData] public int TPortatil { get; set; }
         [TempData] public bool EnCompra { get; set; }
 
+        // Pal tema de Mapas
+        [BindProperty] public string? DireccionEntrega { get; set; }
+        [BindProperty] public string? CiudadEntrega { get; set; }
+
 
         public bool MostrarConfirmacionSalida { get; set; } = false;
         public ComprasModel()
@@ -106,7 +110,26 @@ namespace ApiPresentacion.Pages
                     IPortatiles_Presentacion.Modificar(portatil);
                 }
 
-                
+                // Para Mapas 
+                if (!string.IsNullOrWhiteSpace(DireccionEntrega))
+                {
+                    var iUbicaciones = new UbicacionesPresentacion();
+                    foreach (var portatil in portatiles)
+                    {
+                        iUbicaciones.Guardar(new Ubicaciones
+                        {
+                            Direccion = DireccionEntrega,
+                            // Si no pusieron ciudad se usa "Colombia" como fallback
+                            Ciudad = string.IsNullOrWhiteSpace(CiudadEntrega)
+                                        ? "Colombia"
+                                        : CiudadEntrega,
+                            Portatil = portatil.Id_Portatil
+                        });
+                    }
+                }
+                // Fin del agregado
+
+
                 ConfirmarCompra = true;
             }
             catch (Exception ex)
