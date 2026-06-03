@@ -14,27 +14,18 @@
             <div align="left">
                 <h3>Contratos</h3>
             </div>
-
+            
             <div>
                 <input type="submit"
                        value="Refrescar"
                        class="btn btn-secondary"
-<<<<<<< HEAD
                        asp-page-handler="BtRefrescar" 
                        disabled="@(Model.VienePorCompra)" />
-=======
-                       asp-page-handler="BtRefrescar"
-                       disabled="@(Model.VienePorCompra )" />
->>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                 <input type="submit"
                        value="Nuevo"
                        class="btn btn-secondary"
                        asp-page-handler="BtNuevo"
-<<<<<<< HEAD
                        disabled="@(Model.Contrato != null || Model.VienePorCompra)" />
-=======
-                       disabled="@(Model.Contrato != null || Model.VienePorCompra )" />
->>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
@@ -56,11 +47,7 @@
                             <input id="inFecha_Firma"
                                    class="cts_forms form-control"
                                    asp-for="@Model.Contrato!.Fecha_Firma"
-<<<<<<< HEAD
                                    readonly="@Model.VienePorCompra" 
-=======
-                                   readonly="@(Model.VienePorCompra)"
->>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                                    style="margin-top: 5px;" />
                         </div>
                     </div>
@@ -71,13 +58,8 @@
                         <div class="col-6">
                             <input id="inFecha_Firma"
                                    class="cts_forms form-control"
-<<<<<<< HEAD
                                    asp-for="@Model.Contrato!.Terminos" 
                                    readonly="@Model.VienePorCompra"
-=======
-                                   asp-for="@Model.Contrato!.Terminos"
-                                   readonly="@(Model.VienePorCompra)"
->>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                                    style="margin-top: 5px;" />
                         </div>
                     </div>
@@ -98,11 +80,7 @@
                                 class="form-control"
                                 asp-for="@Model.Contrato!.Cliente"
                                 asp-items="@(new SelectList(Model.CargarClientes(), "Id_Persona", "Nombre"))"
-<<<<<<< HEAD
                                 disabled="@(Model.VienePorCompra ? "disabled" : null)">
-=======
-                                disabled="@((Model.VienePorCompra) ? "disabled" : null)">
->>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                             <option value="">-- Seleccione un cliente --</option>
                         </select>
                     </div>
@@ -151,7 +129,7 @@
                             <h6 align="left">
                                 @Model.Contrato!.Fecha_Firma
                             </h6>
-
+                            
                             <input type="submit"
                                    value="Cerrar"
                                    asp-page-handler="BtCerrar"
@@ -166,7 +144,6 @@
             }
             @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
             {
-<<<<<<< HEAD
             <table class="tb_data table table-striped table-bordered table-hover">
                 <tr>
                     <th>
@@ -186,27 +163,6 @@
                     </th>
                 </tr>
                 
-=======
-                <table class="tb_data table table-striped table-bordered table-hover">
-                    <tr>
-                        <th>
-                            Fecha Firma
-                        </th>
-                        <th>
-                            Terminos
-                        </th>
-                        <th class="cl_hidden">
-                            Fecha_Expiracion
-                        </th>
-                        <th class="cl_hidden">
-                            Cliente
-                        </th>
-                        <th class="cl_actions">
-                            Acción
-                        </th>
-                    </tr>
-
->>>>>>> 2006669a534ebf898f9ed5f00d5c5d2ed833c736
                     @foreach (var elemento in Model.Lista)
                     {
                         <tr>
