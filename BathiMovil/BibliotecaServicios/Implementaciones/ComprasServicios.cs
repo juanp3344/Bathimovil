@@ -26,6 +26,9 @@ namespace BibliotecaServicios.Implementaciones
 
             iConexion = new Conexion();
             iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+            // Ensure Metodo_Pago always has a value to avoid DB NOT NULL errors
+            if (string.IsNullOrWhiteSpace(entidad.Metodo_Pago))
+                entidad.Metodo_Pago = "Transferencia";
 
             iConexion.Compras!.Add(entidad!);
             var lista = iConexion.Compras!.ToList();
@@ -42,6 +45,10 @@ namespace BibliotecaServicios.Implementaciones
 
             this.iConexion = new Conexion();
             this.iConexion.string_conexion = Configuraciones.obtener("string_conexion");
+
+            // Ensure Metodo_Pago is not set to null/empty before updating
+            if (string.IsNullOrWhiteSpace(entidad.Metodo_Pago))
+                entidad.Metodo_Pago = "Transferencia";
 
             var entry = this.iConexion!.Entry<Compras>(entidad!);
             entry.State = EntityState.Modified;

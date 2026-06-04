@@ -946,8 +946,8 @@
               "Title": "DatosHelper.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\UnitariasPresentacion\\DatosHelper.cs",
               "RelativeDocumentMoniker": "UnitariasPresentacion\\DatosHelper.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\UnitariasPresentacion\\DatosHelper.cs*",
-              "RelativeToolTip": "UnitariasPresentacion\\DatosHelper.cs*",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\UnitariasPresentacion\\DatosHelper.cs",
+              "RelativeToolTip": "UnitariasPresentacion\\DatosHelper.cs",
               "ViewState": "AgIAAM4AAAAAAAAAAAAiwPYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T17:18:16.271Z",
@@ -1782,9 +1782,10 @@
               "RelativeDocumentMoniker": "BibliotecaPresentacion\\Implementaciones\\Comunicaciones.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaPresentacion\\Implementaciones\\Comunicaciones.cs",
               "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\Comunicaciones.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAwwGEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAIBJwG0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T22:30:25.825Z"
+              "WhenOpened": "2026-05-28T22:30:25.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
