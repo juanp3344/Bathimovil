@@ -860,6 +860,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\bibliotecaservicios\\interfaces\\itipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5EA2E6-176F-537F-5BB1-4597546F4319}|BibliotecaServicios\\BibliotecaServicios.csproj|solutionrelative:bibliotecaservicios\\interfaces\\itipos_intermediaservicios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|c:\\users\\usuario\\source\\repos\\bathi\\bathimovil\\apipresentacion\\pages\\sesiones\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6E80460-120B-4D1D-BF67-9D98643348E0}|ApiPresentacion\\ApiPresentacion.csproj|solutionrelative:apipresentacion\\pages\\sesiones\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -869,7 +873,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -882,8 +886,7 @@
               "ViewState": "AgIAANEAAAAAAAAAAAAnwLEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-03T23:24:47.651Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -899,13 +902,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 226,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "RelativeToolTip": "ApiPresentacion\\Pages\\sesiones\\Login.cshtml",
+              "ViewState": "AgIAAFMBAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-04T04:57:47.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ComprasServicios.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\Implementaciones\\ComprasServicios.cs",
               "RelativeDocumentMoniker": "BibliotecaServicios\\Implementaciones\\ComprasServicios.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\Implementaciones\\ComprasServicios.cs",
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\ComprasServicios.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIAwwCQAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-04T03:01:20.461Z",
               "EditorCaption": ""
@@ -932,8 +948,7 @@
               "RelativeToolTip": "BibliotecaServicios\\Implementaciones\\PortatilesServicios.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA8wDQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T02:57:50.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T02:57:50.707Z"
             },
             {
               "$type": "Document",
@@ -943,10 +958,9 @@
               "RelativeDocumentMoniker": "Unitarias\\DatosHelper.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\Unitarias\\DatosHelper.cs",
               "RelativeToolTip": "Unitarias\\DatosHelper.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAiwIsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T17:15:36.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T17:15:36.56Z"
             },
             {
               "$type": "Document",
@@ -958,8 +972,7 @@
               "RelativeToolTip": "UnitariasPresentacion\\Detalle_FacturasUnitariasPresentacion.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAUwDkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T16:35:32.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-28T16:35:32.117Z"
             },
             {
               "$type": "Document",
@@ -971,8 +984,7 @@
               "RelativeToolTip": "UnitariasPresentacion\\DatosHelper.cs",
               "ViewState": "AgIAAM4AAAAAAAAAAAAiwPYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T17:18:16.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T17:18:16.271Z"
             },
             {
               "$type": "Document",
@@ -995,8 +1007,7 @@
               "RelativeToolTip": "ApiServicios\\Controllers\\PrestamosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T00:38:46.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T00:38:46.371Z"
             },
             {
               "$type": "Document",
@@ -1020,8 +1031,7 @@
               "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Ventas.cshtml",
               "ViewState": "AgIAALkBAAAAAAAAAAAewAIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-29T00:19:08.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T00:19:08.751Z"
             },
             {
               "$type": "Document",
@@ -1211,7 +1221,7 @@
               "RelativeDocumentMoniker": "ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml",
               "RelativeToolTip": "ApiPresentacion\\Pages\\Ventanas\\Contratos.cshtml",
-              "ViewState": "AgIAAHkAAAAAAAAAAIBJwHsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAIBJwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-29T21:26:49.618Z"
             },
@@ -1801,8 +1811,7 @@
               "RelativeToolTip": "BibliotecaPresentacion\\Implementaciones\\Comunicaciones.cs",
               "ViewState": "AgIAACEAAAAAAAAAAIBJwG0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T22:30:25.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-28T22:30:25.825Z"
             },
             {
               "$type": "Document",
@@ -3288,9 +3297,10 @@
               "RelativeDocumentMoniker": "BibliotecaServicios\\Entidades\\Facturas.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Bathi\\BathiMovil\\BibliotecaServicios\\Entidades\\Facturas.cs",
               "RelativeToolTip": "BibliotecaServicios\\Entidades\\Facturas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAEBTwA0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T15:48:42.588Z"
+              "WhenOpened": "2026-05-09T15:48:42.588Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

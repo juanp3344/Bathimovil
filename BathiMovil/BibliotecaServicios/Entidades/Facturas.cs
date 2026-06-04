@@ -18,9 +18,8 @@ namespace BibliotecaServicios.Entidades
         [ForeignKey("Cliente")] public Clientes? _Cliente { get; set; }
 
         // 1:N
-
-        [NotMapped] public List<Detalle_Facturas>? Detalle_Facturas { get; set; }
-        [NotMapped] public List<Pagos>? Pagos { get; set; }
+        public List<Detalle_Facturas>? Detalle_Facturas { get; set; }
+        public List<Pagos>? Pagos { get; set; }
 
     }
 }

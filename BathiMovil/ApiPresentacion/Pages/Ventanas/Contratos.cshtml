@@ -156,6 +156,12 @@
                         </div>
                     </div>
                 </div>
+
+                @* Hidden fields to ensure values are posted even if UI controls are disabled *@
+                <input type="hidden" asp-for="@Model.Contrato!.Cliente" />
+                <input type="hidden" asp-for="@Model.Contrato!.Fecha_Firma" />
+                <input type="hidden" asp-for="@Model.Contrato!.Terminos" />
+                <input type="hidden" asp-for="@Model.Contrato!.Fecha_Expiracion" />
             }
             @if (Model != null && Model.Lista != null &&  Model.Lista.Count > 0)
             {
