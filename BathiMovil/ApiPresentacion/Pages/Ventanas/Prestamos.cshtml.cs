@@ -16,7 +16,13 @@ namespace ApiPresentacion.Pages
         [BindProperty] public List<Prestamos>? Lista { get; set; }
         [BindProperty] public Prestamos? Prestamo { get; set; }
         [BindProperty] public bool Borrando { get; set; }
+        [BindProperty] public bool VienePorPrestamo { get; set; }
+        [BindProperty] public bool ConfirmarPrestamo { get; set; }
         [BindProperty] public int Cantidad { get; set; }
+        [BindProperty] public string? DireccionEntrega { get; set; }
+        [BindProperty] public string? CiudadEntrega { get; set; }
+        [TempData] public int TPortatil { get; set; }
+        [TempData] public bool EnPrestamo { get; set; }
 
         public PrestamosModel()
         {
@@ -28,6 +34,25 @@ namespace ApiPresentacion.Pages
 
         public void OnGet()
         {
+            if (EnPrestamo)
+            {
+                int idContrato = (int)TempData["Id_Contrato"]!;
+                int cantidadCalculo = (int)TempData["TDCantidad"]!;
+                int portatil = (int)TempData["Id_Portatil"]!;
+
+                Cantidad = cantidadCalculo;
+                TPortatil = portatil;
+
+                VienePorPrestamo = true;
+                Prestamo = new Prestamos()
+                {
+                    Fecha_Inicio = DateTime.Now,
+                    Fecha_Fin_Prevista = DateTime.Now.AddMonths(1),
+                    Estado_Prestamo = true,
+                    Contrato = idContrato
+                };
+                return;
+            }
             OnPostBtRefrescar();
         }
 
@@ -38,12 +63,75 @@ namespace ApiPresentacion.Pages
 
         public List<Portatiles> CargarPortatiles()
         {
-            return IPortatilesPresentacion!.Consultar();
+            return IPortatilesPresentacion!.Consultar()
+                .Where(p => p.Estado_Actual == "Libre")
+                .ToList();
         }
 
+        public void OnPostBtPrestar()
+        {
+            try
+            {
+                var portatiles = IPortatilesPresentacion!.Consultar()
+                    .Where(p => p.Tipo_Portatil == TPortatil && p.Estado_Actual == "Libre")
+                    .Take(Cantidad)
+                    .ToList();
 
+                if (portatiles == null || portatiles.Count == 0)
+                {
+                    ViewData["Mensaje"] = "No hay portátiles libres para prestar.";
+                    return;
+                }
 
+                // Assign a valid Portatil FK so the Prestamo save does not try to insert Portatil=0
+                Prestamo ??= new Prestamos()
+                {
+                    Fecha_Inicio = DateTime.Now,
+                    Fecha_Fin_Prevista = DateTime.Now.AddMonths(1),
+                    Estado_Prestamo = true,
+                    Contrato = Prestamo?.Contrato ?? 0
+                };
 
+                Prestamo.Portatil = portatiles.First().Id_Portatil;
+
+                ConfirmarPrestamo = true;
+                OnPostBtGuardar();
+
+                foreach (var portatil in portatiles)
+                {
+                    portatil.Estado_Actual = "En préstamo";
+                    // Do not assign Prestamo Id into Compra (Compra references Compras.Id_Compra)
+                    IPortatilesPresentacion.Modificar(portatil);
+                }
+
+                if (!string.IsNullOrWhiteSpace(DireccionEntrega))
+                {
+                    var iUbicaciones = new UbicacionesPresentacion();
+                    foreach (var portatil in portatiles)
+                    {
+                        iUbicaciones.Guardar(new Ubicaciones
+                        {
+                            Direccion = DireccionEntrega,
+                            Ciudad = string.IsNullOrWhiteSpace(CiudadEntrega)
+                                            ? "Colombia"
+                                            : CiudadEntrega,
+                            Portatil = portatil.Id_Portatil
+                        });
+                    }
+                }
+
+                ConfirmarPrestamo = true;
+            }
+            catch (Exception ex)
+            {
+                ViewData["Mensaje"] = ex.Message;
+            }
+        }
+
+        public IActionResult OnPostBtTerminar()
+        {
+            return RedirectToPage("/Ventanas/Ventas");
+        }
 
         public void OnPostBtRefrescar()
         {
@@ -82,20 +170,20 @@ namespace ApiPresentacion.Pages
             try
             {
                 var usuario = HttpContext.Session.GetString("Usuario");
-                if (Prestamo == null) return;
-
+                if (Prestamo == null)
+                    return;
                 if (Prestamo.Id_Prestamo == 0)
                 {
                     Prestamo = IPrestamos_Presentacion!.Guardar(Prestamo!);
                     IAuditoriasPresentacion!.Guardar("Medio", "Se ha guardado un Prestamo", usuario);
                 }
                 else
-                {
                     Prestamo = IPrestamos_Presentacion!.Modificar(Prestamo!);
-                    IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado un Prestamo", usuario);
-                }
-
-                if (Prestamo.Id_Prestamo == 0) return;
+                IAuditoriasPresentacion!.Guardar("Alto", "Se ha modificado un Prestamo", usuario);
+                if (Prestamo.Id_Prestamo == 0)
+                    return;
+                if (ConfirmarPrestamo)
+                    return;
                 OnPostBtRefrescar();
             }
             catch (Exception ex)
@@ -108,7 +196,8 @@ namespace ApiPresentacion.Pages
         {
             try
             {
-                if (Prestamo == null) return;
+                if (Prestamo == null)
+                    return;
                 Prestamo = IPrestamos_Presentacion!.Eliminar(Prestamo!);
                 var usuario = HttpContext.Session.GetString("Usuario");
                 IAuditoriasPresentacion!.Guardar("medio/alto", "Se ha eliminado un Prestamo", usuario);

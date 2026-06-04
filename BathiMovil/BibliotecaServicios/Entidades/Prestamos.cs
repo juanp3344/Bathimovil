@@ -7,8 +7,8 @@ namespace BibliotecaServicios.Entidades
     {
         [Key]
         public int Id_Prestamo { get; set; }
-        public DateTime? Fecha_Inicio { get; set; }
-        public DateTime? Fecha_Fin_Prevista { get; set; }
+        public DateTime Fecha_Inicio { get; set; }
+        public DateTime Fecha_Fin_Prevista { get; set; }
         public bool Estado_Prestamo { get; set; }
 
 

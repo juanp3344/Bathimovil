@@ -1,5 +1,4 @@
-﻿﻿
-@page
+﻿@page
 @model VentasModel
 @{
     ViewData["Title"] = "Catalogo";
@@ -168,6 +167,14 @@
                 color: #fff;
             }
 
+            /* ── AGREGADO: boton prestar (morado) ── */
+            .btn-prestar {
+                background: #6d28d9;
+                color: #fff;
+                margin-top: 8px;
+            }
+            /* ── FIN AGREGADO ── */
+
             /* ── Popup de no logueado ── */
             .popup {
                 position: fixed;
@@ -262,6 +269,14 @@
                 color: #1a56a8;
             }
 
+            /* ── AGREGADO: icono morado para modal prestamo ── */
+            .modal-icon-prestamo {
+                font-size: 32px;
+                margin-bottom: 12px;
+                color: #6d28d9;
+            }
+            /* ── FIN AGREGADO ── */
+
             .modal-title {
                 font-size: 17px;
                 font-weight: 600;
@@ -321,6 +336,23 @@
                 .btn-accept:hover {
                     opacity: 0.88;
                 }
+
+            /* ── AGREGADO: boton aceptar morado para modal prestamo ── */
+            .btn-accept-prestamo {
+                flex: 1;
+                padding: 10px 0;
+                background: #6d28d9;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                font-family: 'DM Sans', sans-serif;
+                transition: opacity 0.15s;
+            }
+            .btn-accept-prestamo:hover { opacity: 0.88; }
+            /* ── FIN AGREGADO ── */
 
             .btn-close {
                 flex: 1;
@@ -408,8 +440,6 @@
     </div>
 </div>
 
-
-
 <div class="catalogo">
     @foreach (var tipo in Model.ListaTPortatiles!)
     {
@@ -442,6 +472,12 @@
                            value="Comprar"
                            asp-page-handler="BtComprarPortatil"
                            class="btn-comprar @btnClass" />
+                    @* ── AGREGADO: boton Prestar por producto ── *@
+                    <input type="submit"
+                           value="Prestar"
+                           asp-page-handler="BtPrestarPortatil"
+                           class="btn-comprar btn-prestar" />
+                    @* ── FIN AGREGADO ── *@
                 </form>
             </div>
         </div>
@@ -499,6 +535,7 @@
         </div>
     </div>
 }
+
 <form method="post">
     @if (Model!.ConfirmarCantidad)
     {
@@ -533,4 +570,39 @@
             </div>
         </div>
     }
+
+    @* ── AGREGADO: modal morado de cantidad para prestamo ── *@
+    @if (Model!.ConfirmarCantidadPrestamo)
+    {
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="modal-icon-prestamo">🤝</div>
+                <p class="modal-title">Cantidad para préstamo</p>
+                <p class="modal-sub">¿Cuántos baños portátiles deseas tomar en préstamo?</p>
+
+                <input id="inCantidadPrestamo"
+                       type="number"
+                       class="modal-input"
+                       asp-for="@Model.Cantidad"
+                       placeholder="0" />
+
+                <span asp-validation-for="Cantidad" class="modal-error"></span>
+
+                <div class="modal-btn-row">
+                    <input type="submit"
+                           value="Aceptar"
+                           asp-page-handler="BtAceptarPrestamo"
+                           class="btn-accept-prestamo" />
+                    <input type="submit"
+                           value="Cerrar"
+                           asp-page-handler="BtCerrar"
+                           class="btn-close" />
+                </div>
+            </div>
+        </div>
+    }
+    @* ── FIN AGREGADO ── *@
+
 </form>

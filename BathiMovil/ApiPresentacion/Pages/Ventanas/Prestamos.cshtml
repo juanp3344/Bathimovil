@@ -5,103 +5,158 @@
 }
 <center>
     <div>
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST"
+              enctype="multipart/form-data">
             @Html.AntiForgeryToken()
-
+            <input type="hidden" asp-for="Cantidad" />
+            <input type="hidden" asp-for="TPortatil" />
+            <input type="hidden" asp-for="Prestamo" />
             <div align="left">
-                <h3>Préstamos</h3>
+                <h3>Prestamos</h3>
             </div>
 
             <div>
                 <input type="submit"
                        value="Refrescar"
                        class="btn btn-secondary"
-                       asp-page-handler="BtRefrescar" />
+                       asp-page-handler="BtRefrescar"
+                       disabled="@(Model.VienePorPrestamo)" />
                 <input type="submit"
                        value="Nuevo"
-                       class="btn btn-secondary"
+                       class="btn btn-success"
                        asp-page-handler="BtNuevo"
-                       disabled="@(Model.Prestamo != null)" />
+                       disabled="@(Model.Prestamo != null || Model.VienePorPrestamo)" />
                 <input type="submit"
                        value="Guardar"
                        class="btn btn-secondary"
                        asp-page-handler="BtGuardar"
-                       disabled="@(Model.Prestamo == null)" />
+                       disabled="@(Model.Prestamo == null || Model.VienePorPrestamo)" />
             </div>
 
-            @* ── Formulario del préstamo ── *@
             @if (Model.Prestamo != null)
             {
-                <input type="hidden" asp-for="@Model.Prestamo!.Id_Prestamo" />
-                <input type="hidden" asp-for="Cantidad" />
+                <input type="hidden"
+                       asp-for="@Model.Prestamo!.Id_Prestamo" />
 
                 <div>
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>Fecha Inicio</label>
                         <div class="col-6">
                             <input id="inFecha_Inicio"
                                    class="cts_forms form-control"
-                                   type="datetime-local"
-                                   asp-for="@Model.Prestamo!.Fecha_Inicio" />
+                                   asp-for="@Model.Prestamo!.Fecha_Inicio"
+                                   readonly="@Model.VienePorPrestamo" />
                         </div>
                     </div>
-
-                    <div class="form-group">
+                    <div style="margin-top: 20px;">
                         <label>Fecha Fin Prevista</label>
                         <div class="col-6">
                             <input id="inFecha_Fin_Prevista"
                                    class="cts_forms form-control"
-                                   type="datetime-local"
                                    asp-for="@Model.Prestamo!.Fecha_Fin_Prevista" />
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label>Estado Préstamo</label>
-                        <input type="checkbox" asp-for="@Model.Prestamo!.Estado_Prestamo" />
-                        <span>Activo</span>
+                    <div style="margin-top: 20px;">
+                        <label>Estado Prestamo</label>
+                        <div class="col-6">
+                            <input type="checkbox"
+                                   asp-for="@Model.Prestamo!.Estado_Prestamo" />
+                        </div>
                     </div>
 
                     <div style="margin-top: 20px;">
-                        <label>Contrato</label>
                         <select id="nmContrato"
                                 class="form-control"
                                 asp-for="@Model.Prestamo!.Contrato"
-                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Id_Contrato"))">
-                            <option value="">-- Seleccione un Contrato --</option>
+                                asp-items="@(new SelectList(Model.CargarContratos(), "Id_Contrato", "Terminos"))"
+                                disabled="@(Model.VienePorPrestamo ? "disabled" : null)">
+                            <option value="">-- Seleccione un contrato --</option>
                         </select>
                     </div>
 
                     <div style="margin-top: 20px;">
-                        <label>Portatil</label>
                         <select id="nmPortatil"
                                 class="form-control"
                                 asp-for="@Model.Prestamo!.Portatil"
-                                asp-items="@(new SelectList(Model.CargarPortatiles(), "Id_Portatil", "Numero_Serial"))">
+                                asp-items="@(new SelectList(Model.CargarPortatiles(), "Id_Portatil", "Numero_Serial"))"
+                                disabled="@(Model.VienePorPrestamo ? "disabled" : null)">
                             <option value="">-- Seleccione un portatil --</option>
                         </select>
                     </div>
 
-                   
+                    @if (Model.VienePorPrestamo)
+                    {
+                        <input type="hidden" asp-for="@Model.Prestamo!.Contrato" />
+                        <input type="hidden" asp-for="@Model.Prestamo!.Portatil" />
+                        <input type="hidden" asp-for="ConfirmarPrestamo" />
+
+                        <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 15px;">
+                            <h6 align="left" style="color: #6c757d;">
+                                📍 Ubicación de entrega (opcional — aparecerá en el mapa)
+                            </h6>
+                            <div style="margin-top: 10px;">
+                                <label>Dirección</label>
+                                <div class="col-6">
+                                    <input class="cts_forms form-control"
+                                           asp-for="DireccionEntrega"
+                                           placeholder="Ej: Calle 10 # 20-30" />
+                                </div>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <label>Ciudad</label>
+                                <div class="col-6">
+                                    <input class="cts_forms form-control"
+                                           asp-for="CiudadEntrega"
+                                           placeholder="Ej: Medellín" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="submit"
+                               value="Prestar"
+                               asp-page-handler="BtPrestar"
+                               class="btn btn-success" />
+                    }
                 </div>
             }
 
-            @* ── Mensaje de error ── *@
+            @if (Model.ConfirmarPrestamo)
+            {
+                <input type="hidden" asp-for="@Model.Prestamo!.Contrato" />
+                <input type="hidden" asp-for="@Model.Prestamo!.Portatil" />
+                <input type="hidden" asp-for="@Model.Prestamo!.Fecha_Inicio" />
+                <input type="hidden" asp-for="@Model.Prestamo!.Fecha_Fin_Prevista" />
+                <input type="hidden" asp-for="@Model.Prestamo!.Estado_Prestamo" />
+                <input type="hidden" asp-for="@Model.TPortatil" />
+                <div class='popup' style="margin-top: 55px;">
+                    <div class='pp_ms_inner'>
+                        <div style='width:95%'>
+                            <h6 align="left">
+                                PRESTAMO EFECTUADO EXITOSAMENTE
+                            </h6>
+                            <input type="submit"
+                                   value="Cerrar"
+                                   asp-page-handler="BtTerminar"
+                                   class="btn btn-secondary"
+                                   style="margin-top: 55px;" />
+                        </div>
+                    </div>
+                </div>
+            }
+
             @if (ViewData.ContainsKey("Mensaje"))
             {
                 @await Html.PartialAsync("../Emergentes/Mensajes.cshtml")
                 ;
             }
 
-
-            @* ── Confirmación de borrado ── *@
             @if (Model.Prestamo != null && Model.Borrando)
             {
                 <div class='popup'>
                     <div class='pp_ms_inner'>
                         <div style='width:95%'>
                             <h2 align="left">Mensaje</h2>
-                            <h6 align="left">¿Desea borrar el Préstamo?</h6>
+                            <h6 align="left">Desea borrar el Prestamo?</h6>
                             <h6 align="left">@Model.Prestamo!.Fecha_Inicio</h6>
                             <input type="submit"
                                    value="Cerrar"
@@ -110,23 +165,22 @@
                             <input type="submit"
                                    value="Borrar"
                                    asp-page-handler="BtBorrar"
-                                   class="btn btn-danger" />
+                                   class="btn btn-secondary" />
                         </div>
                     </div>
                 </div>
             }
 
-            @* ── Tabla de préstamos existentes ── *@
-            @if (Model != null && Model.Lista != null && Model.Lista.Count > 0)
+            @if (!Model.VienePorPrestamo && Model != null && Model.Lista != null && Model.Lista.Count > 0)
             {
                 <table class="tb_data table table-striped table-bordered table-hover">
                     <tr>
                         <th>Fecha Inicio</th>
                         <th>Fecha Fin Prevista</th>
                         <th>Estado</th>
-                        <th>Contrato</th>
-                        <th>Portatil</th>
-                        <th></th>
+                        <th class="cl_hidden">Contrato</th>
+                        <th class="cl_hidden">Portatil</th>
+                        <th class="cl_actions">Acción</th>
                     </tr>
                     @foreach (var elemento in Model.Lista)
                     {
@@ -134,18 +188,18 @@
                             <td>@elemento.Fecha_Inicio</td>
                             <td>@elemento.Fecha_Fin_Prevista</td>
                             <td>@(elemento.Estado_Prestamo ? "Activo" : "Inactivo")</td>
-                            <td>@elemento.Contrato</td>
-                            <td>@elemento.Portatil</td>
+                            <td class="cl_hidden">@elemento.Contrato</td>
+                            <td class="cl_hidden">@elemento.Portatil</td>
                             <td>
                                 <input type="submit"
-                                       value="Modificar"
+                                       value="Modicar"
                                        asp-page-handler="BtModificar"
-                                       class="btn btn-warning"
+                                       class="btn btn-secondary"
                                        asp-route-data="@elemento.Id_Prestamo" />
                                 <input type="submit"
                                        value="Borrar"
                                        asp-page-handler="BtBorrarVal"
-                                       class="btn btn-danger"
+                                       class="btn btn-secondary"
                                        asp-route-data="@elemento.Id_Prestamo" />
                             </td>
                         </tr>

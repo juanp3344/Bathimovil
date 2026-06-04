@@ -10,12 +10,19 @@ namespace ApiPresentacion.Pages
     public class VentasModel : PageModel
     {
         [BindProperty] public bool ConfirmarCantidad { get; set; }
+
+        //Pa Prestar--------
+        [BindProperty] public bool ConfirmarCantidadPrestamo { get; set; }
+        //------------------
+
         [BindProperty] public bool NoEstaLogeado { get; set; } = false;
         [BindProperty] public bool ErrorRol { get; set; } = false;
         [BindProperty] public int? Cantidad { get; set; }
         [BindProperty] public int? Id { get; set; }
         [BindProperty] public List<Tipos_Portatiles>? ListaTPortatiles { get; set; }
 
+
+        // ── COMPRAR ───────────────────────────────────────────────────────────────
         public void OnPostBtComprarPortatil()
         {
             if (HttpContext.Session.GetString("Usuario") == null)
@@ -31,21 +38,6 @@ namespace ApiPresentacion.Pages
             ConfirmarCantidad = true;
         }
 
-        public IActionResult OnPostBtPrestarPortatil()
-        {
-            if (HttpContext.Session.GetString("Usuario") == null)
-            {
-                NoEstaLogeado = true;
-                return Page();
-            }
-
-
-
-
-
-            TempData["EnPrestamo"] = true;
-            return RedirectToPage("/Ventanas/Prestamos");
-        }
         public void OnPostBtCerrar()
         {
             OnGet();
@@ -97,6 +89,66 @@ namespace ApiPresentacion.Pages
             return RedirectToPage("/Ventanas/Contratos"); //Con todo listo lo mandaremos a contrato para que rellene todo
         }
 
+        // ── PRESTAR ───────────────────────────────────────────────────────────────
 
+        public void OnPostBtPrestarPortatil()
+        {
+            if (HttpContext.Session.GetString("Usuario") == null)
+            {
+                NoEstaLogeado = true;
+                OnGet();
+                return;
+            }
+            if (HttpContext.Session.GetInt32("Rol") == 1 || HttpContext.Session.GetInt32("Rol") == 2)
+            {
+                ErrorRol = true;
+                OnGet();
+                return;
+            }
+            OnGet();
+            ConfirmarCantidadPrestamo = true;   // abre el modal morado de préstamo
+        }
+
+        public IActionResult OnPostBtAceptarPrestamo()
+        {
+            if (Cantidad == null || Cantidad <= 0)
+            {
+                ModelState.AddModelError("Cantidad", "No puedes ingresar valores incorrectos");
+                ConfirmarCantidadPrestamo = true;
+                OnGet();
+                return Page();
+            }
+
+            PortatilesPresentacion IPortatiles_Presentacion = new PortatilesPresentacion();
+            Tipos_PortatilesPresentacion ITiposPortatiles_Presentacion = new Tipos_PortatilesPresentacion();
+
+            var Tportatil = ITiposPortatiles_Presentacion.Consultar()
+                .FirstOrDefault(p => p.Id_Tipo_Portatil == Id);
+
+            IClientesPresentacion IClientesPresentacion = new ClientesPresentacion();
+            int? idCliente = HttpContext.Session.GetInt32("Id_Cliente");
+            var Cliente = IClientesPresentacion.Consultar()
+                .FirstOrDefault(p => p.Id_Persona == idCliente);
+
+            var disponibles = IPortatiles_Presentacion.ComprobarTamanio(Tportatil!).Count;
+            if (disponibles < Cantidad)
+            {
+                ModelState.AddModelError("Cantidad", "No existe esa cantidad para esos baños portatiles");
+                ConfirmarCantidadPrestamo = true;
+                OnGet();
+                return Page();
+            }
+
+            // igual que compra pero con EnPrestamo en vez de EnCompra
+            TempData["Id_Cliente"] = Cliente!.Id_Persona;
+            TempData["TDCantidad"] = Cantidad;
+            TempData["Id_Portatil"] = Tportatil!.Id_Tipo_Portatil;
+            TempData["EnPrestamo"] = true;
+            return RedirectToPage("/Ventanas/Contratos");
+        }
+
+        //--------------------------------------------------------------------------------- Fin Prestar
+    
+    
     }
 }

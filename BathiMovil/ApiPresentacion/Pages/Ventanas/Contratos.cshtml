@@ -92,7 +92,22 @@
                 
             }
 
-            @if (Model.VienePorCompra)
+            @if (Model.VienePorPrestamo)
+            {
+                <input type="hidden" asp-for="@Model.Contrato!.Cliente" />
+                <input type="hidden" asp-for="@Model.Contrato!.Fecha_Firma" />
+                <input type="hidden" asp-for="@Model.Contrato!.Terminos" />
+                <input type="hidden" asp-for="@Model.Contrato!.Fecha_Expiracion" />
+                <input type="hidden" asp-for="CantidadCalculo" />
+                <input type="hidden" asp-for="Portatil" />
+                <input type="hidden" asp-for="VienePorPrestamo" />
+                <input type="submit"
+                       value="Firmar"
+                       asp-page-handler="BtFirmarPrestamo"
+                       class="btn btn-secondary"
+                       style="margin-top: 50px;" />
+            }
+            else if (Model.VienePorCompra)
             {
                 <input type="hidden" asp-for="@Model.Contrato!.Cliente" />
                 <input type="hidden" asp-for="@Model.Contrato!.Fecha_Firma" />
@@ -106,7 +121,7 @@
                        class="btn btn-secondary"
                        style="margin-top: 50px;" />
             }
-
+        
 
             @if (ViewData.ContainsKey("Mensaje"))
             {

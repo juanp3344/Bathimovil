@@ -15,7 +15,11 @@ namespace ApiPresentacion.Pages
         private IAuditoriasPresentacion? IAuditoriasPresentacion;
         [BindProperty] public List<Contratos>? Lista { get; set; }
         [BindProperty] public Contratos? Contrato { get; set; }
+
         [BindProperty] public bool VienePorCompra { get; set; }
+        //Pa Prestar--------
+        [BindProperty] public bool VienePorPrestamo { get; set; }
+        //------------------
         [BindProperty] public bool Borrando { get; set; }
         [BindProperty] public int? CantidadCalculo { get; set; }
         [BindProperty] public int? Portatil { get; set; }
@@ -42,6 +46,8 @@ namespace ApiPresentacion.Pages
 
             bool enCompra = TempData.ContainsKey("EnCompra") && (bool)TempData["EnCompra"]!;
 
+
+
             if (enCompra)
             {
                 VienePorCompra = enCompra;
@@ -57,6 +63,41 @@ namespace ApiPresentacion.Pages
                         Fecha_Firma = DateTime.Now,
 
                         Terminos = "Comprara el baño portatil programado a envio",
+
+                        Fecha_Expiracion = DateTime.Now.AddMonths(12)
+
+                    };
+
+                    CantidadCalculo = (int)TempData["TDCantidad"]!;
+                    Portatil = (int)TempData["Id_Portatil"]!;
+
+                    return;
+                }
+                OnPostBtRefrescar();
+            }
+
+
+
+            bool EnPrestamo = false;
+            if (TempData.ContainsKey("EnPrestamo"))
+            {
+                EnPrestamo = (bool)TempData["EnPrestamo"]!;
+            }
+            bool enPrestamo = TempData.ContainsKey("EnPrestamo") && (bool)TempData["EnPrestamo"]!;
+
+            if (enPrestamo)
+            {
+                VienePorCompra = enPrestamo;
+
+                if (EnPrestamo)
+                {
+                    VienePorPrestamo = true;
+                    Contrato = new Contratos()
+                    {
+                        Cliente = (int)Id_Cliente!,
+                        Fecha_Firma = DateTime.Now,
+
+                        Terminos = "Prestara el baño portatil programado a envio",
 
                         Fecha_Expiracion = DateTime.Now.AddMonths(12)
 
@@ -97,6 +138,24 @@ namespace ApiPresentacion.Pages
             TempData["EnCompra"] = true;
 
             return RedirectToPage("/Ventanas/Compras");
+        }
+
+        public IActionResult OnPostBtFirmarPrestamo()
+        {
+            OnPostBtGuardar();
+
+            if (UltimoContratoId == 0)
+            {
+                ViewData["Mensaje"] = "Error al guardar el contrato";
+                VienePorPrestamo = true;
+                return Page();
+            }
+
+            TempData["TDCantidad"] = CantidadCalculo;
+            TempData["Id_Portatil"] = Portatil;
+            TempData["Id_Contrato"] = UltimoContratoId;
+            TempData["EnPrestamo"] = true;
+            return RedirectToPage("/Ventanas/Prestamos");
         }
 
         public List<Clientes> CargarClientes()
