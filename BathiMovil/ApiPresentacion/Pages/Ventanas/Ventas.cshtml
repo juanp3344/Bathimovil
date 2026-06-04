@@ -447,14 +447,26 @@
             <img src="@tipo.ImagenUrl" alt="@tipo.Nombre" />
 
             <div class="producto-body">
-                @{
-                    bool esEmpresarial = tipo.Nombre != null && tipo.Nombre.Contains("Empresarial");
+                @{ 
+                    var nombre = tipo.Nombre ?? string.Empty;
+                    bool esEmpresarial = nombre.Contains("Empresarial", StringComparison.OrdinalIgnoreCase);
+                    bool esConstruccion = nombre.Contains("Construccion", StringComparison.OrdinalIgnoreCase) || nombre.Contains("Construcción", StringComparison.OrdinalIgnoreCase);
                     string badgeClass = esEmpresarial ? "badge-empresarial" : "badge-personal";
                     string badgeText = esEmpresarial ? "Más popular" : "Uso personal";
                     string btnClass = esEmpresarial ? "btn-empresarial" : "btn-personal";
-                    string descText = esEmpresarial
-                        ? "Diseñado para obras, eventos masivos y empresas"
-                        : "Ideal para eventos pequeños y uso familiar";
+                    string descText;
+                    if (esConstruccion)
+                    {
+                        descText = "Diseñado para obras y proyectos de construcción";
+                    }
+                    else if (esEmpresarial)
+                    {
+                        descText = "Diseñado para eventos masivos y empresas";
+                    }
+                    else
+                    {
+                        descText = "Ideal para eventos pequeños y uso familiar";
+                    }
                 }
 
                 <span class="producto-badge @badgeClass">@badgeText</span>
