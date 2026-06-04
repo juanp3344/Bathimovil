@@ -1,6 +1,7 @@
 ﻿using BibliotecaServicios.Entidades;
 using BibliotecaServicios.Interfaces;
 using System;
+using System.Linq;
 
 namespace Unitarias
 {
@@ -192,6 +193,15 @@ namespace Unitarias
 
         public static Compras CrearCompra(IConexion conexion, int idContrato)
         {
+            // Ensure contrato exists
+            if (conexion.Contratos == null || !conexion.Contratos.Any(c => c.Id_Contrato == idContrato))
+            {
+                // create minimal client+contract
+                var cliente = CrearCliente(conexion);
+                var contrato = CrearContrato(conexion, cliente.Id_Persona);
+                idContrato = contrato.Id_Contrato;
+            }
+
             var e = new Compras()
             {
                 Fecha_Compra = DateTime.Now.AddMonths(-6),
@@ -231,6 +241,11 @@ namespace Unitarias
                 Sede = idSede,
                 Compra = idCompra
             };
+            // assign Compra only if it exists to avoid FK violations in tests
+            if (idCompra > 0 && conexion.Compras != null && conexion.Compras.Any(c => c.Id_Compra == idCompra))
+            {
+                e.Compra = idCompra;
+            }
             conexion.Portatiles!.Add(e);
             conexion.SaveChanges();
             return e;
@@ -238,6 +253,31 @@ namespace Unitarias
 
         public static Implementos CrearImplemento(IConexion conexion, int idPortatil, int idBodega, int idTipo)
         {
+            // Ensure referenced entities exist; create minimal ones if missing
+            if (conexion.Portatiles == null || !conexion.Portatiles.Any(p => p.Id_Portatil == idPortatil))
+            {
+                // create minimal dependencies for a portatil
+                var tipo = CrearTipo_Portatil(conexion);
+                var sede = CrearSede(conexion);
+                var compra = CrearCompra(conexion, CrearContrato(conexion, CrearCliente(conexion).Id_Persona).Id_Contrato);
+                var port = CrearPortatil(conexion, tipo.Id_Tipo_Portatil, sede.Id_Sede, compra.Id_Compra);
+                idPortatil = port.Id_Portatil;
+            }
+
+            if (conexion.Bodegas == null || !conexion.Bodegas.Any(b => b.Id_Bodega == idBodega))
+            {
+                var sede = CrearSede(conexion);
+                var empleado = CrearEmpleado(conexion);
+                var b = CrearBodega(conexion, sede.Id_Sede, empleado.Id_Persona);
+                idBodega = b.Id_Bodega;
+            }
+
+            if (conexion.Tipos_Implementos == null || !conexion.Tipos_Implementos.Any(t => t.Id_Tipo_Implemento == idTipo))
+            {
+                var t = CrearTipo_Implemento(conexion);
+                idTipo = t.Id_Tipo_Implemento;
+            }
+
             var e = new Implementos()
             {
                 Vida_Util = 36,
@@ -284,12 +324,19 @@ namespace Unitarias
 
         public static Prestamos CrearPrestamo(IConexion conexion, int idContrato)
         {
+            // Ensure there is a Portatil to reference: create tipo, sede, compra and portatil
+            var tipo = CrearTipo_Portatil(conexion);
+            var sede = CrearSede(conexion);
+            var compra = CrearCompra(conexion, idContrato);
+            var portatil = CrearPortatil(conexion, tipo.Id_Tipo_Portatil, sede.Id_Sede, compra.Id_Compra);
+
             var e = new Prestamos()
             {
                 Fecha_Inicio = DateTime.Now.AddMonths(-1),
                 Fecha_Fin_Prevista = DateTime.Now.AddMonths(2),
                 Estado_Prestamo = true,
-                Contrato = idContrato
+                Contrato = idContrato,
+                Portatil = portatil.Id_Portatil
             };
             conexion.Prestamos!.Add(e);
             conexion.SaveChanges();
@@ -347,6 +394,13 @@ namespace Unitarias
 
         public static Facturas CrearFactura(IConexion conexion, int idCliente)
         {
+            // Ensure cliente exists
+            if (conexion.Clientes == null || !conexion.Clientes.Any(c => c.Id_Persona == idCliente))
+            {
+                var cliente = CrearCliente(conexion);
+                idCliente = cliente.Id_Persona;
+            }
+
             var e = new Facturas()
             {
                 Numero = $"FAC-{DateTime.Now.Ticks}",
@@ -392,6 +446,16 @@ namespace Unitarias
 
         public static Ubicaciones CrearUbicacion(IConexion conexion, int idPortatil)
         {
+            // Ensure portatil exists
+            if (conexion.Portatiles == null || !conexion.Portatiles.Any(p => p.Id_Portatil == idPortatil))
+            {
+                var tipo = CrearTipo_Portatil(conexion);
+                var sede = CrearSede(conexion);
+                var compra = CrearCompra(conexion, CrearContrato(conexion, CrearCliente(conexion).Id_Persona).Id_Contrato);
+                var port = CrearPortatil(conexion, tipo.Id_Tipo_Portatil, sede.Id_Sede, compra.Id_Compra);
+                idPortatil = port.Id_Portatil;
+            }
+
             var e = new Ubicaciones()
             {
                 Ciudad = "Medellín",
@@ -402,12 +466,8 @@ namespace Unitarias
             conexion.SaveChanges();
             return e;
         }
+
+
+
     }
 }
-
-
-
-
-
-
-
